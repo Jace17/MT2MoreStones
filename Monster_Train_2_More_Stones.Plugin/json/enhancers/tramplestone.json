@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeTrample",
+      "type": "enhancer",
+      "names": {
+        "english": "Tramplestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [trample]."
+      },
+      "relic_effects": [
+        "@TrampleEnhancer"
+      ],
+      "icon": "@TramplestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "unit_upgrade_rare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "TrampleEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddTrample"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddTrample",
+      "titles": {
+        "english": "Tramplestone"
+      },
+      "descriptions": {
+        "english": "Gain [trample]."
+      },
+      "icon": "@TramplestoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon",
+        "@ExcludeTrample"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TramplestoneIcon",
+      "path": "textures/tramplestone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeTrample",
+      "excluded_status": [
+        {
+          "status": "trample",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

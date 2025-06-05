@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeSweep",
+      "type": "enhancer",
+      "names": {
+        "english": "Swipestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [sweep], but <b>-10</b>[attack]."
+      },
+      "relic_effects": [
+        "@SweepEnhancer"
+      ],
+      "icon": "@SwipestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "unit_upgrade_rare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SweepEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddSweep"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSweep",
+      "titles": {
+        "english": "Swipestone"
+      },
+      "descriptions": {
+        "english": "Gain [sweep] but <b>-10</b>."
+      },
+      "icon": "@SwipestoneIcon",
+      "bonus_damage": -10,
+      "status_effect_upgrades": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon",
+        "@ExcludeSweep"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SwipestoneIcon",
+      "path": "textures/swipestone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeSweep",
+      "excluded_status": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

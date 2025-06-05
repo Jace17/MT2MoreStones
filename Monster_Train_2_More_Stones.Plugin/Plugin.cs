@@ -43,13 +43,17 @@ namespace Monster_Train_2_More_Stones.Plugin
                     //   the project only copies json files in the json folder and not in subdirectories.
                     c.AddMergedJsonFile(
                         "json/plugin.json",
-                        "json/global.json"
+                        "json/global.json",
+                        "json/enhancers/tramplestone.json",
+                        "json/enhancers/swipestone.json",
+                        "json/enhancers/bannerstone.json",
+                        "json/enhancers/shellstone.json"  
                     );
                 }
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-            
+
             // Uncomment if you need harmony patches, if you are writing your own custom effects.
             //var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
             //harmony.PatchAll();

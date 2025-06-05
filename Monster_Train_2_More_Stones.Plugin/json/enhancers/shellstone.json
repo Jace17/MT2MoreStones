@@ -1,0 +1,65 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeTitanskin2",
+      "type": "enhancer",
+      "names": {
+        "english": "Shellstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [titanskin] <b>2</b>."
+      },
+      "relic_effects": [
+        "@Titanskin2Enhancer"
+      ],
+      "icon": "@ShellstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "unit_upgrade_common"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Titanskin2Enhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddTitanskin2"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddTitanskin2",
+      "titles": {
+        "english": "Shellstone"
+      },
+      "descriptions": {
+        "english": "Gain [titanskin] <b>2</b>."
+      },
+      "icon": "@ShellstoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "titanskin",
+          "count": 2
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ShellstoneIcon",
+      "path": "textures/shellstone.png"
+    }
+  ]
+}

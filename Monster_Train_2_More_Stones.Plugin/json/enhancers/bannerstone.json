@@ -1,0 +1,81 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeDeployable",
+      "type": "enhancer",
+      "names": {
+        "english": "Bannerstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [deployable] and <b>+10</b>[health]."
+      },
+      "relic_effects": [
+        "@DeployableEnhancer"
+      ],
+      "icon": "@BannerstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "unit_upgrade_common"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DeployableEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddDeployableTrait"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddDeployableTrait",
+      "titles": {
+        "english": "Bannerstone"
+      },
+      "descriptions": {
+        "english": "Gain [deployable] and <b>+10</b>[health]."
+      },
+      "icon": "@BannerstoneIcon",
+      "bonus_hp": 10,
+      "trait_upgrades": [
+        {
+          "id": "@DeployableTrait"
+        }
+      ],
+      "filters": [
+        "@ExcludeDeployable"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BannerstoneIcon",
+      "path": "textures/bannerstone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeDeployable",
+      "excluded_traits": [
+        {
+          "id": "@DeployableTrait"
+        }
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "DeployableTrait",
+      "name": "CardTraitDrawInDeploymentPhase"
+    }
+  ]
+}
