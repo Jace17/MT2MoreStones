@@ -8,7 +8,7 @@
         "english": "Bannerstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [deployable] and <b>+10</b>[attack]."
+        "english": "Upgrade a unit with [deployable] and +<b>10</b>[attack]."
       },
       "relic_effects": [
         "@DeployableEnhancer"
@@ -19,7 +19,9 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "unit_upgrade_common"
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
             ],
             "rarity": "common"
           }
@@ -42,7 +44,7 @@
         "english": "Bannerstone"
       },
       "descriptions": {
-        "english": "Gain [deployable] and <b>+10</b>[attack]."
+        "english": "Gain [deployable] and +<b>10</b>[attack]."
       },
       "icon": "@BannerstoneIcon",
       "bonus_damage": 10,

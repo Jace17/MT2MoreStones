@@ -2,18 +2,18 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeMeleeWeakness",
+      "id": "SpellUpgradeDraw1NextTurn",
       "type": "enhancer",
       "names": {
-        "english": "Weakstone"
+        "english": "Sunstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [meleeweakness] <b>1</b> to enemy units."
+        "english": "Upgrade a spell to Draw <b>+1</b> next turn."
       },
       "relic_effects": [
-        "@MeleeWeaknessEnhancer"
+        "@Draw1NextTurnEnhancer"
       ],
-      "icon": "@WeakstoneIcon",
+      "icon": "@SunstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "MeleeWeaknessEnhancer",
+      "id": "Draw1NextTurnEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMeleeWeaknessEffect"
+      "param_upgrade": "@AddDraw1NextTurn"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMeleeWeaknessEffect",
+      "id": "AddDraw1NextTurn",
       "titles": {
-        "english": "Weakstone"
+        "english": "Sunstone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [meleeweakness] <b>1</b> to enemy units.'"
+        "english": "Gain 'Draw 1 next turn.'"
       },
-      "icon": "@WeakstoneIcon",
+      "icon": "@SunstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyMeleeWeaknessTrigger"
+          "id": "@ApplyDraw1NextTurnTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "WeakstoneIcon",
-      "path": "textures/weakstone.png"
+      "id": "SunstoneIcon",
+      "path": "textures/sunstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyMeleeWeaknessTrigger",
+      "id": "ApplyDraw1NextTurnTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units."
+        "english": "Draw +[effect0.power] next turn."
       },
       "effects": [
         {
-          "id": "@EffectApplyMeleeWeakness"
+          "id": "@EffectDraw1NextTurn"
         }
       ],
       "filters": [
@@ -79,16 +79,10 @@
   ],
   "effects": [
     {
-      "id": "EffectApplyMeleeWeakness",
-      "name": "CardEffectAddStatusEffect",
-      "target_mode": "room",
-      "target_team": "heroes",
-      "param_status_effects": [
-        {
-          "status": "melee weakness",
-          "count" :  1
-        }
-      ]
+      "id": "EffectDraw1NextTurn",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "should_test": false,
+      "param_int": 1
     }
   ]
 }

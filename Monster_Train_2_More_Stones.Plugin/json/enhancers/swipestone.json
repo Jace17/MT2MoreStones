@@ -8,7 +8,7 @@
         "english": "Swipestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [sweep], but <b>-10</b>[attack]."
+        "english": "Upgrade a unit with [sweep], but -<b>10</b>[attack]."
       },
       "relic_effects": [
         "@SweepEnhancer"
@@ -19,7 +19,9 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "unit_upgrade_rare"
+              "UnitUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
             ],
             "rarity": "rare"
           }
@@ -42,7 +44,7 @@
         "english": "Swipestone"
       },
       "descriptions": {
-        "english": "Gain [sweep] but <b>-10</b>."
+        "english": "Gain [sweep] but -<b>10</b>[attack]."
       },
       "icon": "@SwipestoneIcon",
       "bonus_damage": -10,

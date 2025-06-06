@@ -51,7 +51,13 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/shellstone.json",
                         "json/enhancers/attunestone.json",
                         "json/enhancers/weakstone.json",
-                        "json/enhancers/feeblestone.json"
+                        "json/enhancers/feeblestone.json",
+                        "json/enhancers/bloomstone.json",
+                        "json/enhancers/sunstone.json",
+                        "json/enhancers/vinestone.json",
+                        "json/enhancers/cloudstone.json",
+                        "json/enhancers/forgestone.json",
+                        "json/enhancers/wingstone.json"
                     );
                 }
             );

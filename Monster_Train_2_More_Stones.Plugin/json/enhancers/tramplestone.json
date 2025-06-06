@@ -19,7 +19,9 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "unit_upgrade_rare"
+              "UnitUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
             ],
             "rarity": "rare"
           }

@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeMeleeWeakness",
+      "id": "SpellUpgradeRooted",
       "type": "enhancer",
       "names": {
-        "english": "Weakstone"
+        "english": "Vinestone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [meleeweakness] <b>1</b> to enemy units."
+        "english": "Upgrade a spell to apply [rooted] <b>1</b> to enemy units."
       },
       "relic_effects": [
-        "@MeleeWeaknessEnhancer"
+        "@RootedEnhancer"
       ],
-      "icon": "@WeakstoneIcon",
+      "icon": "@VinestoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": null,
+            "class": "ClassAwoken",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "MeleeWeaknessEnhancer",
+      "id": "RootedEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMeleeWeaknessEffect"
+      "param_upgrade": "@AddRootedEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMeleeWeaknessEffect",
+      "id": "AddRootedEffect",
       "titles": {
-        "english": "Weakstone"
+        "english": "Vinestone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [meleeweakness] <b>1</b> to enemy units.'"
+        "english": "Gain 'Apply [rooted] <b>1</b> to enemy units.'"
       },
-      "icon": "@WeakstoneIcon",
+      "icon": "@VinestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyMeleeWeaknessTrigger"
+          "id": "@ApplyRootedTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "WeakstoneIcon",
-      "path": "textures/weakstone.png"
+      "id": "VinestoneIcon",
+      "path": "textures/vinestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyMeleeWeaknessTrigger",
+      "id": "ApplyRootedTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units."
+        "english": "Apply [rooted] [effect0.status0.power] to enemy units."
       },
       "effects": [
         {
-          "id": "@EffectApplyMeleeWeakness"
+          "id": "@EffectApplyRooted"
         }
       ],
       "filters": [
@@ -79,14 +79,14 @@
   ],
   "effects": [
     {
-      "id": "EffectApplyMeleeWeakness",
+      "id": "EffectApplyRooted",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "melee weakness",
-          "count" :  1
+          "status": "rooted",
+          "count": 1
         }
       ]
     }

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeRejuvenate",
+      "type": "enhancer",
+      "names": {
+        "english": "Bloomstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[rejuvenate]: +<b>4</b>[attack] and +<b>4</b>[health].'"
+      },
+      "relic_effects": [
+        "@RejuvenateEnhancer"
+      ],
+      "icon": "@BloomstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RejuvenateEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddRejuvenate"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddRejuvenate",
+      "titles": {
+        "english": "Bloomstone"
+      },
+      "descriptions": {
+        "english": "Gain '[rejuvenate]: +<b>4</b>[attack] and +<b>4</b>[health].'"
+      },
+      "icon": "@BloomstoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@RejuvenateAdd4Attack4HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BloomstoneIcon",
+      "path": "textures/bloomstone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "RejuvenateAdd4Attack4HealthTrigger",
+      "trigger": "on_heal",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]"
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd4Attack4Health"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectAdd4Attack4Health",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "Plus4Attack4Health"
+    }
+  ]
+}

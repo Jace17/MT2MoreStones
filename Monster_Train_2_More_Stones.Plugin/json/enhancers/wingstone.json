@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeTitanskin2",
+      "id": "UnitUpgradeFlight",
       "type": "enhancer",
       "names": {
-        "english": "Shellstone"
+        "english": "Wingstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [titanskin] <b>2</b>."
+        "english": "Add [ability]: <b>Flight</b>."
       },
       "relic_effects": [
-        "@Titanskin2Enhancer"
+        "@FlightEnhancer"
       ],
-      "icon": "@ShellstoneIcon",
+      "icon": "@WingstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": null,
+            "class": "ClassBanished",
             "pools": [
               "UnitUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,37 +31,32 @@
   ],
   "relic_effects": [
     {
-      "id": "Titanskin2Enhancer",
+      "id": "FlightEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddTitanskin2"
+      "param_upgrade": "@AddAbilityFlight"
     }
   ],
   "upgrades": [
     {
-      "id": "AddTitanskin2",
+      "id": "AddAbilityFlight",
       "titles": {
-        "english": "Shellstone"
+        "english": "Wingstone"
       },
       "descriptions": {
-        "english": "Gain [titanskin] <b>2</b>."
+        "english": "Gain [ability]: <b>Flight</b>."
       },
-      "icon": "@ShellstoneIcon",
-      "status_effect_upgrades": [
-        {
-          "status": "titanskin",
-          "count": 2
-        }
-      ],
+      "icon": "@WingstoneIcon",
+      "ability_upgrade": "AngelFlightAbility",
       "filters": [
-        "ExcludeEelGorgon"
+        "ExcludeUnitsWithAbilities"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "ShellstoneIcon",
-      "path": "textures/shellstone.png"
+      "id": "WingstoneIcon",
+      "path": "textures/wingstone.png"
     }
   ]
 }

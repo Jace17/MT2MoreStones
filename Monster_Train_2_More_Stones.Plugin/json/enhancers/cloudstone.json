@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeShift",
+      "type": "enhancer",
+      "names": {
+        "english": "cloudstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[shift]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+      },
+      "relic_effects": [
+        "@ShiftEnhancer"
+      ],
+      "icon": "@CloudstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassBanished",
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ShiftEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddShift"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddShift",
+      "titles": {
+        "english": "Cloudstone"
+      },
+      "descriptions": {
+        "english": "Gain '[shift]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+      },
+      "icon": "@CloudstoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@ShiftAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CloudstoneIcon",
+      "path": "textures/cloudstone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ShiftAdd2Attack2HealthTrigger",
+      "trigger": "on_shift",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]"
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectAdd2Attack2Health",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "Plus2Attack2Health"
+    }
+  ]
+}
