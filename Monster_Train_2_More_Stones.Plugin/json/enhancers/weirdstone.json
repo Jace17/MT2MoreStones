@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeUnstable",
+      "type": "enhancer",
+      "names": {
+        "english": "Weirdstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [unstable] 25."
+      },
+      "relic_effects": [
+        "@Unstable25Enhancer"
+      ],
+      "icon": "@WeirdstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLazarusLeague",
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Unstable25Enhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddUnstable"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddUnstable",
+      "titles": {
+        "english": "Weirdstone"
+      },
+      "descriptions": {
+        "english": "Gain [unstable] 25."
+      },
+      "icon": "@WeirdstoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "unstable",
+          "count": 25
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WeirdstoneIcon",
+      "path": "textures/weirdstone.png"
+    }
+  ]
+}

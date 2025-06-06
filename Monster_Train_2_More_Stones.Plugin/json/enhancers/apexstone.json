@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeRejuvenate",
+      "id": "UnitUpgradeArmored",
       "type": "enhancer",
       "names": {
-        "english": "Bloomstone"
+        "english": "Apexstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[rejuvenate]: +<b>4</b>[attack] and +<b>4</b>[health].'"
+        "english": "Upgrade a unit with '<b>Armored</b>: +<b>4</b>[attack].'"
       },
       "relic_effects": [
-        "@RejuvenateEnhancer"
+        "@ArmoredEnhancer"
       ],
-      "icon": "@BloomstoneIcon",
+      "icon": "@ApexstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassAwoken",
+            "class": "ClassHellhorned",
             "pools": [
               "UnitUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,56 +31,60 @@
   ],
   "relic_effects": [
     {
-      "id": "RejuvenateEnhancer",
+      "id": "ArmoredEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddRejuvenate"
+      "param_upgrade": "@AddArmored"
     }
   ],
   "upgrades": [
     {
-      "id": "AddRejuvenate",
+      "id": "AddArmored",
       "titles": {
-        "english": "Bloomstone"
+        "english": "Apexstone"
       },
       "descriptions": {
-        "english": "Gain '[rejuvenate]: +<b>4</b>[attack] and +<b>4</b>[health].'"
+        "english": "Gain '<b>Armored</b>: +<b>4</b>[attack].'"
       },
-      "icon": "@BloomstoneIcon",
+      "icon": "@ApexstoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@RejuvenateAdd4Attack4HealthTrigger"
+          "id": "@ArmoredAdd4AttackTrigger"
         }
       ]
+    },
+    {
+      "id": "Plus4Attack",
+      "bonus_damage": 4
     }
   ],
   "sprites": [
     {
-      "id": "BloomstoneIcon",
-      "path": "textures/bloomstone.png"
+      "id": "ApexstoneIcon",
+      "path": "textures/apexstone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "RejuvenateAdd4Attack4HealthTrigger",
-      "trigger": "on_heal",
+      "id": "ArmoredAdd4AttackTrigger",
+      "trigger": "on_armor_added",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+        "english": "+[effect0.upgrade.bonusdamage][attack]."
       },
       "effects": [
         {
-          "id": "@EffectAdd4Attack4Health"
+          "id": "@EffectAdd4Attack"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectAdd4Attack4Health",
+      "id": "EffectAdd4Attack",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
       "param_int": 1,
-      "param_upgrade": "Plus4Attack4Health"
+      "param_upgrade": "@Plus4Attack"
     }
   ]
 }

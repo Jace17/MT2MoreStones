@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDraw1NextTurn",
+      "id": "SpellUpgradeMix",
       "type": "enhancer",
       "names": {
-        "english": "Sunstone"
+        "english": "Flaskstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Draw +<b>1</b> next turn.'"
+        "english": "Upgrade a spell to add [mix]."
       },
       "relic_effects": [
-        "@Draw1NextTurnEnhancer"
+        "@AddMixEnhancer"
       ],
-      "icon": "@SunstoneIcon",
+      "icon": "@FlaskstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassAwoken",
+            "class": "ClassLazarusLeague",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "Draw1NextTurnEnhancer",
+      "id": "AddMixEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddDraw1NextTurn"
+      "param_upgrade": "@AddMix"
     }
   ],
   "upgrades": [
     {
-      "id": "AddDraw1NextTurn",
+      "id": "AddMix",
       "titles": {
-        "english": "Sunstone"
+        "english": "Flaskstone"
       },
       "descriptions": {
-        "english": "Gain 'Draw +<b>1</b> next turn.'"
+        "english": "Gain [mix]."
       },
-      "icon": "@SunstoneIcon",
+      "icon": "@FlaskstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyDraw1NextTurnTrigger"
+          "id": "@AddMixTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "SunstoneIcon",
-      "path": "textures/sunstone.png"
+      "id": "FlaskstoneIcon",
+      "path": "textures/flaskstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyDraw1NextTurnTrigger",
+      "id": "AddMixTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Draw +[effect0.power] next turn."
+        "english": "[mix]."
       },
       "effects": [
         {
-          "id": "@EffectDraw1NextTurn"
+          "id": "@MixEffect"
         }
       ],
       "filters": [
@@ -79,10 +79,10 @@
   ],
   "effects": [
     {
-      "id": "EffectDraw1NextTurn",
-      "name": "CardEffectDrawAdditionalNextTurn",
+      "id": "MixEffect",
+      "name": "CardEffectMix",
       "should_test": false,
-      "param_int": 1
+      "param_int": 2
     }
   ]
 }

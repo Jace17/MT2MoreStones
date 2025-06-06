@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDraw1NextTurn",
+      "id": "SpellUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Sunstone"
+        "english": "Radiostone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Draw +<b>1</b> next turn.'"
+        "english": "Upgrade a spell to apply [unstable] <b>10</b> to enemy units."
       },
       "relic_effects": [
-        "@Draw1NextTurnEnhancer"
+        "@Unstable10Enhancer"
       ],
-      "icon": "@SunstoneIcon",
+      "icon": "@RadiostoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassAwoken",
+            "class": "ClassLazarusLeague",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "Draw1NextTurnEnhancer",
+      "id": "Unstable10Enhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddDraw1NextTurn"
+      "param_upgrade": "@AddUnstableEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddDraw1NextTurn",
+      "id": "AddUnstableEffect",
       "titles": {
-        "english": "Sunstone"
+        "english": "Radiostone"
       },
       "descriptions": {
-        "english": "Gain 'Draw +<b>1</b> next turn.'"
+        "english": "Gain 'Apply [unstable] <b>10</b> to enemy units.'"
       },
-      "icon": "@SunstoneIcon",
+      "icon": "@RadiostoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyDraw1NextTurnTrigger"
+          "id": "@ApplyUnstableTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "SunstoneIcon",
-      "path": "textures/sunstone.png"
+      "id": "RadiostoneIcon",
+      "path": "textures/radiostone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyDraw1NextTurnTrigger",
+      "id": "ApplyUnstableTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Draw +[effect0.power] next turn."
+        "english": "Apply [unstable] [effect0.status0.power] to enemy units."
       },
       "effects": [
         {
-          "id": "@EffectDraw1NextTurn"
+          "id": "@EffectApplyUnstable"
         }
       ],
       "filters": [
@@ -79,10 +79,16 @@
   ],
   "effects": [
     {
-      "id": "EffectDraw1NextTurn",
-      "name": "CardEffectDrawAdditionalNextTurn",
-      "should_test": false,
-      "param_int": 1
+      "id": "EffectApplyUnstable",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "unstable",
+          "count": 10
+        }
+      ]
     }
   ]
 }

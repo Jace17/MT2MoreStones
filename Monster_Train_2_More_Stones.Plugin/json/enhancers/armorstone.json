@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeAddArmor",
+      "type": "enhancer",
+      "names": {
+        "english": "Armorstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [armor] 25."
+      },
+      "relic_effects": [
+        "@AddArmorEnhancer"
+      ],
+      "icon": "@ArmorstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassHellhorned",
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddArmorEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddArmor"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddArmor",
+      "titles": {
+        "english": "Armorstone"
+      },
+      "descriptions": {
+        "english": "Gain [armor] 25."
+      },
+      "icon": "@ArmorstoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 25
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ArmorstoneIcon",
+      "path": "textures/armorstone.png"
+    }
+  ]
+}

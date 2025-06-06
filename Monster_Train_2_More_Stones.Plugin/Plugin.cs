@@ -57,7 +57,14 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/vinestone.json",
                         "json/enhancers/cloudstone.json",
                         "json/enhancers/forgestone.json",
-                        "json/enhancers/wingstone.json"
+                        "json/enhancers/wingstone.json",
+                        "json/enhancers/apexstone.json",
+                        "json/enhancers/armorstone.json",
+                        "json/enhancers/flaskstone.json",
+                        "json/enhancers/piercestone.json",
+                        "json/enhancers/radiostone.json",  
+                        "json/enhancers/weirdstone.json",
+                        "json/enhancers/impstone.json"
                     );
                 }
             );
@@ -81,13 +88,9 @@ namespace Monster_Train_2_More_Stones.Plugin
                 CardTriggerTypeMethods.GetLocalizedName(cardTriggerEffectData.GetTrigger(), out empty, true);
                 string descriptionKey = cardTriggerEffectData.GetDescriptionKey();
                 string description = descriptionKey.HasTranslation() ? descriptionKey.Localize(new CardEffectLocalizationContext(cardTriggerEffectData, null, __instance)) : "NO DESCRIPTION PROVIDED";
-                if (__instance.GetCardType() == CardType.Spell && cardTriggerEffectData.GetTrigger() == CardTriggerType.OnCast)
+                if (__instance.GetCardType() == CardType.Spell && cardTriggerEffectData.GetTrigger() == CardTriggerType.OnCast && areTempModifiers)
                 {
                     string arg = "tempUpgradeHighlight";
-                    if (!areTempModifiers)
-                    {
-                        arg = "upgradeHighlight";
-                    }
                     string arg2 = description.Substring(0, 0);
                     string arg3 = description.Substring(0);
                     string text = string.Format("{1}<{0}>{2}</{0}>", arg, arg2, arg3);
@@ -95,15 +98,6 @@ namespace Monster_Train_2_More_Stones.Plugin
                     stringBuilder.Append(Environment.NewLine);
                 }
             }
-        }
-    }
-
-    [HarmonyPatch(typeof(CardState), "SetupOnCastTriggerUpgradeText")]
-    public class DisableSetupOnCastTriggerUpgradeText
-    {
-        public static bool Prefix(StringBuilder stringBuilder, bool useUpgradeHighlightTextTags)
-        {
-            return false;
         }
     }
 }

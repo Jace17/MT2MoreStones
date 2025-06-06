@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeAddImp",
+      "type": "enhancer",
+      "names": {
+        "english": "Impstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add 'Add a common or uncommon [imp] unit to your hand.'"
+      },
+      "relic_effects": [
+        "@AddImpEnhancer"
+      ],
+      "icon": "@ImpstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassHellhorned",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddImpEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddImpToHand"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddImpToHand",
+      "titles": {
+        "english": "Impstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Add a common or uncommon [imp] unit to your hand.'"
+      },
+      "icon": "@ImpstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddImpToHandTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ImpstoneIcon",
+      "path": "textures/impstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddImpToHandTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Add a common or uncommon [imp] unit to your hand."
+      },
+      "effects": [
+        {
+          "id": "@AddImpToHandEffect"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AddImpToHandEffect",
+      "name": "CardEffectAddBattleCard",
+      "should_test": false,
+      "param_int": 3,
+      "param_card_pool": "@RandomImpCardPool"
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "RandomImpCardPool",
+      "cards": [
+        "AggressiveImp",
+        "AggressiveImp",
+        "StarterImp",
+        "StarterImp",
+        "UnstableInfery",
+        "UnstableInfery",
+        "WelderHelper",
+        "WelderHelper",
+        "EmberedInfery",
+        "EnlightenedInfery"
+      ]
+    }
+  ]
+}

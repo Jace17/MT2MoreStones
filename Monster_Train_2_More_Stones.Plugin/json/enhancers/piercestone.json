@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradePiercing",
+      "type": "enhancer",
+      "names": {
+        "english": "Piercestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to gain [piercing] and +5 [magicpower]."
+      },
+      "relic_effects": [
+        "@PiercingEnhancer"
+      ],
+      "icon": "@PiercestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "PiercingEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddPiercingTrait"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddPiercingTrait",
+      "titles": {
+        "english": "Piercestone"
+      },
+      "descriptions": {
+        "english": "Gain [piercing] and +5 [magicpower]."
+      },
+      "icon": "@PiercestoneIcon",
+      "trait_upgrades": [
+        {
+          "id": "@PiercingTrait"
+        }
+      ],
+      "bonus_damage": 5,
+      "bonus_heal": 5,
+      "filters": [
+        "@ExcludePiercing",
+        "@AttackSpellsOnly"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PiercestoneIcon",
+      "path": "textures/piercestone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludePiercing",
+      "excluded_traits": [
+        "CardTraitIgnoreArmor"
+      ]
+    },
+    {
+      "id": "AttackSpellsOnly",
+      "required_effects_operator": "or",
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectHealAndDamageRelative",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerHp"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "PiercingTrait",
+      "name": "CardTraitIgnoreArmor"
+    }
+  ]
+}
