@@ -5,6 +5,7 @@ using I2.Loc;
 using Microsoft.Extensions.Configuration;
 using ShinyShoe.Logging;
 using SimpleInjector;
+using System.Text;
 using TrainworksReloaded.Base;
 using TrainworksReloaded.Base.Card;
 using TrainworksReloaded.Base.CardUpgrade;
@@ -16,9 +17,9 @@ using TrainworksReloaded.Base.Prefab;
 using TrainworksReloaded.Base.Trait;
 using TrainworksReloaded.Base.Trigger;
 using TrainworksReloaded.Core;
+using TrainworksReloaded.Core.Extensions;
 using TrainworksReloaded.Core.Impl;
 using TrainworksReloaded.Core.Interfaces;
-using TrainworksReloaded.Core.Extensions;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
@@ -47,7 +48,10 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/tramplestone.json",
                         "json/enhancers/swipestone.json",
                         "json/enhancers/bannerstone.json",
-                        "json/enhancers/shellstone.json"  
+                        "json/enhancers/shellstone.json",
+                        "json/enhancers/attunestone.json",
+                        "json/enhancers/weakstone.json",
+                        "json/enhancers/feeblestone.json"
                     );
                 }
             );
@@ -55,8 +59,45 @@ namespace Monster_Train_2_More_Stones.Plugin
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
 
             // Uncomment if you need harmony patches, if you are writing your own custom effects.
-            //var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
-            //harmony.PatchAll();
+            var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
+            harmony.PatchAll();
+        }
+    }
+
+    [HarmonyPatch(typeof(CardState), "SetupCardTriggerBodyUpgradeText")]
+    public class AddOnCastTriggerTemporaryUpgradesToSpellText
+    {
+        public static void Postfix(StringBuilder stringBuilder, List<CardTriggerEffectData> triggerUpgrades, bool areTempModifiers, bool useUpgradeHighlightTextTags, bool highlightEntireUpgrade, CardState __instance)
+        {
+            foreach (CardTriggerEffectData cardTriggerEffectData in triggerUpgrades)
+            {
+                string empty = string.Empty;
+                CardTriggerTypeMethods.GetLocalizedName(cardTriggerEffectData.GetTrigger(), out empty, true);
+                string descriptionKey = cardTriggerEffectData.GetDescriptionKey();
+                string description = descriptionKey.HasTranslation() ? descriptionKey.Localize(new CardEffectLocalizationContext(cardTriggerEffectData, null, __instance)) : "NO DESCRIPTION PROVIDED";
+                if (__instance.GetCardType() == CardType.Spell && cardTriggerEffectData.GetTrigger() == CardTriggerType.OnCast)
+                {
+                    string arg = "tempUpgradeHighlight";
+                    if (!areTempModifiers)
+                    {
+                        arg = "upgradeHighlight";
+                    }
+                    string arg2 = description.Substring(0, 0);
+                    string arg3 = description.Substring(0);
+                    string text = string.Format("{1}<{0}>{2}</{0}>", arg, arg2, arg3);
+                    stringBuilder.Append(text);
+                    stringBuilder.Append(Environment.NewLine);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(CardState), "SetupOnCastTriggerUpgradeText")]
+    public class DisableSetupOnCastTriggerUpgradeText
+    {
+        public static bool Prefix(StringBuilder stringBuilder, bool useUpgradeHighlightTextTags)
+        {
+            return false;
         }
     }
 }

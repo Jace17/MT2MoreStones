@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeAttuned",
+      "type": "enhancer",
+      "names": {
+        "english": "Attunestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to gain [attuned]."
+      },
+      "relic_effects": [
+        "@AttunedEnhancer"
+      ],
+      "icon": "@AttunestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "spell_upgrade_rare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AttunedEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddAttunedTrait"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddAttunedTrait",
+      "titles": {
+        "english": "Attunestone"
+      },
+      "descriptions": {
+        "english": "Gain [attuned]."
+      },
+      "icon": "@AttunestoneIcon",
+      "trait_upgrades": [
+        {
+          "id": "@AttunedTrait"
+        }
+      ],
+      "filters": [
+        "MagicPowerSpells",
+        "@ExcludeAttuned"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "AttunestoneIcon",
+      "path": "textures/attunestone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeAttuned",
+      "excluded_traits": [
+        "CardTraitStrongerMagicPower"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "AttunedTrait",
+      "name": "CardTraitStrongerMagicPower"
+    }
+  ]
+}

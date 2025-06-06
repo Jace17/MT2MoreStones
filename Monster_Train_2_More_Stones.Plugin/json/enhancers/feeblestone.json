@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeSpellWeakness",
+      "type": "enhancer",
+      "names": {
+        "english": "Feeblestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [spellweakness] <b>1</b> to enemy units."
+      },
+      "relic_effects": [
+        "@SpellWeaknessEnhancer"
+      ],
+      "icon": "@FeeblestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "spell_upgrade_common"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SpellWeaknessEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddSpellWeaknessEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSpellWeaknessEffect",
+      "titles": {
+        "english": "Feeblestone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [spellweakness] <b>1</b> to enemy units.'"
+      },
+      "icon": "@FeeblestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplySpellWeaknessTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FeeblestoneIcon",
+      "path": "textures/feeblestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplySpellWeaknessTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [spellweakness] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplySpellWeakness"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplySpellWeakness",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "spell weakness",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

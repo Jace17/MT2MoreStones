@@ -8,7 +8,7 @@
         "english": "Bannerstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [deployable] and <b>+10</b>[health]."
+        "english": "Upgrade a unit with [deployable] and <b>+10</b>[attack]."
       },
       "relic_effects": [
         "@DeployableEnhancer"
@@ -42,16 +42,17 @@
         "english": "Bannerstone"
       },
       "descriptions": {
-        "english": "Gain [deployable] and <b>+10</b>[health]."
+        "english": "Gain [deployable] and <b>+10</b>[attack]."
       },
       "icon": "@BannerstoneIcon",
-      "bonus_hp": 10,
+      "bonus_damage": 10,
       "trait_upgrades": [
         {
           "id": "@DeployableTrait"
         }
       ],
       "filters": [
+        "ExcludeChampions",
         "@ExcludeDeployable"
       ]
     }
@@ -66,9 +67,10 @@
     {
       "id": "ExcludeDeployable",
       "excluded_traits": [
-        {
-          "id": "@DeployableTrait"
-        }
+        "CardTraitDrawInDeploymentPhase"
+      ],
+      "excluded_subtypes": [
+        "SubtypesData_BannerUnit"
       ]
     }
   ],
