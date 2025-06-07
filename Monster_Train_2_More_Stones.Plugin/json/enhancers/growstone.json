@@ -51,6 +51,9 @@
         {
           "id": "@AddPropagateTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@PropagateEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

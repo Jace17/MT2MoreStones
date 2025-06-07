@@ -51,6 +51,9 @@
         {
           "id": "@ApplyMuteTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@EffectApplyMute"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

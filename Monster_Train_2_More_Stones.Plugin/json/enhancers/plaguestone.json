@@ -51,6 +51,9 @@
         {
           "id": "@ApplyDecayTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@EffectApplyDecay"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

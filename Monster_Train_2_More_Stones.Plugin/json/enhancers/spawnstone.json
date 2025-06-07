@@ -51,6 +51,9 @@
         {
           "id": "@AddSpawnTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@SpawnEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

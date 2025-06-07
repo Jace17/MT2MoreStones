@@ -51,6 +51,9 @@
         {
           "id": "@AddMixTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@MixEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

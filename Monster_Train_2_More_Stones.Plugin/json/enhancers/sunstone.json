@@ -51,6 +51,9 @@
         {
           "id": "@ApplyDraw1NextTurnTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@EffectDraw1NextTurn"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

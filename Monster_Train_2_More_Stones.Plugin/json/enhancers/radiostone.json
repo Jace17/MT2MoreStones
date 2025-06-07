@@ -51,6 +51,9 @@
         {
           "id": "@ApplyUnstableTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@EffectApplyUnstable"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

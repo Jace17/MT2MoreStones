@@ -2,28 +2,28 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeSap",
+      "id": "SpellUpgradeCorruption",
       "type": "enhancer",
       "names": {
-        "english": "Meekstone"
+        "english": "Vilestone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [sap] <b>2</b> to enemy units."
+        "english": "Upgrade a spell to apply [corruption] <b>20</b> to enemy units."
       },
       "relic_effects": [
-        "@SapEnhancer"
+        "@CorruptionEnhancer"
       ],
-      "icon": "@MeekstoneIcon",
+      "icon": "@VilestoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassStygian",
+            "class": null,
             "pools": [
-              "SpellUpgradePoolCommon",
+              "SpellUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]
@@ -31,25 +31,25 @@
   ],
   "relic_effects": [
     {
-      "id": "SapEnhancer",
+      "id": "CorruptionEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddSapEffect"
+      "param_upgrade": "@AddCorruptionEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSapEffect",
+      "id": "AddCorruptionEffect",
       "titles": {
-        "english": "Meekstone"
+        "english": "Vilestone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [sap] <b>2</b> to enemy units.'"
+        "english": "Gain 'Apply [corruption] <b>20</b> to enemy units.'"
       },
-      "icon": "@MeekstoneIcon",
+      "icon": "@VilestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplySapTrigger"
+          "id": "@ApplyCorruptionTrigger"
         }
       ],
       "filters": [
@@ -59,34 +59,34 @@
   ],
   "sprites": [
     {
-      "id": "MeekstoneIcon",
-      "path": "textures/meekstone.png"
+      "id": "VilestoneIcon",
+      "path": "textures/vilestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplySapTrigger",
+      "id": "ApplyCorruptionTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [sap] [effect0.status0.power] to enemy units."
+        "english": "Apply [corruption] [effect0.status0.power] to enemy units."
       },
       "effects": [
         {
-          "id": "@EffectApplySap"
+          "id": "@EffectApplyCorruption"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplySap",
+      "id": "EffectApplyCorruption",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "debuff",
-          "count": 2
+          "status": "corruption",
+          "count": 20
         }
       ]
     }

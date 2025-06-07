@@ -51,6 +51,9 @@
         {
           "id": "@GainDragonsHoardTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@GainDragonsHoardEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

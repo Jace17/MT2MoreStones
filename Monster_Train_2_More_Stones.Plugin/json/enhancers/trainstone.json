@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeFree",
+      "type": "enhancer",
+      "names": {
+        "english": "Trainstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit to make it cost 0[ember]."
+      },
+      "relic_effects": [
+        "@FreeUnitEnhancer"
+      ],
+      "icon": "@TrainstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FreeUnitEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@FreeUnit"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "FreeUnit",
+      "titles": {
+        "english": "Trainstone"
+      },
+      "descriptions": {
+        "english": "This unit costs 0[ember]."
+      },
+      "icon": "@TrainstoneIcon",
+      "cost_reduction": 99,
+      "filters": [
+        "ExcludeZeroCost"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "TrainstoneIcon",
+      "path": "textures/trainstone.png"
+    }
+  ]
+}

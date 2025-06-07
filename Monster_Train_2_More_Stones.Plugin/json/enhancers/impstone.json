@@ -51,6 +51,9 @@
         {
           "id": "@AddImpToHandTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@AddImpToHandEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

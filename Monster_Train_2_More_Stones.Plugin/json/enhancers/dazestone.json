@@ -51,6 +51,9 @@
         {
           "id": "@ApplyDazedTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@EffectApplyDazed"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

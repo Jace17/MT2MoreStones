@@ -51,6 +51,9 @@
         {
           "id": "@ApplyPyregelTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@EffectApplyPyregel"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

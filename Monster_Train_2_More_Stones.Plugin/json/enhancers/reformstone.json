@@ -51,6 +51,9 @@
         {
           "id": "@AddReformTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     },
     {
@@ -83,9 +86,6 @@
         {
           "id": "@ReformEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],

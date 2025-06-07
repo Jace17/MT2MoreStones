@@ -51,6 +51,9 @@
         {
           "id": "@AddPhaseTrigger"
         }
+      ],
+      "filters": [
+        "OnlySpells"
       ]
     }
   ],
@@ -71,9 +74,6 @@
         {
           "id": "@PhaseEffect"
         }
-      ],
-      "filters": [
-        "OnlySpells"
       ]
     }
   ],
