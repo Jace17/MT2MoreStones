@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeLifesteal",
+      "type": "enhancer",
+      "names": {
+        "english": "Leechstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [lifesteal] <b>3</b>."
+      },
+      "relic_effects": [
+        "@LifestealEnhancer"
+      ],
+      "icon": "@LeechstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUmbra",
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "LifestealEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddLifesteal"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddLifesteal",
+      "titles": {
+        "english": "Leechstone"
+      },
+      "descriptions": {
+        "english": "Gain [lifesteal] <b>3</b>."
+      },
+      "icon": "@LeechstoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "lifesteal",
+          "count": 3
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LeechstoneIcon",
+      "path": "textures/leechstone.png"
+    }
+  ]
+}

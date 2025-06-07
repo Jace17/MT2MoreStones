@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeMooncycle",
+      "id": "UnitUpgradeGorge",
       "type": "enhancer",
       "names": {
-        "english": "Cyclestone"
+        "english": "Gorgestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[mooncycle]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+        "english": "Upgrade a unit with '[feed]: +<b>2</b>[attack] and +<b>2</b>[health].'"
       },
       "relic_effects": [
-        "@MooncycleEnhancer"
+        "@GorgeEnhancer"
       ],
-      "icon": "@CyclestoneIcon",
+      "icon": "@GorgestoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassLunaCoven",
+            "class": "ClassUmbra",
             "pools": [
               "UnitUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,39 +31,39 @@
   ],
   "relic_effects": [
     {
-      "id": "MooncycleEnhancer",
+      "id": "GorgeEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddMooncycle"
+      "param_upgrade": "@AddGorge"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMooncycle",
+      "id": "AddGorge",
       "titles": {
-        "english": "Cyclestone"
+        "english": "Gorgestone"
       },
       "descriptions": {
-        "english": "Gain '[mooncycle]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+        "english": "Gain '[feed]: +<b>2</b>[attack] and +<b>2</b>[health].'"
       },
-      "icon": "@CyclestoneIcon",
+      "icon": "@GorgestoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@MooncycleAdd2Attack2HealthTrigger"
+          "id": "@GorgeAdd2Attack2HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "CyclestoneIcon",
-      "path": "textures/cyclestone.png"
+      "id": "GorgestoneIcon",
+      "path": "textures/gorgestone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "MooncycleAdd2Attack2HealthTrigger",
-      "trigger": "on_moon_phase_shift",
+      "id": "GorgeAdd2Attack2HealthTrigger",
+      "trigger": "on_feed",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
       },

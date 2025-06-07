@@ -81,7 +81,6 @@
     {
       "id": "EffectDraw1NextTurn",
       "name": "CardEffectDrawAdditionalNextTurn",
-      "should_test": false,
       "param_int": 1
     }
   ]

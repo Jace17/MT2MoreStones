@@ -1,0 +1,103 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeAddMorsel",
+      "type": "enhancer",
+      "names": {
+        "english": "Morselstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add 'Add a common or uncommon [snack] unit to your hand.'"
+      },
+      "relic_effects": [
+        "@AddMorselEnhancer"
+      ],
+      "icon": "@MorselstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUmbra",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddMorselEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddMorselToHand"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddMorselToHand",
+      "titles": {
+        "english": "Morselstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Add a common or uncommon [snack] unit to your hand.'"
+      },
+      "icon": "@MorselstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddMorselToHandTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MorselstoneIcon",
+      "path": "textures/morselstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddMorselToHandTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Add a common or uncommon [snack] unit to your hand."
+      },
+      "effects": [
+        {
+          "id": "@AddMorselToHandEffect"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AddMorselToHandEffect",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 3,
+      "param_card_pool": "@RandomMorselCardPool"
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "RandomMorselCardPool",
+      "cards": [
+        "VoidExcavator",
+        "ShadowMorsel",
+        "MoltenMorsel",
+        "MorselJeweler",
+        "RubbleRaiser",
+        "RubbleRaiser",
+        "RubbleRaiser",
+        "RubbleRaiser"
+      ]
+    }
+  ]
+}

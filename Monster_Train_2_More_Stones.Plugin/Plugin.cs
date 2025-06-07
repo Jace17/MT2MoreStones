@@ -44,7 +44,7 @@ namespace Monster_Train_2_More_Stones.Plugin
                     //   the project only copies json files in the json folder and not in subdirectories.
                     c.AddMergedJsonFile(
                         "json/plugin.json",
-                        "json/global.json",
+                        "json/global.json",  
                         "json/enhancers/tramplestone.json",
                         "json/enhancers/swipestone.json",
                         "json/enhancers/bannerstone.json",
@@ -77,7 +77,13 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/lootstone.json",
                         "json/enhancers/meekstone.json",
                         "json/enhancers/mutestone.json",
-                        "json/enhancers/pyrestone.json"
+                        "json/enhancers/pyrestone.json",
+                        "json/enhancers/gorgestone.json",
+                        "json/enhancers/growstone.json",
+                        "json/enhancers/leechstone.json",
+                        "json/enhancers/morselstone.json",
+                        "json/enhancers/plaguestone.json",
+                        "json/enhancers/spawnstone.json"
                     );
                 }
             );
@@ -108,7 +114,7 @@ namespace Monster_Train_2_More_Stones.Plugin
                     string arg3 = description.Substring(0);
                     string text = string.Format("{1}<{0}>{2}</{0}>", arg, arg2, arg3);
                     stringBuilder.Append(text);
-                    stringBuilder.Append(Environment.NewLine);
+                    stringBuilder.Append(Environment.NewLine); 
                 }
             }
         }

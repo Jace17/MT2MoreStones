@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainCoin",
+      "id": "SpellUpgradePropagate",
       "type": "enhancer",
       "names": {
-        "english": "Lootstone"
+        "english": "Growstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Gain <b>10</b> [coin].'"
+        "english": "Upgrade a spell to add '[propagate] <b>1</b> on all units.'"
       },
       "relic_effects": [
-        "@GainCoinEnhancer"
+        "@AddPropagateEnhancer"
       ],
-      "icon": "@LootstoneIcon",
+      "icon": "@GrowstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassPyreborne",
+            "class": "ClassUnderlegion",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "GainCoinEnhancer",
+      "id": "AddPropagateEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainCoin"
+      "param_upgrade": "@AddPropagate"
     }
   ],
   "upgrades": [
     {
-      "id": "GainCoin",
+      "id": "AddPropagate",
       "titles": {
-        "english": "Lootstone"
+        "english": "Lunestone"
       },
       "descriptions": {
-        "english": "Gain 'Gain <b>10</b> [coin].''"
+        "english": "Gain '[propagate] <b>1</b> on all units.'"
       },
-      "icon": "@LootstoneIcon",
+      "icon": "@GrowstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainCoinTrigger"
+          "id": "@AddPropagateTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "LootstoneIcon",
-      "path": "textures/lootstone.png"
+      "id": "GrowstoneIcon",
+      "path": "textures/growstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainCoinTrigger",
+      "id": "AddPropagateTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain <b>10</b> [coin]."
+        "english": "[propagate] <b>1</b> on all units."
       },
       "effects": [
         {
-          "id": "@GainCoinEffect"
+          "id": "@PropagateEffect"
         }
       ],
       "filters": [
@@ -79,9 +79,12 @@
   ],
   "effects": [
     {
-      "id": "GainCoinEffect",
-      "name": "CardEffectRewardGold",
-      "param_int": 10
+      "id": "PropagateEffect",
+      "name": "CardEffectAdjustAllStatusEffects",
+      "target_mode": "room",
+      "target_team": "both",
+      "param_int": 1,
+      "param_int_2": 1
     }
   ]
 }

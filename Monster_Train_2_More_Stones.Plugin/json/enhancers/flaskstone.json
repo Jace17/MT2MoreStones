@@ -81,7 +81,6 @@
     {
       "id": "MixEffect",
       "name": "CardEffectMix",
-      "should_test": false,
       "param_int": 2
     }
   ]

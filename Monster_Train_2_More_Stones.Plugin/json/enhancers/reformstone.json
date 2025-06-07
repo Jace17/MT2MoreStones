@@ -5,7 +5,7 @@
       "id": "SpellUpgradeReform",
       "type": "enhancer",
       "names": {
-        "english": "Reformstone"
+        "english": "Formstone"
       },
       "descriptions": {
         "english": "Upgrade a spell to add '<b>Reform</b> a random unit.'"
@@ -41,7 +41,7 @@
     {
       "id": "AddReform",
       "titles": {
-        "english": "Reformstone"
+        "english": "Formstone"
       },
       "descriptions": {
         "english": "Gain '<b>Reform</b> a random unit.'"
@@ -69,7 +69,7 @@
   "sprites": [
     {
       "id": "ReformstoneIcon",
-      "path": "textures/reformstone.png"
+      "path": "textures/reformstone-v2.png"
     }
   ],
   "card_triggers": [
@@ -93,7 +93,6 @@
     {
       "id": "ReformEffect",
       "name": "CardEffectRecursion",
-      "should_test": false,
       "param_int": 1,
       "param_upgrade": "@ReformUnitUPgrade",
       "target_mode": "exhaust",

@@ -81,7 +81,6 @@
     {
       "id": "AddImpToHandEffect",
       "name": "CardEffectAddBattleCard",
-      "should_test": false,
       "param_int": 3,
       "param_card_pool": "@RandomImpCardPool"
     }
@@ -92,10 +91,14 @@
       "cards": [
         "AggressiveImp",
         "AggressiveImp",
-        "StarterImp",
-        "StarterImp",
+        "AggressiveImp",
+        "AggressiveImp",
         "UnstableInfery",
         "UnstableInfery",
+        "UnstableInfery",
+        "UnstableInfery",
+        "WelderHelper",
+        "WelderHelper",
         "WelderHelper",
         "WelderHelper",
         "EmberedInfery",

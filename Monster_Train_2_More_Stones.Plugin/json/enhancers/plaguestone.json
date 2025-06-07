@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainDragonsHoard",
+      "id": "SpellUpgradeDecay",
       "type": "enhancer",
       "names": {
-        "english": "Hoardstone"
+        "english": "Plaguestone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Gain <b>1</b> [dragonshoardicon].'"
+        "english": "Upgrade a spell to apply [decay] <b>4</b> to enemy units."
       },
       "relic_effects": [
-        "@GainDragonsHoardEnhancer"
+        "@DecayEnhancer"
       ],
-      "icon": "@HoardstoneIcon",
+      "icon": "@PlaguestoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassPyreborne",
+            "class": "ClassUnderlegion",
             "pools": [
               "SpellUpgradePoolRare",
               "DraftUpgradePool",
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "GainDragonsHoardEnhancer",
+      "id": "DecayEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainDragonsHoard"
+      "param_upgrade": "@AddDecayEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "GainDragonsHoard",
+      "id": "AddDecayEffect",
       "titles": {
-        "english": "Hoardstone"
+        "english": "Plaguestone"
       },
       "descriptions": {
-        "english": "Gain 'Gain <b>1</b> [dragonshoardicon].''"
+        "english": "Gain 'Apply [decay] <b>4</b> to enemy units.'"
       },
-      "icon": "@HoardstoneIcon",
+      "icon": "@PlaguestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainDragonsHoardTrigger"
+          "id": "@ApplyDecayTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "HoardstoneIcon",
-      "path": "textures/hoardstone.png"
+      "id": "PlaguestoneIcon",
+      "path": "textures/plaguestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainDragonsHoardTrigger",
+      "id": "ApplyDecayTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain <b>1</b> [dragonshoardicon]."
+        "english": "Apply [decay] [effect0.status0.power] to enemy units."
       },
       "effects": [
         {
-          "id": "@GainDragonsHoardEffect"
+          "id": "@EffectApplyDecay"
         }
       ],
       "filters": [
@@ -79,9 +79,16 @@
   ],
   "effects": [
     {
-      "id": "GainDragonsHoardEffect",
-      "name": "CardEffectAdjustDragonsHoard",
-      "param_int": 1
+      "id": "EffectApplyDecay",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "decay",
+          "count": 4
+        }
+      ]
     }
   ]
 }

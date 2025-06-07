@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainCoin",
+      "id": "SpellUpgradeSpawn",
       "type": "enhancer",
       "names": {
-        "english": "Lootstone"
+        "english": "Spawnstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Gain <b>10</b> [coin].'"
+        "english": "Upgrade a spell to add [spawn] <b>1</b>."
       },
       "relic_effects": [
-        "@GainCoinEnhancer"
+        "@AddSpawnEnhancer"
       ],
-      "icon": "@LootstoneIcon",
+      "icon": "@SpawnstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassPyreborne",
+            "class": "ClassUnderlegion",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,45 +31,45 @@
   ],
   "relic_effects": [
     {
-      "id": "GainCoinEnhancer",
+      "id": "AddSpawnEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainCoin"
+      "param_upgrade": "@AddSpawn"
     }
   ],
   "upgrades": [
     {
-      "id": "GainCoin",
+      "id": "AddSpawn",
       "titles": {
-        "english": "Lootstone"
+        "english": "Spawnstone"
       },
       "descriptions": {
-        "english": "Gain 'Gain <b>10</b> [coin].''"
+        "english": "Gain [spawn] <b>1</b>."
       },
-      "icon": "@LootstoneIcon",
+      "icon": "@SpawnstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainCoinTrigger"
+          "id": "@AddSpawnTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "LootstoneIcon",
-      "path": "textures/lootstone.png"
+      "id": "SpawnstoneIcon",
+      "path": "textures/spawnstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainCoinTrigger",
+      "id": "AddSpawnTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain <b>10</b> [coin]."
+        "english": "[spawn] <b>1</b>."
       },
       "effects": [
         {
-          "id": "@GainCoinEffect"
+          "id": "@SpawnEffect"
         }
       ],
       "filters": [
@@ -79,9 +79,17 @@
   ],
   "effects": [
     {
-      "id": "GainCoinEffect",
-      "name": "CardEffectRewardGold",
-      "param_int": 10
+      "id": "SpawnEffect",
+      "name": "CardEffectSpawnMonsterOrAddStatusEffect",
+      "param_int": 1,
+      "target_subtype": "SubtypesData_Horde",
+      "param_status_effects": [
+        {
+          "status": "horde",
+          "count": 1
+        }
+      ],
+      "param_character": "MonsterFunguy"
     }
   ]
 }

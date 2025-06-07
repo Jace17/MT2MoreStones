@@ -5,7 +5,7 @@
       "id": "SpellUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Radiostone"
+        "english": "Radstone"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [unstable] <b>10</b> to enemy units."
@@ -41,7 +41,7 @@
     {
       "id": "AddUnstableEffect",
       "titles": {
-        "english": "Radiostone"
+        "english": "Radstone"
       },
       "descriptions": {
         "english": "Gain 'Apply [unstable] <b>10</b> to enemy units.'"

@@ -81,7 +81,6 @@
     {
       "id": "PhaseEffect",
       "name": "CardEffectAdvanceMoonPhase",
-      "should_test": false,
       "param_int": 1
     }
   ]
