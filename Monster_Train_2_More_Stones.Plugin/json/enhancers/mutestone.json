@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeMute",
+      "type": "enhancer",
+      "names": {
+        "english": "Mutestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [mute] <b>3</b> to enemy units."
+      },
+      "relic_effects": [
+        "@MuteEnhancer"
+      ],
+      "icon": "@MutestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassStygian",
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "MuteEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddMuteEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddMuteEffect",
+      "titles": {
+        "english": "Mutestone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [mute] <b>3</b> to enemy units.'"
+      },
+      "icon": "@MutestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyMuteTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MutestoneIcon",
+      "path": "textures/mutestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyMuteTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [mute] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyMute"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyMute",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "muted",
+          "count": 3
+        }
+      ]
+    }
+  ]
+}

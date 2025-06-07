@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeGainDragonsHoard",
+      "type": "enhancer",
+      "names": {
+        "english": "Hoardstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add 'Gain <b>1</b> [dragonshoardicon].'"
+      },
+      "relic_effects": [
+        "@GainDragonsHoardEnhancer"
+      ],
+      "icon": "@HoardstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassPyreborne",
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GainDragonsHoardEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@GainDragonsHoard"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GainDragonsHoard",
+      "titles": {
+        "english": "Hoardstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Gain <b>1</b> [dragonshoardicon].''"
+      },
+      "icon": "@HoardstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@GainDragonsHoardTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "HoardstoneIcon",
+      "path": "textures/hoardstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GainDragonsHoardTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Gain <b>1</b> [dragonshoardicon]."
+      },
+      "effects": [
+        {
+          "id": "@GainDragonsHoardEffect"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GainDragonsHoardEffect",
+      "name": "CardEffectAdjustDragonsHoard",
+      "should_test": false,
+      "param_int": 1
+    }
+  ]
+}

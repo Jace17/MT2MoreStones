@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeGainCoin",
+      "type": "enhancer",
+      "names": {
+        "english": "Lootstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add 'Gain <b>10</b> [coin].'"
+      },
+      "relic_effects": [
+        "@GainCoinEnhancer"
+      ],
+      "icon": "@LootstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassPyreborne",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GainCoinEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@GainCoin"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GainCoin",
+      "titles": {
+        "english": "Lootstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Gain <b>10</b> [coin].''"
+      },
+      "icon": "@LootstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@GainCoinTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LootstoneIcon",
+      "path": "textures/lootstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GainCoinTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Gain <b>10</b> [coin]."
+      },
+      "effects": [
+        {
+          "id": "@GainCoinEffect"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GainCoinEffect",
+      "name": "CardEffectRewardGold",
+      "should_test": false,
+      "param_int": 10
+    }
+  ]
+}

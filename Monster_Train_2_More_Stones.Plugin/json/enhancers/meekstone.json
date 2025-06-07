@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeSap",
+      "type": "enhancer",
+      "names": {
+        "english": "Meekstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [sap] <b>2</b> to enemy units."
+      },
+      "relic_effects": [
+        "@SapEnhancer"
+      ],
+      "icon": "@MeekstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassStygian",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SapEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddSapEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSapEffect",
+      "titles": {
+        "english": "Meekstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [sap] <b>2</b> to enemy units.'"
+      },
+      "icon": "@MeekstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplySapTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MeekstoneIcon",
+      "path": "textures/meekstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplySapTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [sap] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplySap"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplySap",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "debuff",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

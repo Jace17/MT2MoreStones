@@ -2,18 +2,18 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradePiercing",
+      "id": "SpellUpgradeExplosive",
       "type": "enhancer",
       "names": {
-        "english": "Piercestone"
+        "english": "Boomstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain [piercing] and +5 [magicpower]."
+        "english": "Upgrade a spell to gain <b>Explosive</b> and +5 [magicpower]."
       },
       "relic_effects": [
-        "@PiercingEnhancer"
+        "@ExplosiveEnhancer"
       ],
-      "icon": "@PiercestoneIcon",
+      "icon": "@BoomstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,53 +31,54 @@
   ],
   "relic_effects": [
     {
-      "id": "PiercingEnhancer",
+      "id": "ExplosiveEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddPiercingTrait"
+      "param_upgrade": "@AddExplosiveTrait"
     }
   ],
   "upgrades": [
     {
-      "id": "AddPiercingTrait",
+      "id": "AddExplosiveTrait",
       "titles": {
-        "english": "Piercestone"
+        "english": "Boomstone"
       },
       "descriptions": {
-        "english": "Gain [piercing] and +5 [magicpower]."
+        "english": "Gain <b>Explosive</b> and +5 [magicpower]."
       },
-      "icon": "@PiercestoneIcon",
+      "icon": "@BoomstoneIcon",
       "trait_upgrades": [
         {
-          "id": "@PiercingTrait"
+          "id": "@ExplosiveTrait"
         }
       ],
       "bonus_damage": 5,
       "bonus_heal": 5,
       "filters": [
-        "@ExcludePiercing",
+        "@ExcludeExplosive",
         "@AttackSpellsOnly"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "PiercestoneIcon",
-      "path": "textures/piercestone.png"
+      "id": "BoomstoneIcon",
+      "path": "textures/boomstone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludePiercing",
+      "id": "ExcludeExplosive",
       "excluded_traits": [
-        "CardTraitIgnoreArmor"
+        "CardTraitDamageOverflow"
       ]
     }
   ],
   "traits": [
     {
-      "id": "PiercingTrait",
-      "name": "CardTraitIgnoreArmor"
+      "id": "ExplosiveTrait",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2
     }
   ]
 }

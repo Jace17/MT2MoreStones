@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradePyregel",
+      "type": "enhancer",
+      "names": {
+        "english": "Pyrestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [pyregel] <b>5</b> to enemy units."
+      },
+      "relic_effects": [
+        "@PyregelEnhancer"
+      ],
+      "icon": "@PyrestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassPyreborne",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "PyregelEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddPyregelEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddPyregelEffect",
+      "titles": {
+        "english": "Pyrestone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [pyregel] <b>5</b> to enemy units.'"
+      },
+      "icon": "@PyrestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyPyregelTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PyrestoneIcon",
+      "path": "textures/pyrestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyPyregelTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [pyregel] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyPyregel"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyPyregel",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pyregel",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

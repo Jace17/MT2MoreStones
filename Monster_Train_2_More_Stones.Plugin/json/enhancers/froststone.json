@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeFrostbite",
+      "type": "enhancer",
+      "names": {
+        "english": "Froststone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [frostbite] <b>10</b> to enemy units."
+      },
+      "relic_effects": [
+        "@FrostbiteEnhancer"
+      ],
+      "icon": "@FroststoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassStygian",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FrostbiteEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddFrostbiteEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddFrostbiteEffect",
+      "titles": {
+        "english": "Froststone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [frostbite] <b>10</b> to enemy units.'"
+      },
+      "icon": "@FroststoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyFrostbiteTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FroststoneIcon",
+      "path": "textures/froststone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyFrostbiteTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyFrostbite"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyFrostbite",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "poison",
+          "count": 10
+        }
+      ]
+    }
+  ]
+}

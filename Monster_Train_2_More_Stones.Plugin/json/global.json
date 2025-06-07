@@ -1,1 +1,14 @@
-{}
+{
+  "upgrade_masks": [
+    {
+      "id": "AttackSpellsOnly",
+      "required_effects_operator": "or",
+      "required_effects": [
+        "CardEffectDamage",
+        "CardEffectHealAndDamageRelative",
+        "CardEffectDamagePerSourceAttack",
+        "CardEffectDamagePerHp"
+      ]
+    }
+  ]
+}
