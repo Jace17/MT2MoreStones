@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradePhase",
+      "type": "enhancer",
+      "names": {
+        "english": "Lunestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add [phase]."
+      },
+      "relic_effects": [
+        "@AddPhaseEnhancer"
+      ],
+      "icon": "@LunestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLunaCoven",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddPhaseEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddPhase"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddPhase",
+      "titles": {
+        "english": "Lunestone"
+      },
+      "descriptions": {
+        "english": "Gain [phase]."
+      },
+      "icon": "@LunestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddPhaseTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LunestoneIcon",
+      "path": "textures/lunestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddPhaseTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[phase]."
+      },
+      "effects": [
+        {
+          "id": "@PhaseEffect"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "PhaseEffect",
+      "name": "CardEffectAdvanceMoonPhase",
+      "should_test": false,
+      "param_int": 1
+    }
+  ]
+}

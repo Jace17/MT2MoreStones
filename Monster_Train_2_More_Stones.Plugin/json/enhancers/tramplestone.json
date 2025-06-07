@@ -62,7 +62,7 @@
   "sprites": [
     {
       "id": "TramplestoneIcon",
-      "path": "textures/tramplestone.png"
+      "path": "textures/tramplestone-v2.png"
     }
   ],
   "upgrade_masks": [

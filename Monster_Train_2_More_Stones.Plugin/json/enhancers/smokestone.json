@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeAddStealth",
+      "type": "enhancer",
+      "names": {
+        "english": "Smokestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [stealth] 3."
+      },
+      "relic_effects": [
+        "@AddStealthEnhancer"
+      ],
+      "icon": "@SmokestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddStealthEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddStealth"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddStealth",
+      "titles": {
+        "english": "Smokestone"
+      },
+      "descriptions": {
+        "english": "Gain [stealth] 3."
+      },
+      "icon": "@SmokestoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "stealth",
+          "count": 3
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SmokestoneIcon",
+      "path": "textures/smokestone.png"
+    }
+  ]
+}

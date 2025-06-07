@@ -1,0 +1,86 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeMooncycle",
+      "type": "enhancer",
+      "names": {
+        "english": "Cyclestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[mooncycle]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+      },
+      "relic_effects": [
+        "@MooncycleEnhancer"
+      ],
+      "icon": "@CyclestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLunaCoven",
+            "pools": [
+              "UnitUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "MooncycleEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddMooncycle"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddMooncycle",
+      "titles": {
+        "english": "Cyclestone"
+      },
+      "descriptions": {
+        "english": "Gain '[mooncycle]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+      },
+      "icon": "@CyclestoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@MooncycleAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CyclestoneIcon",
+      "path": "textures/cyclestone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "MooncycleAdd2Attack2HealthTrigger",
+      "trigger": "on_moon_phase_shift",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@MooncycleEffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "MooncycleEffectAdd2Attack2Health",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "Plus2Attack2Health"
+    }
+  ]
+}

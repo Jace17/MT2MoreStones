@@ -62,9 +62,15 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/armorstone.json",
                         "json/enhancers/flaskstone.json",
                         "json/enhancers/piercestone.json",
-                        "json/enhancers/radiostone.json",  
+                        "json/enhancers/radiostone.json",   
                         "json/enhancers/weirdstone.json",
-                        "json/enhancers/impstone.json"
+                        "json/enhancers/impstone.json",
+                        "json/enhancers/bladestone.json",
+                        "json/enhancers/cyclestone.json",
+                        "json/enhancers/dazestone.json",
+                        "json/enhancers/lunestone.json",
+                        "json/enhancers/reformstone.json",
+                        "json/enhancers/smokestone.json"
                     );
                 }
             );

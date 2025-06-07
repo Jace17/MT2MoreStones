@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeSweep",
+      "id": "UnitUpgradeMageblade",
       "type": "enhancer",
       "names": {
-        "english": "Swipestone"
+        "english": "Bladestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [sweep], but -<b>10</b>[attack]."
+        "english": "Upgrade a unit with [mageblade] 2."
       },
       "relic_effects": [
-        "@SweepEnhancer"
+        "@AddMagebladeEnhancer"
       ],
-      "icon": "@SwipestoneIcon",
+      "icon": "@BladestoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": null,
+            "class": "ClassLunaCoven",
             "pools": [
               "UnitUpgradePoolRare",
               "DraftUpgradePool",
@@ -31,50 +31,37 @@
   ],
   "relic_effects": [
     {
-      "id": "SweepEnhancer",
+      "id": "AddMagebladeEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddSweep"
+      "param_upgrade": "@AddMageblade"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSweep",
+      "id": "AddMageblade",
       "titles": {
-        "english": "Swipestone"
+        "english": "Bladestone"
       },
       "descriptions": {
-        "english": "Gain [sweep] but -<b>10</b>[attack]."
+        "english": "Gain [mageblade] 2."
       },
-      "icon": "@SwipestoneIcon",
-      "bonus_damage": -10,
+      "icon": "@BladestoneIcon",
       "status_effect_upgrades": [
         {
-          "status": "sweep",
-          "count": 1
+          "status": "mageblade",
+          "count": 2
         }
       ],
       "filters": [
-        "ExcludeEelGorgon",
-        "@ExcludeSweep"
+        "ExcludeEelGorgon"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "SwipestoneIcon",
-      "path": "textures/swipestone-v2.png"
-    }
-  ],
-  "upgrade_masks": [
-    {
-      "id": "ExcludeSweep",
-      "excluded_status": [
-        {
-          "status": "sweep",
-          "count": 1
-        }
-      ]
+      "id": "BladestoneIcon",
+      "path": "textures/bladestone.png"
     }
   ]
 }

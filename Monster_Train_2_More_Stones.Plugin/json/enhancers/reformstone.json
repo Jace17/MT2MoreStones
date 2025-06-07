@@ -1,0 +1,104 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeReform",
+      "type": "enhancer",
+      "names": {
+        "english": "Reformstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add '<b>Reform</b> a random unit.'"
+      },
+      "relic_effects": [
+        "@AddReformEnhancer"
+      ],
+      "icon": "@ReformstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddReformEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddReform"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddReform",
+      "titles": {
+        "english": "Reformstone"
+      },
+      "descriptions": {
+        "english": "Gain '<b>Reform</b> a random unit.'"
+      },
+      "icon": "@ReformstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddReformTrigger"
+        }
+      ]
+    },
+    {
+      "id": "ReformUnitUPgrade",
+      "status_effect_upgrades": [
+        {
+          "status": "burnout",
+          "count": 1
+        }
+      ],
+      "bonus_damage": 5,
+      "bonus_hp": 5,
+      "cost_reduction": 99
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ReformstoneIcon",
+      "path": "textures/reformstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddReformTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "<b>Reform</b> a random unit."
+      },
+      "effects": [
+        {
+          "id": "@ReformEffect"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ReformEffect",
+      "name": "CardEffectRecursion",
+      "should_test": false,
+      "param_int": 1,
+      "param_upgrade": "@ReformUnitUPgrade",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand"
+    }
+  ]
+}

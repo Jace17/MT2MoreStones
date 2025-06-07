@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeDazed",
+      "type": "enhancer",
+      "names": {
+        "english": "Dazestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [dazed] <b>1</b> to enemy units."
+      },
+      "relic_effects": [
+        "@DazedEnhancer"
+      ],
+      "icon": "@DazestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DazedEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AdDazedEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AdDazedEffect",
+      "titles": {
+        "english": "Dazestone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [dazed] <b>1</b> to enemy units.'"
+      },
+      "icon": "@DazestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyDazedTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "DazestoneIcon",
+      "path": "textures/dazestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyDazedTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [dazed] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyDazed"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyDazed",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "dazed",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}
