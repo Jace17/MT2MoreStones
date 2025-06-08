@@ -55,18 +55,6 @@
       "filters": [
         "OnlySpells"
       ]
-    },
-    {
-      "id": "ReformUnitUPgrade",
-      "status_effect_upgrades": [
-        {
-          "status": "burnout",
-          "count": 1
-        }
-      ],
-      "bonus_damage": 5,
-      "bonus_hp": 5,
-      "cost_reduction": 99
     }
   ],
   "sprites": [
@@ -94,7 +82,7 @@
       "id": "ReformEffect",
       "name": "CardEffectRecursion",
       "param_int": 1,
-      "param_upgrade": "@ReformUnitUPgrade",
+      "param_upgrade": "Raise",
       "target_mode": "exhaust",
       "target_card_type": "monster",
       "target_card_selection_mode": "random_to_hand"
