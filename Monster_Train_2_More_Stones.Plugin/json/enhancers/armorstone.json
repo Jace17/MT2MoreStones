@@ -8,7 +8,7 @@
         "english": "Armorstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [armor] 25."
+        "english": "Upgrade a unit with [armor] [effect0.upgrade.status0.power]."
       },
       "relic_effects": [
         "@AddArmorEnhancer"
@@ -44,7 +44,7 @@
         "english": "Armorstone"
       },
       "descriptions": {
-        "english": "Gain [armor] 25."
+        "english": "Gain [armor] [status0.power]."
       },
       "icon": "@ArmorstoneIcon",
       "status_effect_upgrades": [

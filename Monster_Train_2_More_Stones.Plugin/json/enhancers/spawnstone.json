@@ -8,7 +8,7 @@
         "english": "Spawnstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [spawn] <b>1</b>."
+        "english": "Upgrade a spell to add [spawn] [effect0.upgrade.cardtrigger0.effect0.paramint]."
       },
       "relic_effects": [
         "@AddSpawnEnhancer"
@@ -44,7 +44,7 @@
         "english": "Spawnstone"
       },
       "descriptions": {
-        "english": "Gain [spawn] <b>1</b>."
+        "english": "Gain [spawn] [cardtrigger0.effect0.paramint]."
       },
       "icon": "@SpawnstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +68,7 @@
       "id": "AddSpawnTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[spawn] <b>1</b>."
+        "english": "[spawn] [effect0.paramint]."
       },
       "effects": [
         {

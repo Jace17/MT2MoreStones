@@ -8,7 +8,7 @@
         "english": "Cloudstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[shift]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+        "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
         "@ShiftEnhancer"
@@ -44,7 +44,7 @@
         "english": "Cloudstone"
       },
       "descriptions": {
-        "english": "Gain '[shift]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+        "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "icon": "@CloudstoneIcon",
       "trigger_upgrades": [

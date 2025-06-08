@@ -8,7 +8,7 @@
         "english": "Sunstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Draw +<b>1</b> next turn.'"
+        "english": "Upgrade a spell to add 'Draw +[effect0.upgrade.cardtrigger0.effect0.paramint] next turn.'"
       },
       "relic_effects": [
         "@Draw1NextTurnEnhancer"
@@ -44,7 +44,7 @@
         "english": "Sunstone"
       },
       "descriptions": {
-        "english": "Gain 'Draw +<b>1</b> next turn.'"
+        "english": "Gain 'Draw +[cardtrigger0.effect0.paramint] next turn.'"
       },
       "icon": "@SunstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +68,7 @@
       "id": "ApplyDraw1NextTurnTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Draw +[effect0.power] next turn."
+        "english": "Draw +[effect0.paramint] next turn."
       },
       "effects": [
         {

@@ -8,7 +8,7 @@
         "english": "Weirdstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [unstable] 25."
+        "english": "Upgrade a unit with [unstable] [effect0.upgrade.status0.power]."
       },
       "relic_effects": [
         "@Unstable25Enhancer"
@@ -44,7 +44,7 @@
         "english": "Weirdstone"
       },
       "descriptions": {
-        "english": "Gain [unstable] 25."
+        "english": "Gain [unstable] [status0.power]."
       },
       "icon": "@WeirdstoneIcon",
       "status_effect_upgrades": [

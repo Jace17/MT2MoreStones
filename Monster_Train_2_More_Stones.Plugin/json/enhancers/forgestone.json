@@ -8,7 +8,7 @@
         "english": "Forgestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Artificer</b>: +<b>8</b>[attack] and +<b>8</b>[health].'"
+        "english": "Upgrade a unit with '<b>Artificer</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
         "@ArtificerEnhancer"
@@ -44,7 +44,7 @@
         "english": "Forgestone"
       },
       "descriptions": {
-        "english": "Gain '<b>Artificer</b>: +<b>8</b>[attack] and +<b>8</b>[health].'"
+        "english": "Gain '<b>Artificer</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "icon": "@ForgestoneIcon",
       "trigger_upgrades": [

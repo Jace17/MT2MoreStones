@@ -8,7 +8,7 @@
         "english": "Smokestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [stealth] 3."
+        "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power]."
       },
       "relic_effects": [
         "@AddStealthEnhancer"
@@ -44,7 +44,7 @@
         "english": "Smokestone"
       },
       "descriptions": {
-        "english": "Gain [stealth] 3."
+        "english": "Gain [stealth] [status0.power]."
       },
       "icon": "@SmokestoneIcon",
       "status_effect_upgrades": [

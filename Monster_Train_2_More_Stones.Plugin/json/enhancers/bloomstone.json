@@ -8,7 +8,7 @@
         "english": "Bloomstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[rejuvenate]: +<b>4</b>[attack] and +<b>4</b>[health].'"
+        "english": "Upgrade a unit with '[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
         "@RejuvenateEnhancer"
@@ -44,7 +44,7 @@
         "english": "Bloomstone"
       },
       "descriptions": {
-        "english": "Gain '[rejuvenate]: +<b>4</b>[attack] and +<b>4</b>[health].'"
+        "english": "Gain '[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "icon": "@BloomstoneIcon",
       "trigger_upgrades": [

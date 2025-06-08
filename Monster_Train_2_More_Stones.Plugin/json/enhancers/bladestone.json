@@ -8,7 +8,7 @@
         "english": "Bladestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [mageblade] 2."
+        "english": "Upgrade a unit with [mageblade] [effect0.upgrade.status0.power]."
       },
       "relic_effects": [
         "@AddMagebladeEnhancer"
@@ -44,7 +44,7 @@
         "english": "Bladestone"
       },
       "descriptions": {
-        "english": "Gain [mageblade] 2."
+        "english": "Gain [mageblade] [status0.power]."
       },
       "icon": "@BladestoneIcon",
       "status_effect_upgrades": [

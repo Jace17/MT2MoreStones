@@ -8,7 +8,7 @@
         "english": "Shellstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [titanskin] <b>2</b>."
+        "english": "Upgrade a unit with [effect0.upgrade.status0.power] <b>2</b>."
       },
       "relic_effects": [
         "@Titanskin2Enhancer"
@@ -44,7 +44,7 @@
         "english": "Shellstone"
       },
       "descriptions": {
-        "english": "Gain [titanskin] <b>2</b>."
+        "english": "Gain [titanskin] [status0.power]."
       },
       "icon": "@ShellstoneIcon",
       "status_effect_upgrades": [

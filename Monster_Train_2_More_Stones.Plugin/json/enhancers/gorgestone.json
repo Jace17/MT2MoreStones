@@ -8,7 +8,7 @@
         "english": "Gorgestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[feed]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+        "english": "Upgrade a unit with '[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
         "@GorgeEnhancer"
@@ -44,7 +44,7 @@
         "english": "Gorgestone"
       },
       "descriptions": {
-        "english": "Gain '[feed]: +<b>2</b>[attack] and +<b>2</b>[health].'"
+        "english": "Gain '[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "icon": "@GorgestoneIcon",
       "trigger_upgrades": [

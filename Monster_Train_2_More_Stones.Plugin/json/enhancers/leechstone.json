@@ -8,7 +8,7 @@
         "english": "Leechstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [lifesteal] <b>3</b>."
+        "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power]."
       },
       "relic_effects": [
         "@LifestealEnhancer"
@@ -44,7 +44,7 @@
         "english": "Leechstone"
       },
       "descriptions": {
-        "english": "Gain [lifesteal] <b>3</b>."
+        "english": "Gain [lifesteal] [status0.power]."
       },
       "icon": "@LeechstoneIcon",
       "status_effect_upgrades": [

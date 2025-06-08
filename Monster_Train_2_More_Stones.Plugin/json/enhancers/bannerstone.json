@@ -8,7 +8,7 @@
         "english": "Bannerstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [deployable] and +<b>10</b>[attack]."
+        "english": "Upgrade a unit with [deployable] and +[effect0.upgrade.bonusdamage][attack]."
       },
       "relic_effects": [
         "@DeployableEnhancer"
@@ -44,7 +44,7 @@
         "english": "Bannerstone"
       },
       "descriptions": {
-        "english": "Gain [deployable] and +<b>10</b>[attack]."
+        "english": "Gain [deployable] and +[bonusdamage][attack]."
       },
       "icon": "@BannerstoneIcon",
       "bonus_damage": 10,

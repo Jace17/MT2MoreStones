@@ -8,7 +8,7 @@
         "english": "Swipestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [sweep], but -<b>10</b>[attack]."
+        "english": "Upgrade a unit with [sweep], but [effect0.upgrade.bonusdamage][attack]."
       },
       "relic_effects": [
         "@SweepEnhancer"
@@ -44,7 +44,7 @@
         "english": "Swipestone"
       },
       "descriptions": {
-        "english": "Gain [sweep] but -<b>10</b>[attack]."
+        "english": "Gain [sweep] but [bonusdamage][attack]."
       },
       "icon": "@SwipestoneIcon",
       "bonus_damage": -10,

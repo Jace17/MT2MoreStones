@@ -8,7 +8,7 @@
         "english": "Vilestone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [corruption] <b>20</b> to enemy units."
+        "english": "Upgrade a spell to apply [corruption] [effect0.upgrade.cardtrigger0.effect0.status0.power] to enemy units."
       },
       "relic_effects": [
         "@CorruptionEnhancer"
@@ -44,7 +44,7 @@
         "english": "Vilestone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [corruption] <b>20</b> to enemy units.'"
+        "english": "Gain 'Apply [corruption] [cardtrigger0.effect0.status0.power] to enemy units.'"
       },
       "icon": "@VilestoneIcon",
       "card_trigger_upgrades": [

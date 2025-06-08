@@ -1,27 +1,9 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using I2.Loc;
-using Microsoft.Extensions.Configuration;
-using ShinyShoe.Logging;
-using SimpleInjector;
 using System.Text;
-using TrainworksReloaded.Base;
-using TrainworksReloaded.Base.Card;
-using TrainworksReloaded.Base.CardUpgrade;
-using TrainworksReloaded.Base.Character;
-using TrainworksReloaded.Base.Class;
-using TrainworksReloaded.Base.Effect;
-using TrainworksReloaded.Base.Localization;
-using TrainworksReloaded.Base.Prefab;
-using TrainworksReloaded.Base.Trait;
-using TrainworksReloaded.Base.Trigger;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
-using TrainworksReloaded.Core.Impl;
-using TrainworksReloaded.Core.Interfaces;
-using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace Monster_Train_2_More_Stones.Plugin
 {

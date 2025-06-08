@@ -8,7 +8,7 @@
         "english": "Trainstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit to make it cost 0[ember]."
+        "english": "Upgrade a unit to make it <b>0</b>[ember]."
       },
       "relic_effects": [
         "@FreeUnitEnhancer"
@@ -44,7 +44,7 @@
         "english": "Trainstone"
       },
       "descriptions": {
-        "english": "This unit costs 0[ember]."
+        "english": "<b>0</b>[ember]."
       },
       "icon": "@TrainstoneIcon",
       "cost_reduction": 99,

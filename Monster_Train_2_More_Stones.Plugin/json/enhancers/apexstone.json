@@ -8,7 +8,7 @@
         "english": "Apexstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Armored</b>: +<b>4</b>[attack].'"
+        "english": "Upgrade a unit with '<b>Armored</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].'"
       },
       "relic_effects": [
         "@ArmoredEnhancer"
@@ -44,7 +44,7 @@
         "english": "Apexstone"
       },
       "descriptions": {
-        "english": "Gain '<b>Armored</b>: +<b>4</b>[attack].'"
+        "english": "Gain '<b>Armored</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].'"
       },
       "icon": "@ApexstoneIcon",
       "trigger_upgrades": [
