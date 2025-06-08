@@ -16,8 +16,9 @@ This is a non-cosmetic mod that changes the game mechanics. Do not use it while 
 
 # Full List of New Upgrade Stones
 
-| Vinestone    | Spell | Awoken          | Common | Apply Rooted 1 to all enemies.                     |
+| Name         | Type  | Clan            | Rarity | Effect                                             |
 | ------------ | ----- | --------------- | ------ | -------------------------------------------------- |
+| Vinestone    | Spell | Awoken          | Common | Apply Rooted 1 to all enemies.                     |
 | Bloomstone   | Unit  | Awoken          | Common | Add Rejuvenate: +4 Attack, +4 Health               |
 | Sunstone     | Spell | Awoken          | Common | Draw +1 next turn.                                 |
 | Cloudstone   | Unit  | Banished        | Common | Add Shift: +2 Attack, +2 Health                    |
