@@ -61,7 +61,7 @@
   "sprites": [
     {
       "id": "LeechstoneIcon",
-      "path": "textures/leechstone.png"
+      "path": "textures/leechstone-v2.png"
     }
   ]
 }

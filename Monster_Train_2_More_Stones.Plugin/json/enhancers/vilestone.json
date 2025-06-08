@@ -60,7 +60,7 @@
   "sprites": [
     {
       "id": "VilestoneIcon",
-      "path": "textures/vilestone.png"
+      "path": "textures/vilestone-v2.png"
     }
   ],
   "card_triggers": [

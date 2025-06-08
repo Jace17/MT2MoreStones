@@ -56,7 +56,7 @@
   "sprites": [
     {
       "id": "TrainstoneIcon",
-      "path": "textures/trainstone.png"
+      "path": "textures/trainstone-v2.png"
     }
   ]
 }

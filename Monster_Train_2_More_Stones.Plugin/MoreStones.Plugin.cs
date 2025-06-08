@@ -60,14 +60,15 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/meekstone.json",
                         "json/enhancers/mutestone.json",
                         "json/enhancers/pyrestone.json",
-                        "json/enhancers/gorgestone.json",
+                        "json/enhancers/gorgestone.json", 
                         "json/enhancers/growstone.json",
                         "json/enhancers/leechstone.json",
                         "json/enhancers/morselstone.json",
                         "json/enhancers/plaguestone.json",
                         "json/enhancers/spawnstone.json",
                         "json/enhancers/vilestone.json",
-                        "json/enhancers/trainstone.json"
+                        "json/enhancers/trainstone.json",
+                        "json/enhancers/offerstone.json"
                     );
                 }
             );

@@ -60,7 +60,7 @@
   "sprites": [
     {
       "id": "VinestoneIcon",
-      "path": "textures/vinestone.png"
+      "path": "textures/vinestone-v2.png"
     }
   ],
   "card_triggers": [
