@@ -8,7 +8,7 @@
         "english": "Hoardstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [effect0.upgrade.cardtrigger0.effect0.paramint][dragonshoardicon]."
+        "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon]."
       },
       "relic_effects": [
         "@GainDragonsHoardEnhancer"
@@ -44,7 +44,7 @@
         "english": "Hoardstone"
       },
       "descriptions": {
-        "english": "Gain [cardtrigger0.effect0.paramint][dragonshoardicon]."
+        "english": "Gain [trigger0.effect0.paramint][dragonshoardicon]."
       },
       "icon": "@HoardstoneIcon",
       "card_trigger_upgrades": [

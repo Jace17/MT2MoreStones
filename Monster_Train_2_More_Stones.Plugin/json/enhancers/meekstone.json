@@ -8,7 +8,7 @@
         "english": "Meekstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [sap] [effect0.upgrade.cardtrigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [sap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
       },
       "relic_effects": [
         "@SapEnhancer"
@@ -44,7 +44,7 @@
         "english": "Meekstone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [sap] [cardtrigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [sap] [trigger0.effect0.status0.power] to enemy units.'"
       },
       "icon": "@MeekstoneIcon",
       "card_trigger_upgrades": [

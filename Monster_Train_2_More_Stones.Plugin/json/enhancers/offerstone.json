@@ -55,7 +55,6 @@
       ],
       "filters": [
         "OnlySpells",
-        "ExcludeZeroCost",
         "@TargetlessOnly",
         "@ExcludeOffering"
       ]
@@ -76,7 +75,7 @@
     },
     {
       "id": "TargetlessOnly",
-      "card_target_mode":  "targetless"
+      "card_target_mode": [ "targetless" ]
     }
   ],
   "traits": [

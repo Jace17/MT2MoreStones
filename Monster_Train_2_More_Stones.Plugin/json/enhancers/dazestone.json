@@ -8,7 +8,7 @@
         "english": "Dazestone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [dazed] [effect0.upgrade.cardtrigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [dazed] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
       },
       "relic_effects": [
         "@DazedEnhancer"
@@ -44,7 +44,7 @@
         "english": "Dazestone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [dazed] [cardtrigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [dazed] [trigger0.effect0.status0.power] to enemy units.'"
       },
       "icon": "@DazestoneIcon",
       "card_trigger_upgrades": [

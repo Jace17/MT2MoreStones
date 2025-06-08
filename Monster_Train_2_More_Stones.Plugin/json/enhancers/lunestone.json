@@ -54,8 +54,7 @@
         }
       ],
       "filters": [
-        "OnlySpells",
-        "ExcludeZeroCost"
+        "OnlySpells"
       ]
     }
   ],

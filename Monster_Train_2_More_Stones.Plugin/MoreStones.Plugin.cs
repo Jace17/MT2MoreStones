@@ -81,6 +81,7 @@ namespace Monster_Train_2_More_Stones.Plugin
         }
     }
 
+    // Append upgrade preview text when a cast trigger is added to a spell
     [HarmonyPatch(typeof(CardState), "SetupCardTriggerBodyUpgradeText")]
     public class AddOnCastTriggerTemporaryUpgradesToSpellText
     {
