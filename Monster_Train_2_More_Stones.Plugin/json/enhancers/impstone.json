@@ -19,9 +19,7 @@
           "enhancer": {
             "class": "ClassHellhorned",
             "pools": [
-              "SpellUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCommon"
             ],
             "rarity": "common"
           }
@@ -91,18 +89,10 @@
       "cards": [
         "AggressiveImp",
         "AggressiveImp",
-        "AggressiveImp",
-        "AggressiveImp",
-        "StarterImp",
-        "StarterImp",
         "StarterImp",
         "StarterImp",
         "UnstableInfery",
         "UnstableInfery",
-        "UnstableInfery",
-        "UnstableInfery",
-        "WelderHelper",
-        "WelderHelper",
         "WelderHelper",
         "WelderHelper",
         "EmberedInfery",
