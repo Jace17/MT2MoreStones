@@ -1,4 +1,4 @@
-# Monster Train 2 More Upgrade Stones
+# MT2 More Upgrade Stones
 
 A mod for Monster Train 2 that adds several new upgrade options for cards.
 
@@ -13,6 +13,10 @@ Install via Thunderstore or manually: copy the mod contents to the 'BepInEx/plug
 # Warning
 
 This is a non-cosmetic mod that changes the game mechanics. Do not use it while playing any online mode as it may cause you to be banned.
+
+# Suggested Mods
+
+[Unlimited Purchases](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/MT2UnlimitedPurchases/) - Allows unlimited rerolls to make up for the diluted upgrade pool
 
 # Full List of New Upgrade Stones
 
