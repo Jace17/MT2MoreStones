@@ -5,10 +5,12 @@
       "id": "SpellUpgradeSap",
       "type": "enhancer",
       "names": {
-        "english": "Meekstone"
+        "english": "Meekstone",
+        "chinese": "弱化石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [sap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [sap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其apply [sap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
       },
       "relic_effects": [
         "@SapEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddSapEffect",
       "titles": {
-        "english": "Meekstone"
+        "english": "Meekstone",
+        "chinese": "弱化石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [sap] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [sap] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'Apply [sap] [trigger0.effect0.status0.power] to enemy units。'"
       },
       "icon": "@MeekstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplySapTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [sap] [effect0.status0.power] to enemy units."
+        "english": "Apply [sap] [effect0.status0.power] to enemy units.",
+        "chinese": "Apply [sap] [effect0.status0.power] to enemy units。"
       },
       "effects": [
         {

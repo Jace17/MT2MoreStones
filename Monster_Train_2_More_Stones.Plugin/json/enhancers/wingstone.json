@@ -5,10 +5,12 @@
       "id": "UnitUpgradeFlight",
       "type": "enhancer",
       "names": {
-        "english": "Wingstone"
+        "english": "Wingstone",
+        "chinese": "飞行石"
       },
       "descriptions": {
-        "english": "Add [ability]: <b>Flight</b>."
+        "english": "Add [ability]: <b>Flight</b>.",
+        "chinese": "Add [ability]: <b>Flight</b>。"
       },
       "relic_effects": [
         "@FlightEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddAbilityFlight",
       "titles": {
-        "english": "Wingstone"
+        "english": "Wingstone",
+        "chinese": "飞行石"
       },
       "descriptions": {
-        "english": "Gain [ability]: <b>Flight</b>."
+        "english": "Gain [ability]: <b>Flight</b>.",
+        "chinese": "获得[ability]: <b>Flight</b>。"
       },
       "icon": "@WingstoneIcon",
       "ability_upgrade": "AngelFlightAbility",

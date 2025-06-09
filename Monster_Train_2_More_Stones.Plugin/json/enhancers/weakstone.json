@@ -5,10 +5,12 @@
       "id": "SpellUpgradeMeleeWeakness",
       "type": "enhancer",
       "names": {
-        "english": "Weakstone"
+        "english": "Weakstone",
+        "chinese": "物伤石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [meleeweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [meleeweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其apply [meleeweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
       },
       "relic_effects": [
         "@MeleeWeaknessEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddMeleeWeaknessEffect",
       "titles": {
-        "english": "Weakstone"
+        "english": "Weakstone",
+        "chinese": "物伤石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [meleeweakness] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [meleeweakness] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'Apply [meleeweakness] [trigger0.effect0.status0.power] to enemy units。'"
       },
       "icon": "@WeakstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyMeleeWeaknessTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units."
+        "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units.",
+        "chinese": "Apply [meleeweakness] [effect0.status0.power] to enemy units。"
       },
       "effects": [
         {

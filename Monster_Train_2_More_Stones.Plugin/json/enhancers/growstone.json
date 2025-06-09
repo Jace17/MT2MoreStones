@@ -5,10 +5,12 @@
       "id": "SpellUpgradePropagate",
       "type": "enhancer",
       "names": {
-        "english": "Growstone"
+        "english": "Growstone",
+        "chinese": "散播石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add '[propagate] [effect0.upgrade.trigger0.effect0.paramint] on all units.'"
+        "english": "Upgrade a spell to add '[propagate] [effect0.upgrade.trigger0.effect0.paramint] on all units.'",
+        "chinese": "升级一个法术，使其add '[propagate] [effect0.upgrade.trigger0.effect0.paramint] on all units。'"
       },
       "relic_effects": [
         "@AddPropagateEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddPropagate",
       "titles": {
-        "english": "Growstone"
+        "english": "Growstone",
+        "chinese": "散播石"
       },
       "descriptions": {
-        "english": "Gain '[propagate] [trigger0.effect0.paramint] on all units.'"
+        "english": "Gain '[propagate] [trigger0.effect0.paramint] on all units.'",
+        "chinese": "获得'[propagate] [trigger0.effect0.paramint] on all units。'"
       },
       "icon": "@GrowstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "AddPropagateTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[propagate] [effect0.paramint] on all units."
+        "english": "[propagate] [effect0.paramint] on all units.",
+        "chinese": "[propagate] [effect0.paramint] on all units。"
       },
       "effects": [
         {

@@ -5,10 +5,12 @@
       "id": "SpellUpgradeSpawn",
       "type": "enhancer",
       "names": {
-        "english": "Spawnstone"
+        "english": "Spawnstone",
+        "chinese": "生成石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [spawn] [effect0.upgrade.trigger0.effect0.paramint]."
+        "english": "Upgrade a spell to add [spawn] [effect0.upgrade.trigger0.effect0.paramint].",
+        "chinese": "升级一个法术，使其add [spawn] [effect0.upgrade.trigger0.effect0.paramint]。"
       },
       "relic_effects": [
         "@AddSpawnEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddSpawn",
       "titles": {
-        "english": "Spawnstone"
+        "english": "Spawnstone",
+        "chinese": "生成石"
       },
       "descriptions": {
-        "english": "Gain [spawn] [trigger0.effect0.paramint]."
+        "english": "Gain [spawn] [trigger0.effect0.paramint].",
+        "chinese": "获得[spawn] [trigger0.effect0.paramint]。"
       },
       "icon": "@SpawnstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "AddSpawnTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[spawn] [effect0.paramint]."
+        "english": "[spawn] [effect0.paramint].",
+        "chinese": "[spawn] [effect0.paramint]。"
       },
       "effects": [
         {

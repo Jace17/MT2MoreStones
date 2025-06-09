@@ -5,10 +5,12 @@
       "id": "UnitUpgradeTrample",
       "type": "enhancer",
       "names": {
-        "english": "Tramplestone"
+        "english": "Tramplestone",
+        "chinese": "践踏石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [trample]."
+        "english": "Upgrade a unit with [trample].",
+        "chinese": "升级一个单位，使其获得[trample]。"
       },
       "relic_effects": [
         "@TrampleEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddTrample",
       "titles": {
-        "english": "Tramplestone"
+        "english": "Tramplestone",
+        "chinese": "践踏石"
       },
       "descriptions": {
-        "english": "Gain [trample]."
+        "english": "Gain [trample].",
+        "chinese": "获得[trample]。"
       },
       "icon": "@TramplestoneIcon",
       "status_effect_upgrades": [

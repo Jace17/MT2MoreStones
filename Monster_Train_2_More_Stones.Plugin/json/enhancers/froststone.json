@@ -5,10 +5,12 @@
       "id": "SpellUpgradeFrostbite",
       "type": "enhancer",
       "names": {
-        "english": "Froststone"
+        "english": "Froststone",
+        "chinese": "霜冻石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [frostbite] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [frostbite] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[frostbite] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
         "@FrostbiteEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddFrostbiteEffect",
       "titles": {
-        "english": "Froststone"
+        "english": "Froststone",
+        "chinese": "霜冻石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [frostbite] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [frostbite] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[frostbite] [trigger0.effect0.status0.power]。'"
       },
       "icon": "@FroststoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyFrostbiteTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [frostbite] [effect0.status0.power] to enemy units."
+        "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[frostbite] [effect0.status0.power]。"
       },
       "effects": [
         {

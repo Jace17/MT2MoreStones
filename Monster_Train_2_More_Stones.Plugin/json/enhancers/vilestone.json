@@ -5,10 +5,12 @@
       "id": "SpellUpgradeCorruption",
       "type": "enhancer",
       "names": {
-        "english": "Vilestone"
+        "english": "Vilestone",
+        "chinese": "腐化石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [corruption] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [corruption] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其apply [corruption] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
       },
       "relic_effects": [
         "@CorruptionEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddCorruptionEffect",
       "titles": {
-        "english": "Vilestone"
+        "english": "Vilestone",
+        "chinese": "腐化石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [corruption] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [corruption] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'Apply [corruption] [trigger0.effect0.status0.power] to enemy units。'"
       },
       "icon": "@VilestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyCorruptionTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [corruption] [effect0.status0.power] to enemy units."
+        "english": "Apply [corruption] [effect0.status0.power] to enemy units.",
+        "chinese": "Apply [corruption] [effect0.status0.power] to enemy units。"
       },
       "effects": [
         {

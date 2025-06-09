@@ -5,10 +5,12 @@
       "id": "UnitUpgradeSweep",
       "type": "enhancer",
       "names": {
-        "english": "Swipestone"
+        "english": "Swipestone",
+        "chinese": "横扫石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [sweep], but [effect0.upgrade.bonusdamage][attack]."
+        "english": "Upgrade a unit with [sweep], but [effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得[sweep]，[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
         "@SweepEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddSweep",
       "titles": {
-        "english": "Swipestone"
+        "english": "Swipestone",
+        "chinese": "横扫石"
       },
       "descriptions": {
-        "english": "Gain [sweep] but [bonusdamage][attack]."
+        "english": "Gain [sweep] but [bonusdamage][attack].",
+        "chinese": "获得[sweep]，[bonusdamage][attack]。"
       },
       "icon": "@SwipestoneIcon",
       "bonus_damage": -10,

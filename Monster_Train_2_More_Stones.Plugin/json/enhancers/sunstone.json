@@ -5,10 +5,12 @@
       "id": "SpellUpgradeDraw1NextTurn",
       "type": "enhancer",
       "names": {
-        "english": "Sunstone"
+        "english": "Sunstone",
+        "chinese": "抽牌石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn.'"
+        "english": "Upgrade a spell to add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn.'",
+        "chinese": "升级一个法术，使其add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn。'"
       },
       "relic_effects": [
         "@Draw1NextTurnEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddDraw1NextTurn",
       "titles": {
-        "english": "Sunstone"
+        "english": "Sunstone",
+        "chinese": "抽牌石"
       },
       "descriptions": {
-        "english": "Gain 'Draw +[trigger0.effect0.paramint] next turn.'"
+        "english": "Gain 'Draw +[trigger0.effect0.paramint] next turn.'",
+        "chinese": "获得'Draw +[trigger0.effect0.paramint] next turn。'"
       },
       "icon": "@SunstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyDraw1NextTurnTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Draw +[effect0.paramint] next turn."
+        "english": "Draw +[effect0.paramint] next turn.",
+        "chinese": "Draw +[effect0.paramint] next turn。"
       },
       "effects": [
         {

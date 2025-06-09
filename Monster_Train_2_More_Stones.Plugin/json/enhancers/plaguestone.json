@@ -5,10 +5,12 @@
       "id": "SpellUpgradeDecay",
       "type": "enhancer",
       "names": {
-        "english": "Plaguestone"
+        "english": "Plaguestone",
+        "chinese": "腐朽石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [decay] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [decay] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其apply [decay] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
       },
       "relic_effects": [
         "@DecayEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddDecayEffect",
       "titles": {
-        "english": "Plaguestone"
+        "english": "Plaguestone",
+        "chinese": "腐朽石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [decay] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [decay] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'Apply [decay] [trigger0.effect0.status0.power] to enemy units。'"
       },
       "icon": "@PlaguestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyDecayTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [decay] [effect0.status0.power] to enemy units."
+        "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+        "chinese": "Apply [decay] [effect0.status0.power] to enemy units。"
       },
       "effects": [
         {

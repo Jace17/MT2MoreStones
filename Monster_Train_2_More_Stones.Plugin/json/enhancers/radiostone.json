@@ -5,10 +5,12 @@
       "id": "SpellUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Radstone"
+        "english": "Radstone",
+        "chinese": "不稳石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
       },
       "relic_effects": [
         "@Unstable10Enhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddUnstableEffect",
       "titles": {
-        "english": "Radstone"
+        "english": "Radstone",
+        "chinese": "不稳石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [unstable] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [unstable] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'Apply [unstable] [trigger0.effect0.status0.power] to enemy units。'"
       },
       "icon": "@RadiostoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyUnstableTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [unstable] [effect0.status0.power] to enemy units."
+        "english": "Apply [unstable] [effect0.status0.power] to enemy units.",
+        "chinese": "Apply [unstable] [effect0.status0.power] to enemy units。"
       },
       "effects": [
         {

@@ -5,10 +5,12 @@
       "id": "UnitUpgradeAddStealth",
       "type": "enhancer",
       "names": {
-        "english": "Smokestone"
+        "english": "Smokestone",
+        "chinese": "潜行石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[stealth] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@AddStealthEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddStealth",
       "titles": {
-        "english": "Smokestone"
+        "english": "Smokestone",
+        "chinese": "潜行石"
       },
       "descriptions": {
-        "english": "Gain [stealth] [status0.power]."
+        "english": "Gain [stealth] [status0.power].",
+        "chinese": "获得[stealth] [status0.power]。"
       },
       "icon": "@SmokestoneIcon",
       "status_effect_upgrades": [

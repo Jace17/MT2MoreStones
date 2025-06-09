@@ -5,10 +5,12 @@
       "id": "SpellUpgradeAttuned",
       "type": "enhancer",
       "names": {
-        "english": "Attunestone"
+        "english": "Attunestone",
+        "chinese": "调和石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain [attuned]."
+        "english": "Upgrade a spell to gain [attuned].",
+        "chinese": "升级一个法术，使其获得[attuned]。"
       },
       "relic_effects": [
         "@AttunedEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddAttunedTrait",
       "titles": {
-        "english": "Attunestone"
+        "english": "Attunestone",
+        "chinese": "调和石"
       },
       "descriptions": {
-        "english": "Gain [attuned]."
+        "english": "Gain [attuned].",
+        "chinese": "获得[attuned]。"
       },
       "icon": "@AttunestoneIcon",
       "trait_upgrades": [

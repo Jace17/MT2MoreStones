@@ -5,10 +5,12 @@
       "id": "SpellUpgradeGainCoin",
       "type": "enhancer",
       "names": {
-        "english": "Lootstone"
+        "english": "Lootstone",
+        "chinese": "金币石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][coin]."
+        "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][coin].",
+        "chinese": "升级一个法术，使其add [effect0.upgrade.trigger0.effect0.paramint][coin]。"
       },
       "relic_effects": [
         "@GainCoinEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "GainCoin",
       "titles": {
-        "english": "Lootstone"
+        "english": "Lootstone",
+        "chinese": "金币石"
       },
       "descriptions": {
-        "english": "Gain [trigger0.effect0.paramint][coin]."
+        "english": "Gain [trigger0.effect0.paramint][coin].",
+        "chinese": "获得[trigger0.effect0.paramint][coin]。"
       },
       "icon": "@LootstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "GainCoinTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain [effect0.paramint][coin]."
+        "english": "Gain [effect0.paramint][coin].",
+        "chinese": "获得[effect0.paramint][coin]。"
       },
       "effects": [
         {

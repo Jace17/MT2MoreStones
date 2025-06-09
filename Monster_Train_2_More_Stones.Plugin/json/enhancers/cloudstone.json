@@ -5,10 +5,12 @@
       "id": "UnitUpgradeShift",
       "type": "enhancer",
       "names": {
-        "english": "Cloudstone"
+        "english": "Cloudstone",
+        "chinese": "转移石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@ShiftEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddShift",
       "titles": {
-        "english": "Cloudstone"
+        "english": "Cloudstone",
+        "chinese": "转移石"
       },
       "descriptions": {
-        "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@CloudstoneIcon",
       "trigger_upgrades": [
@@ -65,7 +69,8 @@
       "id": "ShiftAdd2Attack2HealthTrigger",
       "trigger": "on_shift",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {

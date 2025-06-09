@@ -5,10 +5,12 @@
       "id": "SpellUpgradeRooted",
       "type": "enhancer",
       "names": {
-        "english": "Vinestone"
+        "english": "Vinestone",
+        "chinese": "缠绕石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [rooted] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [rooted] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其apply [rooted] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
       },
       "relic_effects": [
         "@RootedEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddRootedEffect",
       "titles": {
-        "english": "Vinestone"
+        "english": "Vinestone",
+        "chinese": "缠绕石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [rooted] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [rooted] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'Apply [rooted] [trigger0.effect0.status0.power] to enemy units。'"
       },
       "icon": "@VinestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyRootedTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [rooted] [effect0.status0.power] to enemy units."
+        "english": "Apply [rooted] [effect0.status0.power] to enemy units.",
+        "chinese": "Apply [rooted] [effect0.status0.power] to enemy units。"
       },
       "effects": [
         {

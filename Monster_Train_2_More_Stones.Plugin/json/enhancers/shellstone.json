@@ -5,10 +5,12 @@
       "id": "UnitUpgradeTitanskin2",
       "type": "enhancer",
       "names": {
-        "english": "Shellstone"
+        "english": "Shellstone",
+        "chinese": "坦肤石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [titanskin] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [titanskin] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[titanskin] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@Titanskin2Enhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddTitanskin2",
       "titles": {
-        "english": "Shellstone"
+        "english": "Shellstone",
+        "chinese": "坦肤石"
       },
       "descriptions": {
-        "english": "Gain [titanskin] [status0.power]."
+        "english": "Gain [titanskin] [status0.power].",
+        "chinese": "获得[titanskin] [status0.power]。"
       },
       "icon": "@ShellstoneIcon",
       "status_effect_upgrades": [

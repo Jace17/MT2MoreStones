@@ -5,10 +5,12 @@
       "id": "SpellUpgradePiercing",
       "type": "enhancer",
       "names": {
-        "english": "Piercestone"
+        "english": "Piercestone",
+        "chinese": "穿刺石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain [piercing] and +[effect0.upgrade.bonusdamage] [magicpower]."
+        "english": "Upgrade a spell to gain [piercing] and +[effect0.upgrade.bonusdamage] [magicpower].",
+        "chinese": "升级一个法术，使其gain [piercing] and +[effect0.upgrade.bonusdamage] [magicpower]。"
       },
       "relic_effects": [
         "@PiercingEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddPiercingTrait",
       "titles": {
-        "english": "Piercestone"
+        "english": "Piercestone",
+        "chinese": "穿刺石"
       },
       "descriptions": {
-        "english": "Gain [piercing] and +[bonusdamage] [magicpower]."
+        "english": "Gain [piercing] and +[bonusdamage] [magicpower].",
+        "chinese": "获得[piercing] and +[bonusdamage] [magicpower]。"
       },
       "icon": "@PiercestoneIcon",
       "trait_upgrades": [
