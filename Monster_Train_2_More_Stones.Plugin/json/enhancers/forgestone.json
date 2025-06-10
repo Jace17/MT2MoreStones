@@ -17,7 +17,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassBanished",
+            "class": "ClassLazarusLeague",
             "pools": [
               "UnitUpgradePoolCommon",
               "DraftUpgradePool",

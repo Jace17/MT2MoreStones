@@ -17,7 +17,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": null,
+            "class": "ClassStygian",
             "pools": [
               "SpellUpgradePoolRare",
               "DraftUpgradePool",

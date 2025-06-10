@@ -17,7 +17,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": null,
+            "class": "ClassHellhorned",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",

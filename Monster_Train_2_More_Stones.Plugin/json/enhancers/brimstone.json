@@ -2,22 +2,22 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeRetreat",
+      "id": "SpellUpgradeDamage",
       "type": "enhancer",
       "names": {
-        "english": "Backstone"
+        "english": "Brimstone"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [retreat]."
+        "english": "Upgrade a spell to deal [effect0.upgrade.trigger0.effect0.power] damage to enemy units."
       },
       "relic_effects": [
-        "@RetreatEnhancer"
+        "@DamageAllEnhancer"
       ],
-      "icon": "@BackstoneIcon",
+      "icon": "@BrimstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassBanished",
+            "class": "ClassPyreborne",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",
@@ -31,60 +31,59 @@
   ],
   "relic_effects": [
     {
-      "id": "RetreatEnhancer",
+      "id": "DamageAllEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddRetreat"
+      "param_upgrade": "@AddDamageAll"
     }
   ],
   "upgrades": [
     {
-      "id": "AddRetreat",
+      "id": "AddDamageAll",
       "titles": {
-        "english": "Backstone"
+        "english": "Brimstone"
       },
       "descriptions": {
-        "english": "Gain [retreat]."
+        "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'"
       },
-      "icon": "@BackstoneIcon",
+      "icon": "@BrimstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@RetreatTrigger"
+          "id": "@DamageAllTrigger"
         }
       ],
       "filters": [
-        "OnlySpells",
-        "@SingleTargetOnly",
-        "@NoAdvanceOrRetreat"
+        "OnlySpells"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "BackstoneIcon",
-      "path": "textures/backstone.png"
+      "id": "BrimstoneIcon",
+      "path": "textures/brimstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "RetreatTrigger",
+      "id": "DamageAllTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[retreat]."
+        "english": "Deal [effect0.power] damage to enemy units."
       },
       "effects": [
         {
-          "id": "@RetreatEffect"
+          "id": "@DamageAllEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "RetreatEffect",
-      "name": "CardEffectFloorRearrange",
-      "target_mode": "last_targeted_characters",
-      "param_int": 1
+      "id": "DamageAllEffect",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 3
     }
   ]
 }

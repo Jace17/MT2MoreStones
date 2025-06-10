@@ -75,7 +75,8 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/backstone.json",
                         "json/enhancers/healstone.json",
                         "json/enhancers/curestone.json",
-                        "json/enhancers/scourstone.json"
+                        "json/enhancers/scourstone.json",
+                        "json/enhancers/brimstone.json"
                     );
                 }
             );
