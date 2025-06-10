@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeAdvance",
+      "type": "enhancer",
+      "names": {
+        "english": "Frontstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a targeted spell to add [advance]."
+      },
+      "relic_effects": [
+        "@AdvanceEnhancer"
+      ],
+      "icon": "@FrontstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AdvanceEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddAdvance"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddAdvance",
+      "titles": {
+        "english": "Frontstone"
+      },
+      "descriptions": {
+        "english": "Gain [advance]."
+      },
+      "icon": "@FrontstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AdvanceTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells",
+        "@SingleTargetOnly",
+        "@NoAdvanceOrRetreat"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FrontstoneIcon",
+      "path": "textures/frontstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AdvanceTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[advance]."
+      },
+      "effects": [
+        {
+          "id": "@AdvanceEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AdvanceEffect",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "last_targeted_characters",
+      "param_int": 0
+    }
+  ]
+}

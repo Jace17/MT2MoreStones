@@ -68,7 +68,14 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/spawnstone.json",
                         "json/enhancers/vilestone.json",
                         "json/enhancers/trainstone.json",
-                        "json/enhancers/offerstone.json"
+                        "json/enhancers/offerstone.json",
+                        "json/enhancers/upstone.json",
+                        "json/enhancers/downstone.json",
+                        "json/enhancers/frontstone.json",
+                        "json/enhancers/backstone.json",
+                        "json/enhancers/healstone.json",
+                        "json/enhancers/curestone.json",
+                        "json/enhancers/scourstone.json"
                     );
                 }
             );

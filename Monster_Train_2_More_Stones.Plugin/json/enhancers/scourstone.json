@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeRemoveBuff",
+      "type": "enhancer",
+      "names": {
+        "english": "Scourstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to remove all [buff] effects from enemy units."
+      },
+      "relic_effects": [
+        "@RemoveBuffEnhancer"
+      ],
+      "icon": "@ScourstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RemoveBuffEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@RemoveBuff"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RemoveBuff",
+      "titles": {
+        "english": "Scourstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Remove all [buff] effects from enemy units.'"
+      },
+      "icon": "@ScourstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@RemoveBuffTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ScourstoneIcon",
+      "path": "textures/scourstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "RemoveBuffTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Remove all [buff] effects from enemy units."
+      },
+      "effects": [
+        {
+          "id": "@RemoveBuffEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RemoveBuffEffect",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 0
+    }
+  ]
+}

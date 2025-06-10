@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeAscend",
+      "type": "enhancer",
+      "names": {
+        "english": "Upstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a targeted spell to add [ascend]."
+      },
+      "relic_effects": [
+        "@AscendEnhancer"
+      ],
+      "icon": "@UpstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AscendEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddAscend"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddAscend",
+      "titles": {
+        "english": "Upstone"
+      },
+      "descriptions": {
+        "english": "Gain [ascend]."
+      },
+      "icon": "@UpstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AscendTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells",
+        "@SingleTargetOnly",
+        "@NoAscendOrDescend"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "UpstoneIcon",
+      "path": "textures/upstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AscendTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[ascend]."
+      },
+      "effects": [
+        {
+          "id": "@AscendEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AscendEffect",
+      "name": "CardEffectBump",
+      "target_mode": "last_targeted_characters",
+      "param_int": 1
+    }
+  ]
+}

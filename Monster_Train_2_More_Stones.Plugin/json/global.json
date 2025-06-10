@@ -9,6 +9,22 @@
         "CardEffectDamagePerSourceAttack",
         "CardEffectDamagePerHp"
       ]
+    },
+    {
+      "id": "SingleTargetOnly",
+      "card_target_mode": [ "single" ]
+    },
+    {
+      "id": "NoAscendOrDescend",
+      "excluded_effects": [
+        "CardEffectBump"
+      ]
+    },
+    {
+      "id": "NoAdvanceOrRetreat",
+      "excluded_effects": [
+        "CardEffectFloorRearrange"
+      ]
     }
   ],
   "effects": [

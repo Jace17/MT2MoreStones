@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeDescend",
+      "type": "enhancer",
+      "names": {
+        "english": "Downstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a targeted spell to add [descend]."
+      },
+      "relic_effects": [
+        "@DescendEnhancer"
+      ],
+      "icon": "@DownstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DescendEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddDescend"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddDescend",
+      "titles": {
+        "english": "Downstone"
+      },
+      "descriptions": {
+        "english": "Gain [descend]."
+      },
+      "icon": "@DownstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@DescendTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells",
+        "@SingleTargetOnly",
+        "@NoAscendOrDescend"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "DownstoneIcon",
+      "path": "textures/downstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "DescendTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[descend]."
+      },
+      "effects": [
+        {
+          "id": "@DescendEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "DescendEffect",
+      "name": "CardEffectBump",
+      "target_mode": "last_targeted_characters",
+      "param_int": -1
+    }
+  ]
+}
