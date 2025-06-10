@@ -60,7 +60,7 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Frontstone   | Spell | Clanless        | Common | Add Advance. (Targeted spells only.)                   |
 | Curestone    | Spell | Clanless        | Rare   | Remove all debuff effects from friendly units.         |
 | Feeblestone  | Spell | Clanless        | Common | Apply Spell Weakness 1 to all enemies.                 |
-| Backtone     | Spell | Clanless        | Common | Add Retreat. (Targeted spells only.)                   |
+| Backstone    | Spell | Clanless        | Common | Add Retreat. (Targeted spells only.)                   |
 | Downstone    | Spell | Clanless        | Common | Add Descend. (Targeted spells only.)                   |
 | Healstone    | Spell | Clanless        | Common | Restore 5 HP to all allies.                            |
 | Mutestone    | Spell | Clanless        | Rare   | Apply Mute 3 to all enemies.                           |
