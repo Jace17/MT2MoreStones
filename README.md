@@ -17,6 +17,7 @@ This is a non-cosmetic mod that changes the game mechanics. Do not use it while 
 # Suggested Mods
 
 [Unlimited Purchases](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/MT2UnlimitedPurchases/) - Allows unlimited rerolls to make up for the diluted upgrade pool
+[Upgrade Champions](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/Upgrade_Champions_2/) - Try the new upgrade stones on your champion
 
 If you loved this or any of my other mods, feel free to [tip me a coffee.](https://ko-fi.com/gravitongamer)
 
