@@ -18,6 +18,8 @@ This is a non-cosmetic mod that changes the game mechanics. Do not use it while 
 
 [Unlimited Purchases](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/MT2UnlimitedPurchases/) - Allows unlimited rerolls to make up for the diluted upgrade pool
 
+If you loved this or any of my other mods, feel free to [tip me a coffee.](https://ko-fi.com/gravitongamer)
+
 # Full List of New Upgrade Stones
 
 | Name         | Type  | Clan            | Rarity | Effect                                             |
