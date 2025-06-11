@@ -19,9 +19,7 @@
           "enhancer": {
             "class": "ClassAwoken",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolCommon"
             ],
             "rarity": "common"
           }

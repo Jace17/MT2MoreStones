@@ -5,7 +5,7 @@
       "id": "SpellUpgradeAttuned",
       "type": "enhancer",
       "names": {
-        "english": "Attunestone"
+        "english": "Tunestone"
       },
       "descriptions": {
         "english": "Upgrade a spell to gain [attuned]."
@@ -41,7 +41,7 @@
     {
       "id": "AddAttunedTrait",
       "titles": {
-        "english": "Attunestone"
+        "english": "Tunestone"
       },
       "descriptions": {
         "english": "Gain [attuned]."

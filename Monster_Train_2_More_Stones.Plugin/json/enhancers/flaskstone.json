@@ -19,9 +19,7 @@
           "enhancer": {
             "class": "ClassLazarusLeague",
             "pools": [
-              "SpellUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCommon"
             ],
             "rarity": "common"
           }

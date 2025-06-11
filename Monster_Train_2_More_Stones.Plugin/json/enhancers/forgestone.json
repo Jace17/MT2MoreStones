@@ -19,9 +19,7 @@
           "enhancer": {
             "class": "ClassLazarusLeague",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolCommon"
             ],
             "rarity": "common"
           }
