@@ -25,16 +25,6 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 
 | Name         | Type  | Clan            | Rarity | Effect                                                 |
 | ------------ | ----- | --------------- | ------ | ------------------------------------------------------ |
-| Attunestone  | Spell | Clanless        | Common | Add Attuned.                                           |
-| Bannerstone  | Unit  | Clanless        | Common | Add Deployable. Health +10.                            |
-| Boomstone    | Spell | Clanless        | Common | Add Explosive. Spell Power +5.                         |
-| Curestone    | Spell | Clanless        | Rare   | Remove all debuff effects from friendly units.         |
-| Piercestone  | Spell | Clanless        | Common | Add Piercing. Spell Power +5.                          |
-| Shellstone   | Unit  | Clanless        | Common | Add Titanskin 2.                                       |
-| Swipestone   | Unit  | Clanless        | Rare   | Add Sweep. Attack -10.                                 |
-| Trainstone   | Unit  | Clanless        | Common | Ember cost is 0.                                       |
-| Tramplestone | Unit  | Clanless        | Rare   | Add Trample.                                           |
-| Vilestone    | Spell | Clanless        | Rare   | Apply Corruption 20 to all enemies.                    |
 | Bloomstone   | Unit  | Awoken          | Common | Add Rejuvenate: +4 Attack, +4 Health                   |
 | Healstone    | Spell | Awoken          | Common | Restore 5 HP to all allies.                            |
 | Sunstone     | Spell | Awoken          | Common | Draw +1 next turn.                                     |
@@ -43,9 +33,19 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Cloudstone   | Unit  | Banished        | Common | Add Shift: +2 Attack, +2 Health                        |
 | Weakstone    | Spell | Banished        | Common | Apply Melee Weakness 1 to all enemies.                 |
 | Wingstone    | Unit  | Banished        | Common | Add Ability: Flight                                    |
+| Bannerstone  | Unit  | Clanless        | Common | Add Deployable. Attack +10.                            |
+| Boomstone    | Spell | Clanless        | Common | Add Explosive. Spell Power +5.                         |
+| Curestone    | Spell | Clanless        | Rare   | Remove all debuff effects from friendly units.         |
+| Piercestone  | Spell | Clanless        | Common | Add Piercing. Spell Power +5.                          |
+| Shellstone   | Unit  | Clanless        | Common | Add Titanskin 2.                                       |
+| Swipestone   | Unit  | Clanless        | Rare   | Add Sweep. Attack -10.                                 |
+| Trainstone   | Unit  | Clanless        | Common | Ember cost is 0.                                       |
+| Tramplestone | Unit  | Clanless        | Rare   | Add Trample.                                           |
+| Tunestone    | Spell | Clanless        | Common | Add Attuned.                                           |
+| Vilestone    | Spell | Clanless        | Rare   | Apply Corruption 20 to all enemies.                    |
 | Apexstone    | Unit  | Hellhorned      | Common | Add Armored: +4 Attack.                                |
 | Armorstone   | Unit  | Hellhorned      | Common | Add Armor 25.                                          |
-| Impstone     | Spell | Hellhorned      | Common | Add a common or uncommon imp unit to your hand.        |
+| Impstone     | Spell | Hellhorned      | Common | Add a common or uncommon Imp unit to your hand.        |
 | Upstone      | Spell | Hellhorned      | Common | Add Ascend. (Targeted spells only.)                    |
 | Flaskstone   | Spell | Lazarus League  | Common | Add Mix.                                               |
 | Forgestone   | Unit  | Lazarus League  | Common | Add Artificer: +8 Attack, +8 Health                    |
