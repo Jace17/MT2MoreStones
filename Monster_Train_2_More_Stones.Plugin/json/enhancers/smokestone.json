@@ -8,7 +8,7 @@
         "english": "Smokestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack]."
       },
       "relic_effects": [
         "@AddStealthEnhancer"
@@ -23,7 +23,7 @@
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "uncommon"
           }
         }
       ]
@@ -44,9 +44,10 @@
         "english": "Smokestone"
       },
       "descriptions": {
-        "english": "Gain [stealth] [status0.power]."
+        "english": "Gain [stealth] [status0.power] and +[bonusdamage][attack]."
       },
       "icon": "@SmokestoneIcon",
+      "bonus_damage": 10,
       "status_effect_upgrades": [
         {
           "status": "stealth",

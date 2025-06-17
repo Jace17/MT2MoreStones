@@ -56,7 +56,6 @@
       ],
       "filters": [
         "ExcludeEelGorgon",
-        "OnlyAttackingUnits",
         "@ExcludeSweep"
       ]
     }

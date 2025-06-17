@@ -19,9 +19,9 @@
           "enhancer": {
             "class": "ClassLazarusLeague",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "UnitUpgradePoolRare"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]
@@ -48,7 +48,7 @@
       "status_effect_upgrades": [
         {
           "status": "unstable",
-          "count": 25
+          "count": 20
         }
       ],
       "filters": [

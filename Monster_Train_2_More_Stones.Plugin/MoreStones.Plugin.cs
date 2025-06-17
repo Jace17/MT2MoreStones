@@ -54,7 +54,7 @@ namespace Monster_Train_2_More_Stones.Plugin
                         "json/enhancers/reformstone.json",
                         "json/enhancers/smokestone.json",
                         "json/enhancers/boomstone.json",
-                        "json/enhancers/froststone.json",
+                        "json/enhancers/froststone.json", 
                         "json/enhancers/hoardstone.json",
                         "json/enhancers/lootstone.json",
                         "json/enhancers/meekstone.json",

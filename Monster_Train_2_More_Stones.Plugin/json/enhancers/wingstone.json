@@ -19,11 +19,11 @@
           "enhancer": {
             "class": "ClassBanished",
             "pools": [
-              "UnitUpgradePoolCommon",
+              "UnitUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]
