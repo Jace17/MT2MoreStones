@@ -75,7 +75,3 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Growstone    | Spell | Underlegion     | Uncommon | Propagate 1 on all units.                              |
 | Plaguestone  | Spell | Underlegion     | Common   | Apply Decay 4 to all enemies.                          |
 | Spawnstone   | Spell | Underlegion     | Uncommon | Add Spawn 1.                                           |
-| Frontstone   | Spell | Underlegion     | Common | Add Advance. (Targeted spells only.)                   |
-| Growstone    | Spell | Underlegion     | Common | Propagate 1 on all units.                              |
-| Plaguestone  | Spell | Underlegion     | Common | Apply Decay 4 to all enemies.                          |
-| Spawnstone   | Spell | Underlegion     | Common | Add Spawn 1.                                           |
