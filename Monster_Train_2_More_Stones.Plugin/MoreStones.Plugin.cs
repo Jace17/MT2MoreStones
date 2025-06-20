@@ -180,7 +180,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addFrontstone.Value) paths.Add("json/enhancers/frontstone.json");
             if (addGrowstone.Value) paths.Add("json/enhancers/growstone.json");
             if (addPlaguestone.Value) paths.Add("json/enhancers/plaguestone.json");
-            if (addSpawnstone.Value) paths.Add("json/enhancers/spawnstone.json");
+            if (addSpawnstone.Value) paths.Add("json/enhancers/spawnstone.json"); 
 
             var builder = Railhead.GetBuilder();
             builder.Configure(
