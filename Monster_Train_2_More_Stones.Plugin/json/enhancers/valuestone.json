@@ -1,0 +1,62 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeValue",
+      "type": "enhancer",
+      "names": {
+        "english": "Valuestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to cost -[effect0.upgrade.costreduction][ember]."
+      },
+      "relic_effects": [
+        "@ValueEffect"
+      ],
+      "icon": "@ValuestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "null",
+            "pools": [
+              "SpellUpgradePoolCostReduction"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ValueEffect",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@ValueUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ValueUpgrade",
+      "titles": {
+        "english": "Valuestone"
+      },
+      "descriptions": {
+        "english": "-[costreduction][ember]."
+      },
+      "icon": "@ValuestoneIcon",
+      "cost_reduction": 3,
+      "xCostReduction": 3,
+      "filters": [
+        "OnlySpells",
+        "ExcludeZeroCost"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ValuestoneIcon",
+      "path": "textures/valuestone.png"
+    }
+  ]
+}

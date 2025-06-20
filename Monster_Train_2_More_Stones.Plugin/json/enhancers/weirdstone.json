@@ -5,7 +5,7 @@
       "id": "UnitUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Weirdstone"
+        "english": "Madstone"
       },
       "descriptions": {
         "english": "Upgrade a unit with [unstable] [effect0.upgrade.status0.power]."
@@ -39,7 +39,7 @@
     {
       "id": "AddUnstable",
       "titles": {
-        "english": "Weirdstone"
+        "english": "Madstone"
       },
       "descriptions": {
         "english": "Gain [unstable] [status0.power]."

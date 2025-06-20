@@ -5,7 +5,7 @@
       "id": "SpellUpgradePiercing",
       "type": "enhancer",
       "names": {
-        "english": "Piercestone"
+        "english": "Truestone"
       },
       "descriptions": {
         "english": "Upgrade a spell to gain [piercing] and +[effect0.upgrade.bonusdamage] [magicpower]."
@@ -41,7 +41,7 @@
     {
       "id": "AddPiercingTrait",
       "titles": {
-        "english": "Piercestone"
+        "english": "Truestone"
       },
       "descriptions": {
         "english": "Gain [piercing] and +[bonusdamage] [magicpower]."
@@ -63,7 +63,7 @@
   "sprites": [
     {
       "id": "PiercestoneIcon",
-      "path": "textures/piercestone.png"
+      "path": "textures/piercestone-v2.png"
     }
   ],
   "upgrade_masks": [

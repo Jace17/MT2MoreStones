@@ -5,7 +5,7 @@
       "id": "UnitUpgradeTrample",
       "type": "enhancer",
       "names": {
-        "english": "Tramplestone"
+        "english": "Stompstone"
       },
       "descriptions": {
         "english": "Upgrade a unit with [trample]."
@@ -41,7 +41,7 @@
     {
       "id": "AddTrample",
       "titles": {
-        "english": "Tramplestone"
+        "english": "Stompstone"
       },
       "descriptions": {
         "english": "Gain [trample]."
