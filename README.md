@@ -4,7 +4,8 @@ A mod for Monster Train 2 that adds several new upgrade options for cards.
 
 # Features
 
-- Adds 50 new upgrade stones with their own icons, scroll down below see the whole list
+- Adds 52 new upgrade stones with their own icons, scroll down below see the whole list
+- Configurable to disable any new stones you don't want to see in-game (everything is enabled by default)
 
 # Installation
 
@@ -36,12 +37,14 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Bannerstone  | Unit  | Clanless        | Uncommon | Add Deployable. Attack +10.                            |
 | Boomstone    | Spell | Clanless        | Common   | Add Explosive. Spell Power +5.                         |
 | Curestone    | Spell | Clanless        | Rare     | Remove all debuff effects from friendly units.         |
-| Piercestone  | Spell | Clanless        | Common   | Add Piercing. Spell Power +5.                          |
+| Extremestone | Spell | Clanless        | Rare     | Spell Power +30.                                       |
 | Shellstone   | Unit  | Clanless        | Uncommon | Add Titanskin 2.                                       |
+| Stompstone   | Unit  | Clanless        | Rare     | Add Trample.                                           |
 | Swipestone   | Unit  | Clanless        | Rare     | Add Sweep. Attack -10.                                 |
 | Trainstone   | Unit  | Clanless        | Uncommon | Ember cost is 0.                                       |
-| Tramplestone | Unit  | Clanless        | Rare     | Add Trample.                                           |
+| Truestone    | Spell | Clanless        | Common   | Add Piercing. Spell Power +5.                          |
 | Tunestone    | Spell | Clanless        | Rare     | Add Attuned.                                           |
+| Valuestone   | Spell | Clanless        | Rare     | Ember cost -3.                                         |
 | Vilestone    | Spell | Clanless        | Rare     | Apply Corruption 20 to all enemies.                    |
 | Apexstone    | Unit  | Hellhorned      | Uncommon | Add Armored: +4 Attack.                                |
 | Armorstone   | Unit  | Hellhorned      | Common   | Add Armor 25.                                          |
@@ -49,8 +52,8 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Upstone      | Spell | Hellhorned      | Uncommon | Add Ascend. (Targeted spells only.)                    |
 | Flaskstone   | Spell | Lazarus League  | Uncommon | Add Mix.                                               |
 | Forgestone   | Unit  | Lazarus League  | Uncommon | Add Artificer: +8 Attack, +8 Health                    |
+| Madstone     | Unit  | Lazarus League  | Rare     | Add Unstable 20.                                       |
 | Radstone     | Spell | Lazarus League  | Common   | Apply Unstable 10 to all enemies.                      |
-| Weirdstone   | Unit  | Lazarus League  | Rare     | Add Unstable 20.                                       |
 | Bladestone   | Unit  | Luna Coven      | Rare     | Add Mageblade 2.                                       |
 | Cyclestone   | Unit  | Luna Coven      | Uncommon | Add Mooncycle: +2 Attack, +2 Health                    |
 | Feeblestone  | Spell | Luna Coven      | Common   | Apply Spell Weakness 1 to all enemies.                 |
