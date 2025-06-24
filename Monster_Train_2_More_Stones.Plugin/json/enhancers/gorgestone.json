@@ -21,11 +21,9 @@
           "enhancer": {
             "class": "ClassUmbra",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolCommon"
             ],
-            "rarity": "common"
+            "rarity": "uncommon"
           }
         }
       ]

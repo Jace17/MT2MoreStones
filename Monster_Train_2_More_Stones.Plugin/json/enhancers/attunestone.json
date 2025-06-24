@@ -5,7 +5,7 @@
       "id": "SpellUpgradeAttuned",
       "type": "enhancer",
       "names": {
-        "english": "Attunestone",
+        "english": "Tunestone",
         "chinese": "调和石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "AddAttunedTrait",
       "titles": {
-        "english": "Attunestone",
+        "english": "Tunestone",
         "chinese": "调和石"
       },
       "descriptions": {

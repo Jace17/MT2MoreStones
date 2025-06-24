@@ -5,7 +5,7 @@
       "id": "UnitUpgradeTrample",
       "type": "enhancer",
       "names": {
-        "english": "Tramplestone",
+        "english": "Stompstone",
         "chinese": "践踏石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "AddTrample",
       "titles": {
-        "english": "Tramplestone",
+        "english": "Stompstone",
         "chinese": "践踏石"
       },
       "descriptions": {

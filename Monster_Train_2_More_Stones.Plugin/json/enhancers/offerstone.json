@@ -9,7 +9,7 @@
         "chinese": "献祭石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain <b>Offering</b> and -[effect0.upgrade.costreduction][ember].",
+        "english": "Upgrade a targetless spell to gain <b>Offering</b> and -[effect0.upgrade.costreduction][ember].",
         "chinese": "升级一个法术，使其gain <b>Offering</b> and -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
@@ -52,6 +52,7 @@
       },
       "icon": "@OfferstoneIcon",
       "cost_reduction": 1,
+      "xCostReduction": 1,
       "trait_upgrades": [
         {
           "id": "@OfferingTrait"

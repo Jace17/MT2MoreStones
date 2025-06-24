@@ -2,20 +2,18 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainCoin",
+      "id": "SpellUpgradeDamage",
       "type": "enhancer",
       "names": {
-        "english": "Lootstone",
-        "chinese": "金币石"
+        "english": "Brimstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][coin].",
-        "chinese": "升级一个法术，使其add [effect0.upgrade.trigger0.effect0.paramint][coin]。"
+        "english": "Upgrade a spell to deal [effect0.upgrade.trigger0.effect0.power] damage to enemy units."
       },
       "relic_effects": [
-        "@GainCoinEnhancer"
+        "@DamageAllEnhancer"
       ],
-      "icon": "@LootstoneIcon",
+      "icon": "@BrimstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,27 +31,25 @@
   ],
   "relic_effects": [
     {
-      "id": "GainCoinEnhancer",
+      "id": "DamageAllEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainCoin"
+      "param_upgrade": "@AddDamageAll"
     }
   ],
   "upgrades": [
     {
-      "id": "GainCoin",
+      "id": "AddDamageAll",
       "titles": {
-        "english": "Lootstone",
-        "chinese": "金币石"
+        "english": "Brimstone"
       },
       "descriptions": {
-        "english": "Gain [trigger0.effect0.paramint][coin].",
-        "chinese": "获得[trigger0.effect0.paramint][coin]。"
+        "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'"
       },
-      "icon": "@LootstoneIcon",
+      "icon": "@BrimstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainCoinTrigger"
+          "id": "@DamageAllTrigger"
         }
       ],
       "filters": [
@@ -63,30 +59,31 @@
   ],
   "sprites": [
     {
-      "id": "LootstoneIcon",
-      "path": "textures/lootstone.png"
+      "id": "BrimstoneIcon",
+      "path": "textures/brimstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainCoinTrigger",
+      "id": "DamageAllTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain [effect0.paramint][coin].",
-        "chinese": "获得[effect0.paramint][coin]。"
+        "english": "Deal [effect0.power] damage to enemy units."
       },
       "effects": [
         {
-          "id": "@GainCoinEffect"
+          "id": "@DamageAllEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainCoinEffect",
-      "name": "CardEffectRewardGold",
-      "param_int": 10
+      "id": "DamageAllEffect",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 3
     }
   ]
 }

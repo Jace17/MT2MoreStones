@@ -19,13 +19,11 @@
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassBanished",
+            "class": "ClassLazarusLeague",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolCommon"
             ],
-            "rarity": "common"
+            "rarity": "uncommon"
           }
         }
       ]

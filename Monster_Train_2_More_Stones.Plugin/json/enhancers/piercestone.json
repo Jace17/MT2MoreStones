@@ -5,7 +5,7 @@
       "id": "SpellUpgradePiercing",
       "type": "enhancer",
       "names": {
-        "english": "Piercestone",
+        "english": "Truestone",
         "chinese": "穿刺石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "AddPiercingTrait",
       "titles": {
-        "english": "Piercestone",
+        "english": "Truestone",
         "chinese": "穿刺石"
       },
       "descriptions": {
@@ -67,7 +67,7 @@
   "sprites": [
     {
       "id": "PiercestoneIcon",
-      "path": "textures/piercestone.png"
+      "path": "textures/piercestone-v2.png"
     }
   ],
   "upgrade_masks": [

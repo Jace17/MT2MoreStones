@@ -21,11 +21,9 @@
           "enhancer": {
             "class": "ClassRemnant",
             "pools": [
-              "SpellUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCommon"
             ],
-            "rarity": "common"
+            "rarity": "uncommon"
           }
         }
       ]

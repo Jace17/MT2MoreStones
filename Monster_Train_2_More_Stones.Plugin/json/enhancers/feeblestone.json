@@ -19,7 +19,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": null,
+            "class": "ClassLunaCoven",
             "pools": [
               "SpellUpgradePoolCommon",
               "DraftUpgradePool",

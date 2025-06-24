@@ -2,26 +2,26 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeMix",
+      "id": "SpellUpgradeAscend",
       "type": "enhancer",
       "names": {
-        "english": "Flaskstone",
-        "chinese": "调配石"
+        "english": "Upstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [mix].",
-        "chinese": "升级一个法术，使其获得[mix]。"
+        "english": "Upgrade a targeted spell to add [ascend]."
       },
       "relic_effects": [
-        "@AddMixEnhancer"
+        "@AscendEnhancer"
       ],
-      "icon": "@FlaskstoneIcon",
+      "icon": "@UpstoneIcon",
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassLazarusLeague",
+            "class": "ClassHellhorned",
             "pools": [
-              "SpellUpgradePoolCommon"
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
             ],
             "rarity": "uncommon"
           }
@@ -31,60 +31,60 @@
   ],
   "relic_effects": [
     {
-      "id": "AddMixEnhancer",
+      "id": "AscendEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMix"
+      "param_upgrade": "@AddAscend"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMix",
+      "id": "AddAscend",
       "titles": {
-        "english": "Flaskstone",
-        "chinese": "调配石"
+        "english": "Upstone"
       },
       "descriptions": {
-        "english": "Gain [mix].",
-        "chinese": "获得[mix]。"
+        "english": "Gain [ascend]."
       },
-      "icon": "@FlaskstoneIcon",
+      "icon": "@UpstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddMixTrigger"
+          "id": "@AscendTrigger"
         }
       ],
       "filters": [
-        "OnlySpells"
+        "OnlySpells",
+        "@SingleTargetOnly",
+        "@NoAscendOrDescend"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "FlaskstoneIcon",
-      "path": "textures/flaskstone.png"
+      "id": "UpstoneIcon",
+      "path": "textures/upstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddMixTrigger",
+      "id": "AscendTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[mix].",
-        "chinese": "[mix]。"
+        "english": "[ascend]."
       },
       "effects": [
         {
-          "id": "@MixEffect"
+          "id": "@AscendEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "MixEffect",
-      "name": "CardEffectMix",
-      "param_int": 2
+      "id": "AscendEffect",
+      "name": "CardEffectBump",
+      "target_mode": "last_targeted_characters",
+      "param_int": 1
     }
   ]
 }

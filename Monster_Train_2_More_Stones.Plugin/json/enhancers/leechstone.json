@@ -9,7 +9,7 @@
         "chinese": "吸血石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power].",
+        "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
         "chinese": "升级一个单位，使其获得[lifesteal] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
@@ -25,7 +25,7 @@
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "uncommon"
           }
         }
       ]
@@ -47,10 +47,11 @@
         "chinese": "吸血石"
       },
       "descriptions": {
-        "english": "Gain [lifesteal] [status0.power].",
+        "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack].",
         "chinese": "获得[lifesteal] [status0.power]。"
       },
       "icon": "@LeechstoneIcon",
+      "bonus_damage": 10,
       "status_effect_upgrades": [
         {
           "status": "lifesteal",

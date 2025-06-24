@@ -64,7 +64,7 @@
   "sprites": [
     {
       "id": "PyrestoneIcon",
-      "path": "textures/pyrestone.png"
+      "path": "textures/pyrestone-v2.png"
     }
   ],
   "card_triggers": [

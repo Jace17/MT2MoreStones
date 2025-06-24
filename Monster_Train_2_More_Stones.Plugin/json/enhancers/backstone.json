@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeRetreat",
+      "type": "enhancer",
+      "names": {
+        "english": "Backstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a targeted spell to add [retreat]."
+      },
+      "relic_effects": [
+        "@RetreatEnhancer"
+      ],
+      "icon": "@BackstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassBanished",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RetreatEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddRetreat"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddRetreat",
+      "titles": {
+        "english": "Backstone"
+      },
+      "descriptions": {
+        "english": "Gain [retreat]."
+      },
+      "icon": "@BackstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@RetreatTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells",
+        "@SingleTargetOnly",
+        "@NoAdvanceOrRetreat"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BackstoneIcon",
+      "path": "textures/backstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "RetreatTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[retreat]."
+      },
+      "effects": [
+        {
+          "id": "@RetreatEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RetreatEffect",
+      "name": "CardEffectFloorRearrange",
+      "target_mode": "last_targeted_characters",
+      "param_int": 1
+    }
+  ]
+}

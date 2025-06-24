@@ -21,9 +21,7 @@
           "enhancer": {
             "class": "ClassPyreborne",
             "pools": [
-              "SpellUpgradePoolRare",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolRare"
             ],
             "rarity": "rare"
           }

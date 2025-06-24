@@ -1,0 +1,63 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeExtreme",
+      "type": "enhancer",
+      "names": {
+        "english": "Extremestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower]."
+      },
+      "relic_effects": [
+        "@ExtremeEnhancer"
+      ],
+      "icon": "@ExtremestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ExtremeEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@ExtremeUpgrade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "ExtremeUpgrade",
+      "titles": {
+        "english": "Extremestone"
+      },
+      "descriptions": {
+        "english": "+[bonusdamage] [magicpower]."
+      },
+      "icon": "@ExtremestoneIcon",
+      "bonus_damage": 30,
+      "bonus_heal": 30,
+      "filters": [
+        "MagicPowerSpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ExtremestoneIcon",
+      "path": "textures/extremestone-v2.png"
+    }
+  ]
+}

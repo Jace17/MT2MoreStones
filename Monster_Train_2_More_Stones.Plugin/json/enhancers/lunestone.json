@@ -21,9 +21,7 @@
           "enhancer": {
             "class": "ClassLunaCoven",
             "pools": [
-              "SpellUpgradePoolCostReduction",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCostReduction"
             ],
             "rarity": "common"
           }
@@ -52,6 +50,7 @@
       },
       "icon": "@LunestoneIcon",
       "cost_reduction": 1,
+      "xCostReduction": 1,
       "card_trigger_upgrades": [
         {
           "id": "@AddPhaseTrigger"

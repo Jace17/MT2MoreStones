@@ -5,7 +5,7 @@
       "id": "UnitUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Weirdstone",
+        "english": "Madstone",
         "chinese": "不稳石"
       },
       "descriptions": {
@@ -21,11 +21,9 @@
           "enhancer": {
             "class": "ClassLazarusLeague",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolRare"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]
@@ -43,7 +41,7 @@
     {
       "id": "AddUnstable",
       "titles": {
-        "english": "Weirdstone",
+        "english": "Madstone",
         "chinese": "不稳石"
       },
       "descriptions": {
@@ -54,7 +52,7 @@
       "status_effect_upgrades": [
         {
           "status": "unstable",
-          "count": 25
+          "count": 20
         }
       ],
       "filters": [

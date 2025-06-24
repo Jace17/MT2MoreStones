@@ -21,11 +21,9 @@
           "enhancer": {
             "class": "ClassHellhorned",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolCommon"
             ],
-            "rarity": "common"
+            "rarity": "uncommon"
           }
         }
       ]
