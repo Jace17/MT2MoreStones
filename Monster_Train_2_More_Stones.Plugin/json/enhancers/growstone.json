@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to add '[propagate] [effect0.upgrade.trigger0.effect0.paramint] on all units.'",
-        "chinese": "升级一个法术，使其add '[propagate] [effect0.upgrade.trigger0.effect0.paramint] on all units。'"
+        "chinese": "升级一个法术，使其获得'使本层所有单位[propagate] [effect0.upgrade.trigger0.effect0.paramint]。'"
       },
       "relic_effects": [
         "@AddPropagateEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain '[propagate] [trigger0.effect0.paramint] on all units.'",
-        "chinese": "获得'[propagate] [trigger0.effect0.paramint] on all units。'"
+        "chinese": "获得'使本层所有单位[propagate] [trigger0.effect0.paramint]。'"
       },
       "icon": "@GrowstoneIcon",
       "card_trigger_upgrades": [
@@ -73,7 +73,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "[propagate] [effect0.paramint] on all units.",
-        "chinese": "[propagate] [effect0.paramint] on all units。"
+        "chinese": "使本层所有单位[propagate] [effect0.paramint]。"
       },
       "effects": [
         {

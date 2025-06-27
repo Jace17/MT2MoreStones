@@ -5,10 +5,12 @@
       "id": "SpellUpgradeAdvance",
       "type": "enhancer",
       "names": {
-        "english": "Frontstone"
+        "english": "Frontstone",
+        "chinese": "前进石"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [advance]."
+        "english": "Upgrade a targeted spell to add [advance].",
+        "chinese": "升级一个指定目标法术，使其获得[advance]。"
       },
       "relic_effects": [
         "@AdvanceEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddAdvance",
       "titles": {
-        "english": "Frontstone"
+        "english": "Frontstone",
+        "chinese": "前进石"
       },
       "descriptions": {
-        "english": "Gain [advance]."
+        "english": "Gain [advance].",
+        "chinese": "获得[advance]。"
       },
       "icon": "@FrontstoneIcon",
       "card_trigger_upgrades": [
@@ -70,7 +74,8 @@
       "id": "AdvanceTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[advance]."
+        "english": "[advance].",
+        "chinese": "[advance]。"
       },
       "effects": [
         {

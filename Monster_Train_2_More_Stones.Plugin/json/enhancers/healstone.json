@@ -5,10 +5,12 @@
       "id": "SpellUpgradeHeal",
       "type": "enhancer",
       "names": {
-        "english": "Healstone"
+        "english": "Healstone",
+        "chinese": "恢复石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to restore [effect0.upgrade.trigger0.effect0.power] health to friendly units."
+        "english": "Upgrade a spell to restore [effect0.upgrade.trigger0.effect0.power] health to friendly units.",
+        "chinese": "升级一个法术，使其获得'使本层所有友方单位恢复 [effect0.upgrade.trigger0.effect0.power] 点生命值。'"
       },
       "relic_effects": [
         "@HealEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddHeal",
       "titles": {
-        "english": "Healstone"
+        "english": "Healstone",
+        "chinese": "恢复石"
       },
       "descriptions": {
-        "english": "Gain 'Restore [trigger0.effect0.power] health to friendly units.'"
+        "english": "Gain 'Restore [trigger0.effect0.power] health to friendly units.'",
+        "chinese": "获得'使本层所有友方单位恢复 [trigger0.effect0.power] 点生命值。'"
       },
       "icon": "@HealstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "HealTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Restore [effect0.power] health to friendly units."
+        "english": "Restore [effect0.power] health to friendly units.",
+        "chinese": "使本层所有友方单位恢复 [effect0.power] 点生命值。"
       },
       "effects": [
         {

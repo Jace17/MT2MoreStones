@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
-        "chinese": "升级一个单位，使其获得[stealth] [effect0.upgrade.status0.power]。"
+        "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonusdamage][attack] 和[stealth] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@AddStealthEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain [stealth] [status0.power] and +[bonusdamage][attack].",
-        "chinese": "获得[stealth] [status0.power]。"
+        "chinese": "获得 +[bonusdamage][attack] 和[stealth] [status0.power]。"
       },
       "icon": "@SmokestoneIcon",
       "bonus_damage": 10,

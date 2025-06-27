@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn.'",
-        "chinese": "升级一个法术，使其add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn。'"
+        "chinese": "升级一个法术，使其获得'下个回合抽 +[effect0.upgrade.trigger0.effect0.paramint] 张牌。'"
       },
       "relic_effects": [
         "@Draw1NextTurnEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain 'Draw +[trigger0.effect0.paramint] next turn.'",
-        "chinese": "获得'Draw +[trigger0.effect0.paramint] next turn。'"
+        "chinese": "获得'下个回合抽 +[trigger0.effect0.paramint] 张牌。'"
       },
       "icon": "@SunstoneIcon",
       "card_trigger_upgrades": [
@@ -73,7 +73,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "Draw +[effect0.paramint] next turn.",
-        "chinese": "Draw +[effect0.paramint] next turn。"
+        "chinese": "下个回合抽 +[effect0.paramint] 张牌。"
       },
       "effects": [
         {

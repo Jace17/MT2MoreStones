@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to gain [phase] and -[effect0.upgrade.costreduction][ember].",
-        "chinese": "升级一个法术，使其gain [phase] and -[effect0.upgrade.costreduction][ember]。"
+        "chinese": "升级一个法术，使其获得[phase]，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@AddPhaseEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain [phase] and -[costreduction][ember].",
-        "chinese": "获得[phase] and -[costreduction][ember]。"
+        "chinese": "获得[phase]，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "icon": "@LunestoneIcon",
       "cost_reduction": 1,

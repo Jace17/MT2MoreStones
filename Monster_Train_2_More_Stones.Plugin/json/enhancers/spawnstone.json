@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to add [spawn] [effect0.upgrade.trigger0.effect0.paramint].",
-        "chinese": "升级一个法术，使其add [spawn] [effect0.upgrade.trigger0.effect0.paramint]。"
+        "chinese": "升级一个法术，使其获得'[spawn] [effect0.upgrade.trigger0.effect0.paramint]。'"
       },
       "relic_effects": [
         "@AddSpawnEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain [spawn] [trigger0.effect0.paramint].",
-        "chinese": "获得[spawn] [trigger0.effect0.paramint]。"
+        "chinese": "获得'[spawn] [trigger0.effect0.paramint]。'"
       },
       "icon": "@SpawnstoneIcon",
       "card_trigger_upgrades": [

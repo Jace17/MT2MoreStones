@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
-        "chinese": "升级一个单位，使其获得[lifesteal] [effect0.upgrade.status0.power]。"
+        "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonusdamage][attack] 和[lifesteal] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@LifestealEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack].",
-        "chinese": "获得[lifesteal] [status0.power]。"
+        "chinese": "获得 +[bonusdamage][attack] 和[lifesteal] [status0.power]。"
       },
       "icon": "@LeechstoneIcon",
       "bonus_damage": 10,

@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
-        "chinese": "升级一个法术，使其apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units。"
+        "chinese": "升级一个法术，使其'对本层所有敌方单位施加[unstable] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
         "@Unstable10Enhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain 'Apply [unstable] [trigger0.effect0.status0.power] to enemy units.'",
-        "chinese": "获得'Apply [unstable] [trigger0.effect0.status0.power] to enemy units。'"
+        "chinese": "获得'对本层所有敌方单位施加[unstable] [trigger0.effect0.status0.power]。'"
       },
       "icon": "@RadiostoneIcon",
       "card_trigger_upgrades": [
@@ -73,7 +73,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [unstable] [effect0.status0.power] to enemy units.",
-        "chinese": "Apply [unstable] [effect0.status0.power] to enemy units。"
+        "chinese": "对本层所有敌方单位施加[unstable] [effect0.status0.power]。"
       },
       "effects": [
         {

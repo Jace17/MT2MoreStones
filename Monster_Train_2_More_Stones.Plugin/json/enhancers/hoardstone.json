@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon].",
-        "chinese": "升级一个法术，使其add [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon]。"
+        "chinese": "升级一个法术，使其获得'获得 [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon]。'"
       },
       "relic_effects": [
         "@GainDragonsHoardEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain [trigger0.effect0.paramint][dragonshoardicon].",
-        "chinese": "获得[trigger0.effect0.paramint][dragonshoardicon]。"
+        "chinese": "获得'获得 [trigger0.effect0.paramint][dragonshoardicon]。'"
       },
       "icon": "@HoardstoneIcon",
       "card_trigger_upgrades": [
@@ -71,7 +71,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "Gain [effect0.paramint][dragonshoardicon].",
-        "chinese": "获得[effect0.paramint][dragonshoardicon]。"
+        "chinese": "获得 [effect0.paramint][dragonshoardicon]。"
       },
       "effects": [
         {
