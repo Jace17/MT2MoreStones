@@ -50,7 +50,7 @@
       },
       "icon": "@ValuestoneIcon",
       "cost_reduction": 3,
-      "xCostReduction": 3,
+      "x_cost_reduction": 3,
       "filters": [
         "OnlySpells",
         "ExcludeZeroCost"

@@ -50,7 +50,7 @@
       },
       "icon": "@LunestoneIcon",
       "cost_reduction": 1,
-      "xCostReduction": 1,
+      "x_cost_reduction": 1,
       "card_trigger_upgrades": [
         {
           "id": "@AddPhaseTrigger"

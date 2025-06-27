@@ -52,7 +52,7 @@
       },
       "icon": "@OfferstoneIcon",
       "cost_reduction": 1,
-      "xCostReduction": 1,
+      "x_cost_reduction": 1,
       "trait_upgrades": [
         {
           "id": "@OfferingTrait"
