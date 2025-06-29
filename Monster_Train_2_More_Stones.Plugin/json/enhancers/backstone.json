@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Backstone",
-        "chinese": "后退石"
+        "chinese": "后移石"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [retreat].",
@@ -44,7 +44,7 @@
       "id": "AddRetreat",
       "titles": {
         "english": "Backstone",
-        "chinese": "后退石"
+        "chinese": "后移石"
       },
       "descriptions": {
         "english": "Gain [retreat].",

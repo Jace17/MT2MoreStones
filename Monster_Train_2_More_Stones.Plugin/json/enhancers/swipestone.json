@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Swipestone",
-        "chinese": "横扫石"
+        "chinese": "拍击石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [sweep], but [effect0.upgrade.bonusdamage][attack].",
@@ -44,7 +44,7 @@
       "id": "AddSweep",
       "titles": {
         "english": "Swipestone",
-        "chinese": "横扫石"
+        "chinese": "拍击石"
       },
       "descriptions": {
         "english": "Gain [sweep] but [bonusdamage][attack].",

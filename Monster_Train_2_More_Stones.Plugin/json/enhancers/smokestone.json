@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Smokestone",
-        "chinese": "潜行石"
+        "chinese": "烟雾石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
@@ -44,7 +44,7 @@
       "id": "AddStealth",
       "titles": {
         "english": "Smokestone",
-        "chinese": "潜行石"
+        "chinese": "烟雾石"
       },
       "descriptions": {
         "english": "Gain [stealth] [status0.power] and +[bonusdamage][attack].",

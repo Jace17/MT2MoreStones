@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Leechstone",
-        "chinese": "吸血石"
+        "chinese": "水蛭石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
@@ -44,7 +44,7 @@
       "id": "AddLifesteal",
       "titles": {
         "english": "Leechstone",
-        "chinese": "吸血石"
+        "chinese": "水蛭石"
       },
       "descriptions": {
         "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack].",

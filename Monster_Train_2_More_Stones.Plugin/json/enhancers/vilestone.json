@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Vilestone",
-        "chinese": "腐化石"
+        "chinese": "腐败石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [corruption] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddCorruptionEffect",
       "titles": {
         "english": "Vilestone",
-        "chinese": "腐化石"
+        "chinese": "腐败石"
       },
       "descriptions": {
         "english": "Gain 'Apply [corruption] [trigger0.effect0.status0.power] to enemy units.'",

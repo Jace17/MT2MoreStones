@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Wingstone",
-        "chinese": "飞行石"
+        "chinese": "添翼石"
       },
       "descriptions": {
         "english": "Add [ability]: <b>Flight</b>.",
@@ -44,7 +44,7 @@
       "id": "AddAbilityFlight",
       "titles": {
         "english": "Wingstone",
-        "chinese": "飞行石"
+        "chinese": "添翼石"
       },
       "descriptions": {
         "english": "Gain [ability]: <b>Flight</b>.",

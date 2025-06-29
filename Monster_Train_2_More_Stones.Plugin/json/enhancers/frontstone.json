@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Frontstone",
-        "chinese": "前进石"
+        "chinese": "前移石"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [advance].",
@@ -44,7 +44,7 @@
       "id": "AddAdvance",
       "titles": {
         "english": "Frontstone",
-        "chinese": "前进石"
+        "chinese": "前移石"
       },
       "descriptions": {
         "english": "Gain [advance].",

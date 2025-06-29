@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Spawnstone",
-        "chinese": "生成石"
+        "chinese": "孢子石"
       },
       "descriptions": {
         "english": "Upgrade a spell to add [spawn] [effect0.upgrade.trigger0.effect0.paramint].",
@@ -42,7 +42,7 @@
       "id": "AddSpawn",
       "titles": {
         "english": "Spawnstone",
-        "chinese": "生成石"
+        "chinese": "孢子石"
       },
       "descriptions": {
         "english": "Gain [spawn] [trigger0.effect0.paramint].",

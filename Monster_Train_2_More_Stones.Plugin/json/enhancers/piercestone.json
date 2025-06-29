@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Truestone",
-        "chinese": "穿刺石"
+        "chinese": "真言石"
       },
       "descriptions": {
         "english": "Upgrade a spell to gain [piercing] and +[effect0.upgrade.bonusdamage] [magicpower].",
@@ -44,7 +44,7 @@
       "id": "AddPiercingTrait",
       "titles": {
         "english": "Truestone",
-        "chinese": "穿刺石"
+        "chinese": "真言石"
       },
       "descriptions": {
         "english": "Gain [piercing] and +[bonusdamage] [magicpower].",

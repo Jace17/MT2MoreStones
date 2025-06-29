@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Healstone",
-        "chinese": "恢复石"
+        "chinese": "回血石"
       },
       "descriptions": {
         "english": "Upgrade a spell to restore [effect0.upgrade.trigger0.effect0.power] health to friendly units.",
@@ -44,7 +44,7 @@
       "id": "AddHeal",
       "titles": {
         "english": "Healstone",
-        "chinese": "恢复石"
+        "chinese": "回血石"
       },
       "descriptions": {
         "english": "Gain 'Restore [trigger0.effect0.power] health to friendly units.'",

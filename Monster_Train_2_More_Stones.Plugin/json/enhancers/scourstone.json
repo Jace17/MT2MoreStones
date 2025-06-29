@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Scourstone",
-        "chinese": "石"
+        "chinese": "冲刷石"
       },
       "descriptions": {
         "english": "Upgrade a spell to remove all [buff] effects from enemy units.",
@@ -44,7 +44,7 @@
       "id": "RemoveBuff",
       "titles": {
         "english": "Scourstone",
-        "chinese": "石"
+        "chinese": "冲刷石"
       },
       "descriptions": {
         "english": "Gain 'Remove all [buff] effects from enemy units.'",

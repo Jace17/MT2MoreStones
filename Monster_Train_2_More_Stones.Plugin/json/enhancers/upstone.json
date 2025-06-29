@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Upstone",
-        "chinese": "上升石"
+        "chinese": "上移石"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [ascend].",
@@ -44,7 +44,7 @@
       "id": "AddAscend",
       "titles": {
         "english": "Upstone",
-        "chinese": "上升石"
+        "chinese": "上移石"
       },
       "descriptions": {
         "english": "Gain [ascend].",

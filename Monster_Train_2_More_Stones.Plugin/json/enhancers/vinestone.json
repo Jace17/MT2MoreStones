@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Vinestone",
-        "chinese": "缠绕石"
+        "chinese": "藤蔓石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [rooted] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddRootedEffect",
       "titles": {
         "english": "Vinestone",
-        "chinese": "缠绕石"
+        "chinese": "藤蔓石"
       },
       "descriptions": {
         "english": "Gain 'Apply [rooted] [trigger0.effect0.status0.power] to enemy units.'",

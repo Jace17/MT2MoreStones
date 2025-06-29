@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Sunstone",
-        "chinese": "抽牌石"
+        "chinese": "太阳石"
       },
       "descriptions": {
         "english": "Upgrade a spell to add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn.'",
@@ -44,7 +44,7 @@
       "id": "AddDraw1NextTurn",
       "titles": {
         "english": "Sunstone",
-        "chinese": "抽牌石"
+        "chinese": "太阳石"
       },
       "descriptions": {
         "english": "Gain 'Draw +[trigger0.effect0.paramint] next turn.'",

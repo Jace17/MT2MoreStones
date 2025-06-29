@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Downstone",
-        "chinese": "下降石"
+        "chinese": "下移石"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [descend].",
@@ -44,7 +44,7 @@
       "id": "AddDescend",
       "titles": {
         "english": "Downstone",
-        "chinese": "下降石"
+        "chinese": "下移石"
       },
       "descriptions": {
         "english": "Gain [descend].",

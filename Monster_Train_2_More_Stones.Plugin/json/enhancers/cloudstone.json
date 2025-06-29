@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Cloudstone",
-        "chinese": "转移石"
+        "chinese": "腾云石"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
@@ -42,7 +42,7 @@
       "id": "AddShift",
       "titles": {
         "english": "Cloudstone",
-        "chinese": "转移石"
+        "chinese": "腾云石"
       },
       "descriptions": {
         "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",

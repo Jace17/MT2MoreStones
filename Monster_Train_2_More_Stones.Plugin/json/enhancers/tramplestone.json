@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Stompstone",
-        "chinese": "践踏石"
+        "chinese": "蹂躏石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [trample].",
@@ -44,7 +44,7 @@
       "id": "AddTrample",
       "titles": {
         "english": "Stompstone",
-        "chinese": "践踏石"
+        "chinese": "蹂躏石"
       },
       "descriptions": {
         "english": "Gain [trample].",

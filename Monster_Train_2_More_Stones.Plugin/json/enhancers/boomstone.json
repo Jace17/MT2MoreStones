@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Boomstone",
-        "chinese": "爆炸石"
+        "chinese": "爆破石"
       },
       "descriptions": {
         "english": "Upgrade a spell to gain <b>Explosive</b> and +[effect0.upgrade.bonusdamage] [magicpower].",
@@ -44,7 +44,7 @@
       "id": "AddExplosiveTrait",
       "titles": {
         "english": "Boomstone",
-        "chinese": "爆炸石"
+        "chinese": "爆破石"
       },
       "descriptions": {
         "english": "Gain <b>Explosive</b> and +[bonusdamage] [magicpower].",

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Radstone",
-        "chinese": "不稳石"
+        "chinese": "辐射石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddUnstableEffect",
       "titles": {
         "english": "Radstone",
-        "chinese": "不稳石"
+        "chinese": "辐射石"
       },
       "descriptions": {
         "english": "Gain 'Apply [unstable] [trigger0.effect0.status0.power] to enemy units.'",

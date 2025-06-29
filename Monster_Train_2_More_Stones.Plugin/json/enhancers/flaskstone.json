@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Flaskstone",
-        "chinese": "调配石"
+        "chinese": "试剂石"
       },
       "descriptions": {
         "english": "Upgrade a spell to add [mix].",
@@ -42,7 +42,7 @@
       "id": "AddMix",
       "titles": {
         "english": "Flaskstone",
-        "chinese": "调配石"
+        "chinese": "试剂石"
       },
       "descriptions": {
         "english": "Gain [mix].",

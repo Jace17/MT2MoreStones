@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Madstone",
-        "chinese": "不稳石"
+        "chinese": "癫狂石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [unstable] [effect0.upgrade.status0.power].",
@@ -42,7 +42,7 @@
       "id": "AddUnstable",
       "titles": {
         "english": "Madstone",
-        "chinese": "不稳石"
+        "chinese": "癫狂石"
       },
       "descriptions": {
         "english": "Gain [unstable] [status0.power].",

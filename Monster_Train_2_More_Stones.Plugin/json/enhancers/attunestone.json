@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Tunestone",
-        "chinese": "调和石"
+        "chinese": "调音石"
       },
       "descriptions": {
         "english": "Upgrade a spell to gain [attuned].",
@@ -44,7 +44,7 @@
       "id": "AddAttunedTrait",
       "titles": {
         "english": "Tunestone",
-        "chinese": "调和石"
+        "chinese": "调音石"
       },
       "descriptions": {
         "english": "Gain [attuned].",

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Weakstone",
-        "chinese": "物伤石"
+        "chinese": "破防石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [meleeweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddMeleeWeaknessEffect",
       "titles": {
         "english": "Weakstone",
-        "chinese": "物伤石"
+        "chinese": "破防石"
       },
       "descriptions": {
         "english": "Gain 'Apply [meleeweakness] [trigger0.effect0.status0.power] to enemy units.'",

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Bladestone",
-        "chinese": "魔刃石"
+        "chinese": "刀刃石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [mageblade] [effect0.upgrade.status0.power].",
@@ -42,7 +42,7 @@
       "id": "AddMageblade",
       "titles": {
         "english": "Bladestone",
-        "chinese": "魔刃石"
+        "chinese": "刀刃石"
       },
       "descriptions": {
         "english": "Gain [mageblade] [status0.power].",

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Trainstone",
-        "chinese": "零费石"
+        "chinese": "火车石"
       },
       "descriptions": {
         "english": "Upgrade a unit to make it <b>0</b>[ember].",
@@ -44,7 +44,7 @@
       "id": "FreeUnit",
       "titles": {
         "english": "Trainstone",
-        "chinese": "零费石"
+        "chinese": "火车石"
       },
       "descriptions": {
         "english": "<b>0</b>[ember].",

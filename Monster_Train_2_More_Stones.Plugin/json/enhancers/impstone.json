@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Impstone",
-        "chinese": "小鬼石"
+        "chinese": "碎尾石"
       },
       "descriptions": {
         "english": "Upgrade a spell to add 'Add a common or uncommon [imp] unit to your hand.'",
@@ -42,7 +42,7 @@
       "id": "AddImpToHand",
       "titles": {
         "english": "Impstone",
-        "chinese": "小鬼石"
+        "chinese": "碎尾石"
       },
       "descriptions": {
         "english": "Gain 'Add a common or uncommon [imp] unit to your hand.'",

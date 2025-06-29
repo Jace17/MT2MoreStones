@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Meekstone",
-        "chinese": "弱化石"
+        "chinese": "驯化石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [sap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddSapEffect",
       "titles": {
         "english": "Meekstone",
-        "chinese": "弱化石"
+        "chinese": "驯化石"
       },
       "descriptions": {
         "english": "Gain 'Apply [sap] [trigger0.effect0.status0.power] to enemy units.'",

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Plaguestone",
-        "chinese": "腐朽石"
+        "chinese": "瘟疫石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [decay] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddDecayEffect",
       "titles": {
         "english": "Plaguestone",
-        "chinese": "腐朽石"
+        "chinese": "瘟疫石"
       },
       "descriptions": {
         "english": "Gain 'Apply [decay] [trigger0.effect0.status0.power] to enemy units.'",

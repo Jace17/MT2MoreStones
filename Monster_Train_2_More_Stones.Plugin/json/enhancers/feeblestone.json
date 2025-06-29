@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Feeblestone",
-        "chinese": "法伤石"
+        "chinese": "破魔石"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [spellweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -44,7 +44,7 @@
       "id": "AddSpellWeaknessEffect",
       "titles": {
         "english": "Feeblestone",
-        "chinese": "法伤石"
+        "chinese": "破魔石"
       },
       "descriptions": {
         "english": "Gain 'Apply [spellweakness] [trigger0.effect0.status0.power] to enemy units.'",

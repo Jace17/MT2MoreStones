@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Formstone",
-        "chinese": "改造石"
+        "chinese": "塑造石"
       },
       "descriptions": {
         "english": "Upgrade a spell to add '[raise] a random unit.'",
@@ -42,7 +42,7 @@
       "id": "AddReform",
       "titles": {
         "english": "Formstone",
-        "chinese": "改造石"
+        "chinese": "塑造石"
       },
       "descriptions": {
         "english": "Gain '[raise] a random unit.'",

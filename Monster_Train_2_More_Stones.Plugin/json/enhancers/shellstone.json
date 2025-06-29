@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Shellstone",
-        "chinese": "坦肤石"
+        "chinese": "甲壳石"
       },
       "descriptions": {
         "english": "Upgrade a unit with [titanskin] [effect0.upgrade.status0.power].",
@@ -44,7 +44,7 @@
       "id": "AddTitanskin2",
       "titles": {
         "english": "Shellstone",
-        "chinese": "坦肤石"
+        "chinese": "甲壳石"
       },
       "descriptions": {
         "english": "Gain [titanskin] [status0.power].",

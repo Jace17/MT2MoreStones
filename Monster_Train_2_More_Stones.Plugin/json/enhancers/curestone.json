@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Curestone",
-        "chinese": "治愈石"
+        "chinese": "洗涤石"
       },
       "descriptions": {
         "english": "Upgrade a spell to remove all [debuff] effects from friendly units.",
@@ -44,7 +44,7 @@
       "id": "RemoveDebuff",
       "titles": {
         "english": "Curestone",
-        "chinese": "治愈石"
+        "chinese": "洗涤石"
       },
       "descriptions": {
         "english": "Gain 'Remove all [debuff] effects from friendly units.'",
