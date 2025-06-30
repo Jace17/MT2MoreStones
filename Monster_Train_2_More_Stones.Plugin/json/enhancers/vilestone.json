@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [corruption] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
-        "chinese": "升级一个法术，使其'对本层所有敌方单位施加[corruption] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[corruption] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
         "@CorruptionEnhancer"
