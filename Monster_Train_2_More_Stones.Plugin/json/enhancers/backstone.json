@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [retreat].",
-        "chinese": "升级一个指定目标法术，使其获得[retreat]。"
+        "chinese": "升级一个指定目标法术，使其获得'[retreat]。'"
       },
       "relic_effects": [
         "@RetreatEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain [retreat].",
-        "chinese": "获得[retreat]。"
+        "chinese": "获得'[retreat]。'"
       },
       "icon": "@BackstoneIcon",
       "card_trigger_upgrades": [

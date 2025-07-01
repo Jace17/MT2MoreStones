@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [ascend].",
-        "chinese": "升级一个指定目标法术，使其获得[ascend]。"
+        "chinese": "升级一个指定目标法术，使其获得'[ascend]。'"
       },
       "relic_effects": [
         "@AscendEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain [ascend].",
-        "chinese": "获得[ascend]。"
+        "chinese": "获得'[ascend]。'"
       },
       "icon": "@UpstoneIcon",
       "card_trigger_upgrades": [

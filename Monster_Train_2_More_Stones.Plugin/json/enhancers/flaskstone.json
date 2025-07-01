@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a spell to add [mix].",
-        "chinese": "升级一个法术，使其获得[mix]。"
+        "chinese": "升级一个法术，使其获得'[mix]。'"
       },
       "relic_effects": [
         "@AddMixEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain [mix].",
-        "chinese": "获得[mix]。"
+        "chinese": "获得'[mix]。'"
       },
       "icon": "@FlaskstoneIcon",
       "card_trigger_upgrades": [

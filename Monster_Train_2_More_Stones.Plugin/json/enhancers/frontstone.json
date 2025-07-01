@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [advance].",
-        "chinese": "升级一个指定目标法术，使其获得[advance]。"
+        "chinese": "升级一个指定目标法术，使其获得'[advance]。'"
       },
       "relic_effects": [
         "@AdvanceEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain [advance].",
-        "chinese": "获得[advance]。"
+        "chinese": "获得'[advance]。'"
       },
       "icon": "@FrontstoneIcon",
       "card_trigger_upgrades": [
