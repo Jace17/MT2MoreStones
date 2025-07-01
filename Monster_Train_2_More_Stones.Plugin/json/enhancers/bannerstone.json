@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with [deployable] and +[effect0.upgrade.bonusdamage][attack].",
-        "chinese": "升级一个单位，使其获得[deployable]和 +[effect0.upgrade.bonusdamage][attack]。"
+        "chinese": "升级一个单位，使其获得[deployable]，+[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
         "@DeployableEnhancer"
@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "Gain [deployable] and +[bonusdamage][attack].",
-        "chinese": "获得[deployable]和 +[bonusdamage][attack]。"
+        "chinese": "获得[deployable]，+[bonusdamage][attack]。"
       },
       "icon": "@BannerstoneIcon",
       "bonus_damage": 10,
