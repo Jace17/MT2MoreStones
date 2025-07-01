@@ -2,7 +2,7 @@
 
 支持的语言: [English](https://github.com/Jace17/MT2MoreStones/blob/main/README.md) | 简体中文
 
-该模组为《怪物火车 2》增添了一些用于升级卡牌的石头。
+本模组为《怪物火车 2》增添了一些用于升级卡牌的石头。
 
 # 模组内容
 
@@ -15,12 +15,12 @@
 
 # 警告
 
-该模组是非装扮类模组，不应该在社区挑战或者每日挑战内使用该模组，通过该模组在上述挑战中刷得高分会导致您被封禁。
+本模组是非装扮类模组，不应该在社区挑战或者每日挑战内使用本模组，通过本模组在上述挑战中刷得高分会导致您被封禁。
 
 # 建议一同使用的模组
 
 - [商店无限购买](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/MT2UnlimitedPurchases/) - 可以使商店无限刷新，以解决升级石抽选池扩大的问题
-- [勇者可升级](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/Upgrade_Champions_2/) - 可以将该模组的升级石打到勇者身上
+- [勇者可升级](https://thunderstore.io/c/monster-train-2/p/GravitonGamer/Upgrade_Champions_2/) - 可以将本模组的升级石打到勇者身上
 
 如果你喜欢这个模组或者我制作的其他模组，可以点击[这里](https://ko-fi.com/gravitongamer)赞助我。
 
