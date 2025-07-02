@@ -5,10 +5,12 @@
       "id": "SpellUpgradeExplosive",
       "type": "enhancer",
       "names": {
-        "english": "Boomstone"
+        "english": "Boomstone",
+        "chinese": "爆破石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain <b>Explosive</b> and +[effect0.upgrade.bonusdamage] [magicpower]."
+        "english": "Upgrade a spell to gain <b>Explosive</b> and +[effect0.upgrade.bonusdamage] [magicpower].",
+        "chinese": "升级一个法术，使其获得<b>爆炸</b>，+[effect0.upgrade.bonusdamage] [magicpower]。"
       },
       "relic_effects": [
         "@ExplosiveEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddExplosiveTrait",
       "titles": {
-        "english": "Boomstone"
+        "english": "Boomstone",
+        "chinese": "爆破石"
       },
       "descriptions": {
-        "english": "Gain <b>Explosive</b> and +[bonusdamage] [magicpower]."
+        "english": "Gain <b>Explosive</b> and +[bonusdamage] [magicpower].",
+        "chinese": "获得<b>爆炸</b>，+[bonusdamage] [magicpower]。"
       },
       "icon": "@BoomstoneIcon",
       "trait_upgrades": [

@@ -5,10 +5,12 @@
       "id": "SpellUpgradeExtreme",
       "type": "enhancer",
       "names": {
-        "english": "Extremestone"
+        "english": "Extremestone",
+        "chinese": "极限石"
       },
       "descriptions": {
-        "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower]."
+        "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower].",
+        "chinese": "升级一个法术，使其获得 +[effect0.upgrade.bonusdamage] [magicpower]。"
       },
       "relic_effects": [
         "@ExtremeEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "ExtremeUpgrade",
       "titles": {
-        "english": "Extremestone"
+        "english": "Extremestone",
+        "chinese": "极限石"
       },
       "descriptions": {
-        "english": "+[bonusdamage] [magicpower]."
+        "english": "+[bonusdamage] [magicpower].",
+        "chinese": "+[bonusdamage] [magicpower]。"
       },
       "icon": "@ExtremestoneIcon",
       "bonus_damage": 30,

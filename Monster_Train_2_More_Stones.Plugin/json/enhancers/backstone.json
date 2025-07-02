@@ -5,10 +5,12 @@
       "id": "SpellUpgradeRetreat",
       "type": "enhancer",
       "names": {
-        "english": "Backstone"
+        "english": "Backstone",
+        "chinese": "后移石"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [retreat]."
+        "english": "Upgrade a targeted spell to add [retreat].",
+        "chinese": "升级一个指定目标法术，使其获得'[retreat]。'"
       },
       "relic_effects": [
         "@RetreatEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddRetreat",
       "titles": {
-        "english": "Backstone"
+        "english": "Backstone",
+        "chinese": "后移石"
       },
       "descriptions": {
-        "english": "Gain [retreat]."
+        "english": "Gain [retreat].",
+        "chinese": "获得'[retreat]。'"
       },
       "icon": "@BackstoneIcon",
       "card_trigger_upgrades": [
@@ -70,7 +74,8 @@
       "id": "RetreatTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[retreat]."
+        "english": "[retreat].",
+        "chinese": "[retreat]。"
       },
       "effects": [
         {

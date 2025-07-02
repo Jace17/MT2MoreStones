@@ -5,10 +5,12 @@
       "id": "SpellUpgradeAddImp",
       "type": "enhancer",
       "names": {
-        "english": "Impstone"
+        "english": "Impstone",
+        "chinese": "碎尾石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Add a common or uncommon [imp] unit to your hand.'"
+        "english": "Upgrade a spell to add 'Add a common or uncommon [imp] unit to your hand.'",
+        "chinese": "升级一个法术，使其获得'将一个普通或高级[imp]单位加入你的手牌。'"
       },
       "relic_effects": [
         "@AddImpEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddImpToHand",
       "titles": {
-        "english": "Impstone"
+        "english": "Impstone",
+        "chinese": "碎尾石"
       },
       "descriptions": {
-        "english": "Gain 'Add a common or uncommon [imp] unit to your hand.'"
+        "english": "Gain 'Add a common or uncommon [imp] unit to your hand.'",
+        "chinese": "获得'将一个普通或高级[imp]单位加入你的手牌。'"
       },
       "icon": "@ImpstoneIcon",
       "card_trigger_upgrades": [
@@ -66,7 +70,8 @@
       "id": "AddImpToHandTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Add a common or uncommon [imp] unit to your hand."
+        "english": "Add a common or uncommon [imp] unit to your hand.",
+        "chinese": "将一个普通或高级[imp]单位加入你的手牌。"
       },
       "effects": [
         {

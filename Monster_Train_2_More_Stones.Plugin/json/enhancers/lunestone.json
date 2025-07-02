@@ -5,10 +5,12 @@
       "id": "SpellUpgradePhase",
       "type": "enhancer",
       "names": {
-        "english": "Lunestone"
+        "english": "Lunestone",
+        "chinese": "月相石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain [phase] and -[effect0.upgrade.costreduction][ember]."
+        "english": "Upgrade a spell to gain [phase] and -[effect0.upgrade.costreduction][ember].",
+        "chinese": "升级一个法术，使其获得'[phase]'，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@AddPhaseEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddPhase",
       "titles": {
-        "english": "Lunestone"
+        "english": "Lunestone",
+        "chinese": "月相石"
       },
       "descriptions": {
-        "english": "Gain [phase] and -[costreduction][ember]."
+        "english": "Gain [phase] and -[costreduction][ember].",
+        "chinese": "获得'[phase]'，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "icon": "@LunestoneIcon",
       "cost_reduction": 1,
@@ -68,7 +72,8 @@
       "id": "AddPhaseTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[phase]."
+        "english": "[phase].",
+        "chinese": "[phase]。"
       },
       "effects": [
         {

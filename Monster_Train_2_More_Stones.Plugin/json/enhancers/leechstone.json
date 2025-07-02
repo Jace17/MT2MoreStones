@@ -5,10 +5,12 @@
       "id": "UnitUpgradeLifesteal",
       "type": "enhancer",
       "names": {
-        "english": "Leechstone"
+        "english": "Leechstone",
+        "chinese": "水蛭石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack]."
+        "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得[lifesteal] [effect0.upgrade.status0.power]，+[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
         "@LifestealEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddLifesteal",
       "titles": {
-        "english": "Leechstone"
+        "english": "Leechstone",
+        "chinese": "水蛭石"
       },
       "descriptions": {
-        "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack]."
+        "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack].",
+        "chinese": "获得[lifesteal] [status0.power]，+[bonusdamage][attack]。"
       },
       "icon": "@LeechstoneIcon",
       "bonus_damage": 10,

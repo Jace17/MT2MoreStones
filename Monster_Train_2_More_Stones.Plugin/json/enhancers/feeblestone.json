@@ -5,10 +5,12 @@
       "id": "SpellUpgradeSpellWeakness",
       "type": "enhancer",
       "names": {
-        "english": "Feeblestone"
+        "english": "Feeblestone",
+        "chinese": "破魔石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [spellweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [spellweakness] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[spellweakness] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
         "@SpellWeaknessEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddSpellWeaknessEffect",
       "titles": {
-        "english": "Feeblestone"
+        "english": "Feeblestone",
+        "chinese": "破魔石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [spellweakness] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [spellweakness] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[spellweakness] [trigger0.effect0.status0.power]。'"
       },
       "icon": "@FeeblestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplySpellWeaknessTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [spellweakness] [effect0.status0.power] to enemy units."
+        "english": "Apply [spellweakness] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[spellweakness] [effect0.status0.power]。"
       },
       "effects": [
         {

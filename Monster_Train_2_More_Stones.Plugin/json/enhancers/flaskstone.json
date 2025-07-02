@@ -5,10 +5,12 @@
       "id": "SpellUpgradeMix",
       "type": "enhancer",
       "names": {
-        "english": "Flaskstone"
+        "english": "Flaskstone",
+        "chinese": "试剂石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [mix]."
+        "english": "Upgrade a spell to add [mix].",
+        "chinese": "升级一个法术，使其获得'[mix]。'"
       },
       "relic_effects": [
         "@AddMixEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddMix",
       "titles": {
-        "english": "Flaskstone"
+        "english": "Flaskstone",
+        "chinese": "试剂石"
       },
       "descriptions": {
-        "english": "Gain [mix]."
+        "english": "Gain [mix].",
+        "chinese": "获得'[mix]。'"
       },
       "icon": "@FlaskstoneIcon",
       "card_trigger_upgrades": [
@@ -66,7 +70,8 @@
       "id": "AddMixTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[mix]."
+        "english": "[mix].",
+        "chinese": "[mix]。"
       },
       "effects": [
         {

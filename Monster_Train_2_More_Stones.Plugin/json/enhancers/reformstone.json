@@ -5,10 +5,12 @@
       "id": "SpellUpgradeReform",
       "type": "enhancer",
       "names": {
-        "english": "Formstone"
+        "english": "Formstone",
+        "chinese": "塑造石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add '<b>Reform</b> a random unit.'"
+        "english": "Upgrade a spell to add '[raise] a random unit.'",
+        "chinese": "升级一个法术，使其获得'随机[raise]一个单位。'"
       },
       "relic_effects": [
         "@AddReformEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddReform",
       "titles": {
-        "english": "Formstone"
+        "english": "Formstone",
+        "chinese": "塑造石"
       },
       "descriptions": {
-        "english": "Gain '<b>Reform</b> a random unit.'"
+        "english": "Gain '[raise] a random unit.'",
+        "chinese": "获得'随机[raise]一个单位。'"
       },
       "icon": "@ReformstoneIcon",
       "card_trigger_upgrades": [
@@ -66,7 +70,8 @@
       "id": "AddReformTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "<b>Reform</b> a random unit."
+        "english": "[raise] a random unit.",
+        "chinese": "随机[raise]一个单位。"
       },
       "effects": [
         {

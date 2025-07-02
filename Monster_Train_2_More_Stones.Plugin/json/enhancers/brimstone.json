@@ -5,10 +5,12 @@
       "id": "SpellUpgradeDamage",
       "type": "enhancer",
       "names": {
-        "english": "Brimstone"
+        "english": "Brimstone",
+        "chinese": "硫黄石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to deal [effect0.upgrade.trigger0.effect0.power] damage to enemy units."
+        "english": "Upgrade a spell to deal [effect0.upgrade.trigger0.effect0.power] damage to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位造成 [effect0.upgrade.trigger0.effect0.power] 点伤害。'"
       },
       "relic_effects": [
         "@DamageAllEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddDamageAll",
       "titles": {
-        "english": "Brimstone"
+        "english": "Brimstone",
+        "chinese": "硫黄石"
       },
       "descriptions": {
-        "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'"
+        "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位造成 [trigger0.effect0.power] 点伤害。'"
       },
       "icon": "@BrimstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "DamageAllTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Deal [effect0.power] damage to enemy units."
+        "english": "Deal [effect0.power] damage to enemy units.",
+        "chinese": "对本层所有敌方单位造成 [effect0.power] 点伤害。"
       },
       "effects": [
         {

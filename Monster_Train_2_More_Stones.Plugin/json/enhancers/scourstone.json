@@ -5,10 +5,12 @@
       "id": "SpellUpgradeRemoveBuff",
       "type": "enhancer",
       "names": {
-        "english": "Scourstone"
+        "english": "Scourstone",
+        "chinese": "冲刷石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to remove all [buff] effects from enemy units."
+        "english": "Upgrade a spell to remove all [buff] effects from enemy units.",
+        "chinese": "升级一个法术，使其获得'移除本层所有敌方单位身上的所有[buff]效果。'"
       },
       "relic_effects": [
         "@RemoveBuffEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "RemoveBuff",
       "titles": {
-        "english": "Scourstone"
+        "english": "Scourstone",
+        "chinese": "冲刷石"
       },
       "descriptions": {
-        "english": "Gain 'Remove all [buff] effects from enemy units.'"
+        "english": "Gain 'Remove all [buff] effects from enemy units.'",
+        "chinese": "获得'移除本层所有敌方单位身上的所有[buff]效果。'"
       },
       "icon": "@ScourstoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "RemoveBuffTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Remove all [buff] effects from enemy units."
+        "english": "Remove all [buff] effects from enemy units.",
+        "chinese": "移除本层所有敌方单位身上的所有[buff]效果。"
       },
       "effects": [
         {

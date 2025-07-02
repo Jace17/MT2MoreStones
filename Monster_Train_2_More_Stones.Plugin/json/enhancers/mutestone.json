@@ -5,10 +5,12 @@
       "id": "SpellUpgradeMute",
       "type": "enhancer",
       "names": {
-        "english": "Mutestone"
+        "english": "Mutestone",
+        "chinese": "沉默石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [mute] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [mute] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[mute] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
         "@MuteEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddMuteEffect",
       "titles": {
-        "english": "Mutestone"
+        "english": "Mutestone",
+        "chinese": "沉默石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [mute] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [mute] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[mute] [trigger0.effect0.status0.power]。'"
       },
       "icon": "@MutestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyMuteTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [mute] [effect0.status0.power] to enemy units."
+        "english": "Apply [mute] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[mute] [effect0.status0.power]。"
       },
       "effects": [
         {

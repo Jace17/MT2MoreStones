@@ -5,10 +5,12 @@
       "id": "SpellUpgradeRemoveDebuff",
       "type": "enhancer",
       "names": {
-        "english": "Curestone"
+        "english": "Curestone",
+        "chinese": "洗涤石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to remove all [debuff] effects from friendly units."
+        "english": "Upgrade a spell to remove all [debuff] effects from friendly units.",
+        "chinese": "升级一个法术，使其获得'移除本层所有友方单位身上的所有[debuff]效果。'"
       },
       "relic_effects": [
         "@RemoveDebuffEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "RemoveDebuff",
       "titles": {
-        "english": "Curestone"
+        "english": "Curestone",
+        "chinese": "洗涤石"
       },
       "descriptions": {
-        "english": "Gain 'Remove all [debuff] effects from friendly units.'"
+        "english": "Gain 'Remove all [debuff] effects from friendly units.'",
+        "chinese": "获得'移除本层所有友方单位身上的所有[debuff]效果。'"
       },
       "icon": "@CurestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "RemoveDebuffTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Remove all [debuff] effects from friendly units."
+        "english": "Remove all [debuff] effects from friendly units.",
+        "chinese": "移除本层所有友方单位身上的所有[debuff]效果。"
       },
       "effects": [
         {

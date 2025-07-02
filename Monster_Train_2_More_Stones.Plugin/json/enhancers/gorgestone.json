@@ -5,10 +5,12 @@
       "id": "UnitUpgradeGorge",
       "type": "enhancer",
       "names": {
-        "english": "Gorgestone"
+        "english": "Gorgestone",
+        "chinese": "暴食石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@GorgeEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddGorge",
       "titles": {
-        "english": "Gorgestone"
+        "english": "Gorgestone",
+        "chinese": "暴食石"
       },
       "descriptions": {
-        "english": "Gain '[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@GorgestoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "GorgeAdd2Attack2HealthTrigger",
       "trigger": "on_feed",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {

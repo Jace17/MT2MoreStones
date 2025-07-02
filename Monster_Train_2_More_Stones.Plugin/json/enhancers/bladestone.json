@@ -5,10 +5,12 @@
       "id": "UnitUpgradeMageblade",
       "type": "enhancer",
       "names": {
-        "english": "Bladestone"
+        "english": "Bladestone",
+        "chinese": "刀刃石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [mageblade] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [mageblade] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[mageblade] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@AddMagebladeEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddMageblade",
       "titles": {
-        "english": "Bladestone"
+        "english": "Bladestone",
+        "chinese": "刀刃石"
       },
       "descriptions": {
-        "english": "Gain [mageblade] [status0.power]."
+        "english": "Gain [mageblade] [status0.power].",
+        "chinese": "获得[mageblade] [status0.power]。"
       },
       "icon": "@BladestoneIcon",
       "status_effect_upgrades": [

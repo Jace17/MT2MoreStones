@@ -5,10 +5,12 @@
       "id": "SpellUpgradeOffering",
       "type": "enhancer",
       "names": {
-        "english": "Offerstone"
+        "english": "Offerstone",
+        "chinese": "献祭石"
       },
       "descriptions": {
-        "english": "Upgrade a targetless spell to gain <b>Offering</b> and -[effect0.upgrade.costreduction][ember]."
+        "english": "Upgrade a targetless spell to gain <b>Offering</b> and -[effect0.upgrade.costreduction][ember].",
+        "chinese": "升级一个非指定目标法术，使其获得<b>献祭</b>，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@OfferingEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddOfferingTrait",
       "titles": {
-        "english": "Offerstone"
+        "english": "Offerstone",
+        "chinese": "献祭石"
       },
       "descriptions": {
-        "english": "Gain <b>Offering</b> and -[costreduction][ember]."
+        "english": "Gain <b>Offering</b> and -[costreduction][ember].",
+        "chinese": "获得<b>献祭</b>，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "icon": "@OfferstoneIcon",
       "cost_reduction": 1,

@@ -5,10 +5,12 @@
       "id": "UnitUpgradeRejuvenate",
       "type": "enhancer",
       "names": {
-        "english": "Bloomstone"
+        "english": "Bloomstone",
+        "chinese": "盛开石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@RejuvenateEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddRejuvenate",
       "titles": {
-        "english": "Bloomstone"
+        "english": "Bloomstone",
+        "chinese": "盛开石"
       },
       "descriptions": {
-        "english": "Gain '[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@BloomstoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "RejuvenateAdd4Attack4HealthTrigger",
       "trigger": "on_heal",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {

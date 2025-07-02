@@ -1,5 +1,7 @@
 # MT2 More Upgrade Stones
 
+Support language: English | [简体中文](https://github.com/Jace17/MT2MoreStones/blob/main/README_zh.md)
+
 A mod for Monster Train 2 that adds several new upgrade options for cards.
 
 # Features

@@ -5,10 +5,12 @@
       "id": "UnitUpgradeFree",
       "type": "enhancer",
       "names": {
-        "english": "Trainstone"
+        "english": "Trainstone",
+        "chinese": "火车石"
       },
       "descriptions": {
-        "english": "Upgrade a unit to make it <b>0</b>[ember]."
+        "english": "Upgrade a unit to make it <b>0</b>[ember].",
+        "chinese": "升级一个单位，使其费用变成 <b>0</b>[ember]。"
       },
       "relic_effects": [
         "@FreeUnitEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "FreeUnit",
       "titles": {
-        "english": "Trainstone"
+        "english": "Trainstone",
+        "chinese": "火车石"
       },
       "descriptions": {
-        "english": "<b>0</b>[ember]."
+        "english": "<b>0</b>[ember].",
+        "chinese": "<b>0</b>[ember]。"
       },
       "icon": "@TrainstoneIcon",
       "cost_reduction": 99,

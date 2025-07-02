@@ -5,10 +5,12 @@
       "id": "UnitUpgradeAddArmor",
       "type": "enhancer",
       "names": {
-        "english": "Armorstone"
+        "english": "Armorstone",
+        "chinese": "护甲石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [armor] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [armor] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[armor] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@AddArmorEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddArmor",
       "titles": {
-        "english": "Armorstone"
+        "english": "Armorstone",
+        "chinese": "护甲石"
       },
       "descriptions": {
-        "english": "Gain [armor] [status0.power]."
+        "english": "Gain [armor] [status0.power].",
+        "chinese": "获得[armor] [status0.power]。"
       },
       "icon": "@ArmorstoneIcon",
       "status_effect_upgrades": [

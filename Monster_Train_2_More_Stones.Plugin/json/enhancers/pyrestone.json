@@ -5,10 +5,12 @@
       "id": "SpellUpgradePyregel",
       "type": "enhancer",
       "names": {
-        "english": "Pyrestone"
+        "english": "Pyrestone",
+        "chinese": "薪火石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [pyregel] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [pyregel] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[pyregel] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
         "@PyregelEnhancer"
@@ -41,10 +43,12 @@
     {
       "id": "AddPyregelEffect",
       "titles": {
-        "english": "Pyrestone"
+        "english": "Pyrestone",
+        "chinese": "薪火石"
       },
       "descriptions": {
-        "english": "Gain 'Apply [pyregel] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [pyregel] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[pyregel] [trigger0.effect0.status0.power]。'"
       },
       "icon": "@PyrestoneIcon",
       "card_trigger_upgrades": [
@@ -68,7 +72,8 @@
       "id": "ApplyPyregelTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [pyregel] [effect0.status0.power] to enemy units."
+        "english": "Apply [pyregel] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[pyregel] [effect0.status0.power]。"
       },
       "effects": [
         {

@@ -5,10 +5,12 @@
       "id": "UnitUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Madstone"
+        "english": "Madstone",
+        "chinese": "癫狂石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [unstable] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [unstable] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[unstable] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
         "@Unstable25Enhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddUnstable",
       "titles": {
-        "english": "Madstone"
+        "english": "Madstone",
+        "chinese": "癫狂石"
       },
       "descriptions": {
-        "english": "Gain [unstable] [status0.power]."
+        "english": "Gain [unstable] [status0.power].",
+        "chinese": "获得[unstable] [status0.power]。"
       },
       "icon": "@WeirdstoneIcon",
       "status_effect_upgrades": [
