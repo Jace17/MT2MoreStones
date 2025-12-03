@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with '<b>Artificer</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "升级一个单位，使其获得'<b>巧匠</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "升级一个单位，使其获得'<b>巧匠</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@ArtificerEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain '<b>Artificer</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "获得'<b>巧匠</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "获得'<b>巧匠</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@ForgestoneIcon",
       "trigger_upgrades": [

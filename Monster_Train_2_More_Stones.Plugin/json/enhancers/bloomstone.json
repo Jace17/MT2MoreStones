@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with '[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "升级一个单位，使其获得'[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "升级一个单位，使其获得'[rejuvenate]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@RejuvenateEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain '[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "获得'[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "获得'[rejuvenate]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@BloomstoneIcon",
       "trigger_upgrades": [

@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with '[mooncycle]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "升级一个单位，使其获得'[mooncycle]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "升级一个单位，使其获得'[mooncycle]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@MooncycleEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain '[mooncycle]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "获得'[mooncycle]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "获得'[mooncycle]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@CyclestoneIcon",
       "trigger_upgrades": [
