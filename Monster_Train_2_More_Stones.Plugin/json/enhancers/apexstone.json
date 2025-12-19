@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with '<b>Armored</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].'",
-        "chinese": "升级一个单位，使其获得'<b>带甲</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
+        "chinese": "升级一个单位，使其获得'<b>带甲</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
       },
       "relic_effects": [
         "@ArmoredEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain '<b>Armored</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].'",
-        "chinese": "获得'<b>带甲</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
+        "chinese": "获得'<b>带甲</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
       },
       "icon": "@ApexstoneIcon",
       "trigger_upgrades": [
