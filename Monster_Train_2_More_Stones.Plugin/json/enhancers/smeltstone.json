@@ -8,7 +8,7 @@
         "english": "Smeltstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add '[smelt] a card.'"
+        "english": "Upgrade a spell to add '[smelt] a card in hand.'"
       },
       "relic_effects": [
         "@GainSmeltEnhancer"
@@ -42,7 +42,7 @@
         "english": "Smeltstone"
       },
       "descriptions": {
-        "english": "Gain '[smelt] a card.'"
+        "english": "Gain '[smelt] a card in hand.'"
       },
       "icon": "@SmeltstoneIcon",
       "card_trigger_upgrades": [
@@ -66,7 +66,7 @@
       "id": "GainSmeltTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain '[smelt] a card.'"
+        "english": "[smelt] a card in hand."
       },
       "effects": [
         {

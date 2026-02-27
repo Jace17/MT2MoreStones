@@ -11,7 +11,7 @@
         "english": "Upgrade a unit with [steelguard] and [armor] [effect0.upgrade.status0.power]."
       },
       "relic_effects": [
-        "@AddStelguardEnhancer"
+        "@AddSteelguardEnhancer"
       ],
       "icon": "@SteelstoneIcon",
       "extensions": [
@@ -47,12 +47,13 @@
       "icon": "@SteelstoneIcon",
       "status_effect_upgrades": [
         {
-          "status": "steelguard",
-          "count": 1
-        },
-        {
           "status": "armor",
           "count": 15
+        }
+      ],
+      "trait_upgrades": [
+        {
+          "id": "@SteelguardTrait"
         }
       ],
       "filters": [
@@ -69,12 +70,16 @@
   "upgrade_masks": [
     {
       "id": "ExcludeSteelguard",
-      "excluded_status": [
-        {
-          "status": "steelguard",
-          "count": 1
-        }
+      "excluded_traits": [
+        "CardTraitModifyArmorOnHit"
       ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "SteelguardTrait",
+      "name": "CardTraitModifyArmorOnHit",
+      "param_int": 15
     }
   ]
 }

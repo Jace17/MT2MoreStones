@@ -8,7 +8,7 @@
         "english": "InspireStone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[inspire]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '<b>Inspire</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
         "@InspireEnhancer"
@@ -42,7 +42,7 @@
         "english": "Inspirestone"
       },
       "descriptions": {
-        "english": "Gain '[inspire]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '<b>Inspire</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "icon": "@InspirestoneIcon",
       "trigger_upgrades": [

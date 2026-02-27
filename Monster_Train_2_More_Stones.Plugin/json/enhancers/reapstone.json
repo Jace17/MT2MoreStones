@@ -8,7 +8,7 @@
         "english": "Reapstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to apply [reap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+        "english": "Upgrade a spell to apply [corruptpoison] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
       },
       "relic_effects": [
         "@Reap5Enhancer"
@@ -42,7 +42,7 @@
         "english": "Reapstone"
       },
       "descriptions": {
-        "english": "Gain 'Apply [reap] [trigger0.effect0.status0.power] to enemy units.'"
+        "english": "Gain 'Apply [corruptpoison] [trigger0.effect0.status0.power] to enemy units.'"
       },
       "icon": "@ReapstoneIcon",
       "card_trigger_upgrades": [
@@ -66,7 +66,7 @@
       "id": "ApplyReapTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Apply [reap] [effect0.status0.power] to enemy units."
+        "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units."
       },
       "effects": [
         {
@@ -83,7 +83,7 @@
       "target_team": "heroes",
       "param_status_effects": [
         {
-          "status": "reap",
+          "status": "corrupt_poison",
           "count": 5
         }
       ]

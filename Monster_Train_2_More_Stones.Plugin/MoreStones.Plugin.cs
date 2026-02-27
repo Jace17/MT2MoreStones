@@ -232,43 +232,18 @@ namespace Monster_Train_2_More_Stones.Plugin
         }
     }
 
-    // Append upgrade preview text when a cast trigger is added to a spell
-    [HarmonyPatch(typeof(CardState), "SetupCardTriggerBodyUpgradeText")]
-    public class AddOnCastTriggerTemporaryUpgradesToSpellText
-    {
-        public static void Postfix(StringBuilder stringBuilder, List<CardTriggerEffectData> triggerUpgrades, bool areTempModifiers, bool useUpgradeHighlightTextTags, bool highlightEntireUpgrade, CardState __instance)
-        {
-            foreach (CardTriggerEffectData cardTriggerEffectData in triggerUpgrades)
-            {
-                string empty = string.Empty;
-                CardTriggerTypeMethods.GetLocalizedName(cardTriggerEffectData.GetTrigger(), out empty, true);
-                string descriptionKey = cardTriggerEffectData.GetDescriptionKey();
-                string description = descriptionKey.HasTranslation() ? descriptionKey.Localize(new CardEffectLocalizationContext(cardTriggerEffectData, null, __instance)) : "NO DESCRIPTION PROVIDED";
-                if (__instance.GetCardType() == CardType.Spell && cardTriggerEffectData.GetTrigger() == CardTriggerType.OnCast && areTempModifiers)
-                {
-                    string arg = "tempUpgradeHighlight";
-                    string arg2 = description.Substring(0, 0);
-                    string arg3 = description.Substring(0);
-                    string text = string.Format("{1}<{0}>{2}</{0}>", arg, arg2, arg3);
-                    stringBuilder.Append(text);
-                    stringBuilder.Append(Environment.NewLine);
-                }
-            }
-        }
-    }
-
-    [HarmonyPatch(typeof(SaveManager), "SetupRun")]
-    public class LogForDebug
-    {
-        public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
-        public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
-        {
-            List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
-            enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
-            foreach (EnhancerData enhancerData in enhancers)
-            {
-                Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs
-            }
-        }
-    }
+    //[HarmonyPatch(typeof(SaveManager), "SetupRun")]
+    //public class LogForDebug
+    //{
+    //    public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
+    //    public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
+    //    {
+    //        List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
+    //        enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
+    //        foreach (EnhancerData enhancerData in enhancers)
+    //        {
+    //            Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
+    //        }
+    //    }
+    //}
 }

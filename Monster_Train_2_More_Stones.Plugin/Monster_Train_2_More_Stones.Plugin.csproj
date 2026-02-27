@@ -30,7 +30,7 @@
     </None>
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+  <!--<Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="xcopy &quot;$(TargetDir)*.*&quot; &quot;C:\Users\jacel\AppData\Roaming\r2modmanPlus-local\MonsterTrain2\profiles\Default\BepInEx\plugins\GravitonGamer-Monster_Train_2_More_Stones&quot; /Y /I /E" />
-  </Target>
+  </Target>-->
 </Project>  

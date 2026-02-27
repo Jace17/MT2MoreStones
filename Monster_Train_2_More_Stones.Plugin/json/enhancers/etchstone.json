@@ -8,7 +8,7 @@
         "english": "Etchstone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[etch]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '<b>Etch</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
         "@EtchEnhancer"
@@ -42,7 +42,7 @@
         "english": "Etchstone"
       },
       "descriptions": {
-        "english": "Gain '[etch]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '<b>Etch</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "icon": "@EtchstoneIcon",
       "trigger_upgrades": [

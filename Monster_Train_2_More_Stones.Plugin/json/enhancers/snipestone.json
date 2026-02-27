@@ -8,7 +8,7 @@
         "english": "Snipestone"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [sniper] and +[effect0.upgrade.bonusdamage][attack]."
+        "english": "Upgrade a unit with <b>Sniper</b> and +[effect0.upgrade.bonusdamage][attack]."
       },
       "relic_effects": [
         "@SniperEnhancer"
@@ -42,7 +42,7 @@
         "english": "Snipestone"
       },
       "descriptions": {
-        "english": "Gain [sniper] and +[bonusdamage][attack]."
+        "english": "Gain <b>Sniper</b> and +[bonusdamage][attack]."
       },
       "icon": "@SnipestoneIcon",
       "bonus_damage": 10,
