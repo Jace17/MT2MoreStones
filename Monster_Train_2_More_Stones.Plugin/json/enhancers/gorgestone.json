@@ -10,7 +10,7 @@
       },
       "descriptions": {
         "english": "Upgrade a unit with '[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "升级一个单位，使其获得'[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "升级一个单位，使其获得'[feed]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@GorgeEnhancer"
@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain '[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
-        "chinese": "获得'[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+        "chinese": "获得'[feed]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@GorgestoneIcon",
       "trigger_upgrades": [
