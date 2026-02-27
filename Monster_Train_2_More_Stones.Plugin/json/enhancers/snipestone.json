@@ -5,10 +5,12 @@
       "id": "UnitUpgradeSniper",
       "type": "enhancer",
       "names": {
-        "english": "Snipestone"
+        "english": "Snipestone",
+        "chinese": "狙击石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with <b>Sniper</b> and +[effect0.upgrade.bonusdamage][attack]."
+        "english": "Upgrade a unit with <b>Sniper</b> and +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得<b>狙击手</b>，+[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
         "@SniperEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddSniper",
       "titles": {
-        "english": "Snipestone"
+        "english": "Snipestone",
+        "chinese": "狙击石"
       },
       "descriptions": {
-        "english": "Gain <b>Sniper</b> and +[bonusdamage][attack]."
+        "english": "Gain <b>Sniper</b> and +[bonusdamage][attack].",
+        "chinese": "获得<b>狙击手</b>，+[bonusdamage][attack]。"
       },
       "icon": "@SnipestoneIcon",
       "bonus_damage": 10,

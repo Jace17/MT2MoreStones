@@ -5,10 +5,12 @@
       "id": "SpellUpgradeRefine",
       "type": "enhancer",
       "names": {
-        "english": "Hearthstone"
+        "english": "Hearthstone",
+        "chinese": "炉底石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [refined] [effect0.upgrade.trait0.paramint]."
+        "english": "Upgrade a spell to add [refined] [effect0.upgrade.trait0.paramint].",
+        "chinese": "升级一个法术，使其获得[refined] [effect0.upgrade.trait0.paramint]。"
       },
       "relic_effects": [
         "@RefineEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddRefineTrait",
       "titles": {
-        "english": "Hearthstone"
+        "english": "Hearthstone",
+        "chinese": "炉底石"
       },
       "descriptions": {
-        "english": "Gain [refined] [trait0.paramint]."
+        "english": "Gain [refined] [trait0.paramint].",
+        "chinese": "获得[refined] [trait0.paramint]。"
       },
       "icon": "@HearthstoneIcon",
       "trait_upgrades": [

@@ -86,6 +86,6 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Plaguestone  | Spell | Underlegion     | Common   | Apply Decay 4 to all enemies.                          |
 | Spawnstone   | Spell | Underlegion     | Uncommon | Add Spawn 1.                                           |
 | Etchstone    | Unit  | Wurmkin         | Uncommon | Add Etch: +4 Attack, +4 Health                         |
-| Fusionstone  | Spell | Wurmkin         | Common   | Gain 1 Corrupted Echo.                                 |
+| Fusionstone  | Spell | Wurmkin         | Common   | Gain 1 Charged Echo.                                   |
 | Inspirestone | Unit  | Wurmkin         | Rare     | Add Inspire: +2 Attack, +2 Health                      |
 | Reapstone    | Spell | Wurmkin         | Uncommon | Apply Reap 5 to all enemies.                           |

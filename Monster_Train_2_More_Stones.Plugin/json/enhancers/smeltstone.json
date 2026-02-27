@@ -5,10 +5,12 @@
       "id": "SpellUpgradeGainSmelt",
       "type": "enhancer",
       "names": {
-        "english": "Smeltstone"
+        "english": "Smeltstone",
+        "chinese": "熔炼石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add '[smelt] a card in hand.'"
+        "english": "Upgrade a spell to add '[smelt] a card in hand.'",
+        "chinese": "升级一个法术，使其获得'[smelt]一张手牌。'"
       },
       "relic_effects": [
         "@GainSmeltEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "GainSmelt",
       "titles": {
-        "english": "Smeltstone"
+        "english": "Smeltstone",
+        "chinese": "熔炼石"
       },
       "descriptions": {
-        "english": "Gain '[smelt] a card in hand.'"
+        "english": "Gain '[smelt] a card in hand.'",
+        "chinese": "获得'[smelt]一张手牌。'"
       },
       "icon": "@SmeltstoneIcon",
       "card_trigger_upgrades": [
@@ -66,7 +70,8 @@
       "id": "GainSmeltTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[smelt] a card in hand."
+        "english": "[smelt] a card in hand.",
+        "chinese": "[smelt]一张手牌。"
       },
       "effects": [
         {
