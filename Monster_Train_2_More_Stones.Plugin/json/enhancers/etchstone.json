@@ -5,10 +5,12 @@
       "id": "UnitUpgradeEtch",
       "type": "enhancer",
       "names": {
-        "english": "Etchstone"
+        "english": "Etchstone",
+        "chinese": "蚀刻石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Etch</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '<b>Etch</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'<b>蚀刻</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@EtchEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddEtch",
       "titles": {
-        "english": "Etchstone"
+        "english": "Etchstone",
+        "chinese": "蚀刻石"
       },
       "descriptions": {
-        "english": "Gain '<b>Etch</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '<b>Etch</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'<b>蚀刻</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@EtchstoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "EtchAdd4Attack4HealthTrigger",
       "trigger": "card_exhausted",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {

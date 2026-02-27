@@ -5,10 +5,12 @@
       "id": "UnitUpgradeAddSteelguard",
       "type": "enhancer",
       "names": {
-        "english": "Steelstone"
+        "english": "Steelstone",
+        "chinese": "钢铁石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [steelguard] and [armor] [effect0.upgrade.status0.power]."
+        "english": "Upgrade a unit with [steelguard] and [armor] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[armor] [effect0.upgrade.status0.power] 和[steelguard]。"
       },
       "relic_effects": [
         "@AddSteelguardEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddSteelguard",
       "titles": {
-        "english": "Steelstone"
+        "english": "Steelstone",
+        "chinese": "钢铁石"
       },
       "descriptions": {
-        "english": "Gain [steelguard] and [armor] [status0.power]."
+        "english": "Gain [steelguard] and [armor] [status0.power].",
+        "chinese": "获得[armor] [status0.power] 和[steelguard]。"
       },
       "icon": "@SteelstoneIcon",
       "status_effect_upgrades": [
