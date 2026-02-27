@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeEtch",
+      "type": "enhancer",
+      "names": {
+        "english": "Etchstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[etch]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "relic_effects": [
+        "@EtchEnhancer"
+      ],
+      "icon": "@EtchstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassWurm",
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "EtchEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddEtch"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddEtch",
+      "titles": {
+        "english": "Etchstone"
+      },
+      "descriptions": {
+        "english": "Gain '[etch]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "icon": "@EtchstoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@EtchAdd4Attack4HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "EtchstoneIcon",
+      "path": "textures/etchstone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "EtchAdd4Attack4HealthTrigger",
+      "trigger": "card_exhausted",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd4Attack4Health"
+        }
+      ]
+    }
+  ]
+}

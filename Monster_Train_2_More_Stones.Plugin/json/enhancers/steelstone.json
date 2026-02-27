@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeAddSteelguard",
+      "type": "enhancer",
+      "names": {
+        "english": "Steelstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [steelguard] and [armor] [effect0.upgrade.status0.power]."
+      },
+      "relic_effects": [
+        "@AddStelguardEnhancer"
+      ],
+      "icon": "@SteelstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRailforged",
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddSteelguardEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddSteelguard"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSteelguard",
+      "titles": {
+        "english": "Steelstone"
+      },
+      "descriptions": {
+        "english": "Gain [steelguard] and [armor] [status0.power]."
+      },
+      "icon": "@SteelstoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "steelguard",
+          "count": 1
+        },
+        {
+          "status": "armor",
+          "count": 15
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SteelstoneIcon",
+      "path": "textures/steelstone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeSteelguard",
+      "excluded_status": [
+        {
+          "status": "steelguard",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeSniper",
+      "type": "enhancer",
+      "names": {
+        "english": "Snipestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [sniper] and +[effect0.upgrade.bonusdamage][attack]."
+      },
+      "relic_effects": [
+        "@SniperEnhancer"
+      ],
+      "icon": "@SnipestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SniperEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddSniper"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSniper",
+      "titles": {
+        "english": "Snipestone"
+      },
+      "descriptions": {
+        "english": "Gain [sniper] and +[bonusdamage][attack]."
+      },
+      "icon": "@SnipestoneIcon",
+      "bonus_damage": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon",
+        "@ExcludeSniper"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SnipestoneIcon",
+      "path": "textures/snipestone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeSniper",
+      "excluded_status": [
+        {
+          "status": "sniper",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

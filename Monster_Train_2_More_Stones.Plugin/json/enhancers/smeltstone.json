@@ -2,26 +2,26 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainForge",
+      "id": "SpellUpgradeGainSmelt",
       "type": "enhancer",
       "names": {
-        "english": "Forgestone"
+        "english": "Smeltstone"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [forge] [effect0.upgrade.trigger0.effect0.paramint]."
+        "english": "Upgrade a spell to add '[smelt] a card.'"
       },
       "relic_effects": [
-        "@GainForgeEnhancer"
+        "@GainSmeltEnhancer"
       ],
-      "icon": "@ForgestoneIcon",
+      "icon": "@SmeltstoneIcon",
       "extensions": [
         {
           "enhancer": {
             "class": "ClassRailforged",
             "pools": [
-              "SpellUpgradePoolRare"
+              "SpellUpgradePoolCommon"
             ],
-            "rarity": "rare"
+            "rarity": "uncommon"
           }
         }
       ]
@@ -29,25 +29,25 @@
   ],
   "relic_effects": [
     {
-      "id": "GainForgeEnhancer",
+      "id": "GainSmeltEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainForge"
+      "param_upgrade": "@GainSmelt"
     }
   ],
   "upgrades": [
     {
-      "id": "GainForge",
+      "id": "GainSmelt",
       "titles": {
-        "english": "Forgestone"
+        "english": "Smeltstone"
       },
       "descriptions": {
-        "english": "Gain [forge] [trigger0.effect0.paramint]."
+        "english": "Gain '[smelt] a card.'"
       },
-      "icon": "@ForgestoneIcon",
+      "icon": "@SmeltstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainForgeTrigger"
+          "id": "@GainSmeltTrigger"
         }
       ],
       "filters": [
@@ -57,29 +57,31 @@
   ],
   "sprites": [
     {
-      "id": "ForgestoneIcon",
-      "path": "textures/forgestone.png"
+      "id": "SmeltstoneIcon",
+      "path": "textures/smeltstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainForgeTrigger",
+      "id": "GainSmeltTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Gain [forge] [effect0.paramint]"
+        "english": "Gain '[smelt] a card.'"
       },
       "effects": [
         {
-          "id": "@GainForgeEffect"
+          "id": "@GainSmeltEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainForgeEffect",
-      "name": "CardEffectAdjustForgePoints",
-      "param_int": 5
+      "id": "GainSmeltEffect",
+      "name": "CardEffectChooseDiscard",
+      "target_mode": "hand",
+      "param_int": 3,
+      "param_int_2": 5
     }
   ]
 }

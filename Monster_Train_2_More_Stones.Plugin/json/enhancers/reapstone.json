@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeReap",
+      "type": "enhancer",
+      "names": {
+        "english": "Reapstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [reap] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units."
+      },
+      "relic_effects": [
+        "@Reap5Enhancer"
+      ],
+      "icon": "@ReapstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassWurm",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Reap5Enhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddReapEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddReapEffect",
+      "titles": {
+        "english": "Reapstone"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [reap] [trigger0.effect0.status0.power] to enemy units.'"
+      },
+      "icon": "@ReapstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyReapTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ReapstoneIcon",
+      "path": "textures/reapstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyReapTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [reap] [effect0.status0.power] to enemy units."
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyReap"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyReap",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "reap",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

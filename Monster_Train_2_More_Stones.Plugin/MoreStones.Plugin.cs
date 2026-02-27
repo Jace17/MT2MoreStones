@@ -36,7 +36,7 @@ namespace Monster_Train_2_More_Stones.Plugin
         public static ConfigEntry<bool>? addImpstone;
         public static ConfigEntry<bool>? addUpstone;
         public static ConfigEntry<bool>? addFlaskstone;
-        public static ConfigEntry<bool>? addForgestone;
+        public static ConfigEntry<bool>? addArtistone;
         public static ConfigEntry<bool>? addWeirdstone;
         public static ConfigEntry<bool>? addRadiostone;
         public static ConfigEntry<bool>? addBladestone;
@@ -63,6 +63,16 @@ namespace Monster_Train_2_More_Stones.Plugin
         public static ConfigEntry<bool>? addGrowstone;
         public static ConfigEntry<bool>? addPlaguestone;
         public static ConfigEntry<bool>? addSpawnstone;
+
+        public static ConfigEntry<bool>? addSteelstone;
+        public static ConfigEntry<bool>? addForgestone;
+        public static ConfigEntry<bool>? addSmeltstone;
+        public static ConfigEntry<bool>? addHearthstone;
+        public static ConfigEntry<bool>? addFusionstone;
+        public static ConfigEntry<bool>? addReapstone;
+        public static ConfigEntry<bool>? addInspirestone;
+        public static ConfigEntry<bool>? addEtchstone;
+        public static ConfigEntry<bool>? addSnipestone;
 
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
         public void Awake()
@@ -95,7 +105,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             addImpstone = Config.Bind("General", "Impstone", true, "Enable Impstone. (Add a common or uncommon Imp unit to your hand.)\n启用碎尾石（法术获得'将一个普通或高级小鬼单位加入你的手牌。'）");
             addUpstone = Config.Bind("General", "Upstone", true, "Enable Upstone. (Add Ascend. (Targeted spells only.))\n启用上移石（指定目标法术获得'上升。'）");
             addFlaskstone = Config.Bind("General", "Flaskstone", true, "Enable Flaskstone. (Add Mix.)\n启用试剂石（法术获得'调配。'）");
-            addForgestone = Config.Bind("General", "Forgestone", true, "Enable Forgestone. (Add Artificer: +8 Attack, +8 Health)\n启用锻造石（单位获得'巧匠: +8 攻击力，+8 生命值。'）");
+            addArtistone = Config.Bind("General", "Artistone", true, "Enable Artistone. (Add Artificer: +8 Attack, +8 Health)");
             addWeirdstone = Config.Bind("General", "Weirdstone", true, "Enable Madstone. (Add Unstable 20.)\n启用癫狂石（单位获得不稳定 20。）");
             addRadiostone = Config.Bind("General", "Radiostone", true, "Enable Radstone. (Apply Unstable 10 to all enemies.)\n启用辐射石（法术获得'对本层所有敌方单位施加不稳定 10。'）");
             addBladestone = Config.Bind("General", "Bladestone", true, "Enable Bladestone. (Add Mageblade 2.)\n启用刀刃石（单位获得魔刃 2。）");
@@ -122,6 +132,16 @@ namespace Monster_Train_2_More_Stones.Plugin
             addGrowstone = Config.Bind("General", "Growstone", true, "Enable Growstone. (Propagate 1 on all units.)\n启用生长石（法术获得'使本层所有单位散播 1。'）");
             addPlaguestone = Config.Bind("General", "Plaguestone", true, "Enable Plaguestone. (Apply Decay 4 to all enemies.)\n启用瘟疫石（法术获得'对本层所有敌方单位施加腐朽 4。'）");
             addSpawnstone = Config.Bind("General", "Spawnstone", true, "Enable Spawnstone. (Add Spawn 1.)\n启用孢子石（法术获得'生成 1。'）");
+
+            addSteelstone = Config.Bind("General", "Steelstone", true, "Enable Steelstone. (Add Steelguard and Armor 15.)");
+            addForgestone = Config.Bind("General", "Forgestone", true, "Enable Forgestone. (Add Forge 5.)");
+            addSmeltstone = Config.Bind("General", "Smeltstone", true, "Enable Smeltstone. (Smelt a card in hand.)");
+            addHearthstone = Config.Bind("General", "Hearthstone", true, "Enable Hearthstone. (Add Refined 3.)");
+            addFusionstone = Config.Bind("General", "Fusionstone", true, "Enable Fusionstone. (Add Infused.)");
+            addReapstone = Config.Bind("General", "Reapstone", true, "Enable Reapstone. (Apply Reap 4 to all enemies.)");
+            addInspirestone = Config.Bind("General", "Inspirestone", true, "Enable Inspirestone. (Add Inspire: +2 Attack, +2 Health)");
+            addEtchstone = Config.Bind("General", "Etchstone", true, "Enable Etchstone. (Add Etch: +6 Attack, +6 Health)");
+            addSnipestone = Config.Bind("General", "Snipestone", true, "Enable Snipestone. (Add Sniper.)");
 
             List<String> paths = new List<string>
             {
@@ -154,7 +174,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addImpstone.Value) paths.Add("json/enhancers/impstone.json");
             if (addUpstone.Value) paths.Add("json/enhancers/upstone.json");
             if (addFlaskstone.Value) paths.Add("json/enhancers/flaskstone.json");
-            if (addForgestone.Value) paths.Add("json/enhancers/forgestone.json");
+            if (addArtistone.Value) paths.Add("json/enhancers/artistone.json");
             if (addWeirdstone.Value) paths.Add("json/enhancers/weirdstone.json");
             if (addRadiostone.Value) paths.Add("json/enhancers/radiostone.json");
             if (addBladestone.Value) paths.Add("json/enhancers/bladestone.json");
@@ -180,7 +200,17 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addFrontstone.Value) paths.Add("json/enhancers/frontstone.json");
             if (addGrowstone.Value) paths.Add("json/enhancers/growstone.json");
             if (addPlaguestone.Value) paths.Add("json/enhancers/plaguestone.json");
-            if (addSpawnstone.Value) paths.Add("json/enhancers/spawnstone.json"); 
+            if (addSpawnstone.Value) paths.Add("json/enhancers/spawnstone.json");
+
+            if (addSteelstone.Value) paths.Add("json/enhancers/steelstone.json");
+            if (addForgestone.Value) paths.Add("json/enhancers/forgestone.json");
+            if (addSmeltstone.Value) paths.Add("json/enhancers/smeltstone.json");
+            if (addHearthstone.Value) paths.Add("json/enhancers/hearthstone.json");
+            if (addFusionstone.Value) paths.Add("json/enhancers/fusionstone.json");
+            if (addReapstone.Value) paths.Add("json/enhancers/reapstone.json");
+            if (addInspirestone.Value) paths.Add("json/enhancers/inspirestone.json");
+            if (addEtchstone.Value) paths.Add("json/enhancers/etchstone.json");
+            if (addSnipestone.Value) paths.Add("json/enhancers/snipestone.json");
 
             var builder = Railhead.GetBuilder();
             builder.Configure(
@@ -195,7 +225,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-
+                
             // Uncomment if you need harmony patches, if you are writing your own custom effects.
             var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
             harmony.PatchAll();
@@ -223,6 +253,21 @@ namespace Monster_Train_2_More_Stones.Plugin
                     stringBuilder.Append(text);
                     stringBuilder.Append(Environment.NewLine);
                 }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(SaveManager), "SetupRun")]
+    public class LogForDebug
+    {
+        public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
+        public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
+        {
+            List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
+            enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
+            foreach (EnhancerData enhancerData in enhancers)
+            {
+                Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs
             }
         }
     }

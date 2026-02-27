@@ -1,0 +1,79 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeRefine",
+      "type": "enhancer",
+      "names": {
+        "english": "Hearthstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add [refine] [effect0.upgrade.trait0.paramint]."
+      },
+      "relic_effects": [
+        "@RefineEnhancer"
+      ],
+      "icon": "@HearthstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRailforged",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RefineEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddRefineTrait"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddRefineTrait",
+      "titles": {
+        "english": "Hearthstone"
+      },
+      "descriptions": {
+        "english": "Gain [refine] [trait0.paramint]."
+      },
+      "icon": "@HearthstoneIcon",
+      "trait_upgrades": [
+        {
+          "id": "@RefineTrait"
+        }
+      ],
+      "filters": [
+        "@ExcludeRefine"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "HearthstoneIcon",
+      "path": "textures/hearthstone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeRefine",
+      "excluded_traits": [
+        "CardTraitRefine"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "RefineTrait",
+      "name": "CardTraitRefine",
+      "param_int": 3
+    }
+  ]
+}

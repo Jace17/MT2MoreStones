@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeGainInfusion",
+      "type": "enhancer",
+      "names": {
+        "english": "Fusionstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][corrupt]."
+      },
+      "relic_effects": [
+        "@GainInfusionEnhancer"
+      ],
+      "icon": "@FusionstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassWurm",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GainInfusionEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@GainInfusion"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GainInfusion",
+      "titles": {
+        "english": "Fusionstone"
+      },
+      "descriptions": {
+        "english": "Gain [trigger0.effect0.paramint][corrupt]."
+      },
+      "icon": "@FusionstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@GainInfusionTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "FusionstoneIcon",
+      "path": "textures/fusionstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GainInfusionTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Gain [effect0.paramint][corrupt]."
+      },
+      "effects": [
+        {
+          "id": "@GainInfusionEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GainInfusionEffect",
+      "name": "CardEffectAdjustCorruption",
+      "target_mode": "room",
+      "param_int": 1,
+      "param_bool": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeArtificer",
+      "type": "enhancer",
+      "names": {
+        "english": "Artistone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '<b>Artificer</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "relic_effects": [
+        "@ArtificerEnhancer"
+      ],
+      "icon": "@ArtistoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLazarusLeague",
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ArtificerEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddArtificer"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddArtificer",
+      "titles": {
+        "english": "Artistone"
+      },
+      "descriptions": {
+        "english": "Gain '<b>Artificer</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "icon": "@ArtistoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@ArtificerAdd8Attack8HealthTrigger"
+        }
+      ]
+    },
+    {
+      "id": "Plus8Attack8Health",
+      "bonus_damage": 8,
+      "bonus_hp": 8
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ArtistoneIcon",
+      "path": "textures/artistone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ArtificerAdd8Attack8HealthTrigger",
+      "trigger": "on_equipment_added_to_ally",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd8Attack8Health"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectAdd8Attack8Health",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "@Plus8Attack8Health"
+    }
+  ]
+}

@@ -76,14 +76,5 @@
         }
       ]
     }
-  ],
-  "effects": [
-    {
-      "id": "EffectAdd4Attack4Health",
-      "name": "CardEffectAddTempCardUpgradeToUnits",
-      "target_mode": "self",
-      "param_int": 1,
-      "param_upgrade": "Plus4Attack4Health"
-    }
   ]
 }
