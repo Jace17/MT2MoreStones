@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "GravitonGamer"
 name = "Monster_Train_2_More_Stones"
-versionNumber = "1.4.1"
+versionNumber = "1.4.2"
 description = "A mod for Monster Train 2 that adds 52 new upgrade options for cards."
 websiteUrl = "https://github.com/Jace17/MT2MoreStones"
 containsNsfwContent = false
