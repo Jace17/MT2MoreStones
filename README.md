@@ -26,8 +26,9 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 
 # Full List of New Upgrade Stones
 
-| Bloomstone   | Unit  | Awoken          | Uncommon | Add Rejuvenate: +4 Attack, +4 Health                   |
+| Name         | Type  | Clan            | Rarity   | Effect                                                 |
 | ------------ | ----- | --------------- | -------- | ------------------------------------------------------ |
+| Bloomstone   | Unit  | Awoken          | Uncommon | Add Rejuvenate: +4 Attack, +4 Health                   |
 | Healstone    | Spell | Awoken          | Common   | Restore 5 HP to all allies.                            |
 | Sunstone     | Spell | Awoken          | Common   | Draw +1 next turn.                                     |
 | Vinestone    | Spell | Awoken          | Uncommon | Apply Rooted 1 to all enemies.                         |
@@ -40,6 +41,7 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Curestone    | Spell | Clanless        | Rare     | Remove all debuff effects from friendly units.         |
 | Extremestone | Spell | Clanless        | Rare     | Spell Power +30.                                       |
 | Shellstone   | Unit  | Clanless        | Uncommon | Add Titanskin 2.                                       |
+| Snipestone   | Unit  | Clanless        | Common   | Add Sniper. +10 attack.                                |
 | Stompstone   | Unit  | Clanless        | Rare     | Add Trample.                                           |
 | Swipestone   | Unit  | Clanless        | Rare     | Add Sweep. Attack -10.                                 |
 | Trainstone   | Unit  | Clanless        | Uncommon | Ember cost is 0.                                       |
@@ -51,8 +53,8 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Armorstone   | Unit  | Hellhorned      | Common   | Add Armor 25.                                          |
 | Impstone     | Spell | Hellhorned      | Uncommon | Add a common or uncommon Imp unit to your hand.        |
 | Upstone      | Spell | Hellhorned      | Uncommon | Add Ascend. (Targeted spells only.)                    |
-| Flaskstone   | Spell | Lazarus League  | Uncommon | Add Mix.                                               |
 | Artistone    | Unit  | Lazarus League  | Uncommon | Add Artificer: +8 Attack, +8 Health                    |
+| Flaskstone   | Spell | Lazarus League  | Uncommon | Add Mix.                                               |
 | Madstone     | Unit  | Lazarus League  | Rare     | Add Unstable 20.                                       |
 | Radstone     | Spell | Lazarus League  | Common   | Apply Unstable 10 to all enemies.                      |
 | Bladestone   | Unit  | Luna Coven      | Rare     | Add Mageblade 2.                                       |
@@ -67,6 +69,10 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Hoardstone   | Spell | Pyreborne       | Rare     | Gain 1 Dragon's Hoard.                                 |
 | Lootstone    | Spell | Pyreborne       | Uncommon | Gain 10 Gold.                                          |
 | Pyrestone    | Spell | Pyreborne       | Common   | Apply Pyregel 5 to all enemies.                        |
+| Forgestone   | Spell | Railforged      | Rare     | Add Forge 5.                                           |
+| Hearthstone  | Spell | Railforged      | Common   | Add Refined 3.                                         |
+| Smeltstone   | Spell | Railforged      | Uncommon | Smelt a card in hand.                                  |
+| Steelstone   | Unit  | Railforged      | Common   | Add Steelguard and Armor 15.                           |
 | Froststone   | Spell | Stygian Guard   | Common   | Apply Frostbite 10 to all enemies.                     |
 | Meekstone    | Spell | Stygian Guard   | Uncommon | Apply Sap 2 to all enemies.                            |
 | Mutestone    | Spell | Stygian Guard   | Rare     | Apply Mute 3 to all enemies.                           |
@@ -79,11 +85,7 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Growstone    | Spell | Underlegion     | Uncommon | Propagate 1 on all units.                              |
 | Plaguestone  | Spell | Underlegion     | Common   | Apply Decay 4 to all enemies.                          |
 | Spawnstone   | Spell | Underlegion     | Uncommon | Add Spawn 1.                                           |
-| Steelstone   | Unit  | Railforged      | Common   | Add Steelguard and Armor 15.                           |
-| Forgestone   | Spell | Railforged      | Rare     | Add Forge 5.                                           |
-| Smeltstone   | Spell | Railforged      | Uncommon | Smelt a card in hand.                                  |
-| Hearthstone  | Spell | Railforged      | Common   | Add Refined 3.                                         |
-| Fusionstone  | Spell | Wurmkin         | Common   | Gain 1 Corrupted Echo.                                 |
-| Reapstone    | Spell | Wurmkin         | Uncommon | Apply Reap 5 to all enemies.                           |
-| Inspirestone | Unit  | Wurmkin         | Rare     | Add Inspire: +2 Attack, +2 Health                      |
 | Etchstone    | Unit  | Wurmkin         | Uncommon | Add Etch: +4 Attack, +4 Health                         |
+| Fusionstone  | Spell | Wurmkin         | Common   | Gain 1 Corrupted Echo.                                 |
+| Inspirestone | Unit  | Wurmkin         | Rare     | Add Inspire: +2 Attack, +2 Health                      |
+| Reapstone    | Spell | Wurmkin         | Uncommon | Apply Reap 5 to all enemies.                           |
