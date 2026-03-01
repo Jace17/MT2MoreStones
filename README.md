@@ -28,64 +28,64 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 
 | Name         | Type  | Clan            | Rarity   | Effect                                                 |
 | ------------ | ----- | --------------- | -------- | ------------------------------------------------------ |
-| Bloomstone   | Unit  | Awoken          | Uncommon | Add Rejuvenate: +4 Attack, +4 Health                   |
+| Bloomstone   | Unit  | Awoken          | Rare     | Add Rejuvenate: +4 Attack, +4 Health                   |
 | Healstone    | Spell | Awoken          | Common   | Restore 5 HP to all allies.                            |
 | Sunstone     | Spell | Awoken          | Common   | Draw +1 next turn.                                     |
 | Vinestone    | Spell | Awoken          | Uncommon | Apply Rooted 1 to all enemies.                         |
 | Backstone    | Spell | Banished        | Uncommon | Add Retreat. (Targeted spells only.)                   |
 | Cloudstone   | Unit  | Banished        | Uncommon | Add Shift: +2 Attack, +2 Health                        |
-| Weakstone    | Spell | Banished        | Common   | Apply Melee Weakness 1 to all enemies.                 |
+| Weakstone    | Spell | Banished        | Rare     | Apply Melee Weakness 1 to all enemies.                 |
 | Wingstone    | Unit  | Banished        | Rare     | Add Ability: Flight                                    |
-| Bannerstone  | Unit  | Clanless        | Uncommon | Add Deployable. Attack +10.                            |
-| Boomstone    | Spell | Clanless        | Common   | Add Explosive. Spell Power +5.                         |
+| Bannerstone  | Unit  | Clanless        | Common   | Add Deployable. Attack +10.                            |
+| Boomstone    | Spell | Clanless        | Rare     | Add Explosive. Spell Power +20.                        |
 | Curestone    | Spell | Clanless        | Rare     | Remove all debuff effects from friendly units.         |
 | Extremestone | Spell | Clanless        | Rare     | Spell Power +30.                                       |
-| Shellstone   | Unit  | Clanless        | Uncommon | Add Titanskin 2.                                       |
+| Shellstone   | Unit  | Clanless        | Uncommon | Add Titanskin 3.                                       |
 | Snipestone   | Unit  | Clanless        | Common   | Add Sniper. +10 attack.                                |
 | Stompstone   | Unit  | Clanless        | Rare     | Add Trample.                                           |
-| Swipestone   | Unit  | Clanless        | Rare     | Add Sweep. Attack -10.                                 |
-| Trainstone   | Unit  | Clanless        | Uncommon | Ember cost is 0.                                       |
-| Truestone    | Spell | Clanless        | Common   | Add Piercing. Spell Power +5.                          |
+| Swipestone   | Unit  | Clanless        | Rare     | Add Sweep. Attack -20.                                 |
+| Trainstone   | Unit  | Clanless        | Common   | Ember cost is 0.                                       |
+| Truestone    | Spell | Clanless        | Uncommon | Add Piercing. Spell Power +10.                         |
 | Tunestone    | Spell | Clanless        | Rare     | Add Attuned.                                           |
 | Valuestone   | Spell | Clanless        | Rare     | Ember cost -3.                                         |
 | Vilestone    | Spell | Clanless        | Rare     | Apply Corruption 20 to all enemies.                    |
-| Apexstone    | Unit  | Hellhorned      | Uncommon | Add Armored: +4 Attack.                                |
+| Apexstone    | Unit  | Hellhorned      | Rare     | Add Armored: +4 Attack.                                |
 | Armorstone   | Unit  | Hellhorned      | Common   | Add Armor 25.                                          |
 | Impstone     | Spell | Hellhorned      | Uncommon | Add a common or uncommon Imp unit to your hand.        |
 | Upstone      | Spell | Hellhorned      | Uncommon | Add Ascend. (Targeted spells only.)                    |
-| Artistone    | Unit  | Lazarus League  | Uncommon | Add Artificer: +8 Attack, +8 Health                    |
+| Artistone    | Unit  | Lazarus League  | Rare     | Add Artificer: +8 Attack, +8 Health                    |
 | Flaskstone   | Spell | Lazarus League  | Uncommon | Add Mix.                                               |
-| Madstone     | Unit  | Lazarus League  | Rare     | Add Unstable 20.                                       |
-| Radstone     | Spell | Lazarus League  | Common   | Apply Unstable 10 to all enemies.                      |
+| Madstone     | Unit  | Lazarus League  | Rare     | Add Unstable 30.                                       |
+| Radstone     | Spell | Lazarus League  | Uncommon | Apply Unstable 10 to all enemies.                      |
 | Bladestone   | Unit  | Luna Coven      | Rare     | Add Mageblade 2.                                       |
 | Cyclestone   | Unit  | Luna Coven      | Uncommon | Add Mooncycle: +2 Attack, +2 Health                    |
-| Feeblestone  | Spell | Luna Coven      | Common   | Apply Spell Weakness 1 to all enemies.                 |
+| Feeblestone  | Spell | Luna Coven      | Rare     | Apply Spell Weakness 1 to all enemies.                 |
 | Lunestone    | Spell | Luna Coven      | Common   | Add Phase. Ember cost -1.                              |
 | Dazestone    | Spell | Melting Remnant | Rare     | Apply Dazed 1 to all enemies.                          |
 | Formstone    | Spell | Melting Remnant | Uncommon | Reform a random unit.                                  |
 | Scourstone   | Spell | Melting Remnant | Rare     | Remove all buff effects from enemy units.              |
-| Smokestone   | Unit  | Melting Remnant | Uncommon | Add Stealth 3. +10 attack.                             |
-| Brimstone    | Spell | Pyreborne       | Uncommon | Deal 3 Damage to all enemies.                          |
+| Smokestone   | Unit  | Melting Remnant | Common   | Add Stealth 2. +10 attack.                             |
+| Brimstone    | Spell | Pyreborne       | Common   | Deal 3 Damage to all enemies.                          |
 | Hoardstone   | Spell | Pyreborne       | Rare     | Gain 1 Dragon's Hoard.                                 |
 | Lootstone    | Spell | Pyreborne       | Uncommon | Gain 10 Gold.                                          |
-| Pyrestone    | Spell | Pyreborne       | Common   | Apply Pyregel 5 to all enemies.                        |
+| Pyrestone    | Spell | Pyreborne       | Uncommon | Apply Pyregel 5 to all enemies.                        |
 | Forgestone   | Spell | Railforged      | Rare     | Add Forge 5.                                           |
 | Hearthstone  | Spell | Railforged      | Common   | Add Refined 3.                                         |
 | Smeltstone   | Spell | Railforged      | Uncommon | Smelt a card in hand.                                  |
-| Steelstone   | Unit  | Railforged      | Common   | Add Steelguard and Armor 15.                           |
-| Froststone   | Spell | Stygian Guard   | Common   | Apply Frostbite 10 to all enemies.                     |
+| Steelstone   | Unit  | Railforged      | Rare     | Add Steelguard and Armor 50.                           |
+| Froststone   | Spell | Stygian Guard   | Uncommon | Apply Frostbite 10 to all enemies.                     |
 | Meekstone    | Spell | Stygian Guard   | Uncommon | Apply Sap 2 to all enemies.                            |
-| Mutestone    | Spell | Stygian Guard   | Rare     | Apply Mute 3 to all enemies.                           |
+| Mutestone    | Spell | Stygian Guard   | Uncommon | Apply Mute 1 to all enemies.                           |
 | Offerstone   | Spell | Stygian Guard   | Common   | Add Offering. Ember cost -1. (Targetless spells only.) |
 | Downstone    | Spell | Umbra           | Uncommon | Add Descend. (Targeted spells only.)                   |
-| Gorgestone   | Unit  | Umbra           | Uncommon | Add Gorge: +2 Attack, +2 Health                        |
-| Leechstone   | Unit  | Umbra           | Uncommon | Add Lifesteal 3. +10 Attack.                           |
+| Gorgestone   | Unit  | Umbra           | Rare     | Add Gorge: +2 Attack, +2 Health                        |
+| Leechstone   | Unit  | Umbra           | Common   | Add Lifesteal 2. +10 Attack.                           |
 | Morselstone  | Spell | Umbra           | Uncommon | Add a common or uncommon Morsel unit to your hand.     |
 | Frontstone   | Spell | Underlegion     | Uncommon | Add Advance. (Targeted spells only.)                   |
 | Growstone    | Spell | Underlegion     | Uncommon | Propagate 1 on all units.                              |
-| Plaguestone  | Spell | Underlegion     | Common   | Apply Decay 4 to all enemies.                          |
+| Plaguestone  | Spell | Underlegion     | Uncommon | Apply Decay 4 to all enemies.                          |
 | Spawnstone   | Spell | Underlegion     | Uncommon | Add Spawn 1.                                           |
-| Etchstone    | Unit  | Wurmkin         | Uncommon | Add Etch: +4 Attack, +4 Health                         |
-| Fusionstone  | Spell | Wurmkin         | Common   | Gain 1 Charged Echo.                                   |
+| Etchstone    | Unit  | Wurmkin         | Rare     | Add Etch: +4 Attack, +4 Health                         |
+| Fusionstone  | Spell | Wurmkin         | Common   | Gain 1 Corrupted Echo.                                 |
 | Inspirestone | Unit  | Wurmkin         | Rare     | Add Inspire: +2 Attack, +2 Health                      |
 | Reapstone    | Spell | Wurmkin         | Uncommon | Apply Reap 5 to all enemies.                           |
