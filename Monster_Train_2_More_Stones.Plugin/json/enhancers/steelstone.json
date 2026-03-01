@@ -21,9 +21,11 @@
           "enhancer": {
             "class": "ClassRailforged",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "UnitUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]
@@ -52,7 +54,7 @@
       "status_effect_upgrades": [
         {
           "status": "armor",
-          "count": 15
+          "count": 50
         }
       ],
       "trait_upgrades": [

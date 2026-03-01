@@ -21,9 +21,7 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "UnitUpgradePoolRare",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolRare"
             ],
             "rarity": "rare"
           }
@@ -51,7 +49,7 @@
         "chinese": "获得[sweep]，[bonusdamage][attack]。"
       },
       "icon": "@SwipestoneIcon",
-      "bonus_damage": -10,
+      "bonus_damage": -20,
       "status_effect_upgrades": [
         {
           "status": "sweep",

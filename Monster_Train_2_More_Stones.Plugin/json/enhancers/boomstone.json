@@ -21,11 +21,11 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "SpellUpgradePoolCommon",
+              "SpellUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]
@@ -56,8 +56,8 @@
           "id": "@ExplosiveTrait"
         }
       ],
-      "bonus_damage": 5,
-      "bonus_heal": 5,
+      "bonus_damage": 20,
+      "bonus_heal": 20,
       "filters": [
         "@ExcludeExplosive",
         "@AttackSpellsOnly"

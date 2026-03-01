@@ -21,11 +21,11 @@
           "enhancer": {
             "class": "ClassLunaCoven",
             "pools": [
-              "SpellUpgradePoolCommon",
+              "SpellUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "common"
+            "rarity": "rare"
           }
         }
       ]

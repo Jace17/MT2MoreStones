@@ -21,9 +21,9 @@
           "enhancer": {
             "class": "ClassWurm",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "UnitUpgradePoolRare"
             ],
-            "rarity": "uncommon"
+            "rarity": "rare"
           }
         }
       ]

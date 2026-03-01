@@ -21,9 +21,7 @@
           "enhancer": {
             "class": "ClassStygian",
             "pools": [
-              "SpellUpgradePoolCostReduction",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCostReduction"
             ],
             "rarity": "common"
           }

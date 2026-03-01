@@ -21,9 +21,9 @@
           "enhancer": {
             "class": "ClassLazarusLeague",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "UnitUpgradePoolRare"
             ],
-            "rarity": "uncommon"
+            "rarity": "rare"
           }
         }
       ]

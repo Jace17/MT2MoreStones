@@ -21,9 +21,7 @@
           "enhancer": {
             "class": "ClassHellhorned",
             "pools": [
-              "SpellUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

@@ -21,11 +21,9 @@
           "enhancer": {
             "class": "ClassRemnant",
             "pools": [
-              "UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "UnitUpgradePoolCommon"
             ],
-            "rarity": "uncommon"
+            "rarity": "common"
           }
         }
       ]
@@ -55,7 +53,7 @@
       "status_effect_upgrades": [
         {
           "status": "stealth",
-          "count": 3
+          "count": 2
         }
       ],
       "filters": [

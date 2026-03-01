@@ -25,7 +25,7 @@
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "uncommon"
+              "rarity": "common"
           }
         }
       ]
@@ -55,7 +55,7 @@
       "status_effect_upgrades": [
         {
           "status": "lifesteal",
-          "count": 3
+          "count": 2
         }
       ],
       "filters": [

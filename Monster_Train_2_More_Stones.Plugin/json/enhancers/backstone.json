@@ -21,9 +21,7 @@
           "enhancer": {
             "class": "ClassBanished",
             "pools": [
-              "SpellUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SpellUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

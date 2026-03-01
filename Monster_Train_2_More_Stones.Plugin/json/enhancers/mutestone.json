@@ -21,11 +21,11 @@
           "enhancer": {
             "class": "ClassStygian",
             "pools": [
-              "SpellUpgradePoolRare",
+              "SpellUpgradePoolCommon",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
-            "rarity": "rare"
+            "rarity": "uncommon"
           }
         }
       ]
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "muted",
-          "count": 3
+          "count": 1
         }
       ]
     }
