@@ -105,7 +105,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             addImpstone = Config.Bind("General", "Impstone", true, "Enable Impstone. (Add a common or uncommon Imp unit to your hand.)\n启用碎尾石（法术获得'将一个普通或高级小鬼单位加入你的手牌。'）");
             addUpstone = Config.Bind("General", "Upstone", true, "Enable Upstone. (Add Ascend. (Targeted spells only.))\n启用上移石（指定目标法术获得'上升。'）");
             addFlaskstone = Config.Bind("General", "Flaskstone", true, "Enable Flaskstone. (Add Mix.)\n启用试剂石（法术获得'调配。'）");
-            addArtistone = Config.Bind("General", "Artistone", true, "Enable Artistone. (Add Artificer: +8 Attack, +8 Health)");
+            addArtistone = Config.Bind("General", "Artistone", true, "Enable Artistone. (Add Artificer: +8 Attack, +8 Health)\n启用巧艺石（单位获得'巧匠: +8 攻击力，+8 生命值。'");
             addWeirdstone = Config.Bind("General", "Weirdstone", true, "Enable Madstone. (Add Unstable 20.)\n启用癫狂石（单位获得不稳定 20。）");
             addRadiostone = Config.Bind("General", "Radiostone", true, "Enable Radstone. (Apply Unstable 10 to all enemies.)\n启用辐射石（法术获得'对本层所有敌方单位施加不稳定 10。'）");
             addBladestone = Config.Bind("General", "Bladestone", true, "Enable Bladestone. (Add Mageblade 2.)\n启用刀刃石（单位获得魔刃 2。）");
@@ -122,7 +122,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             addPyrestone = Config.Bind("General", "Pyrestone", true, "Enable Pyrestone. (Apply Pyregel 5 to all enemies.)\n启用（法术获得'对本层所有敌方单位施加薪火熔胶 5。'）");
             addFroststone = Config.Bind("General", "Froststone", true, "Enable Froststone. (Apply Frostbite 10  to all enemies.)\n启用霜冻石（法术获得'对本层所有敌方单位施加霜冻 10。'）");
             addMeekstone = Config.Bind("General", "Meekstone", true, "Enable Meekstone. (Apply Sap 2 to all enemies.)\n启用驯化石（法术获得'对本层所有敌方单位施加弱化 2。'）");
-            addMutestone = Config.Bind("General", "Mutestone", true, "Enable Mutestone. (Apply Mute 3 to all enemies.)\n启用沉默石（法术获得'对本层所有敌方单位施加沉默 3。'）");
+            addMutestone = Config.Bind("General", "Mutestone", true, "Enable Mutestone. (Apply Mute 3 to all enemies.)\n启用静默石（法术获得'对本层所有敌方单位施加静默 3。'）");
             addOfferstone = Config.Bind("General", "Offerstone", true, "Enable Offerstone. (Add Offering. Ember cost -1. (Targetless spells only.))\n启用献祭石（非指定目标法术获得献祭，费用 -1 余烬。）");
             addDownstone = Config.Bind("General", "Downstone", true, "Enable Downstone. (Add Descend. (Targeted spells only.))\n启用下移石（指定目标法术获得'下降。'）");
             addGorgestone = Config.Bind("General", "Gorgestone", true, "Enable Gorgestone. (Add Gorge: +2 Attack, +2 Health)\n启用暴食石（单位获得'暴食: +2 攻击力，+2 生命值。'）");
@@ -133,15 +133,15 @@ namespace Monster_Train_2_More_Stones.Plugin
             addPlaguestone = Config.Bind("General", "Plaguestone", true, "Enable Plaguestone. (Apply Decay 4 to all enemies.)\n启用瘟疫石（法术获得'对本层所有敌方单位施加腐朽 4。'）");
             addSpawnstone = Config.Bind("General", "Spawnstone", true, "Enable Spawnstone. (Add Spawn 1.)\n启用孢子石（法术获得'生成 1。'）");
 
-            addSteelstone = Config.Bind("General", "Steelstone", true, "Enable Steelstone. (Add Steelguard and Armor 15.)");
-            addForgestone = Config.Bind("General", "Forgestone", true, "Enable Forgestone. (Add Forge 5.)");
-            addSmeltstone = Config.Bind("General", "Smeltstone", true, "Enable Smeltstone. (Smelt a card in hand.)");
-            addHearthstone = Config.Bind("General", "Hearthstone", true, "Enable Hearthstone. (Add Refined 3.)");
-            addFusionstone = Config.Bind("General", "Fusionstone", true, "Enable Fusionstone. (Add Infused.)");
-            addReapstone = Config.Bind("General", "Reapstone", true, "Enable Reapstone. (Apply Reap 4 to all enemies.)");
-            addInspirestone = Config.Bind("General", "Inspirestone", true, "Enable Inspirestone. (Add Inspire: +2 Attack, +2 Health)");
-            addEtchstone = Config.Bind("General", "Etchstone", true, "Enable Etchstone. (Add Etch: +6 Attack, +6 Health)");
-            addSnipestone = Config.Bind("General", "Snipestone", true, "Enable Snipestone. (Add Sniper.)");
+            addSteelstone = Config.Bind("General", "Steelstone", true, "Enable Steelstone. (Add Steelguard and Armor 15.)\n启用钢铁石（单位获得护甲 15 和钢铁护卫。）");
+            addForgestone = Config.Bind("General", "Forgestone", true, "Enable Forgestone. (Add Forge 5.)\n启用锻造石（法术获得'锻造 5。'）");
+            addSmeltstone = Config.Bind("General", "Smeltstone", true, "Enable Smeltstone. (Smelt a card in hand.)\n启用熔炼石（法术获得'熔炼一张手牌。'）");
+            addHearthstone = Config.Bind("General", "Hearthstone", true, "Enable Hearthstone. (Add Refined 3.)\n启用炉底石（法术获得精炼 3。）");
+            addFusionstone = Config.Bind("General", "Fusionstone", true, "Enable Fusionstone. (Gain 1 Charged Echo.)\n启用注能石（法术获得'获得 1 充能的回响水晶。'）");
+            addReapstone = Config.Bind("General", "Reapstone", true, "Enable Reapstone. (Apply Reap 5 to all enemies.)\n启用晶爆石（法术获得'对本层所有敌方单位施加晶爆 5。'）");
+            addInspirestone = Config.Bind("General", "Inspirestone", true, "Enable Inspirestone. (Add Inspire: +2 Attack, +2 Health)\n启用激励石（单位获得'激励: +2 攻击力，+2 生命值。'）");
+            addEtchstone = Config.Bind("General", "Etchstone", true, "Enable Etchstone. (Add Etch: +4 Attack, +4 Health)\n启用蚀刻石（单位获得'蚀刻: +4 攻击力，+4 生命值。'）");
+            addSnipestone = Config.Bind("General", "Snipestone", true, "Enable Snipestone. (Add Sniper. Attack +10.)\n启用狙击石（单位获得狙击手，+10 攻击力。）");
 
             List<String> paths = new List<string>
             {
