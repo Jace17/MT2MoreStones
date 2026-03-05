@@ -21,7 +21,7 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "SpellUpgradePoolCostReduction",
+              "SpellUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
