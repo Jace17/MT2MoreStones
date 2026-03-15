@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassLunaCoven",
             "pools": [
-              "SpellUpgradePoolCostReduction"
+              "SoulSavior_SpellUpgradePoolCostReduction"
             ],
             "rarity": "common"
           }

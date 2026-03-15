@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassLazarusLeague",
             "pools": [
-              "SpellUpgradePoolCommon"
+              "SoulSavior_SpellUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

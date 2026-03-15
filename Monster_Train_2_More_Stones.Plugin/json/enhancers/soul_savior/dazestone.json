@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassRemnant",
             "pools": [
-              "SpellUpgradePoolRare",
+              "SoulSavior_SpellUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],

@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassBanished",
             "pools": [
-              "SpellUpgradePoolCommon"
+              "SoulSavior_SpellUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

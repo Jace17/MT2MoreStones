@@ -21,7 +21,7 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "UnitUpgradePoolRare"
+              "SoulSavior_UnitUpgradePoolRare"
             ],
             "rarity": "rare"
           }

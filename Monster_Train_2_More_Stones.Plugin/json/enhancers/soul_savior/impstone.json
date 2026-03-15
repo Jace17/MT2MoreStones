@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassHellhorned",
             "pools": [
-              "SpellUpgradePoolCommon"
+              "SoulSavior_SpellUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

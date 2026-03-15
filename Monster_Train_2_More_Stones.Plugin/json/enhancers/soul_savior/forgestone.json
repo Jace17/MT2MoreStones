@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassRailforged",
             "pools": [
-              "SpellUpgradePoolRare"
+              "SoulSavior_SpellUpgradePoolRare"
             ],
             "rarity": "rare"
           }

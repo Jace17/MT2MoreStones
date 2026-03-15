@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassWurm",
             "pools": [
-              "SpellUpgradePoolCommon"
+              "SoulSavior_SpellUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

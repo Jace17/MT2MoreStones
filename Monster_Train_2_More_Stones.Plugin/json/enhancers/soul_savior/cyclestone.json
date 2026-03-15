@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassLunaCoven",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "SoulSavior_UnitUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }

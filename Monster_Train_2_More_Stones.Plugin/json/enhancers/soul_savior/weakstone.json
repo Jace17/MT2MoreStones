@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassBanished",
             "pools": [
-              "SpellUpgradePoolRare",
+              "SoulSavior_SpellUpgradePoolRare",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],

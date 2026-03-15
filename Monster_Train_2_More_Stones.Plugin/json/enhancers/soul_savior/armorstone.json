@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassHellhorned",
             "pools": [
-              "UnitUpgradePoolCommon",
+              "SoulSavior_UnitUpgradePoolCommon",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],

@@ -21,7 +21,7 @@
           "enhancer": {
             "class": "ClassUmbra",
             "pools": [
-              "UnitUpgradePoolCommon",
+              "SoulSavior_UnitUpgradePoolCommon",
               "DraftUpgradePool",
               "MalickaDraftUpgradePool"
             ],
