@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeDamage",
       "type": "enhancer",
       "names": {
-        "english": "Brimstone",
+        "english": "Brimstone+",
         "chinese": "硫黄石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddDamageAll",
       "titles": {
-        "english": "Brimstone",
+        "english": "Brimstone+",
         "chinese": "硫黄石"
       },
       "descriptions": {
@@ -88,7 +88,7 @@
       "name": "CardEffectDamage",
       "target_mode": "room",
       "target_team": "heroes",
-      "param_int": 3
+      "param_int": 6
     }
   ]
 }

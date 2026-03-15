@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeReform",
       "type": "enhancer",
       "names": {
-        "english": "Formstone",
+        "english": "Formstone+",
         "chinese": "塑造石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add '[raise] a random unit.'",
+        "english": "Upgrade a spell to add '[raise] [effect0.upgrade.trigger0.effect0.paramint] random units.'",
         "chinese": "升级一个法术，使其获得'随机[raise]一个单位。'"
       },
       "relic_effects": [
@@ -41,11 +41,11 @@
     {
       "id": "SoulSavior_AddReform",
       "titles": {
-        "english": "Formstone",
+        "english": "Formstone+",
         "chinese": "塑造石"
       },
       "descriptions": {
-        "english": "Gain '[raise] a random unit.'",
+        "english": "Gain '[raise] [trigger0.effect0.paramint] random units.'",
         "chinese": "获得'随机[raise]一个单位。'"
       },
       "icon": "@SoulSavior_ReformstoneIcon",
@@ -70,7 +70,7 @@
       "id": "SoulSavior_AddReformTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[raise] a random unit.",
+        "english": "[raise] [effect0.paramint] random units.",
         "chinese": "随机[raise]一个单位。"
       },
       "effects": [
@@ -84,7 +84,7 @@
     {
       "id": "SoulSavior_ReformEffect",
       "name": "CardEffectRecursion",
-      "param_int": 1,
+      "param_int": 2,
       "param_upgrade": "Raise",
       "target_mode": "exhaust",
       "target_card_type": "monster",

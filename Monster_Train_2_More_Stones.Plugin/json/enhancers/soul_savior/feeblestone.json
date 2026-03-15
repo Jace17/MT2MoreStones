@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeSpellWeakness",
       "type": "enhancer",
       "names": {
-        "english": "Feeblestone",
+        "english": "Feeblestone+",
         "chinese": "破魔石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddSpellWeaknessEffect",
       "titles": {
-        "english": "Feeblestone",
+        "english": "Feeblestone+",
         "chinese": "破魔石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "spell weakness",
-          "count": 1
+          "count": 2
         }
       ]
     }

@@ -157,9 +157,6 @@
     <None Update="json\enhancers\soul_savior\reformstone.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="json\enhancers\soul_savior\scourstone.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="json\enhancers\soul_savior\shellstone.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

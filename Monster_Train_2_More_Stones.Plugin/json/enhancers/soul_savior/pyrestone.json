@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradePyregel",
       "type": "enhancer",
       "names": {
-        "english": "Pyrestone",
+        "english": "Pyrestone+",
         "chinese": "薪火石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddPyregelEffect",
       "titles": {
-        "english": "Pyrestone",
+        "english": "Pyrestone+",
         "chinese": "薪火石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "pyregel",
-          "count": 5
+          "count": 10
         }
       ]
     }

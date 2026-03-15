@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeGainDragonsHoard",
       "type": "enhancer",
       "names": {
-        "english": "Hoardstone",
+        "english": "Hoardstone+",
         "chinese": "龙藏石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_GainDragonsHoard",
       "titles": {
-        "english": "Hoardstone",
+        "english": "Hoardstone+",
         "chinese": "龙藏石"
       },
       "descriptions": {
@@ -84,7 +84,7 @@
     {
       "id": "SoulSavior_GainDragonsHoardEffect",
       "name": "CardEffectAdjustDragonsHoard",
-      "param_int": 1
+      "param_int": 2
     }
   ]
 }

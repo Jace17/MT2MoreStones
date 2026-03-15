@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeAddStealth",
       "type": "enhancer",
       "names": {
-        "english": "Smokestone",
+        "english": "Smokeslab",
         "chinese": "烟雾石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddStealth",
       "titles": {
-        "english": "Smokestone",
+        "english": "Smokeslab",
         "chinese": "烟雾石"
       },
       "descriptions": {
@@ -49,11 +49,11 @@
         "chinese": "获得[stealth] [status0.power]，+[bonusdamage][attack]。"
       },
       "icon": "@SoulSavior_SmokestoneIcon",
-      "bonus_damage": 10,
+      "bonus_damage": 30,
       "status_effect_upgrades": [
         {
           "status": "stealth",
-          "count": 2
+          "count": 4
         }
       ],
       "filters": [

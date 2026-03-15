@@ -23,7 +23,8 @@
             "pools": [
               "SpellUpgradePoolRare",
               "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "MalickaDraftUpgradePool",
+              "SoulSavior_SpellUpgradePoolRare"
             ],
             "rarity": "rare"
           }

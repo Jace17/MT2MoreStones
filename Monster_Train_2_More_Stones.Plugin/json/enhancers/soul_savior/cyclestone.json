@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeMooncycle",
       "type": "enhancer",
       "names": {
-        "english": "Cyclestone",
+        "english": "Cycleslab",
         "chinese": "朔望石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddMooncycle",
       "titles": {
-        "english": "Cyclestone",
+        "english": "Cycleslab",
         "chinese": "朔望石"
       },
       "descriptions": {
@@ -72,7 +72,7 @@
       },
       "effects": [
         {
-          "id": "@SoulSavior_EffectAdd2Attack2Health"
+          "id": "@EffectAdd4Attack4Health"
         }
       ]
     }

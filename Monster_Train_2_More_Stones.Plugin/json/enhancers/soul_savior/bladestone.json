@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeMageblade",
       "type": "enhancer",
       "names": {
-        "english": "Bladestone",
+        "english": "Bladeslab",
         "chinese": "刀刃石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddMageblade",
       "titles": {
-        "english": "Bladestone",
+        "english": "Bladeslab",
         "chinese": "刀刃石"
       },
       "descriptions": {
@@ -52,7 +52,7 @@
       "status_effect_upgrades": [
         {
           "status": "mageblade",
-          "count": 2
+          "count": 4
         }
       ],
       "filters": [

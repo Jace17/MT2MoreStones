@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeGainCoin",
       "type": "enhancer",
       "names": {
-        "english": "Lootstone",
+        "english": "Lootstone+",
         "chinese": "财宝石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_GainCoin",
       "titles": {
-        "english": "Lootstone",
+        "english": "Lootstone+",
         "chinese": "财宝石"
       },
       "descriptions": {
@@ -86,7 +86,7 @@
     {
       "id": "SoulSavior_GainCoinEffect",
       "name": "CardEffectRewardGold",
-      "param_int": 10
+      "param_int": 20
     }
   ]
 }
