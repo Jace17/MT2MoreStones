@@ -55,7 +55,7 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Upstone      | Spell | Hellhorned      | Uncommon | Add Ascend. (Targeted spells only.)                    |
 | Artistone    | Unit  | Lazarus League  | Rare     | Add Artificer: +8 Attack, +8 Health                    |
 | Flaskstone   | Spell | Lazarus League  | Uncommon | Add Mix.                                               |
-| Madstone     | Unit  | Lazarus League  | Rare     | Add Unstable 30.                                       |
+| Madstone     | Unit  | Lazarus League  | Rare     | Add Unstable 20.                                       |
 | Radstone     | Spell | Lazarus League  | Uncommon | Apply Unstable 10 to all enemies.                      |
 | Bladestone   | Unit  | Luna Coven      | Rare     | Add Mageblade 2.                                       |
 | Cyclestone   | Unit  | Luna Coven      | Uncommon | Add Mooncycle: +2 Attack, +2 Health                    |
