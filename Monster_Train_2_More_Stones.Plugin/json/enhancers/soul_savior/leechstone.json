@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeLifesteal",
       "type": "enhancer",
       "names": {
-        "english": "Leechstone",
+        "english": "Leechslab",
         "chinese": "水蛭石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddLifesteal",
       "titles": {
-        "english": "Leechstone",
+        "english": "Leechslab",
         "chinese": "水蛭石"
       },
       "descriptions": {
@@ -51,11 +51,11 @@
         "chinese": "获得[lifesteal] [status0.power]，+[bonusdamage][attack]。"
       },
       "icon": "@SoulSavior_LeechstoneIcon",
-      "bonus_damage": 10,
+      "bonus_damage": 30,
       "status_effect_upgrades": [
         {
           "status": "lifesteal",
-          "count": 2
+          "count": 4
         }
       ],
       "filters": [

@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeRefine",
       "type": "enhancer",
       "names": {
-        "english": "Hearthstone",
+        "english": "Hearthstone+",
         "chinese": "炉底石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddRefineTrait",
       "titles": {
-        "english": "Hearthstone",
+        "english": "Hearthstone+",
         "chinese": "炉底石"
       },
       "descriptions": {
@@ -77,7 +77,7 @@
     {
       "id": "SoulSavior_RefineTrait",
       "name": "CardTraitRefine",
-      "param_int": 3
+      "param_int": 6
     }
   ]
 }

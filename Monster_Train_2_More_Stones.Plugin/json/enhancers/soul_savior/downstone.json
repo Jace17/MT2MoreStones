@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeDescend",
       "type": "enhancer",
       "names": {
-        "english": "Downstone",
+        "english": "Downstone+",
         "chinese": "下移石"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [descend].",
+        "english": "Upgrade a targeted spell to add [descend] and -[effect0.upgrade.costreduction][ember].",
         "chinese": "升级一个指定目标法术，使其获得'[descend]。'"
       },
       "relic_effects": [
@@ -43,14 +43,16 @@
     {
       "id": "SoulSavior_AddDescend",
       "titles": {
-        "english": "Downstone",
+        "english": "Downstone+",
         "chinese": "下移石"
       },
       "descriptions": {
-        "english": "Gain [descend].",
+        "english": "Gain [descend] and -[costreduction][ember].",
         "chinese": "获得'[descend]。'"
       },
       "icon": "@SoulSavior_DownstoneIcon",
+      "cost_reduction": 2,
+      "x_cost_reduction": 2,
       "card_trigger_upgrades": [
         {
           "id": "@SoulSavior_DescendTrigger"
@@ -58,8 +60,8 @@
       ],
       "filters": [
         "OnlySpells",
-        "@SoulSavior_SingleTargetOnly",
-        "@SoulSavior_NoAscendOrDescend"
+        "@SingleTargetOnly",
+        "@NoAscendOrDescend"
       ]
     }
   ],

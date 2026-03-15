@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeAddMorsel",
       "type": "enhancer",
       "names": {
-        "english": "Morselstone",
+        "english": "Morselstone+",
         "chinese": "影裔石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Add a common or uncommon [snack] unit to your hand.'",
+        "english": "Upgrade a spell to add 'Add a [snack] unit to your hand.'",
         "chinese": "升级一个法术，使其获得'将一个普通或高级[snack]单位加入你的手牌。'"
       },
       "relic_effects": [
@@ -41,11 +41,11 @@
     {
       "id": "SoulSavior_AddMorselToHand",
       "titles": {
-        "english": "Morselstone",
+        "english": "Morselstone+",
         "chinese": "影裔石"
       },
       "descriptions": {
-        "english": "Gain 'Add a common or uncommon [snack] unit to your hand.'",
+        "english": "Gain 'Add a [snack] unit to your hand.'",
         "chinese": "获得'将一个普通或高级[snack]单位加入你的手牌。'"
       },
       "icon": "@SoulSavior_MorselstoneIcon",
@@ -70,7 +70,7 @@
       "id": "SoulSavior_AddMorselToHandTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Add a common or uncommon [snack] unit to your hand.",
+        "english": "Add a [snack] unit to your hand.",
         "chinese": "将一个普通或高级[snack]单位加入你的手牌。"
       },
       "effects": [
@@ -97,9 +97,7 @@
         "MoltenMorsel",
         "MorselJeweler",
         "RubbleRaiser",
-        "RubbleRaiser",
-        "RubbleRaiser",
-        "RubbleRaiser"
+        "MorselMiner"
       ]
     }
   ]

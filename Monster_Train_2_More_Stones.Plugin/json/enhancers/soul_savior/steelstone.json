@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeAddSteelguard",
       "type": "enhancer",
       "names": {
-        "english": "Steelstone",
+        "english": "Steelslab",
         "chinese": "钢铁石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddSteelguard",
       "titles": {
-        "english": "Steelstone",
+        "english": "Steelslab",
         "chinese": "钢铁石"
       },
       "descriptions": {
@@ -54,7 +54,7 @@
       "status_effect_upgrades": [
         {
           "status": "armor",
-          "count": 50
+          "count": 75
         }
       ],
       "trait_upgrades": [

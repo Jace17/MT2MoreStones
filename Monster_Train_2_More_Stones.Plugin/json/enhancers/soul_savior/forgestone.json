@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeGainForge",
       "type": "enhancer",
       "names": {
-        "english": "Forgestone",
+        "english": "Forgestone+",
         "chinese": "锻造石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_GainForge",
       "titles": {
-        "english": "Forgestone",
+        "english": "Forgestone+",
         "chinese": "锻造石"
       },
       "descriptions": {
@@ -84,7 +84,7 @@
     {
       "id": "SoulSavior_GainForgeEffect",
       "name": "CardEffectAdjustForgePoints",
-      "param_int": 5
+      "param_int": 10
     }
   ]
 }

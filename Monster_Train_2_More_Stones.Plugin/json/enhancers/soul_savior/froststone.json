@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeFrostbite",
       "type": "enhancer",
       "names": {
-        "english": "Froststone",
+        "english": "Froststone+",
         "chinese": "霜冻石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddFrostbiteEffect",
       "titles": {
-        "english": "Froststone",
+        "english": "Froststone+",
         "chinese": "霜冻石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "poison",
-          "count": 10
+          "count": 20
         }
       ]
     }

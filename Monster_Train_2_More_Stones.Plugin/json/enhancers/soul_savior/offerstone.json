@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeOffering",
       "type": "enhancer",
       "names": {
-        "english": "Offerstone",
+        "english": "Offerstone+",
         "chinese": "献祭石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddOfferingTrait",
       "titles": {
-        "english": "Offerstone",
+        "english": "Offerstone+",
         "chinese": "献祭石"
       },
       "descriptions": {
@@ -49,8 +49,8 @@
         "chinese": "获得<b>献祭</b>，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "icon": "@SoulSavior_OfferstoneIcon",
-      "cost_reduction": 1,
-      "x_cost_reduction": 1,
+      "cost_reduction": 2,
+      "x_cost_reduction": 2,
       "trait_upgrades": [
         {
           "id": "@SoulSavior_OfferingTrait"

@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeSap",
       "type": "enhancer",
       "names": {
-        "english": "Meekstone",
+        "english": "Meekstone+",
         "chinese": "驯化石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddSapEffect",
       "titles": {
-        "english": "Meekstone",
+        "english": "Meekstone+",
         "chinese": "驯化石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "debuff",
-          "count": 2
+          "count": 4
         }
       ]
     }
