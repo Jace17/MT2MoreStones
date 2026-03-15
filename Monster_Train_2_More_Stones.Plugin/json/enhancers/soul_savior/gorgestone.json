@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeGorge",
+      "type": "enhancer",
+      "names": {
+        "english": "Gorgestone",
+        "chinese": "暴食石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'[feed]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+      },
+      "relic_effects": [
+        "@GorgeEnhancer"
+      ],
+      "icon": "@GorgestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUmbra",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GorgeEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddGorge"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddGorge",
+      "titles": {
+        "english": "Gorgestone",
+        "chinese": "暴食石"
+      },
+      "descriptions": {
+        "english": "Gain '[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'[feed]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+      },
+      "icon": "@GorgestoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@GorgeAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "GorgestoneIcon",
+      "path": "textures/gorgestone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "GorgeAdd2Attack2HealthTrigger",
+      "trigger": "on_feed",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ]
+}

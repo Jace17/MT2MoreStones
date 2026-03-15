@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeRemoveDebuff",
+      "type": "enhancer",
+      "names": {
+        "english": "Curestone",
+        "chinese": "洗涤石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to remove all [debuff] effects from friendly units.",
+        "chinese": "升级一个法术，使其获得'移除本层所有友方单位身上的所有[debuff]效果。'"
+      },
+      "relic_effects": [
+        "@RemoveDebuffEnhancer"
+      ],
+      "icon": "@CurestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RemoveDebuffEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@RemoveDebuff"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RemoveDebuff",
+      "titles": {
+        "english": "Curestone",
+        "chinese": "洗涤石"
+      },
+      "descriptions": {
+        "english": "Gain 'Remove all [debuff] effects from friendly units.'",
+        "chinese": "获得'移除本层所有友方单位身上的所有[debuff]效果。'"
+      },
+      "icon": "@CurestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@RemoveDebuffTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CurestoneIcon",
+      "path": "textures/curestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "RemoveDebuffTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Remove all [debuff] effects from friendly units.",
+        "chinese": "移除本层所有友方单位身上的所有[debuff]效果。"
+      },
+      "effects": [
+        {
+          "id": "@RemoveDebuffEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RemoveDebuffEffect",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 1
+    }
+  ]
+}

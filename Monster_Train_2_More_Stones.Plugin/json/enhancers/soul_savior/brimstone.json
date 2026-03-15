@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeDamage",
+      "type": "enhancer",
+      "names": {
+        "english": "Brimstone",
+        "chinese": "硫黄石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to deal [effect0.upgrade.trigger0.effect0.power] damage to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位造成 [effect0.upgrade.trigger0.effect0.power] 点伤害。'"
+      },
+      "relic_effects": [
+        "@DamageAllEnhancer"
+      ],
+      "icon": "@BrimstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassPyreborne",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DamageAllEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddDamageAll"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddDamageAll",
+      "titles": {
+        "english": "Brimstone",
+        "chinese": "硫黄石"
+      },
+      "descriptions": {
+        "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位造成 [trigger0.effect0.power] 点伤害。'"
+      },
+      "icon": "@BrimstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@DamageAllTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BrimstoneIcon",
+      "path": "textures/brimstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "DamageAllTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Deal [effect0.power] damage to enemy units.",
+        "chinese": "对本层所有敌方单位造成 [effect0.power] 点伤害。"
+      },
+      "effects": [
+        {
+          "id": "@DamageAllEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "DamageAllEffect",
+      "name": "CardEffectDamage",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 3
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeGainDragonsHoard",
+      "type": "enhancer",
+      "names": {
+        "english": "Hoardstone",
+        "chinese": "龙藏石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon].",
+        "chinese": "升级一个法术，使其获得'获得 [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon]。'"
+      },
+      "relic_effects": [
+        "@GainDragonsHoardEnhancer"
+      ],
+      "icon": "@HoardstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassPyreborne",
+            "pools": [
+              "SpellUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GainDragonsHoardEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@GainDragonsHoard"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GainDragonsHoard",
+      "titles": {
+        "english": "Hoardstone",
+        "chinese": "龙藏石"
+      },
+      "descriptions": {
+        "english": "Gain [trigger0.effect0.paramint][dragonshoardicon].",
+        "chinese": "获得'获得 [trigger0.effect0.paramint][dragonshoardicon]。'"
+      },
+      "icon": "@HoardstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@GainDragonsHoardTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "HoardstoneIcon",
+      "path": "textures/hoardstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GainDragonsHoardTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Gain [effect0.paramint][dragonshoardicon].",
+        "chinese": "获得 [effect0.paramint][dragonshoardicon]。"
+      },
+      "effects": [
+        {
+          "id": "@GainDragonsHoardEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GainDragonsHoardEffect",
+      "name": "CardEffectAdjustDragonsHoard",
+      "param_int": 1
+    }
+  ]
+}

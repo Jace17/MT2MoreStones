@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradePhase",
+      "type": "enhancer",
+      "names": {
+        "english": "Lunestone",
+        "chinese": "月相石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to gain [phase] and -[effect0.upgrade.costreduction][ember].",
+        "chinese": "升级一个法术，使其获得'[phase]'，费用 -[effect0.upgrade.costreduction][ember]。"
+      },
+      "relic_effects": [
+        "@AddPhaseEnhancer"
+      ],
+      "icon": "@LunestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLunaCoven",
+            "pools": [
+              "SpellUpgradePoolCostReduction"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddPhaseEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddPhase"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddPhase",
+      "titles": {
+        "english": "Lunestone",
+        "chinese": "月相石"
+      },
+      "descriptions": {
+        "english": "Gain [phase] and -[costreduction][ember].",
+        "chinese": "获得'[phase]'，费用 -[effect0.upgrade.costreduction][ember]。"
+      },
+      "icon": "@LunestoneIcon",
+      "cost_reduction": 1,
+      "x_cost_reduction": 1,
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddPhaseTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "LunestoneIcon",
+      "path": "textures/lunestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddPhaseTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[phase].",
+        "chinese": "[phase]。"
+      },
+      "effects": [
+        {
+          "id": "@PhaseEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "PhaseEffect",
+      "name": "CardEffectAdvanceMoonPhase",
+      "param_int": 1
+    }
+  ]
+}

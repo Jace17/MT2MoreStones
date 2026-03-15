@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeDazed",
+      "type": "enhancer",
+      "names": {
+        "english": "Dazestone",
+        "chinese": "眩晕石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [dazed] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[dazed] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+      },
+      "relic_effects": [
+        "@DazedEnhancer"
+      ],
+      "icon": "@DazestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DazedEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AdDazedEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AdDazedEffect",
+      "titles": {
+        "english": "Dazestone",
+        "chinese": "眩晕石"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [dazed] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[dazed] [trigger0.effect0.status0.power]。'"
+      },
+      "icon": "@DazestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyDazedTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "DazestoneIcon",
+      "path": "textures/dazestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyDazedTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [dazed] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[dazed] [effect0.status0.power]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyDazed"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyDazed",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "dazed",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

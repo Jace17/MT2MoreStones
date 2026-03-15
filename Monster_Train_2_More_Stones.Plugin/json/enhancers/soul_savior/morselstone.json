@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeAddMorsel",
+      "type": "enhancer",
+      "names": {
+        "english": "Morselstone",
+        "chinese": "影裔石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add 'Add a common or uncommon [snack] unit to your hand.'",
+        "chinese": "升级一个法术，使其获得'将一个普通或高级[snack]单位加入你的手牌。'"
+      },
+      "relic_effects": [
+        "@AddMorselEnhancer"
+      ],
+      "icon": "@MorselstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUmbra",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddMorselEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddMorselToHand"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddMorselToHand",
+      "titles": {
+        "english": "Morselstone",
+        "chinese": "影裔石"
+      },
+      "descriptions": {
+        "english": "Gain 'Add a common or uncommon [snack] unit to your hand.'",
+        "chinese": "获得'将一个普通或高级[snack]单位加入你的手牌。'"
+      },
+      "icon": "@MorselstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddMorselToHandTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "MorselstoneIcon",
+      "path": "textures/morselstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddMorselToHandTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Add a common or uncommon [snack] unit to your hand.",
+        "chinese": "将一个普通或高级[snack]单位加入你的手牌。"
+      },
+      "effects": [
+        {
+          "id": "@AddMorselToHandEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "AddMorselToHandEffect",
+      "name": "CardEffectAddBattleCard",
+      "param_int": 3,
+      "param_card_pool": "@RandomMorselCardPool"
+    }
+  ],
+  "card_pools": [
+    {
+      "id": "RandomMorselCardPool",
+      "cards": [
+        "VoidExcavator",
+        "ShadowMorsel",
+        "MoltenMorsel",
+        "MorselJeweler",
+        "RubbleRaiser",
+        "RubbleRaiser",
+        "RubbleRaiser",
+        "RubbleRaiser"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeDecay",
+      "type": "enhancer",
+      "names": {
+        "english": "Plaguestone",
+        "chinese": "瘟疫石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [decay] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[decay] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+      },
+      "relic_effects": [
+        "@DecayEnhancer"
+      ],
+      "icon": "@PlaguestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUnderlegion",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DecayEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddDecayEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddDecayEffect",
+      "titles": {
+        "english": "Plaguestone",
+        "chinese": "瘟疫石"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [decay] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[decay] [trigger0.effect0.status0.power]。'"
+      },
+      "icon": "@PlaguestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyDecayTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PlaguestoneIcon",
+      "path": "textures/plaguestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyDecayTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [decay] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[decay] [effect0.status0.power]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyDecay"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyDecay",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "decay",
+          "count": 4
+        }
+      ]
+    }
+  ]
+}

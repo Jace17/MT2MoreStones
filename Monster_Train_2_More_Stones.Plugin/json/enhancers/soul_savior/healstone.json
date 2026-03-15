@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeHeal",
+      "type": "enhancer",
+      "names": {
+        "english": "Healstone",
+        "chinese": "回血石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to restore [effect0.upgrade.trigger0.effect0.power] health to friendly units.",
+        "chinese": "升级一个法术，使其获得'使本层所有友方单位恢复 [effect0.upgrade.trigger0.effect0.power] 点生命值。'"
+      },
+      "relic_effects": [
+        "@HealEnhancer"
+      ],
+      "icon": "@HealstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassAwoken",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "HealEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddHeal"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddHeal",
+      "titles": {
+        "english": "Healstone",
+        "chinese": "回血石"
+      },
+      "descriptions": {
+        "english": "Gain 'Restore [trigger0.effect0.power] health to friendly units.'",
+        "chinese": "获得'使本层所有友方单位恢复 [trigger0.effect0.power] 点生命值。'"
+      },
+      "icon": "@HealstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@HealTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "HealstoneIcon",
+      "path": "textures/healstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "HealTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Restore [effect0.power] health to friendly units.",
+        "chinese": "使本层所有友方单位恢复 [effect0.power] 点生命值。"
+      },
+      "effects": [
+        {
+          "id": "@HealEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "HealEffect",
+      "name": "CardEffectHeal",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_int": 5
+    }
+  ]
+}

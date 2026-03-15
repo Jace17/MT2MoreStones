@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeReap",
+      "type": "enhancer",
+      "names": {
+        "english": "Reapstone",
+        "chinese": "晶爆石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [corruptpoison] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[corruptpoison] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+      },
+      "relic_effects": [
+        "@Reap5Enhancer"
+      ],
+      "icon": "@ReapstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassWurm",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Reap5Enhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddReapEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddReapEffect",
+      "titles": {
+        "english": "Reapstone",
+        "chinese": "晶爆石"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [corruptpoison] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[corruptpoison] [trigger0.effect0.status0.power]。'"
+      },
+      "icon": "@ReapstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyReapTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ReapstoneIcon",
+      "path": "textures/reapstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyReapTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[corruptpoison] [effect0.status0.power]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyReap"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyReap",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "corrupt_poison",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

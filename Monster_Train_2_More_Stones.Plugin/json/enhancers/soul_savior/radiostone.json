@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeUnstable",
+      "type": "enhancer",
+      "names": {
+        "english": "Radstone",
+        "chinese": "辐射石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [unstable] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[unstable] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+      },
+      "relic_effects": [
+        "@Unstable10Enhancer"
+      ],
+      "icon": "@RadiostoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLazarusLeague",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Unstable10Enhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddUnstableEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddUnstableEffect",
+      "titles": {
+        "english": "Radstone",
+        "chinese": "辐射石"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [unstable] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[unstable] [trigger0.effect0.status0.power]。'"
+      },
+      "icon": "@RadiostoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyUnstableTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "RadiostoneIcon",
+      "path": "textures/radiostone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyUnstableTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [unstable] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[unstable] [effect0.status0.power]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyUnstable"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyUnstable",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "unstable",
+          "count": 10
+        }
+      ]
+    }
+  ]
+}

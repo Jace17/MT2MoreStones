@@ -1,0 +1,92 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeDraw1NextTurn",
+      "type": "enhancer",
+      "names": {
+        "english": "Sunstone",
+        "chinese": "太阳石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add 'Draw +[effect0.upgrade.trigger0.effect0.paramint] next turn.'",
+        "chinese": "升级一个法术，使其获得'下个回合抽 +[effect0.upgrade.trigger0.effect0.paramint] 张牌。'"
+      },
+      "relic_effects": [
+        "@Draw1NextTurnEnhancer"
+      ],
+      "icon": "@SunstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassAwoken",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "Draw1NextTurnEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddDraw1NextTurn"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddDraw1NextTurn",
+      "titles": {
+        "english": "Sunstone",
+        "chinese": "太阳石"
+      },
+      "descriptions": {
+        "english": "Gain 'Draw +[trigger0.effect0.paramint] next turn.'",
+        "chinese": "获得'下个回合抽 +[trigger0.effect0.paramint] 张牌。'"
+      },
+      "icon": "@SunstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyDraw1NextTurnTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SunstoneIcon",
+      "path": "textures/sunstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyDraw1NextTurnTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Draw +[effect0.paramint] next turn.",
+        "chinese": "下个回合抽 +[effect0.paramint] 张牌。"
+      },
+      "effects": [
+        {
+          "id": "@EffectDraw1NextTurn"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectDraw1NextTurn",
+      "name": "CardEffectDrawAdditionalNextTurn",
+      "param_int": 1
+    }
+  ]
+}

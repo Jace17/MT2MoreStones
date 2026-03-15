@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeRemoveBuff",
+      "type": "enhancer",
+      "names": {
+        "english": "Scourstone",
+        "chinese": "冲刷石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to remove all [buff] effects from enemy units.",
+        "chinese": "升级一个法术，使其获得'移除本层所有敌方单位身上的所有[buff]效果。'"
+      },
+      "relic_effects": [
+        "@RemoveBuffEnhancer"
+      ],
+      "icon": "@ScourstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RemoveBuffEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@RemoveBuff"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "RemoveBuff",
+      "titles": {
+        "english": "Scourstone",
+        "chinese": "冲刷石"
+      },
+      "descriptions": {
+        "english": "Gain 'Remove all [buff] effects from enemy units.'",
+        "chinese": "获得'移除本层所有敌方单位身上的所有[buff]效果。'"
+      },
+      "icon": "@ScourstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@RemoveBuffTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ScourstoneIcon",
+      "path": "textures/scourstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "RemoveBuffTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Remove all [buff] effects from enemy units.",
+        "chinese": "移除本层所有敌方单位身上的所有[buff]效果。"
+      },
+      "effects": [
+        {
+          "id": "@RemoveBuffEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "RemoveBuffEffect",
+      "name": "CardEffectRemoveAllStatusEffects",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_int": 0
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeGainForge",
+      "type": "enhancer",
+      "names": {
+        "english": "Forgestone",
+        "chinese": "锻造石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add [forge] [effect0.upgrade.trigger0.effect0.paramint].",
+        "chinese": "升级一个法术，使其获得'[forge] [effect0.upgrade.trigger0.effect0.paramint]。'"
+      },
+      "relic_effects": [
+        "@GainForgeEnhancer"
+      ],
+      "icon": "@ForgestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRailforged",
+            "pools": [
+              "SpellUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GainForgeEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@GainForge"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GainForge",
+      "titles": {
+        "english": "Forgestone",
+        "chinese": "锻造石"
+      },
+      "descriptions": {
+        "english": "Gain [forge] [trigger0.effect0.paramint].",
+        "chinese": "获得'[forge] [trigger0.effect0.paramint]。'"
+      },
+      "icon": "@ForgestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@GainForgeTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ForgestoneIcon",
+      "path": "textures/forgestone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GainForgeTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Gain [forge] [effect0.paramint]",
+        "chinese": "[forge] [effect0.paramint]。"
+      },
+      "effects": [
+        {
+          "id": "@GainForgeEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GainForgeEffect",
+      "name": "CardEffectAdjustForgePoints",
+      "param_int": 5
+    }
+  ]
+}

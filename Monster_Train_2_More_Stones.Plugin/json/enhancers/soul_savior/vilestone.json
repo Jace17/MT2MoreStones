@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeCorruption",
+      "type": "enhancer",
+      "names": {
+        "english": "Vilestone",
+        "chinese": "腐败石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [corruption] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[corruption] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+      },
+      "relic_effects": [
+        "@CorruptionEnhancer"
+      ],
+      "icon": "@VilestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "CorruptionEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddCorruptionEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddCorruptionEffect",
+      "titles": {
+        "english": "Vilestone",
+        "chinese": "腐败石"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [corruption] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[corruption] [trigger0.effect0.status0.power]。'"
+      },
+      "icon": "@VilestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyCorruptionTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "VilestoneIcon",
+      "path": "textures/vilestone-v2.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyCorruptionTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [corruption] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[corruption] [effect0.status0.power]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyCorruption"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyCorruption",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "corruption",
+          "count": 20
+        }
+      ]
+    }
+  ]
+}

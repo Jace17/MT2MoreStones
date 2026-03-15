@@ -1,0 +1,64 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeFlight",
+      "type": "enhancer",
+      "names": {
+        "english": "Wingstone",
+        "chinese": "添翼石"
+      },
+      "descriptions": {
+        "english": "Add [ability]: <b>Flight</b>.",
+        "chinese": "升级一个单位，使其获得[ability]：<b>飞行</b>。"
+      },
+      "relic_effects": [
+        "@FlightEnhancer"
+      ],
+      "icon": "@WingstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassBanished",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "FlightEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddAbilityFlight"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddAbilityFlight",
+      "titles": {
+        "english": "Wingstone",
+        "chinese": "添翼石"
+      },
+      "descriptions": {
+        "english": "Gain [ability]: <b>Flight</b>.",
+        "chinese": "获得[ability]：<b>飞行</b>。"
+      },
+      "icon": "@WingstoneIcon",
+      "ability_upgrade": "AngelFlightAbility",
+      "filters": [
+        "ExcludeUnitsWithAbilities"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "WingstoneIcon",
+      "path": "textures/wingstone.png"
+    }
+  ]
+}

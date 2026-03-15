@@ -1,0 +1,98 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeSpawn",
+      "type": "enhancer",
+      "names": {
+        "english": "Spawnstone",
+        "chinese": "孢子石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add [spawn] [effect0.upgrade.trigger0.effect0.paramint].",
+        "chinese": "升级一个法术，使其获得'[spawn] [effect0.upgrade.trigger0.effect0.paramint]。'"
+      },
+      "relic_effects": [
+        "@AddSpawnEnhancer"
+      ],
+      "icon": "@SpawnstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUnderlegion",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddSpawnEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddSpawn"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSpawn",
+      "titles": {
+        "english": "Spawnstone",
+        "chinese": "孢子石"
+      },
+      "descriptions": {
+        "english": "Gain [spawn] [trigger0.effect0.paramint].",
+        "chinese": "获得'[spawn] [trigger0.effect0.paramint]。'"
+      },
+      "icon": "@SpawnstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddSpawnTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SpawnstoneIcon",
+      "path": "textures/spawnstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddSpawnTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[spawn] [effect0.paramint].",
+        "chinese": "[spawn] [effect0.paramint]。"
+      },
+      "effects": [
+        {
+          "id": "@SpawnEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "SpawnEffect",
+      "name": "CardEffectSpawnMonsterOrAddStatusEffect",
+      "param_int": 1,
+      "target_subtype": "SubtypesData_Horde",
+      "param_status_effects": [
+        {
+          "status": "horde",
+          "count": 1
+        }
+      ],
+      "param_character": "MonsterFunguy"
+    }
+  ]
+}

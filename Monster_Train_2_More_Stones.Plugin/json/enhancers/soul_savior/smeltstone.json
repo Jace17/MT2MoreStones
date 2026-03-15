@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeGainSmelt",
+      "type": "enhancer",
+      "names": {
+        "english": "Smeltstone",
+        "chinese": "熔炼石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add '[smelt] a card in hand.'",
+        "chinese": "升级一个法术，使其获得'[smelt]一张手牌。'"
+      },
+      "relic_effects": [
+        "@GainSmeltEnhancer"
+      ],
+      "icon": "@SmeltstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRailforged",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "GainSmeltEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@GainSmelt"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "GainSmelt",
+      "titles": {
+        "english": "Smeltstone",
+        "chinese": "熔炼石"
+      },
+      "descriptions": {
+        "english": "Gain '[smelt] a card in hand.'",
+        "chinese": "获得'[smelt]一张手牌。'"
+      },
+      "icon": "@SmeltstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@GainSmeltTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SmeltstoneIcon",
+      "path": "textures/smeltstone.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "GainSmeltTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[smelt] a card in hand.",
+        "chinese": "[smelt]一张手牌。"
+      },
+      "effects": [
+        {
+          "id": "@GainSmeltEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "GainSmeltEffect",
+      "name": "CardEffectChooseDiscard",
+      "target_mode": "hand",
+      "param_int": 3,
+      "param_int_2": 5,
+      "param_bool_2": true
+    }
+  ]
+}

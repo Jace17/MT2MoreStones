@@ -1,0 +1,69 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeMageblade",
+      "type": "enhancer",
+      "names": {
+        "english": "Bladestone",
+        "chinese": "刀刃石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [mageblade] [effect0.upgrade.status0.power].",
+        "chinese": "升级一个单位，使其获得[mageblade] [effect0.upgrade.status0.power]。"
+      },
+      "relic_effects": [
+        "@AddMagebladeEnhancer"
+      ],
+      "icon": "@BladestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassLunaCoven",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddMagebladeEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddMageblade"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddMageblade",
+      "titles": {
+        "english": "Bladestone",
+        "chinese": "刀刃石"
+      },
+      "descriptions": {
+        "english": "Gain [mageblade] [status0.power].",
+        "chinese": "获得[mageblade] [status0.power]。"
+      },
+      "icon": "@BladestoneIcon",
+      "status_effect_upgrades": [
+        {
+          "status": "mageblade",
+          "count": 2
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BladestoneIcon",
+      "path": "textures/bladestone.png"
+    }
+  ]
+}

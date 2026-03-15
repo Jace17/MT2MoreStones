@@ -1,0 +1,99 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradePyregel",
+      "type": "enhancer",
+      "names": {
+        "english": "Pyrestone",
+        "chinese": "薪火石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to apply [pyregel] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
+        "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[pyregel] [effect0.upgrade.trigger0.effect0.status0.power]。'"
+      },
+      "relic_effects": [
+        "@PyregelEnhancer"
+      ],
+      "icon": "@PyrestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassPyreborne",
+            "pools": [
+              "SpellUpgradePoolCommon",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "PyregelEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddPyregelEffect"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddPyregelEffect",
+      "titles": {
+        "english": "Pyrestone",
+        "chinese": "薪火石"
+      },
+      "descriptions": {
+        "english": "Gain 'Apply [pyregel] [trigger0.effect0.status0.power] to enemy units.'",
+        "chinese": "获得'对本层所有敌方单位施加[pyregel] [trigger0.effect0.status0.power]。'"
+      },
+      "icon": "@PyrestoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@ApplyPyregelTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "PyrestoneIcon",
+      "path": "textures/pyrestone-v2.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "ApplyPyregelTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "Apply [pyregel] [effect0.status0.power] to enemy units.",
+        "chinese": "对本层所有敌方单位施加[pyregel] [effect0.status0.power]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectApplyPyregel"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectApplyPyregel",
+      "name": "CardEffectAddStatusEffect",
+      "target_mode": "room",
+      "target_team": "heroes",
+      "param_status_effects": [
+        {
+          "status": "pyregel",
+          "count": 5
+        }
+      ]
+    }
+  ]
+}

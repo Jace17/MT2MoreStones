@@ -1,0 +1,88 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeExplosive",
+      "type": "enhancer",
+      "names": {
+        "english": "Boomstone",
+        "chinese": "爆破石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to gain <b>Explosive</b> and +[effect0.upgrade.bonusdamage] [magicpower].",
+        "chinese": "升级一个法术，使其获得<b>爆炸</b>，+[effect0.upgrade.bonusdamage] [magicpower]。"
+      },
+      "relic_effects": [
+        "@ExplosiveEnhancer"
+      ],
+      "icon": "@BoomstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "SpellUpgradePoolRare",
+              "DraftUpgradePool",
+              "MalickaDraftUpgradePool"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ExplosiveEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddExplosiveTrait"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddExplosiveTrait",
+      "titles": {
+        "english": "Boomstone",
+        "chinese": "爆破石"
+      },
+      "descriptions": {
+        "english": "Gain <b>Explosive</b> and +[bonusdamage] [magicpower].",
+        "chinese": "获得<b>爆炸</b>，+[bonusdamage] [magicpower]。"
+      },
+      "icon": "@BoomstoneIcon",
+      "trait_upgrades": [
+        {
+          "id": "@ExplosiveTrait"
+        }
+      ],
+      "bonus_damage": 20,
+      "bonus_heal": 20,
+      "filters": [
+        "@ExcludeExplosive",
+        "@AttackSpellsOnly"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BoomstoneIcon",
+      "path": "textures/boomstone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeExplosive",
+      "excluded_traits": [
+        "CardTraitDamageOverflow"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "ExplosiveTrait",
+      "name": "CardTraitDamageOverflow",
+      "param_int": 2
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeShift",
+      "type": "enhancer",
+      "names": {
+        "english": "Cloudstone",
+        "chinese": "腾云石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'[shift]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+      },
+      "relic_effects": [
+        "@ShiftEnhancer"
+      ],
+      "icon": "@CloudstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassBanished",
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ShiftEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddShift"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddShift",
+      "titles": {
+        "english": "Cloudstone",
+        "chinese": "腾云石"
+      },
+      "descriptions": {
+        "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'[shift]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+      },
+      "icon": "@CloudstoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@ShiftAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "CloudstoneIcon",
+      "path": "textures/cloudstone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ShiftAdd2Attack2HealthTrigger",
+      "trigger": "on_shift",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ]
+}

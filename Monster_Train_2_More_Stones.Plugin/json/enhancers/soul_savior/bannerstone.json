@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeDeployable",
+      "type": "enhancer",
+      "names": {
+        "english": "Bannerstone",
+        "chinese": "战旗石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [deployable] and +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得[deployable]，+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "relic_effects": [
+        "@DeployableEnhancer"
+      ],
+      "icon": "@BannerstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "DeployableEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddDeployableTrait"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddDeployableTrait",
+      "titles": {
+        "english": "Bannerstone",
+        "chinese": "战旗石"
+      },
+      "descriptions": {
+        "english": "Gain [deployable] and +[bonusdamage][attack].",
+        "chinese": "获得[deployable]，+[bonusdamage][attack]。"
+      },
+      "icon": "@BannerstoneIcon",
+      "bonus_damage": 10,
+      "trait_upgrades": [
+        {
+          "id": "@DeployableTrait"
+        }
+      ],
+      "filters": [
+        "ExcludeChampions",
+        "@ExcludeDeployable"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BannerstoneIcon",
+      "path": "textures/bannerstone.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeDeployable",
+      "excluded_traits": [
+        "CardTraitDrawInDeploymentPhase"
+      ],
+      "excluded_subtypes": [
+        "SubtypesData_BannerUnit"
+      ]
+    }
+  ],
+  "traits": [
+    {
+      "id": "DeployableTrait",
+      "name": "CardTraitDrawInDeploymentPhase"
+    }
+  ]
+}

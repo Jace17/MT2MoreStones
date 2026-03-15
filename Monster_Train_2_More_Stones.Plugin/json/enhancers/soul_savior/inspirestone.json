@@ -1,0 +1,80 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeInspire",
+      "type": "enhancer",
+      "names": {
+        "english": "InspireStone",
+        "chinese": "激励石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '<b>Inspire</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'<b>激励</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
+      },
+      "relic_effects": [
+        "@InspireEnhancer"
+      ],
+      "icon": "@InspirestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassWurm",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "InspireEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddInspire"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddInspire",
+      "titles": {
+        "english": "Inspirestone",
+        "chinese": "激励石"
+      },
+      "descriptions": {
+        "english": "Gain '<b>Inspire</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'<b>激励</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
+      },
+      "icon": "@InspirestoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@InspireAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "InspirestoneIcon",
+      "path": "textures/inspirestone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "InspireAdd2Attack2HealthTrigger",
+      "trigger": "corruption_added",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ]
+}

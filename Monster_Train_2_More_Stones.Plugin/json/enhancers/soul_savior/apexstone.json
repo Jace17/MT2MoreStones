@@ -1,0 +1,93 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeArmored",
+      "type": "enhancer",
+      "names": {
+        "english": "Apexstone",
+        "chinese": "巅峰石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '<b>Armored</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].'",
+        "chinese": "升级一个单位，使其获得'<b>带甲</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
+      },
+      "relic_effects": [
+        "@ArmoredEnhancer"
+      ],
+      "icon": "@ApexstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassHellhorned",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "ArmoredEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddArmored"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddArmored",
+      "titles": {
+        "english": "Apexstone",
+        "chinese": "巅峰石"
+      },
+      "descriptions": {
+        "english": "Gain '<b>Armored</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].'",
+        "chinese": "获得'<b>带甲</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
+      },
+      "icon": "@ApexstoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@ArmoredAdd4AttackTrigger"
+        }
+      ]
+    },
+    {
+      "id": "Plus4Attack",
+      "bonus_damage": 4
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ApexstoneIcon",
+      "path": "textures/apexstone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "ArmoredAdd4AttackTrigger",
+      "trigger": "on_armor_added",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd4Attack"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectAdd4Attack",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "@Plus4Attack"
+    }
+  ]
+}

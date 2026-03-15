@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeAddStealth",
+      "type": "enhancer",
+      "names": {
+        "english": "Smokestone",
+        "chinese": "烟雾石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得[stealth] [effect0.upgrade.status0.power]，+[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "relic_effects": [
+        "@AddStealthEnhancer"
+      ],
+      "icon": "@SmokestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "UnitUpgradePoolCommon"
+            ],
+            "rarity": "common"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddStealthEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddStealth"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddStealth",
+      "titles": {
+        "english": "Smokestone",
+        "chinese": "烟雾石"
+      },
+      "descriptions": {
+        "english": "Gain [stealth] [status0.power] and +[bonusdamage][attack].",
+        "chinese": "获得[stealth] [status0.power]，+[bonusdamage][attack]。"
+      },
+      "icon": "@SmokestoneIcon",
+      "bonus_damage": 10,
+      "status_effect_upgrades": [
+        {
+          "status": "stealth",
+          "count": 2
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SmokestoneIcon",
+      "path": "textures/smokestone.png"
+    }
+  ]
+}

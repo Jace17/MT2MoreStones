@@ -1,0 +1,82 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeSweep",
+      "type": "enhancer",
+      "names": {
+        "english": "Swipestone",
+        "chinese": "拍击石"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with [sweep], but [effect0.upgrade.bonusdamage][attack].",
+        "chinese": "升级一个单位，使其获得[sweep]，[effect0.upgrade.bonusdamage][attack]。"
+      },
+      "relic_effects": [
+        "@SweepEnhancer"
+      ],
+      "icon": "@SwipestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": null,
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "SweepEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddSweep"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddSweep",
+      "titles": {
+        "english": "Swipestone",
+        "chinese": "拍击石"
+      },
+      "descriptions": {
+        "english": "Gain [sweep] but [bonusdamage][attack].",
+        "chinese": "获得[sweep]，[bonusdamage][attack]。"
+      },
+      "icon": "@SwipestoneIcon",
+      "bonus_damage": -20,
+      "status_effect_upgrades": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ],
+      "filters": [
+        "ExcludeEelGorgon",
+        "@ExcludeSweep"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "SwipestoneIcon",
+      "path": "textures/swipestone-v2.png"
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "ExcludeSweep",
+      "excluded_status": [
+        {
+          "status": "sweep",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

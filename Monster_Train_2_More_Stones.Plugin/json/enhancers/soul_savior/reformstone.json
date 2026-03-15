@@ -1,0 +1,94 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "SpellUpgradeReform",
+      "type": "enhancer",
+      "names": {
+        "english": "Formstone",
+        "chinese": "塑造石"
+      },
+      "descriptions": {
+        "english": "Upgrade a spell to add '[raise] a random unit.'",
+        "chinese": "升级一个法术，使其获得'随机[raise]一个单位。'"
+      },
+      "relic_effects": [
+        "@AddReformEnhancer"
+      ],
+      "icon": "@ReformstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "SpellUpgradePoolCommon"
+            ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddReformEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "spell",
+      "param_upgrade": "@AddReform"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddReform",
+      "titles": {
+        "english": "Formstone",
+        "chinese": "塑造石"
+      },
+      "descriptions": {
+        "english": "Gain '[raise] a random unit.'",
+        "chinese": "获得'随机[raise]一个单位。'"
+      },
+      "icon": "@ReformstoneIcon",
+      "card_trigger_upgrades": [
+        {
+          "id": "@AddReformTrigger"
+        }
+      ],
+      "filters": [
+        "OnlySpells"
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "ReformstoneIcon",
+      "path": "textures/reformstone-v2.png"
+    }
+  ],
+  "card_triggers": [
+    {
+      "id": "AddReformTrigger",
+      "trigger": "on_cast",
+      "descriptions": {
+        "english": "[raise] a random unit.",
+        "chinese": "随机[raise]一个单位。"
+      },
+      "effects": [
+        {
+          "id": "@ReformEffect"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "ReformEffect",
+      "name": "CardEffectRecursion",
+      "param_int": 1,
+      "param_upgrade": "Raise",
+      "target_mode": "exhaust",
+      "target_card_type": "monster",
+      "target_card_selection_mode": "random_to_hand"
+    }
+  ]
+}
