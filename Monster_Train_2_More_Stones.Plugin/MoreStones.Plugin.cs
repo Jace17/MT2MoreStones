@@ -289,6 +289,11 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addFusionstone.Value) paths.Add("json/enhancers/soul_savior/fusionstone.json");
             if (addInspirestone.Value) paths.Add("json/enhancers/soul_savior/inspirestone.json");
             if (addReapstone.Value) paths.Add("json/enhancers/soul_savior/reapstone.json");
+            if (addStrikestone.Value) paths.Add("json/enhancers/soul_savior/strikestone.json");
+            if (addHungerstone.Value) paths.Add("json/enhancers/soul_savior/hungerstone.json");
+            if (addRevengestone.Value) paths.Add("json/enhancers/soul_savior/revengestone.json");
+            if (addRallystone.Value) paths.Add("json/enhancers/soul_savior/rallystone.json");
+            if (addGravestone.Value) paths.Add("json/enhancers/soul_savior/gravestone.json");
 
             var builder = Railhead.GetBuilder();
             builder.Configure(
@@ -310,27 +315,27 @@ namespace Monster_Train_2_More_Stones.Plugin
         }
     }
 
-    [HarmonyPatch(typeof(SaveManager), "SetupRun")]
-    public class LogForDebug
-    {
-        public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
-        public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
-        {
-            // Log all enhancers
-            List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
-            enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
-            foreach (EnhancerData enhancerData in enhancers)
-            {
-                Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
-            }
+    //[HarmonyPatch(typeof(SaveManager), "SetupRun")]
+    //public class LogForDebug
+    //{
+    //    public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
+    //    public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
+    //    {
+    //        // Log all enhancers
+    //        List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
+    //        enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
+    //        foreach (EnhancerData enhancerData in enhancers)
+    //        {
+    //            Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
+    //        }
 
-            // Log all cards
-            List<CardData> cards = ___allGameData.GetAllCardData().ToList();
-            cards.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort cards by Name
-            foreach (CardData cardData in cards)
-            {
-                Log.LogInfo($"Card Name: {cardData.Cheat_GetNameEnglish()}, Debug Name: {cardData.GetDebugName()}, ID: {cardData.GetID()}"); // Log all card IDs
-            }
-        }
-    }
+    //        // Log all cards
+    //        List<CardData> cards = ___allGameData.GetAllCardData().ToList();
+    //        cards.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort cards by Name
+    //        foreach (CardData cardData in cards)
+    //        {
+    //            Log.LogInfo($"Card Name: {cardData.Cheat_GetNameEnglish()}, Debug Name: {cardData.GetDebugName()}, ID: {cardData.GetID()}"); // Log all card IDs
+    //        }
+    //    }
+    //}
 }

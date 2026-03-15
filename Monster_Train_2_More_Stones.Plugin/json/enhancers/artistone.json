@@ -9,7 +9,7 @@
         "chinese": "巧艺石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Artificer</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "english": "Upgrade a unit with '<b>Artificer</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'",
         "chinese": "升级一个单位，使其获得'<b>巧匠</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
@@ -45,7 +45,7 @@
         "chinese": "巧艺石"
       },
       "descriptions": {
-        "english": "Gain '<b>Artificer</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "english": "Gain '<b>Artificer</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'",
         "chinese": "获得'<b>巧匠</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@ArtistoneIcon",
@@ -67,12 +67,12 @@
       "id": "ArtificerAdd8Attack8HealthTrigger",
       "trigger": "on_equipment_added_to_ally",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power].",
         "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {
-          "id": "@EffectAdd8Attack8Health"
+          "id": "@EffectAdd8Attack8Armor"
         }
       ]
     }

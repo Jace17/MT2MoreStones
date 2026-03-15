@@ -9,7 +9,7 @@
         "chinese": "腾云石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "english": "Upgrade a unit with '[shift]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'",
         "chinese": "升级一个单位，使其获得'[shift]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
@@ -45,7 +45,7 @@
         "chinese": "腾云石"
       },
       "descriptions": {
-        "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'",
         "chinese": "获得'[shift]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@SoulSavior_CloudstoneIcon",
@@ -67,12 +67,12 @@
       "id": "SoulSavior_ShiftAdd2Attack2HealthTrigger",
       "trigger": "on_shift",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power].",
         "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {
-          "id": "@EffectAdd4Attack4Health"
+          "id": "@EffectAdd4Attack4Armor"
         }
       ]
     }
