@@ -93,8 +93,9 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 
 # Enhanced Stones for Soul Savior Mode
 
-| Bloomslab         | Unit  | Awoken          | Rare     | Add Rejuvenate: +8 Attack, +8 Health                   |
+| Name              | Type  | Clan            | Rarity   | Effect                                                 |
 | ----------------- | ----- | --------------- | -------- | ------------------------------------------------------ |
+| Bloomslab         | Unit  | Awoken          | Rare     | Add Rejuvenate: +8 Attack, +8 Health                   |
 | Healstone+        | Spell | Awoken          | Common   | Restore 10 HP to all allies.                           |
 | Sunstone+         | Spell | Awoken          | Common   | Draw +2 next turn.                                     |
 | Vinestone+        | Spell | Awoken          | Uncommon | Apply Rooted 2 to all enemies.                         |
