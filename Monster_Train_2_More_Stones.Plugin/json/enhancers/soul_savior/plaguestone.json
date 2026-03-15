@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeDecay",
       "type": "enhancer",
       "names": {
-        "english": "Plaguestone",
+        "english": "Plaguestone+",
         "chinese": "瘟疫石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddDecayEffect",
       "titles": {
-        "english": "Plaguestone",
+        "english": "Plaguestone+",
         "chinese": "瘟疫石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "decay",
-          "count": 4
+          "count": 8
         }
       ]
     }

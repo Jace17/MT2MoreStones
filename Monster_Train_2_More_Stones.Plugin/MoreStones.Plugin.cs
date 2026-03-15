@@ -254,6 +254,26 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addHoardstone.Value) paths.Add("json/enhancers/soul_savior/hoardstone.json");
             if (addLootstone.Value) paths.Add("json/enhancers/soul_savior/lootstone.json");
             if (addPyrestone.Value) paths.Add("json/enhancers/soul_savior/pyrestone.json");
+            if (addForgestone.Value) paths.Add("json/enhancers/soul_savior/forgestone.json");
+            if (addHearthstone.Value) paths.Add("json/enhancers/soul_savior/hearthstone.json");
+            if (addSmeltstone.Value) paths.Add("json/enhancers/soul_savior/smeltstone.json");
+            if (addSteelstone.Value) paths.Add("json/enhancers/soul_savior/steelstone.json");
+            if (addFroststone.Value) paths.Add("json/enhancers/soul_savior/froststone.json");
+            if (addMeekstone.Value) paths.Add("json/enhancers/soul_savior/meekstone.json");
+            if (addMutestone.Value) paths.Add("json/enhancers/soul_savior/mutestone.json");
+            if (addOfferstone.Value) paths.Add("json/enhancers/soul_savior/offerstone.json");
+            if (addDownstone.Value) paths.Add("json/enhancers/soul_savior/downstone.json");
+            if (addGorgestone.Value) paths.Add("json/enhancers/soul_savior/gorgestone.json");
+            if (addLeechstone.Value) paths.Add("json/enhancers/soul_savior/leechstone.json");
+            if (addMorselstone.Value) paths.Add("json/enhancers/soul_savior/morselstone.json");
+            if (addFrontstone.Value) paths.Add("json/enhancers/soul_savior/frontstone.json");
+            if (addGrowstone.Value) paths.Add("json/enhancers/soul_savior/growstone.json");
+            if (addPlaguestone.Value) paths.Add("json/enhancers/soul_savior/plaguestone.json");
+            if (addSpawnstone.Value) paths.Add("json/enhancers/soul_savior/spawnstone.json");
+            if (addEtchstone.Value) paths.Add("json/enhancers/soul_savior/etchstone.json");
+            if (addFusionstone.Value) paths.Add("json/enhancers/soul_savior/fusionstone.json");
+            if (addInspirestone.Value) paths.Add("json/enhancers/soul_savior/inspirestone.json");
+            if (addReapstone.Value) paths.Add("json/enhancers/soul_savior/reapstone.json");
 
             var builder = Railhead.GetBuilder();
             builder.Configure(

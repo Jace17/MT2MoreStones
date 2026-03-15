@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeReap",
       "type": "enhancer",
       "names": {
-        "english": "Reapstone",
+        "english": "Reapstone+",
         "chinese": "晶爆石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddReapEffect",
       "titles": {
-        "english": "Reapstone",
+        "english": "Reapstone+",
         "chinese": "晶爆石"
       },
       "descriptions": {
@@ -89,7 +89,7 @@
       "param_status_effects": [
         {
           "status": "corrupt_poison",
-          "count": 5
+          "count": 10
         }
       ]
     }

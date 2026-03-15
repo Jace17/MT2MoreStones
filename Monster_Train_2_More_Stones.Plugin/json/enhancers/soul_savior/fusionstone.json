@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeGainInfusion",
       "type": "enhancer",
       "names": {
-        "english": "Fusionstone",
+        "english": "Fusionstone+",
         "chinese": "注能石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_GainInfusion",
       "titles": {
-        "english": "Fusionstone",
+        "english": "Fusionstone+",
         "chinese": "注能石"
       },
       "descriptions": {
@@ -85,7 +85,7 @@
       "id": "SoulSavior_GainInfusionEffect",
       "name": "CardEffectAdjustCorruption",
       "target_mode": "room",
-      "param_int": 1,
+      "param_int": 2,
       "param_bool": true
     }
   ]

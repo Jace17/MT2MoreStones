@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradePropagate",
       "type": "enhancer",
       "names": {
-        "english": "Growstone",
+        "english": "Growstone+",
         "chinese": "生长石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddPropagate",
       "titles": {
-        "english": "Growstone",
+        "english": "Growstone+",
         "chinese": "生长石"
       },
       "descriptions": {
@@ -88,7 +88,7 @@
       "name": "CardEffectAdjustAllStatusEffects",
       "target_mode": "room",
       "target_team": "both",
-      "param_int": 1,
+      "param_int": 2,
       "param_int_2": 1
     }
   ]

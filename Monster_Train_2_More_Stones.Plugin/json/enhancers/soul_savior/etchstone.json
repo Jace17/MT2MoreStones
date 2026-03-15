@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeEtch",
       "type": "enhancer",
       "names": {
-        "english": "Etchstone",
+        "english": "Etchslab",
         "chinese": "蚀刻石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddEtch",
       "titles": {
-        "english": "Etchstone",
+        "english": "Etchslab",
         "chinese": "蚀刻石"
       },
       "descriptions": {
@@ -72,7 +72,7 @@
       },
       "effects": [
         {
-          "id": "@SoulSavior_EffectAdd4Attack4Health"
+          "id": "@EffectAdd8Attack8Health"
         }
       ]
     }

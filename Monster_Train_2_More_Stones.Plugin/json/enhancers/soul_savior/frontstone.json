@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeAdvance",
       "type": "enhancer",
       "names": {
-        "english": "Frontstone",
+        "english": "Frontstone+",
         "chinese": "前移石"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [advance].",
+        "english": "Upgrade a targeted spell to add [advance] and -[effect0.upgrade.costreduction][ember].",
         "chinese": "升级一个指定目标法术，使其获得'[advance]。'"
       },
       "relic_effects": [
@@ -41,14 +41,16 @@
     {
       "id": "SoulSavior_AddAdvance",
       "titles": {
-        "english": "Frontstone",
+        "english": "Frontstone+",
         "chinese": "前移石"
       },
       "descriptions": {
-        "english": "Gain [advance].",
+        "english": "Gain [advance] and -[effect0.upgrade.costreduction][ember].",
         "chinese": "获得'[advance]。'"
       },
       "icon": "@SoulSavior_FrontstoneIcon",
+      "cost_reduction": 2,
+      "x_cost_reduction": 2,
       "card_trigger_upgrades": [
         {
           "id": "@SoulSavior_AdvanceTrigger"
@@ -56,8 +58,8 @@
       ],
       "filters": [
         "OnlySpells",
-        "@SoulSavior_SingleTargetOnly",
-        "@SoulSavior_NoAdvanceOrRetreat"
+        "@SingleTargetOnly",
+        "@NoAdvanceOrRetreat"
       ]
     }
   ],
