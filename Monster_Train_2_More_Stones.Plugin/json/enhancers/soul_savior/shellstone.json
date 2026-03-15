@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeTitanskin2",
       "type": "enhancer",
       "names": {
-        "english": "Shellstone",
+        "english": "Shellslab",
         "chinese": "甲壳石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddTitanskin2",
       "titles": {
-        "english": "Shellstone",
+        "english": "Shellslab",
         "chinese": "甲壳石"
       },
       "descriptions": {
@@ -54,7 +54,7 @@
       "status_effect_upgrades": [
         {
           "status": "titanskin",
-          "count": 3
+          "count": 7
         }
       ],
       "filters": [

@@ -5,11 +5,11 @@
       "id": "SoulSavior_UnitUpgradeTrample",
       "type": "enhancer",
       "names": {
-        "english": "Stompstone",
+        "english": "Stompslab",
         "chinese": "蹂躏石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [trample].",
+        "english": "Upgrade a unit with [trample] and +[effect0.upgrade.bonusdamage][attack].",
         "chinese": "升级一个单位，使其获得[trample]。"
       },
       "relic_effects": [
@@ -43,14 +43,15 @@
     {
       "id": "SoulSavior_AddTrample",
       "titles": {
-        "english": "Stompstone",
+        "english": "Stompslab",
         "chinese": "蹂躏石"
       },
       "descriptions": {
-        "english": "Gain [trample].",
+        "english": "Gain [trample] and +[bonusdamage][attack].",
         "chinese": "获得[trample]。"
       },
       "icon": "@SoulSavior_TramplestoneIcon",
+      "bonus_damage": 20,
       "status_effect_upgrades": [
         {
           "status": "trample",

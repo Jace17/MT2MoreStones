@@ -1,4 +1,11 @@
 {
+  "upgrades": [
+    {
+      "id": "Plus8Attack8Health",
+      "bonus_damage": 8,
+      "bonus_hp": 8
+    }
+  ],
   "upgrade_masks": [
     {
       "id": "AttackSpellsOnly",
@@ -41,6 +48,13 @@
       "target_mode": "self",
       "param_int": 1,
       "param_upgrade": "Plus4Attack4Health"
+    },
+    {
+      "id": "EffectAdd8Attack8Health",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "@Plus8Attack8Health"
     }
   ]
 }

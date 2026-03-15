@@ -5,11 +5,11 @@
       "id": "SoulSavior_UnitUpgradeFree",
       "type": "enhancer",
       "names": {
-        "english": "Trainstone",
+        "english": "Trainslab",
         "chinese": "火车石"
       },
       "descriptions": {
-        "english": "Upgrade a unit to make it <b>0</b>[ember].",
+        "english": "Upgrade a unit to make it <b>0</b>[ember] and +[effect0.upgrade.bonusdamage][attack].",
         "chinese": "升级一个单位，使其费用变成 <b>0</b>[ember]。"
       },
       "relic_effects": [
@@ -43,14 +43,15 @@
     {
       "id": "SoulSavior_FreeUnit",
       "titles": {
-        "english": "Trainstone",
+        "english": "Trainslab",
         "chinese": "火车石"
       },
       "descriptions": {
-        "english": "<b>0</b>[ember].",
+        "english": "<b>0</b>[ember] and +[bonusdamage][attack].",
         "chinese": "<b>0</b>[ember]。"
       },
       "icon": "@SoulSavior_TrainstoneIcon",
+      "bonus_damage": 20,
       "cost_reduction": 99,
       "filters": [
         "ExcludeZeroCost"

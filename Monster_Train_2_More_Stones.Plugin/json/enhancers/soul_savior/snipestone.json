@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeSniper",
       "type": "enhancer",
       "names": {
-        "english": "Snipestone",
+        "english": "Snipeslab",
         "chinese": "狙击石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddSniper",
       "titles": {
-        "english": "Snipestone",
+        "english": "Snipeslab",
         "chinese": "狙击石"
       },
       "descriptions": {
@@ -51,7 +51,7 @@
         "chinese": "获得<b>狙击手</b>，+[bonusdamage][attack]。"
       },
       "icon": "@SoulSavior_SnipestoneIcon",
-      "bonus_damage": 10,
+      "bonus_damage": 30,
       "status_effect_upgrades": [
         {
           "status": "sniper",

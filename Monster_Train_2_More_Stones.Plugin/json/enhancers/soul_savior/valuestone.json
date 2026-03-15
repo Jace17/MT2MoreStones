@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeValue",
       "type": "enhancer",
       "names": {
-        "english": "Valuestone",
+        "english": "Valuestone+",
         "chinese": "价值石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_ValueUpgrade",
       "titles": {
-        "english": "Valuestone",
+        "english": "Valuestone+",
         "chinese": "价值石"
       },
       "descriptions": {
@@ -51,8 +51,8 @@
         "chinese": "-[costreduction][ember]。"
       },
       "icon": "@SoulSavior_ValuestoneIcon",
-      "cost_reduction": 3,
-      "x_cost_reduction": 3,
+      "cost_reduction": 6,
+      "x_cost_reduction": 6,
       "filters": [
         "OnlySpells",
         "ExcludeZeroCost"

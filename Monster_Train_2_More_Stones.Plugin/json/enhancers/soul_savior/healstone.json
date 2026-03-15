@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeHeal",
       "type": "enhancer",
       "names": {
-        "english": "Healstone",
+        "english": "Healstone+",
         "chinese": "回血石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddHeal",
       "titles": {
-        "english": "Healstone",
+        "english": "Healstone+",
         "chinese": "回血石"
       },
       "descriptions": {
@@ -88,7 +88,7 @@
       "name": "CardEffectHeal",
       "target_mode": "room",
       "target_team": "monsters",
-      "param_int": 5
+      "param_int": 10
     }
   ]
 }

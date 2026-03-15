@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradePiercing",
       "type": "enhancer",
       "names": {
-        "english": "Truestone",
+        "english": "Truestone+",
         "chinese": "真言石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddPiercingTrait",
       "titles": {
-        "english": "Truestone",
+        "english": "Truestone+",
         "chinese": "真言石"
       },
       "descriptions": {
@@ -56,11 +56,11 @@
           "id": "@SoulSavior_PiercingTrait"
         }
       ],
-      "bonus_damage": 10,
-      "bonus_heal": 10,
+      "bonus_damage": 30,
+      "bonus_heal": 30,
       "filters": [
         "@SoulSavior_ExcludePiercing",
-        "@SoulSavior_AttackSpellsOnly"
+        "@AttackSpellsOnly"
       ]
     }
   ],

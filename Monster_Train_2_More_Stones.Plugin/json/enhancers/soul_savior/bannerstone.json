@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeDeployable",
       "type": "enhancer",
       "names": {
-        "english": "Bannerstone",
+        "english": "Bannerslab",
         "chinese": "战旗石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddDeployableTrait",
       "titles": {
-        "english": "Bannerstone",
+        "english": "Bannerslab",
         "chinese": "战旗石"
       },
       "descriptions": {
@@ -49,7 +49,7 @@
         "chinese": "获得[deployable]，+[bonusdamage][attack]。"
       },
       "icon": "@SoulSavior_BannerstoneIcon",
-      "bonus_damage": 10,
+      "bonus_damage": 30,
       "trait_upgrades": [
         {
           "id": "@SoulSavior_DeployableTrait"

@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeRetreat",
       "type": "enhancer",
       "names": {
-        "english": "Backstone",
+        "english": "Backstone+",
         "chinese": "后移石"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [retreat].",
+        "english": "Upgrade a targeted spell to add [retreat] and -[effect0.upgrade.costreduction][ember].",
         "chinese": "升级一个指定目标法术，使其获得'[retreat]。'"
       },
       "relic_effects": [
@@ -41,14 +41,16 @@
     {
       "id": "SoulSavior_AddRetreat",
       "titles": {
-        "english": "Backstone",
+        "english": "Backstone+",
         "chinese": "后移石"
       },
       "descriptions": {
-        "english": "Gain [retreat].",
+        "english": "Gain [retreat] and -[costreduction][ember].",
         "chinese": "获得'[retreat]。'"
       },
       "icon": "@SoulSavior_BackstoneIcon",
+      "cost_reduction": 1,
+      "x_cost_reduction": 1,
       "card_trigger_upgrades": [
         {
           "id": "@SoulSavior_RetreatTrigger"
@@ -56,8 +58,8 @@
       ],
       "filters": [
         "OnlySpells",
-        "@SoulSavior_SingleTargetOnly",
-        "@SoulSavior_NoAdvanceOrRetreat"
+        "@SingleTargetOnly",
+        "@NoAdvanceOrRetreat"
       ]
     }
   ],

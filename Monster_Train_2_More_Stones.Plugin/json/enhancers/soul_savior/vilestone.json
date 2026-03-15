@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeCorruption",
       "type": "enhancer",
       "names": {
-        "english": "Vilestone",
+        "english": "Vilestone+",
         "chinese": "腐败石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddCorruptionEffect",
       "titles": {
-        "english": "Vilestone",
+        "english": "Vilestone+",
         "chinese": "腐败石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "corruption",
-          "count": 20
+          "count": 40
         }
       ]
     }

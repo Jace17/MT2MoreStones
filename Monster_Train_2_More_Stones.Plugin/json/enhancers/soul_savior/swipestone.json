@@ -5,11 +5,11 @@
       "id": "SoulSavior_UnitUpgradeSweep",
       "type": "enhancer",
       "names": {
-        "english": "Swipestone",
+        "english": "Swipeslab",
         "chinese": "拍击石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with [sweep], but [effect0.upgrade.bonusdamage][attack].",
+        "english": "Upgrade a unit with [sweep].",
         "chinese": "升级一个单位，使其获得[sweep]，[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
@@ -41,15 +41,14 @@
     {
       "id": "SoulSavior_AddSweep",
       "titles": {
-        "english": "Swipestone",
+        "english": "Swipeslab",
         "chinese": "拍击石"
       },
       "descriptions": {
-        "english": "Gain [sweep] but [bonusdamage][attack].",
+        "english": "Gain [sweep].",
         "chinese": "获得[sweep]，[bonusdamage][attack]。"
       },
       "icon": "@SoulSavior_SwipestoneIcon",
-      "bonus_damage": -20,
       "status_effect_upgrades": [
         {
           "status": "sweep",

@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeRemoveDebuff",
       "type": "enhancer",
       "names": {
-        "english": "Curestone",
+        "english": "Curestone+",
         "chinese": "洗涤石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to remove all [debuff] effects from friendly units.",
+        "english": "Upgrade a spell to remove all [debuff] effects from friendly units and -[effect0.upgrade.costreduction][ember].",
         "chinese": "升级一个法术，使其获得'移除本层所有友方单位身上的所有[debuff]效果。'"
       },
       "relic_effects": [
@@ -43,14 +43,16 @@
     {
       "id": "SoulSavior_RemoveDebuff",
       "titles": {
-        "english": "Curestone",
+        "english": "Curestone+",
         "chinese": "洗涤石"
       },
       "descriptions": {
-        "english": "Gain 'Remove all [debuff] effects from friendly units.'",
+        "english": "Gain 'Remove all [debuff] effects from friendly units and -[costreduction][ember].'",
         "chinese": "获得'移除本层所有友方单位身上的所有[debuff]效果。'"
       },
       "icon": "@SoulSavior_CurestoneIcon",
+      "cost_reduction": 1,
+      "x_cost_reduction": 1,
       "card_trigger_upgrades": [
         {
           "id": "@SoulSavior_RemoveDebuffTrigger"

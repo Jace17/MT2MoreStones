@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeAttuned",
       "type": "enhancer",
       "names": {
-        "english": "Tunestone",
+        "english": "Tunestone+",
         "chinese": "调音石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to gain [attuned].",
+        "english": "Upgrade a spell to gain [attuned] and +[effect0.upgrade.bonusdamage] [magicpower].",
         "chinese": "升级一个法术，使其获得[attuned]。"
       },
       "relic_effects": [
@@ -43,11 +43,11 @@
     {
       "id": "SoulSavior_AddAttunedTrait",
       "titles": {
-        "english": "Tunestone",
+        "english": "Tunestone+",
         "chinese": "调音石"
       },
       "descriptions": {
-        "english": "Gain [attuned].",
+        "english": "Gain [attuned] and +[bonusdamage] [magicpower].",
         "chinese": "获得[attuned]。"
       },
       "icon": "@SoulSavior_AttunestoneIcon",
@@ -56,6 +56,8 @@
           "id": "@SoulSavior_AttunedTrait"
         }
       ],
+      "bonus_damage": 5,
+      "bonus_heal": 5,
       "filters": [
         "MagicPowerSpells",
         "@SoulSavior_ExcludeAttuned"

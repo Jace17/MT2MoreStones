@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeExtreme",
       "type": "enhancer",
       "names": {
-        "english": "Extremestone",
+        "english": "Extremestone+",
         "chinese": "极限石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_ExtremeUpgrade",
       "titles": {
-        "english": "Extremestone",
+        "english": "Extremestone+",
         "chinese": "极限石"
       },
       "descriptions": {
@@ -51,8 +51,8 @@
         "chinese": "+[bonusdamage] [magicpower]。"
       },
       "icon": "@SoulSavior_ExtremestoneIcon",
-      "bonus_damage": 30,
-      "bonus_heal": 30,
+      "bonus_damage": 60,
+      "bonus_heal": 60,
       "filters": [
         "MagicPowerSpells"
       ]

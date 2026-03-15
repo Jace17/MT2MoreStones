@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeExplosive",
       "type": "enhancer",
       "names": {
-        "english": "Boomstone",
+        "english": "Boomstone+",
         "chinese": "爆破石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddExplosiveTrait",
       "titles": {
-        "english": "Boomstone",
+        "english": "Boomstone+",
         "chinese": "爆破石"
       },
       "descriptions": {
@@ -56,11 +56,11 @@
           "id": "@SoulSavior_ExplosiveTrait"
         }
       ],
-      "bonus_damage": 20,
-      "bonus_heal": 20,
+      "bonus_damage": 40,
+      "bonus_heal": 40,
       "filters": [
         "@SoulSavior_ExcludeExplosive",
-        "@SoulSavior_AttackSpellsOnly"
+        "@AttackSpellsOnly"
       ]
     }
   ],
