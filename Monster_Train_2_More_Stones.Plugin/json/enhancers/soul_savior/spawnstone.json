@@ -84,7 +84,7 @@
     {
       "id": "SoulSavior_SpawnEffect",
       "name": "CardEffectSpawnMonsterOrAddStatusEffect",
-      "param_int": 1,
+      "param_int": 2,
       "target_subtype": "SubtypesData_Horde",
       "param_status_effects": [
         {
