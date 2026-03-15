@@ -291,31 +291,31 @@ namespace Monster_Train_2_More_Stones.Plugin
                 
             // Uncomment if you need harmony patches, if you are writing your own custom effects.
             var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
-            harmony.PatchAll();
+            harmony.PatchAll(); 
         }
     }
 
-    [HarmonyPatch(typeof(SaveManager), "SetupRun")]
-    public class LogForDebug
-    {
-        public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
-        public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
-        {
-            // Log all enhancers
-            List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
-            enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
-            foreach (EnhancerData enhancerData in enhancers)
-            {
-                Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
-            }
+    //[HarmonyPatch(typeof(SaveManager), "SetupRun")]
+    //public class LogForDebug
+    //{
+    //    public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
+    //    public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
+    //    {
+    //        // Log all enhancers
+    //        List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
+    //        enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
+    //        foreach (EnhancerData enhancerData in enhancers)
+    //        {
+    //            Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
+    //        }
 
-            // Log all cards
-            List<CardData> cards = ___allGameData.GetAllCardData().ToList();
-            cards.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort cards by Name
-            foreach (CardData cardData in cards)
-            {
-                Log.LogInfo($"Card Name: {cardData.Cheat_GetNameEnglish()}, Debug Name: {cardData.GetDebugName()}, ID: {cardData.GetID()}"); // Log all card IDs
-            }
-        }
-    }
+    //        // Log all cards
+    //        List<CardData> cards = ___allGameData.GetAllCardData().ToList();
+    //        cards.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort cards by Name
+    //        foreach (CardData cardData in cards)
+    //        {
+    //            Log.LogInfo($"Card Name: {cardData.Cheat_GetNameEnglish()}, Debug Name: {cardData.GetDebugName()}, ID: {cardData.GetID()}"); // Log all card IDs
+    //        }
+    //    }
+    //}
 }

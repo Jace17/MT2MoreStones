@@ -59,6 +59,7 @@
         }
       ],
       "filters": [
+        "OnlyAttackingUnits",
         "ExcludeEelGorgon",
         "@SoulSavior_ExcludeTrample"
       ]
