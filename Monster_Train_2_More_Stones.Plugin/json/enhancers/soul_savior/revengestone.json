@@ -2,24 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeRevenge",
+      "id": "SoulSavior_UnitUpgradeRevenge",
       "type": "enhancer",
       "names": {
-        "english": "Revengestone"
+        "english": "Revengeslab"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'"
       },
       "relic_effects": [
-        "@RevengeEnhancer"
+        "@SoulSavior_RevengeEnhancer"
       ],
-      "icon": "@RevengestoneIcon",
+      "icon": "@SoulSavior_RevengestoneIcon",
       "extensions": [
         {
           "enhancer": {
             "class": "ClassBanished",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "SoulSavior_UnitUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }
@@ -29,45 +29,45 @@
   ],
   "relic_effects": [
     {
-      "id": "RevengeEnhancer",
+      "id": "SoulSavior_RevengeEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddRevenge"
+      "param_upgrade": "@SoulSavior_AddRevenge"
     }
   ],
   "upgrades": [
     {
-      "id": "AddRevenge",
+      "id": "SoulSavior_AddRevenge",
       "titles": {
-        "english": "Revengestone"
+        "english": "Revengeslab"
       },
       "descriptions": {
         "english": "Gain '[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'"
       },
-      "icon": "@RevengestoneIcon",
+      "icon": "@SoulSavior_RevengestoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@RevengeAdd4Attack4ArmorTrigger"
+          "id": "@SoulSavior_RevengeAdd4Attack4ArmorTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "RevengestoneIcon",
+      "id": "SoulSavior_RevengestoneIcon",
       "path": "textures/revengestone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "RevengeAdd4Attack4ArmorTrigger",
+      "id": "SoulSavior_RevengeAdd4Attack4ArmorTrigger",
       "trigger": "on_hit",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power]."
       },
       "effects": [
         {
-          "id": "@EffectAdd4Attack4Armor"
+          "id": "@EffectAdd8Attack8Armor"
         }
       ]
     }

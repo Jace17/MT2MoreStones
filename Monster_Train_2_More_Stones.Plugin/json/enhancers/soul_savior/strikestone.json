@@ -2,24 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeStrike",
+      "id": "SoulSavior_UnitUpgradeStrike",
       "type": "enhancer",
       "names": {
-        "english": "Strikestone"
+        "english": "Strikeslab"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[strike]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'"
       },
       "relic_effects": [
-        "@StrikeEnhancer"
+        "@SoulSavior_StrikeEnhancer"
       ],
-      "icon": "@StrikestoneIcon",
+      "icon": "@SoulSavior_StrikestoneIcon",
       "extensions": [
         {
           "enhancer": {
             "class": "ClassHellhorned",
             "pools": [
-              "UnitUpgradePoolCommon"
+              "SoulSavior_UnitUpgradePoolCommon"
             ],
             "rarity": "uncommon"
           }
@@ -29,45 +29,45 @@
   ],
   "relic_effects": [
     {
-      "id": "StrikeEnhancer",
+      "id": "SoulSavior_StrikeEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddStrike"
+      "param_upgrade": "@SoulSavior_AddStrike"
     }
   ],
   "upgrades": [
     {
-      "id": "AddStrike",
+      "id": "SoulSavior_AddStrike",
       "titles": {
-        "english": "Strikestone"
+        "english": "Strikeslab"
       },
       "descriptions": {
         "english": "Gain '[strike]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'"
       },
-      "icon": "@StrikestoneIcon",
+      "icon": "@SoulSavior_StrikestoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@StrikeAdd4Attack4ArmorTrigger"
+          "id": "@SoulSavior_StrikeAdd4Attack4ArmorTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "StrikestoneIcon",
+      "id": "SoulSavior_StrikestoneIcon",
       "path": "textures/strikestone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "StrikeAdd4Attack4ArmorTrigger",
+      "id": "SoulSavior_StrikeAdd4Attack4ArmorTrigger",
       "trigger": "on_attacking",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power]."
       },
       "effects": [
         {
-          "id": "@EffectAdd4Attack4Armor"
+          "id": "@EffectAdd8Attack8Armor"
         }
       ]
     }

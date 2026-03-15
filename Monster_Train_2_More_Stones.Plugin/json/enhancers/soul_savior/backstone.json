@@ -19,7 +19,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassBanished",
+            "class": null,
             "pools": [
               "SoulSavior_SpellUpgradePoolCommon"
             ],

@@ -2,24 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeHunger",
+      "id": "SoulSavior_UnitUpgradeHunger",
       "type": "enhancer",
       "names": {
-        "english": "Hungerstone"
+        "english": "Hungerslab"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].'"
+        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].' and +[effect0.upgrade.bonushp][health]."
       },
       "relic_effects": [
-        "@HungerEnhancer"
+        "@SoulSavior_HungerEnhancer"
       ],
-      "icon": "@HungerstoneIcon",
+      "icon": "@SoulSavior_HungerstoneIcon",
       "extensions": [
         {
           "enhancer": {
             "class": "ClassUmbra",
             "pools": [
-              "UnitUpgradePoolRare"
+              "SoulSavior_UnitUpgradePoolRare"
             ],
             "rarity": "rare"
           }
@@ -29,52 +29,53 @@
   ],
   "relic_effects": [
     {
-      "id": "HungerEnhancer",
+      "id": "SoulSavior_HungerEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddHunger"
+      "param_upgrade": "@SoulSavior_AddHunger"
     }
   ],
   "upgrades": [
     {
-      "id": "AddHunger",
+      "id": "SoulSavior_AddHunger",
       "titles": {
-        "english": "Hungerstone"
+        "english": "Hungerslab"
       },
       "descriptions": {
-        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].'"
+        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].' and +[bonushp][health]."
       },
-      "icon": "@HungerstoneIcon",
+      "icon": "@SoulSavior_HungerstoneIcon",
+      "bonus_hp": 30,
       "trigger_upgrades": [
         {
-          "id": "@HungerEatFood"
+          "id": "@SoulSavior_HungerEatFood"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "HungerstoneIcon",
+      "id": "SoulSavior_HungerstoneIcon",
       "path": "textures/hungerstone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "HungerEatFood",
+      "id": "SoulSavior_HungerEatFood",
       "trigger": "on_food_spawn",
       "descriptions": {
         "english": "Feed on units with [eaten]."
       },
       "effects": [
         {
-          "id": "@EffectEatFood"
+          "id": "@SoulSavior_EffectEatFood"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectEatFood",
+      "id": "SoulSavior_EffectEatFood",
       "name": "CardEffectFeederRules",
       "target_mode": "room",
       "target_team": "monsters",

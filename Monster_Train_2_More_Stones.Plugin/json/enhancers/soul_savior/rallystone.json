@@ -2,24 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeRally",
+      "id": "SoulSavior_UnitUpgradeRally",
       "type": "enhancer",
       "names": {
-        "english": "Rallystone"
+        "english": "Rallyslab"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[rally]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
-        "@RallyEnhancer"
+        "@SoulSavior_RallyEnhancer"
       ],
-      "icon": "@RallystoneIcon",
+      "icon": "@SoulSavior_RallystoneIcon",
       "extensions": [
         {
           "enhancer": {
             "class": "ClassUnderlegion",
             "pools": [
-              "UnitUpgradePoolRare"
+              "SoulSavior_UnitUpgradePoolRare"
             ],
             "rarity": "rare"
           }
@@ -29,45 +29,45 @@
   ],
   "relic_effects": [
     {
-      "id": "RallyEnhancer",
+      "id": "SoulSavior_RallyEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddRally"
+      "param_upgrade": "@SoulSavior_AddRally"
     }
   ],
   "upgrades": [
     {
-      "id": "AddRally",
+      "id": "SoulSavior_AddRally",
       "titles": {
-        "english": "Rallystone"
+        "english": "Rallyslab"
       },
       "descriptions": {
         "english": "Gain '[rally]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
-      "icon": "@RallystoneIcon",
+      "icon": "@SoulSavior_RallystoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@RallyAdd2Attack2HealthTrigger"
+          "id": "@SoulSavior_RallyAdd2Attack2HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "RallystoneIcon",
+      "id": "SoulSavior_RallystoneIcon",
       "path": "textures/rallystone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "RallyAdd2Attack2HealthTrigger",
+      "id": "SoulSavior_RallyAdd2Attack2HealthTrigger",
       "trigger": "card_monster_played",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
       },
       "effects": [
         {
-          "id": "@EffectAdd2Attack2Health"
+          "id": "@EffectAdd4Attack4Health"
         }
       ]
     }

@@ -19,7 +19,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassUmbra",
+            "class": null,
             "pools": [
               "SoulSavior_SpellUpgradePoolCommon"
             ],

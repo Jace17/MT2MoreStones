@@ -2,24 +2,24 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeHarvest",
+      "id": "SoulSavior_UnitUpgradeHarvest",
       "type": "enhancer",
       "names": {
-        "english": "Gravestone"
+        "english": "Graveslab"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[harvest]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
       "relic_effects": [
-        "@HarvestEnhancer"
+        "@SoulSavior_HarvestEnhancer"
       ],
-      "icon": "@GravestoneIcon",
+      "icon": "@SoulSavior_GravestoneIcon",
       "extensions": [
         {
           "enhancer": {
             "class": "ClassRemnant",
             "pools": [
-              "UnitUpgradePoolRare"
+              "SoulSavior_UnitUpgradePoolRare"
             ],
             "rarity": "rare"
           }
@@ -29,45 +29,45 @@
   ],
   "relic_effects": [
     {
-      "id": "HarvestEnhancer",
+      "id": "SoulSavior_HarvestEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddHarvest"
+      "param_upgrade": "@SoulSavior_AddHarvest"
     }
   ],
   "upgrades": [
     {
-      "id": "AddHarvest",
+      "id": "SoulSavior_AddHarvest",
       "titles": {
-        "english": "Gravestone"
+        "english": "Graveslab"
       },
       "descriptions": {
         "english": "Gain '[harvest]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
       },
-      "icon": "@GravestoneIcon",
+      "icon": "@SoulSavior_GravestoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@HarvestAdd2Attack2HealthTrigger"
+          "id": "@SoulSavior_HarvestAdd2Attack2HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "GravestoneIcon",
+      "id": "SoulSavior_GravestoneIcon",
       "path": "textures/gravestone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "HarvestAdd2Attack2HealthTrigger",
+      "id": "SoulSavior_HarvestAdd2Attack2HealthTrigger",
       "trigger": "on_any_unit_death_on_floor",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
       },
       "effects": [
         {
-          "id": "@EffectAdd2Attack2Health"
+          "id": "@EffectAdd4Attack4Health"
         }
       ]
     }
