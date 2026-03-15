@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeHarvest",
+      "type": "enhancer",
+      "names": {
+        "english": "Gravestone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[harvest]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "relic_effects": [
+        "@HarvestEnhancer"
+      ],
+      "icon": "@GravestoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassRemnant",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "HarvestEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddHarvest"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddHarvest",
+      "titles": {
+        "english": "Gravestone"
+      },
+      "descriptions": {
+        "english": "Gain '[harvest]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "icon": "@GravestoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@HarvestAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "GravestoneIcon",
+      "path": "textures/gravestone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HarvestAdd2Attack2HealthTrigger",
+      "trigger": "on_any_unit_death_on_floor",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ]
+}
