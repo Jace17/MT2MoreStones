@@ -5,7 +5,7 @@
       "id": "SoulSavior_SpellUpgradeUnstable",
       "type": "enhancer",
       "names": {
-        "english": "Radstone",
+        "english": "Radstone+",
         "chinese": "辐射石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddUnstableEffect",
       "titles": {
-        "english": "Radstone",
+        "english": "Radstone+",
         "chinese": "辐射石"
       },
       "descriptions": {
@@ -91,7 +91,7 @@
       "param_status_effects": [
         {
           "status": "unstable",
-          "count": 10
+          "count": 20
         }
       ]
     }

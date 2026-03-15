@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeAddImp",
       "type": "enhancer",
       "names": {
-        "english": "Impstone",
+        "english": "Impstone+",
         "chinese": "碎尾石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add 'Add a common or uncommon [imp] unit to your hand.'",
+        "english": "Upgrade a spell to add 'Add an [imp] unit to your hand.'",
         "chinese": "升级一个法术，使其获得'将一个普通或高级[imp]单位加入你的手牌。'"
       },
       "relic_effects": [
@@ -41,11 +41,11 @@
     {
       "id": "SoulSavior_AddImpToHand",
       "titles": {
-        "english": "Impstone",
+        "english": "Impstone+",
         "chinese": "碎尾石"
       },
       "descriptions": {
-        "english": "Gain 'Add a common or uncommon [imp] unit to your hand.'",
+        "english": "Gain 'Add an [imp] unit to your hand.'",
         "chinese": "获得'将一个普通或高级[imp]单位加入你的手牌。'"
       },
       "icon": "@SoulSavior_ImpstoneIcon",
@@ -70,7 +70,7 @@
       "id": "SoulSavior_AddImpToHandTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "Add a common or uncommon [imp] unit to your hand.",
+        "english": "Add an [imp] unit to your hand.",
         "chinese": "将一个普通或高级[imp]单位加入你的手牌。"
       },
       "effects": [
@@ -93,15 +93,11 @@
       "id": "SoulSavior_RandomImpCardPool",
       "cards": [
         "AggressiveImp",
-        "AggressiveImp",
-        "StarterImp",
-        "StarterImp",
         "UnstableInfery",
-        "UnstableInfery",
-        "WelderHelper",
         "WelderHelper",
         "EmberedInfery",
-        "EnlightenedInfery"
+        "EnlightenedInfery",
+        "TranscendImp"
       ]
     }
   ]

@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeArtificer",
       "type": "enhancer",
       "names": {
-        "english": "Artistone",
+        "english": "Artislab",
         "chinese": "巧艺石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddArtificer",
       "titles": {
-        "english": "Artistone",
+        "english": "Artislab",
         "chinese": "巧艺石"
       },
       "descriptions": {
@@ -57,8 +57,8 @@
     },
     {
       "id": "SoulSavior_Plus8Attack8Health",
-      "bonus_damage": 8,
-      "bonus_hp": 8
+      "bonus_damage": 12,
+      "bonus_hp": 12
     }
   ],
   "sprites": [

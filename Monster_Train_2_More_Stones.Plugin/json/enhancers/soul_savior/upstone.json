@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeAscend",
       "type": "enhancer",
       "names": {
-        "english": "Upstone",
+        "english": "Upstone+",
         "chinese": "上移石"
       },
       "descriptions": {
-        "english": "Upgrade a targeted spell to add [ascend].",
+        "english": "Upgrade a targeted spell to add [ascend] and -[effect0.upgrade.costreduction][ember].",
         "chinese": "升级一个指定目标法术，使其获得'[ascend]。'"
       },
       "relic_effects": [
@@ -41,14 +41,16 @@
     {
       "id": "SoulSavior_AddAscend",
       "titles": {
-        "english": "Upstone",
+        "english": "Upstone+",
         "chinese": "上移石"
       },
       "descriptions": {
-        "english": "Gain [ascend].",
+        "english": "Gain [ascend] and -[costreduction][ember].",
         "chinese": "获得'[ascend]。'"
       },
       "icon": "@SoulSavior_UpstoneIcon",
+      "cost_reduction": 2,
+      "x_cost_reduction": 2,
       "card_trigger_upgrades": [
         {
           "id": "@SoulSavior_AscendTrigger"
@@ -56,8 +58,8 @@
       ],
       "filters": [
         "OnlySpells",
-        "@SoulSavior_SingleTargetOnly",
-        "@SoulSavior_NoAscendOrDescend"
+        "@SingleTargetOnly",
+        "@NoAscendOrDescend"
       ]
     }
   ],

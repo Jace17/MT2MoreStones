@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeArmored",
       "type": "enhancer",
       "names": {
-        "english": "Apexstone",
+        "english": "Apexslab",
         "chinese": "巅峰石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "SoulSavior_AddArmored",
       "titles": {
-        "english": "Apexstone",
+        "english": "Apexslab",
         "chinese": "巅峰石"
       },
       "descriptions": {
@@ -57,7 +57,7 @@
     },
     {
       "id": "SoulSavior_Plus4Attack",
-      "bonus_damage": 4
+      "bonus_damage": 8
     }
   ],
   "sprites": [

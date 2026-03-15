@@ -5,7 +5,7 @@
       "id": "SoulSavior_UnitUpgradeAddArmor",
       "type": "enhancer",
       "names": {
-        "english": "Armorstone",
+        "english": "Armorslab",
         "chinese": "护甲石"
       },
       "descriptions": {
@@ -43,7 +43,7 @@
     {
       "id": "SoulSavior_AddArmor",
       "titles": {
-        "english": "Armorstone",
+        "english": "Armorslab",
         "chinese": "护甲石"
       },
       "descriptions": {
@@ -54,7 +54,7 @@
       "status_effect_upgrades": [
         {
           "status": "armor",
-          "count": 25
+          "count": 50
         }
       ],
       "filters": [

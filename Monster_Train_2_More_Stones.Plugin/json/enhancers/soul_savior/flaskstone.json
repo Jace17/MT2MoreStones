@@ -5,11 +5,11 @@
       "id": "SoulSavior_SpellUpgradeMix",
       "type": "enhancer",
       "names": {
-        "english": "Flaskstone",
+        "english": "Flaskstone+",
         "chinese": "试剂石"
       },
       "descriptions": {
-        "english": "Upgrade a spell to add [mix].",
+        "english": "Upgrade a spell to add '[mix] twice.'",
         "chinese": "升级一个法术，使其获得'[mix]。'"
       },
       "relic_effects": [
@@ -41,11 +41,11 @@
     {
       "id": "SoulSavior_AddMix",
       "titles": {
-        "english": "Flaskstone",
+        "english": "Flaskstone+",
         "chinese": "试剂石"
       },
       "descriptions": {
-        "english": "Gain [mix].",
+        "english": "Gain '[mix] twice.'",
         "chinese": "获得'[mix]。'"
       },
       "icon": "@SoulSavior_FlaskstoneIcon",
@@ -70,10 +70,13 @@
       "id": "SoulSavior_AddMixTrigger",
       "trigger": "on_cast",
       "descriptions": {
-        "english": "[mix].",
+        "english": "[mix] twice.",
         "chinese": "[mix]。"
       },
       "effects": [
+        {
+          "id": "@SoulSavior_MixEffect"
+        },
         {
           "id": "@SoulSavior_MixEffect"
         }
