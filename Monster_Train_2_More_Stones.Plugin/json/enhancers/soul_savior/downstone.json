@@ -49,8 +49,8 @@
         "chinese": "获得'[descend]。'"
       },
       "icon": "@SoulSavior_DownstoneIcon",
-      "cost_reduction": 2,
-      "x_cost_reduction": 2,
+      "cost_reduction": 1,
+      "x_cost_reduction": 1,
       "card_trigger_upgrades": [
         {
           "id": "@SoulSavior_DescendTrigger"
