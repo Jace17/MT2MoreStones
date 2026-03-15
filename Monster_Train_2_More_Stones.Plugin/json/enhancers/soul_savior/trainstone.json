@@ -21,9 +21,7 @@
           "enhancer": {
             "class": null,
             "pools": [
-              "SoulSavior_UnitUpgradePoolCommon",
-              "DraftUpgradePool",
-              "MalickaDraftUpgradePool"
+              "SoulSavior_UnitUpgradePoolCommon"
             ],
             "rarity": "common"
           }
