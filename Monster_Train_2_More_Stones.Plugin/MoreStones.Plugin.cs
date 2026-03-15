@@ -225,7 +225,6 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addWingstone.Value) paths.Add("json/enhancers/soul_savior/wingstone.json");
             if (addBannerstone.Value) paths.Add("json/enhancers/soul_savior/bannerstone.json");
             if (addBoomstone.Value) paths.Add("json/enhancers/soul_savior/boomstone.json");
-            if (addCurestone.Value) paths.Add("json/enhancers/soul_savior/curestone.json");
             if (addExtremestone.Value) paths.Add("json/enhancers/soul_savior/extremestone.json");
             if (addShellstone.Value) paths.Add("json/enhancers/soul_savior/shellstone.json");
             if (addSnipestone.Value) paths.Add("json/enhancers/soul_savior/snipestone.json");

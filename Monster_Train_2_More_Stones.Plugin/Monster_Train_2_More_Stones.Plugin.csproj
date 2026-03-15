@@ -64,9 +64,6 @@
     <None Update="json\enhancers\soul_savior\cloudstone.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="json\enhancers\soul_savior\curestone.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="json\enhancers\soul_savior\cyclestone.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
