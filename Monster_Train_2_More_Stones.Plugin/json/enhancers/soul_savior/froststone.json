@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeFrostbite",
+      "id": "SoulSavior_SpellUpgradeFrostbite",
       "type": "enhancer",
       "names": {
         "english": "Froststone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[frostbite] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@FrostbiteEnhancer"
+        "@SoulSavior_FrostbiteEnhancer"
       ],
-      "icon": "@FroststoneIcon",
+      "icon": "@SoulSavior_FroststoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "FrostbiteEnhancer",
+      "id": "SoulSavior_FrostbiteEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddFrostbiteEffect"
+      "param_upgrade": "@SoulSavior_AddFrostbiteEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddFrostbiteEffect",
+      "id": "SoulSavior_AddFrostbiteEffect",
       "titles": {
         "english": "Froststone",
         "chinese": "霜冻石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [frostbite] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[frostbite] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@FroststoneIcon",
+      "icon": "@SoulSavior_FroststoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyFrostbiteTrigger"
+          "id": "@SoulSavior_ApplyFrostbiteTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "FroststoneIcon",
+      "id": "SoulSavior_FroststoneIcon",
       "path": "textures/froststone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyFrostbiteTrigger",
+      "id": "SoulSavior_ApplyFrostbiteTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [frostbite] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyFrostbite"
+          "id": "@SoulSavior_EffectApplyFrostbite"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyFrostbite",
+      "id": "SoulSavior_EffectApplyFrostbite",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

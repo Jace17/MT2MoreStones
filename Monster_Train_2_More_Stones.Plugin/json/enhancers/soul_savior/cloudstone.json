@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeShift",
+      "id": "SoulSavior_UnitUpgradeShift",
       "type": "enhancer",
       "names": {
         "english": "Cloudstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得'[shift]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
-        "@ShiftEnhancer"
+        "@SoulSavior_ShiftEnhancer"
       ],
-      "icon": "@CloudstoneIcon",
+      "icon": "@SoulSavior_CloudstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "ShiftEnhancer",
+      "id": "SoulSavior_ShiftEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddShift"
+      "param_upgrade": "@SoulSavior_AddShift"
     }
   ],
   "upgrades": [
     {
-      "id": "AddShift",
+      "id": "SoulSavior_AddShift",
       "titles": {
         "english": "Cloudstone",
         "chinese": "腾云石"
@@ -48,23 +48,23 @@
         "english": "Gain '[shift]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
         "chinese": "获得'[shift]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
-      "icon": "@CloudstoneIcon",
+      "icon": "@SoulSavior_CloudstoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@ShiftAdd2Attack2HealthTrigger"
+          "id": "@SoulSavior_ShiftAdd2Attack2HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "CloudstoneIcon",
+      "id": "SoulSavior_CloudstoneIcon",
       "path": "textures/cloudstone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "ShiftAdd2Attack2HealthTrigger",
+      "id": "SoulSavior_ShiftAdd2Attack2HealthTrigger",
       "trigger": "on_shift",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
@@ -72,7 +72,7 @@
       },
       "effects": [
         {
-          "id": "@EffectAdd2Attack2Health"
+          "id": "@SoulSavior_EffectAdd2Attack2Health"
         }
       ]
     }

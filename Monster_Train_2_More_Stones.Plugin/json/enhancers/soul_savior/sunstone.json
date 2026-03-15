@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDraw1NextTurn",
+      "id": "SoulSavior_SpellUpgradeDraw1NextTurn",
       "type": "enhancer",
       "names": {
         "english": "Sunstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'下个回合抽 +[effect0.upgrade.trigger0.effect0.paramint] 张牌。'"
       },
       "relic_effects": [
-        "@Draw1NextTurnEnhancer"
+        "@SoulSavior_Draw1NextTurnEnhancer"
       ],
-      "icon": "@SunstoneIcon",
+      "icon": "@SoulSavior_SunstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "Draw1NextTurnEnhancer",
+      "id": "SoulSavior_Draw1NextTurnEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddDraw1NextTurn"
+      "param_upgrade": "@SoulSavior_AddDraw1NextTurn"
     }
   ],
   "upgrades": [
     {
-      "id": "AddDraw1NextTurn",
+      "id": "SoulSavior_AddDraw1NextTurn",
       "titles": {
         "english": "Sunstone",
         "chinese": "太阳石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Draw +[trigger0.effect0.paramint] next turn.'",
         "chinese": "获得'下个回合抽 +[trigger0.effect0.paramint] 张牌。'"
       },
-      "icon": "@SunstoneIcon",
+      "icon": "@SoulSavior_SunstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyDraw1NextTurnTrigger"
+          "id": "@SoulSavior_ApplyDraw1NextTurnTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "SunstoneIcon",
+      "id": "SoulSavior_SunstoneIcon",
       "path": "textures/sunstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyDraw1NextTurnTrigger",
+      "id": "SoulSavior_ApplyDraw1NextTurnTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Draw +[effect0.paramint] next turn.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectDraw1NextTurn"
+          "id": "@SoulSavior_EffectDraw1NextTurn"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectDraw1NextTurn",
+      "id": "SoulSavior_EffectDraw1NextTurn",
       "name": "CardEffectDrawAdditionalNextTurn",
       "param_int": 1
     }

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeFree",
+      "id": "SoulSavior_UnitUpgradeFree",
       "type": "enhancer",
       "names": {
         "english": "Trainstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其费用变成 <b>0</b>[ember]。"
       },
       "relic_effects": [
-        "@FreeUnitEnhancer"
+        "@SoulSavior_FreeUnitEnhancer"
       ],
-      "icon": "@TrainstoneIcon",
+      "icon": "@SoulSavior_TrainstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "FreeUnitEnhancer",
+      "id": "SoulSavior_FreeUnitEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@FreeUnit"
+      "param_upgrade": "@SoulSavior_FreeUnit"
     }
   ],
   "upgrades": [
     {
-      "id": "FreeUnit",
+      "id": "SoulSavior_FreeUnit",
       "titles": {
         "english": "Trainstone",
         "chinese": "火车石"
@@ -50,7 +50,7 @@
         "english": "<b>0</b>[ember].",
         "chinese": "<b>0</b>[ember]。"
       },
-      "icon": "@TrainstoneIcon",
+      "icon": "@SoulSavior_TrainstoneIcon",
       "cost_reduction": 99,
       "filters": [
         "ExcludeZeroCost"
@@ -59,7 +59,7 @@
   ],
   "sprites": [
     {
-      "id": "TrainstoneIcon",
+      "id": "SoulSavior_TrainstoneIcon",
       "path": "textures/trainstone-v2.png"
     }
   ]

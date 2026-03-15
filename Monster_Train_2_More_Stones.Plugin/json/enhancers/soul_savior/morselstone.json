@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeAddMorsel",
+      "id": "SoulSavior_SpellUpgradeAddMorsel",
       "type": "enhancer",
       "names": {
         "english": "Morselstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'将一个普通或高级[snack]单位加入你的手牌。'"
       },
       "relic_effects": [
-        "@AddMorselEnhancer"
+        "@SoulSavior_AddMorselEnhancer"
       ],
-      "icon": "@MorselstoneIcon",
+      "icon": "@SoulSavior_MorselstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddMorselEnhancer",
+      "id": "SoulSavior_AddMorselEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMorselToHand"
+      "param_upgrade": "@SoulSavior_AddMorselToHand"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMorselToHand",
+      "id": "SoulSavior_AddMorselToHand",
       "titles": {
         "english": "Morselstone",
         "chinese": "影裔石"
@@ -48,10 +48,10 @@
         "english": "Gain 'Add a common or uncommon [snack] unit to your hand.'",
         "chinese": "获得'将一个普通或高级[snack]单位加入你的手牌。'"
       },
-      "icon": "@MorselstoneIcon",
+      "icon": "@SoulSavior_MorselstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddMorselToHandTrigger"
+          "id": "@SoulSavior_AddMorselToHandTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "MorselstoneIcon",
+      "id": "SoulSavior_MorselstoneIcon",
       "path": "textures/morselstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddMorselToHandTrigger",
+      "id": "SoulSavior_AddMorselToHandTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Add a common or uncommon [snack] unit to your hand.",
@@ -75,22 +75,22 @@
       },
       "effects": [
         {
-          "id": "@AddMorselToHandEffect"
+          "id": "@SoulSavior_AddMorselToHandEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "AddMorselToHandEffect",
+      "id": "SoulSavior_AddMorselToHandEffect",
       "name": "CardEffectAddBattleCard",
       "param_int": 3,
-      "param_card_pool": "@RandomMorselCardPool"
+      "param_card_pool": "@SoulSavior_RandomMorselCardPool"
     }
   ],
   "card_pools": [
     {
-      "id": "RandomMorselCardPool",
+      "id": "SoulSavior_RandomMorselCardPool",
       "cards": [
         "VoidExcavator",
         "ShadowMorsel",

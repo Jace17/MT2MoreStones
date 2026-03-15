@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeMeleeWeakness",
+      "id": "SoulSavior_SpellUpgradeMeleeWeakness",
       "type": "enhancer",
       "names": {
         "english": "Weakstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[meleeweakness] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@MeleeWeaknessEnhancer"
+        "@SoulSavior_MeleeWeaknessEnhancer"
       ],
-      "icon": "@WeakstoneIcon",
+      "icon": "@SoulSavior_WeakstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "MeleeWeaknessEnhancer",
+      "id": "SoulSavior_MeleeWeaknessEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMeleeWeaknessEffect"
+      "param_upgrade": "@SoulSavior_AddMeleeWeaknessEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMeleeWeaknessEffect",
+      "id": "SoulSavior_AddMeleeWeaknessEffect",
       "titles": {
         "english": "Weakstone",
         "chinese": "破防石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [meleeweakness] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[meleeweakness] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@WeakstoneIcon",
+      "icon": "@SoulSavior_WeakstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyMeleeWeaknessTrigger"
+          "id": "@SoulSavior_ApplyMeleeWeaknessTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "WeakstoneIcon",
+      "id": "SoulSavior_WeakstoneIcon",
       "path": "textures/weakstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyMeleeWeaknessTrigger",
+      "id": "SoulSavior_ApplyMeleeWeaknessTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [meleeweakness] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyMeleeWeakness"
+          "id": "@SoulSavior_EffectApplyMeleeWeakness"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyMeleeWeakness",
+      "id": "SoulSavior_EffectApplyMeleeWeakness",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

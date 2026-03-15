@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeExplosive",
+      "id": "SoulSavior_SpellUpgradeExplosive",
       "type": "enhancer",
       "names": {
         "english": "Boomstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得<b>爆炸</b>，+[effect0.upgrade.bonusdamage] [magicpower]。"
       },
       "relic_effects": [
-        "@ExplosiveEnhancer"
+        "@SoulSavior_ExplosiveEnhancer"
       ],
-      "icon": "@BoomstoneIcon",
+      "icon": "@SoulSavior_BoomstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "ExplosiveEnhancer",
+      "id": "SoulSavior_ExplosiveEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddExplosiveTrait"
+      "param_upgrade": "@SoulSavior_AddExplosiveTrait"
     }
   ],
   "upgrades": [
     {
-      "id": "AddExplosiveTrait",
+      "id": "SoulSavior_AddExplosiveTrait",
       "titles": {
         "english": "Boomstone",
         "chinese": "爆破石"
@@ -50,29 +50,29 @@
         "english": "Gain <b>Explosive</b> and +[bonusdamage] [magicpower].",
         "chinese": "获得<b>爆炸</b>，+[bonusdamage] [magicpower]。"
       },
-      "icon": "@BoomstoneIcon",
+      "icon": "@SoulSavior_BoomstoneIcon",
       "trait_upgrades": [
         {
-          "id": "@ExplosiveTrait"
+          "id": "@SoulSavior_ExplosiveTrait"
         }
       ],
       "bonus_damage": 20,
       "bonus_heal": 20,
       "filters": [
-        "@ExcludeExplosive",
-        "@AttackSpellsOnly"
+        "@SoulSavior_ExcludeExplosive",
+        "@SoulSavior_AttackSpellsOnly"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "BoomstoneIcon",
+      "id": "SoulSavior_BoomstoneIcon",
       "path": "textures/boomstone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeExplosive",
+      "id": "SoulSavior_ExcludeExplosive",
       "excluded_traits": [
         "CardTraitDamageOverflow"
       ]
@@ -80,7 +80,7 @@
   ],
   "traits": [
     {
-      "id": "ExplosiveTrait",
+      "id": "SoulSavior_ExplosiveTrait",
       "name": "CardTraitDamageOverflow",
       "param_int": 2
     }

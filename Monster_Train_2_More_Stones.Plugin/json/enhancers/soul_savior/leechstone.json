@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeLifesteal",
+      "id": "SoulSavior_UnitUpgradeLifesteal",
       "type": "enhancer",
       "names": {
         "english": "Leechstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[lifesteal] [effect0.upgrade.status0.power]，+[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
-        "@LifestealEnhancer"
+        "@SoulSavior_LifestealEnhancer"
       ],
-      "icon": "@LeechstoneIcon",
+      "icon": "@SoulSavior_LeechstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "LifestealEnhancer",
+      "id": "SoulSavior_LifestealEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddLifesteal"
+      "param_upgrade": "@SoulSavior_AddLifesteal"
     }
   ],
   "upgrades": [
     {
-      "id": "AddLifesteal",
+      "id": "SoulSavior_AddLifesteal",
       "titles": {
         "english": "Leechstone",
         "chinese": "水蛭石"
@@ -50,7 +50,7 @@
         "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack].",
         "chinese": "获得[lifesteal] [status0.power]，+[bonusdamage][attack]。"
       },
-      "icon": "@LeechstoneIcon",
+      "icon": "@SoulSavior_LeechstoneIcon",
       "bonus_damage": 10,
       "status_effect_upgrades": [
         {
@@ -65,7 +65,7 @@
   ],
   "sprites": [
     {
-      "id": "LeechstoneIcon",
+      "id": "SoulSavior_LeechstoneIcon",
       "path": "textures/leechstone-v2.png"
     }
   ]

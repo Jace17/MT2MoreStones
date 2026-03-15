@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeSpellWeakness",
+      "id": "SoulSavior_SpellUpgradeSpellWeakness",
       "type": "enhancer",
       "names": {
         "english": "Feeblestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[spellweakness] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@SpellWeaknessEnhancer"
+        "@SoulSavior_SpellWeaknessEnhancer"
       ],
-      "icon": "@FeeblestoneIcon",
+      "icon": "@SoulSavior_FeeblestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "SpellWeaknessEnhancer",
+      "id": "SoulSavior_SpellWeaknessEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddSpellWeaknessEffect"
+      "param_upgrade": "@SoulSavior_AddSpellWeaknessEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSpellWeaknessEffect",
+      "id": "SoulSavior_AddSpellWeaknessEffect",
       "titles": {
         "english": "Feeblestone",
         "chinese": "破魔石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [spellweakness] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[spellweakness] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@FeeblestoneIcon",
+      "icon": "@SoulSavior_FeeblestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplySpellWeaknessTrigger"
+          "id": "@SoulSavior_ApplySpellWeaknessTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "FeeblestoneIcon",
+      "id": "SoulSavior_FeeblestoneIcon",
       "path": "textures/feeblestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplySpellWeaknessTrigger",
+      "id": "SoulSavior_ApplySpellWeaknessTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [spellweakness] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplySpellWeakness"
+          "id": "@SoulSavior_EffectApplySpellWeakness"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplySpellWeakness",
+      "id": "SoulSavior_EffectApplySpellWeakness",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

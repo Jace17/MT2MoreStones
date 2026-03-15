@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeSniper",
+      "id": "SoulSavior_UnitUpgradeSniper",
       "type": "enhancer",
       "names": {
         "english": "Snipestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得<b>狙击手</b>，+[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
-        "@SniperEnhancer"
+        "@SoulSavior_SniperEnhancer"
       ],
-      "icon": "@SnipestoneIcon",
+      "icon": "@SoulSavior_SnipestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "SniperEnhancer",
+      "id": "SoulSavior_SniperEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddSniper"
+      "param_upgrade": "@SoulSavior_AddSniper"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSniper",
+      "id": "SoulSavior_AddSniper",
       "titles": {
         "english": "Snipestone",
         "chinese": "狙击石"
@@ -50,7 +50,7 @@
         "english": "Gain <b>Sniper</b> and +[bonusdamage][attack].",
         "chinese": "获得<b>狙击手</b>，+[bonusdamage][attack]。"
       },
-      "icon": "@SnipestoneIcon",
+      "icon": "@SoulSavior_SnipestoneIcon",
       "bonus_damage": 10,
       "status_effect_upgrades": [
         {
@@ -60,19 +60,19 @@
       ],
       "filters": [
         "ExcludeEelGorgon",
-        "@ExcludeSniper"
+        "@SoulSavior_ExcludeSniper"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "SnipestoneIcon",
+      "id": "SoulSavior_SnipestoneIcon",
       "path": "textures/snipestone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeSniper",
+      "id": "SoulSavior_ExcludeSniper",
       "excluded_status": [
         {
           "status": "sniper",

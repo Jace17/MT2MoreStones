@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeSap",
+      "id": "SoulSavior_SpellUpgradeSap",
       "type": "enhancer",
       "names": {
         "english": "Meekstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[sap] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@SapEnhancer"
+        "@SoulSavior_SapEnhancer"
       ],
-      "icon": "@MeekstoneIcon",
+      "icon": "@SoulSavior_MeekstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "SapEnhancer",
+      "id": "SoulSavior_SapEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddSapEffect"
+      "param_upgrade": "@SoulSavior_AddSapEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSapEffect",
+      "id": "SoulSavior_AddSapEffect",
       "titles": {
         "english": "Meekstone",
         "chinese": "驯化石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [sap] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[sap] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@MeekstoneIcon",
+      "icon": "@SoulSavior_MeekstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplySapTrigger"
+          "id": "@SoulSavior_ApplySapTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "MeekstoneIcon",
+      "id": "SoulSavior_MeekstoneIcon",
       "path": "textures/meekstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplySapTrigger",
+      "id": "SoulSavior_ApplySapTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [sap] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplySap"
+          "id": "@SoulSavior_EffectApplySap"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplySap",
+      "id": "SoulSavior_EffectApplySap",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

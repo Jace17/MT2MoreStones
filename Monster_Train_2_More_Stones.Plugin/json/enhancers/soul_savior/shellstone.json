@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeTitanskin2",
+      "id": "SoulSavior_UnitUpgradeTitanskin2",
       "type": "enhancer",
       "names": {
         "english": "Shellstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[titanskin] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
-        "@Titanskin2Enhancer"
+        "@SoulSavior_Titanskin2Enhancer"
       ],
-      "icon": "@ShellstoneIcon",
+      "icon": "@SoulSavior_ShellstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "Titanskin2Enhancer",
+      "id": "SoulSavior_Titanskin2Enhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddTitanskin2"
+      "param_upgrade": "@SoulSavior_AddTitanskin2"
     }
   ],
   "upgrades": [
     {
-      "id": "AddTitanskin2",
+      "id": "SoulSavior_AddTitanskin2",
       "titles": {
         "english": "Shellstone",
         "chinese": "甲壳石"
@@ -50,7 +50,7 @@
         "english": "Gain [titanskin] [status0.power].",
         "chinese": "获得[titanskin] [status0.power]。"
       },
-      "icon": "@ShellstoneIcon",
+      "icon": "@SoulSavior_ShellstoneIcon",
       "status_effect_upgrades": [
         {
           "status": "titanskin",
@@ -64,7 +64,7 @@
   ],
   "sprites": [
     {
-      "id": "ShellstoneIcon",
+      "id": "SoulSavior_ShellstoneIcon",
       "path": "textures/shellstone.png"
     }
   ]

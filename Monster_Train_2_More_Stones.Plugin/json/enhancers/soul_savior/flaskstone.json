@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeMix",
+      "id": "SoulSavior_SpellUpgradeMix",
       "type": "enhancer",
       "names": {
         "english": "Flaskstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'[mix]。'"
       },
       "relic_effects": [
-        "@AddMixEnhancer"
+        "@SoulSavior_AddMixEnhancer"
       ],
-      "icon": "@FlaskstoneIcon",
+      "icon": "@SoulSavior_FlaskstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddMixEnhancer",
+      "id": "SoulSavior_AddMixEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMix"
+      "param_upgrade": "@SoulSavior_AddMix"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMix",
+      "id": "SoulSavior_AddMix",
       "titles": {
         "english": "Flaskstone",
         "chinese": "试剂石"
@@ -48,10 +48,10 @@
         "english": "Gain [mix].",
         "chinese": "获得'[mix]。'"
       },
-      "icon": "@FlaskstoneIcon",
+      "icon": "@SoulSavior_FlaskstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddMixTrigger"
+          "id": "@SoulSavior_AddMixTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "FlaskstoneIcon",
+      "id": "SoulSavior_FlaskstoneIcon",
       "path": "textures/flaskstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddMixTrigger",
+      "id": "SoulSavior_AddMixTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[mix].",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@MixEffect"
+          "id": "@SoulSavior_MixEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "MixEffect",
+      "id": "SoulSavior_MixEffect",
       "name": "CardEffectMix",
       "param_int": 2
     }

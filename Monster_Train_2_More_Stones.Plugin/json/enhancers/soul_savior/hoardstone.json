@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainDragonsHoard",
+      "id": "SoulSavior_SpellUpgradeGainDragonsHoard",
       "type": "enhancer",
       "names": {
         "english": "Hoardstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'获得 [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon]。'"
       },
       "relic_effects": [
-        "@GainDragonsHoardEnhancer"
+        "@SoulSavior_GainDragonsHoardEnhancer"
       ],
-      "icon": "@HoardstoneIcon",
+      "icon": "@SoulSavior_HoardstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "GainDragonsHoardEnhancer",
+      "id": "SoulSavior_GainDragonsHoardEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainDragonsHoard"
+      "param_upgrade": "@SoulSavior_GainDragonsHoard"
     }
   ],
   "upgrades": [
     {
-      "id": "GainDragonsHoard",
+      "id": "SoulSavior_GainDragonsHoard",
       "titles": {
         "english": "Hoardstone",
         "chinese": "龙藏石"
@@ -48,10 +48,10 @@
         "english": "Gain [trigger0.effect0.paramint][dragonshoardicon].",
         "chinese": "获得'获得 [trigger0.effect0.paramint][dragonshoardicon]。'"
       },
-      "icon": "@HoardstoneIcon",
+      "icon": "@SoulSavior_HoardstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainDragonsHoardTrigger"
+          "id": "@SoulSavior_GainDragonsHoardTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "HoardstoneIcon",
+      "id": "SoulSavior_HoardstoneIcon",
       "path": "textures/hoardstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainDragonsHoardTrigger",
+      "id": "SoulSavior_GainDragonsHoardTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Gain [effect0.paramint][dragonshoardicon].",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@GainDragonsHoardEffect"
+          "id": "@SoulSavior_GainDragonsHoardEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainDragonsHoardEffect",
+      "id": "SoulSavior_GainDragonsHoardEffect",
       "name": "CardEffectAdjustDragonsHoard",
       "param_int": 1
     }

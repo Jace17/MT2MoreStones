@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradePyregel",
+      "id": "SoulSavior_SpellUpgradePyregel",
       "type": "enhancer",
       "names": {
         "english": "Pyrestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[pyregel] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@PyregelEnhancer"
+        "@SoulSavior_PyregelEnhancer"
       ],
-      "icon": "@PyrestoneIcon",
+      "icon": "@SoulSavior_PyrestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "PyregelEnhancer",
+      "id": "SoulSavior_PyregelEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddPyregelEffect"
+      "param_upgrade": "@SoulSavior_AddPyregelEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddPyregelEffect",
+      "id": "SoulSavior_AddPyregelEffect",
       "titles": {
         "english": "Pyrestone",
         "chinese": "薪火石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [pyregel] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[pyregel] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@PyrestoneIcon",
+      "icon": "@SoulSavior_PyrestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyPyregelTrigger"
+          "id": "@SoulSavior_ApplyPyregelTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "PyrestoneIcon",
+      "id": "SoulSavior_PyrestoneIcon",
       "path": "textures/pyrestone-v2.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyPyregelTrigger",
+      "id": "SoulSavior_ApplyPyregelTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [pyregel] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyPyregel"
+          "id": "@SoulSavior_EffectApplyPyregel"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyPyregel",
+      "id": "SoulSavior_EffectApplyPyregel",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

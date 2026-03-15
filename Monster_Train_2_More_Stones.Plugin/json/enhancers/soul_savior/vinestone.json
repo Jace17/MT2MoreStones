@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeRooted",
+      "id": "SoulSavior_SpellUpgradeRooted",
       "type": "enhancer",
       "names": {
         "english": "Vinestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[rooted] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@RootedEnhancer"
+        "@SoulSavior_RootedEnhancer"
       ],
-      "icon": "@VinestoneIcon",
+      "icon": "@SoulSavior_VinestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "RootedEnhancer",
+      "id": "SoulSavior_RootedEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddRootedEffect"
+      "param_upgrade": "@SoulSavior_AddRootedEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddRootedEffect",
+      "id": "SoulSavior_AddRootedEffect",
       "titles": {
         "english": "Vinestone",
         "chinese": "藤蔓石"
@@ -48,10 +48,10 @@
         "english": "Gain 'Apply [rooted] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[rooted] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@VinestoneIcon",
+      "icon": "@SoulSavior_VinestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyRootedTrigger"
+          "id": "@SoulSavior_ApplyRootedTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "VinestoneIcon",
+      "id": "SoulSavior_VinestoneIcon",
       "path": "textures/vinestone-v2.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyRootedTrigger",
+      "id": "SoulSavior_ApplyRootedTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [rooted] [effect0.status0.power] to enemy units.",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyRooted"
+          "id": "@SoulSavior_EffectApplyRooted"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyRooted",
+      "id": "SoulSavior_EffectApplyRooted",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

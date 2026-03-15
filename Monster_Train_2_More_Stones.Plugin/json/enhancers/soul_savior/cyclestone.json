@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeMooncycle",
+      "id": "SoulSavior_UnitUpgradeMooncycle",
       "type": "enhancer",
       "names": {
         "english": "Cyclestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得'[mooncycle]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
-        "@MooncycleEnhancer"
+        "@SoulSavior_MooncycleEnhancer"
       ],
-      "icon": "@CyclestoneIcon",
+      "icon": "@SoulSavior_CyclestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "MooncycleEnhancer",
+      "id": "SoulSavior_MooncycleEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddMooncycle"
+      "param_upgrade": "@SoulSavior_AddMooncycle"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMooncycle",
+      "id": "SoulSavior_AddMooncycle",
       "titles": {
         "english": "Cyclestone",
         "chinese": "朔望石"
@@ -48,23 +48,23 @@
         "english": "Gain '[mooncycle]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
         "chinese": "获得'[mooncycle]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
-      "icon": "@CyclestoneIcon",
+      "icon": "@SoulSavior_CyclestoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@MooncycleAdd2Attack2HealthTrigger"
+          "id": "@SoulSavior_MooncycleAdd2Attack2HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "CyclestoneIcon",
+      "id": "SoulSavior_CyclestoneIcon",
       "path": "textures/cyclestone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "MooncycleAdd2Attack2HealthTrigger",
+      "id": "SoulSavior_MooncycleAdd2Attack2HealthTrigger",
       "trigger": "on_moon_phase_shift",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
@@ -72,7 +72,7 @@
       },
       "effects": [
         {
-          "id": "@EffectAdd2Attack2Health"
+          "id": "@SoulSavior_EffectAdd2Attack2Health"
         }
       ]
     }

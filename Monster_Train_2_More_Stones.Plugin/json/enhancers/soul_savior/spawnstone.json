@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeSpawn",
+      "id": "SoulSavior_SpellUpgradeSpawn",
       "type": "enhancer",
       "names": {
         "english": "Spawnstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'[spawn] [effect0.upgrade.trigger0.effect0.paramint]。'"
       },
       "relic_effects": [
-        "@AddSpawnEnhancer"
+        "@SoulSavior_AddSpawnEnhancer"
       ],
-      "icon": "@SpawnstoneIcon",
+      "icon": "@SoulSavior_SpawnstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddSpawnEnhancer",
+      "id": "SoulSavior_AddSpawnEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddSpawn"
+      "param_upgrade": "@SoulSavior_AddSpawn"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSpawn",
+      "id": "SoulSavior_AddSpawn",
       "titles": {
         "english": "Spawnstone",
         "chinese": "孢子石"
@@ -48,10 +48,10 @@
         "english": "Gain [spawn] [trigger0.effect0.paramint].",
         "chinese": "获得'[spawn] [trigger0.effect0.paramint]。'"
       },
-      "icon": "@SpawnstoneIcon",
+      "icon": "@SoulSavior_SpawnstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddSpawnTrigger"
+          "id": "@SoulSavior_AddSpawnTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "SpawnstoneIcon",
+      "id": "SoulSavior_SpawnstoneIcon",
       "path": "textures/spawnstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddSpawnTrigger",
+      "id": "SoulSavior_AddSpawnTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[spawn] [effect0.paramint].",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@SpawnEffect"
+          "id": "@SoulSavior_SpawnEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "SpawnEffect",
+      "id": "SoulSavior_SpawnEffect",
       "name": "CardEffectSpawnMonsterOrAddStatusEffect",
       "param_int": 1,
       "target_subtype": "SubtypesData_Horde",

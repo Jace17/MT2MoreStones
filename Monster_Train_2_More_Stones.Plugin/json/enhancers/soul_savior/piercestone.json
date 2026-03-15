@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradePiercing",
+      "id": "SoulSavior_SpellUpgradePiercing",
       "type": "enhancer",
       "names": {
         "english": "Truestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得[piercing]，+[effect0.upgrade.bonusdamage] [magicpower]。"
       },
       "relic_effects": [
-        "@PiercingEnhancer"
+        "@SoulSavior_PiercingEnhancer"
       ],
-      "icon": "@PiercestoneIcon",
+      "icon": "@SoulSavior_PiercestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "PiercingEnhancer",
+      "id": "SoulSavior_PiercingEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddPiercingTrait"
+      "param_upgrade": "@SoulSavior_AddPiercingTrait"
     }
   ],
   "upgrades": [
     {
-      "id": "AddPiercingTrait",
+      "id": "SoulSavior_AddPiercingTrait",
       "titles": {
         "english": "Truestone",
         "chinese": "真言石"
@@ -50,29 +50,29 @@
         "english": "Gain [piercing] and +[bonusdamage] [magicpower].",
         "chinese": "获得[piercing]，+[bonusdamage] [magicpower]。"
       },
-      "icon": "@PiercestoneIcon",
+      "icon": "@SoulSavior_PiercestoneIcon",
       "trait_upgrades": [
         {
-          "id": "@PiercingTrait"
+          "id": "@SoulSavior_PiercingTrait"
         }
       ],
       "bonus_damage": 10,
       "bonus_heal": 10,
       "filters": [
-        "@ExcludePiercing",
-        "@AttackSpellsOnly"
+        "@SoulSavior_ExcludePiercing",
+        "@SoulSavior_AttackSpellsOnly"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "PiercestoneIcon",
+      "id": "SoulSavior_PiercestoneIcon",
       "path": "textures/piercestone-v2.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludePiercing",
+      "id": "SoulSavior_ExcludePiercing",
       "excluded_traits": [
         "CardTraitIgnoreArmor"
       ]
@@ -80,7 +80,7 @@
   ],
   "traits": [
     {
-      "id": "PiercingTrait",
+      "id": "SoulSavior_PiercingTrait",
       "name": "CardTraitIgnoreArmor"
     }
   ]

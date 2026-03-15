@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeAttuned",
+      "id": "SoulSavior_SpellUpgradeAttuned",
       "type": "enhancer",
       "names": {
         "english": "Tunestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得[attuned]。"
       },
       "relic_effects": [
-        "@AttunedEnhancer"
+        "@SoulSavior_AttunedEnhancer"
       ],
-      "icon": "@AttunestoneIcon",
+      "icon": "@SoulSavior_AttunestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AttunedEnhancer",
+      "id": "SoulSavior_AttunedEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddAttunedTrait"
+      "param_upgrade": "@SoulSavior_AddAttunedTrait"
     }
   ],
   "upgrades": [
     {
-      "id": "AddAttunedTrait",
+      "id": "SoulSavior_AddAttunedTrait",
       "titles": {
         "english": "Tunestone",
         "chinese": "调音石"
@@ -50,27 +50,27 @@
         "english": "Gain [attuned].",
         "chinese": "获得[attuned]。"
       },
-      "icon": "@AttunestoneIcon",
+      "icon": "@SoulSavior_AttunestoneIcon",
       "trait_upgrades": [
         {
-          "id": "@AttunedTrait"
+          "id": "@SoulSavior_AttunedTrait"
         }
       ],
       "filters": [
         "MagicPowerSpells",
-        "@ExcludeAttuned"
+        "@SoulSavior_ExcludeAttuned"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "AttunestoneIcon",
+      "id": "SoulSavior_AttunestoneIcon",
       "path": "textures/attunestone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeAttuned",
+      "id": "SoulSavior_ExcludeAttuned",
       "excluded_traits": [
         "CardTraitStrongerMagicPower"
       ]
@@ -78,7 +78,7 @@
   ],
   "traits": [
     {
-      "id": "AttunedTrait",
+      "id": "SoulSavior_AttunedTrait",
       "name": "CardTraitStrongerMagicPower"
     }
   ]

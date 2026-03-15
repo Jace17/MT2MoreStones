@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeReform",
+      "id": "SoulSavior_SpellUpgradeReform",
       "type": "enhancer",
       "names": {
         "english": "Formstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'随机[raise]一个单位。'"
       },
       "relic_effects": [
-        "@AddReformEnhancer"
+        "@SoulSavior_AddReformEnhancer"
       ],
-      "icon": "@ReformstoneIcon",
+      "icon": "@SoulSavior_ReformstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddReformEnhancer",
+      "id": "SoulSavior_AddReformEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddReform"
+      "param_upgrade": "@SoulSavior_AddReform"
     }
   ],
   "upgrades": [
     {
-      "id": "AddReform",
+      "id": "SoulSavior_AddReform",
       "titles": {
         "english": "Formstone",
         "chinese": "塑造石"
@@ -48,10 +48,10 @@
         "english": "Gain '[raise] a random unit.'",
         "chinese": "获得'随机[raise]一个单位。'"
       },
-      "icon": "@ReformstoneIcon",
+      "icon": "@SoulSavior_ReformstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddReformTrigger"
+          "id": "@SoulSavior_AddReformTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "ReformstoneIcon",
+      "id": "SoulSavior_ReformstoneIcon",
       "path": "textures/reformstone-v2.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddReformTrigger",
+      "id": "SoulSavior_AddReformTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[raise] a random unit.",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@ReformEffect"
+          "id": "@SoulSavior_ReformEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "ReformEffect",
+      "id": "SoulSavior_ReformEffect",
       "name": "CardEffectRecursion",
       "param_int": 1,
       "param_upgrade": "Raise",

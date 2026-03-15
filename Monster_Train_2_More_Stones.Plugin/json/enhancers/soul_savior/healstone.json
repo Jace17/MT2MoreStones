@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeHeal",
+      "id": "SoulSavior_SpellUpgradeHeal",
       "type": "enhancer",
       "names": {
         "english": "Healstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'使本层所有友方单位恢复 [effect0.upgrade.trigger0.effect0.power] 点生命值。'"
       },
       "relic_effects": [
-        "@HealEnhancer"
+        "@SoulSavior_HealEnhancer"
       ],
-      "icon": "@HealstoneIcon",
+      "icon": "@SoulSavior_HealstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "HealEnhancer",
+      "id": "SoulSavior_HealEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddHeal"
+      "param_upgrade": "@SoulSavior_AddHeal"
     }
   ],
   "upgrades": [
     {
-      "id": "AddHeal",
+      "id": "SoulSavior_AddHeal",
       "titles": {
         "english": "Healstone",
         "chinese": "回血石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Restore [trigger0.effect0.power] health to friendly units.'",
         "chinese": "获得'使本层所有友方单位恢复 [trigger0.effect0.power] 点生命值。'"
       },
-      "icon": "@HealstoneIcon",
+      "icon": "@SoulSavior_HealstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@HealTrigger"
+          "id": "@SoulSavior_HealTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "HealstoneIcon",
+      "id": "SoulSavior_HealstoneIcon",
       "path": "textures/healstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "HealTrigger",
+      "id": "SoulSavior_HealTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Restore [effect0.power] health to friendly units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@HealEffect"
+          "id": "@SoulSavior_HealEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "HealEffect",
+      "id": "SoulSavior_HealEffect",
       "name": "CardEffectHeal",
       "target_mode": "room",
       "target_team": "monsters",

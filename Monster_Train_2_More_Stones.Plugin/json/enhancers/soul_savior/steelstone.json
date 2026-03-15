@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeAddSteelguard",
+      "id": "SoulSavior_UnitUpgradeAddSteelguard",
       "type": "enhancer",
       "names": {
         "english": "Steelstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[armor] [effect0.upgrade.status0.power] 和[steelguard]。"
       },
       "relic_effects": [
-        "@AddSteelguardEnhancer"
+        "@SoulSavior_AddSteelguardEnhancer"
       ],
-      "icon": "@SteelstoneIcon",
+      "icon": "@SoulSavior_SteelstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddSteelguardEnhancer",
+      "id": "SoulSavior_AddSteelguardEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddSteelguard"
+      "param_upgrade": "@SoulSavior_AddSteelguard"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSteelguard",
+      "id": "SoulSavior_AddSteelguard",
       "titles": {
         "english": "Steelstone",
         "chinese": "钢铁石"
@@ -50,7 +50,7 @@
         "english": "Gain [steelguard] and [armor] [status0.power].",
         "chinese": "获得[armor] [status0.power] 和[steelguard]。"
       },
-      "icon": "@SteelstoneIcon",
+      "icon": "@SoulSavior_SteelstoneIcon",
       "status_effect_upgrades": [
         {
           "status": "armor",
@@ -59,24 +59,24 @@
       ],
       "trait_upgrades": [
         {
-          "id": "@SteelguardTrait"
+          "id": "@SoulSavior_SteelguardTrait"
         }
       ],
       "filters": [
         "ExcludeEelGorgon",
-        "@ExcludeSteelguard"
+        "@SoulSavior_ExcludeSteelguard"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "SteelstoneIcon",
+      "id": "SoulSavior_SteelstoneIcon",
       "path": "textures/steelstone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeSteelguard",
+      "id": "SoulSavior_ExcludeSteelguard",
       "excluded_traits": [
         "CardTraitModifyArmorOnHit"
       ]
@@ -84,7 +84,7 @@
   ],
   "traits": [
     {
-      "id": "SteelguardTrait",
+      "id": "SoulSavior_SteelguardTrait",
       "name": "CardTraitModifyArmorOnHit",
       "param_int": 15
     }

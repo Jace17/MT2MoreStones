@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeRemoveDebuff",
+      "id": "SoulSavior_SpellUpgradeRemoveDebuff",
       "type": "enhancer",
       "names": {
         "english": "Curestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'移除本层所有友方单位身上的所有[debuff]效果。'"
       },
       "relic_effects": [
-        "@RemoveDebuffEnhancer"
+        "@SoulSavior_RemoveDebuffEnhancer"
       ],
-      "icon": "@CurestoneIcon",
+      "icon": "@SoulSavior_CurestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "RemoveDebuffEnhancer",
+      "id": "SoulSavior_RemoveDebuffEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@RemoveDebuff"
+      "param_upgrade": "@SoulSavior_RemoveDebuff"
     }
   ],
   "upgrades": [
     {
-      "id": "RemoveDebuff",
+      "id": "SoulSavior_RemoveDebuff",
       "titles": {
         "english": "Curestone",
         "chinese": "洗涤石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Remove all [debuff] effects from friendly units.'",
         "chinese": "获得'移除本层所有友方单位身上的所有[debuff]效果。'"
       },
-      "icon": "@CurestoneIcon",
+      "icon": "@SoulSavior_CurestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@RemoveDebuffTrigger"
+          "id": "@SoulSavior_RemoveDebuffTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "CurestoneIcon",
+      "id": "SoulSavior_CurestoneIcon",
       "path": "textures/curestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "RemoveDebuffTrigger",
+      "id": "SoulSavior_RemoveDebuffTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Remove all [debuff] effects from friendly units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@RemoveDebuffEffect"
+          "id": "@SoulSavior_RemoveDebuffEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "RemoveDebuffEffect",
+      "id": "SoulSavior_RemoveDebuffEffect",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "room",
       "target_team": "monsters",

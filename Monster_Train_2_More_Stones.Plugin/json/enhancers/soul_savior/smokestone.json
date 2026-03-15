@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeAddStealth",
+      "id": "SoulSavior_UnitUpgradeAddStealth",
       "type": "enhancer",
       "names": {
         "english": "Smokestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[stealth] [effect0.upgrade.status0.power]，+[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
-        "@AddStealthEnhancer"
+        "@SoulSavior_AddStealthEnhancer"
       ],
-      "icon": "@SmokestoneIcon",
+      "icon": "@SoulSavior_SmokestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddStealthEnhancer",
+      "id": "SoulSavior_AddStealthEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddStealth"
+      "param_upgrade": "@SoulSavior_AddStealth"
     }
   ],
   "upgrades": [
     {
-      "id": "AddStealth",
+      "id": "SoulSavior_AddStealth",
       "titles": {
         "english": "Smokestone",
         "chinese": "烟雾石"
@@ -48,7 +48,7 @@
         "english": "Gain [stealth] [status0.power] and +[bonusdamage][attack].",
         "chinese": "获得[stealth] [status0.power]，+[bonusdamage][attack]。"
       },
-      "icon": "@SmokestoneIcon",
+      "icon": "@SoulSavior_SmokestoneIcon",
       "bonus_damage": 10,
       "status_effect_upgrades": [
         {
@@ -63,7 +63,7 @@
   ],
   "sprites": [
     {
-      "id": "SmokestoneIcon",
+      "id": "SoulSavior_SmokestoneIcon",
       "path": "textures/smokestone.png"
     }
   ]

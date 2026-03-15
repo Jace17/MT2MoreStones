@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDazed",
+      "id": "SoulSavior_SpellUpgradeDazed",
       "type": "enhancer",
       "names": {
         "english": "Dazestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[dazed] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@DazedEnhancer"
+        "@SoulSavior_DazedEnhancer"
       ],
-      "icon": "@DazestoneIcon",
+      "icon": "@SoulSavior_DazestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "DazedEnhancer",
+      "id": "SoulSavior_DazedEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AdDazedEffect"
+      "param_upgrade": "@SoulSavior_AdDazedEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AdDazedEffect",
+      "id": "SoulSavior_AdDazedEffect",
       "titles": {
         "english": "Dazestone",
         "chinese": "眩晕石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [dazed] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[dazed] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@DazestoneIcon",
+      "icon": "@SoulSavior_DazestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyDazedTrigger"
+          "id": "@SoulSavior_ApplyDazedTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "DazestoneIcon",
+      "id": "SoulSavior_DazestoneIcon",
       "path": "textures/dazestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyDazedTrigger",
+      "id": "SoulSavior_ApplyDazedTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [dazed] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyDazed"
+          "id": "@SoulSavior_EffectApplyDazed"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyDazed",
+      "id": "SoulSavior_EffectApplyDazed",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

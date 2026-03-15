@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeReap",
+      "id": "SoulSavior_SpellUpgradeReap",
       "type": "enhancer",
       "names": {
         "english": "Reapstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[corruptpoison] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@Reap5Enhancer"
+        "@SoulSavior_Reap5Enhancer"
       ],
-      "icon": "@ReapstoneIcon",
+      "icon": "@SoulSavior_ReapstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "Reap5Enhancer",
+      "id": "SoulSavior_Reap5Enhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddReapEffect"
+      "param_upgrade": "@SoulSavior_AddReapEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddReapEffect",
+      "id": "SoulSavior_AddReapEffect",
       "titles": {
         "english": "Reapstone",
         "chinese": "晶爆石"
@@ -48,10 +48,10 @@
         "english": "Gain 'Apply [corruptpoison] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[corruptpoison] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@ReapstoneIcon",
+      "icon": "@SoulSavior_ReapstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyReapTrigger"
+          "id": "@SoulSavior_ApplyReapTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "ReapstoneIcon",
+      "id": "SoulSavior_ReapstoneIcon",
       "path": "textures/reapstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyReapTrigger",
+      "id": "SoulSavior_ApplyReapTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [corruptpoison] [effect0.status0.power] to enemy units.",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyReap"
+          "id": "@SoulSavior_EffectApplyReap"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyReap",
+      "id": "SoulSavior_EffectApplyReap",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

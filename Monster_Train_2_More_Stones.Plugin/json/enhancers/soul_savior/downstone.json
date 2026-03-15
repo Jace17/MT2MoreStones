@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDescend",
+      "id": "SoulSavior_SpellUpgradeDescend",
       "type": "enhancer",
       "names": {
         "english": "Downstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个指定目标法术，使其获得'[descend]。'"
       },
       "relic_effects": [
-        "@DescendEnhancer"
+        "@SoulSavior_DescendEnhancer"
       ],
-      "icon": "@DownstoneIcon",
+      "icon": "@SoulSavior_DownstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "DescendEnhancer",
+      "id": "SoulSavior_DescendEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddDescend"
+      "param_upgrade": "@SoulSavior_AddDescend"
     }
   ],
   "upgrades": [
     {
-      "id": "AddDescend",
+      "id": "SoulSavior_AddDescend",
       "titles": {
         "english": "Downstone",
         "chinese": "下移石"
@@ -50,28 +50,28 @@
         "english": "Gain [descend].",
         "chinese": "获得'[descend]。'"
       },
-      "icon": "@DownstoneIcon",
+      "icon": "@SoulSavior_DownstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@DescendTrigger"
+          "id": "@SoulSavior_DescendTrigger"
         }
       ],
       "filters": [
         "OnlySpells",
-        "@SingleTargetOnly",
-        "@NoAscendOrDescend"
+        "@SoulSavior_SingleTargetOnly",
+        "@SoulSavior_NoAscendOrDescend"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "DownstoneIcon",
+      "id": "SoulSavior_DownstoneIcon",
       "path": "textures/downstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "DescendTrigger",
+      "id": "SoulSavior_DescendTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[descend].",
@@ -79,14 +79,14 @@
       },
       "effects": [
         {
-          "id": "@DescendEffect"
+          "id": "@SoulSavior_DescendEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "DescendEffect",
+      "id": "SoulSavior_DescendEffect",
       "name": "CardEffectBump",
       "target_mode": "last_targeted_characters",
       "param_int": -1

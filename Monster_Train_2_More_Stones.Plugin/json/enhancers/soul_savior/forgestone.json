@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainForge",
+      "id": "SoulSavior_SpellUpgradeGainForge",
       "type": "enhancer",
       "names": {
         "english": "Forgestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'[forge] [effect0.upgrade.trigger0.effect0.paramint]。'"
       },
       "relic_effects": [
-        "@GainForgeEnhancer"
+        "@SoulSavior_GainForgeEnhancer"
       ],
-      "icon": "@ForgestoneIcon",
+      "icon": "@SoulSavior_ForgestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "GainForgeEnhancer",
+      "id": "SoulSavior_GainForgeEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainForge"
+      "param_upgrade": "@SoulSavior_GainForge"
     }
   ],
   "upgrades": [
     {
-      "id": "GainForge",
+      "id": "SoulSavior_GainForge",
       "titles": {
         "english": "Forgestone",
         "chinese": "锻造石"
@@ -48,10 +48,10 @@
         "english": "Gain [forge] [trigger0.effect0.paramint].",
         "chinese": "获得'[forge] [trigger0.effect0.paramint]。'"
       },
-      "icon": "@ForgestoneIcon",
+      "icon": "@SoulSavior_ForgestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainForgeTrigger"
+          "id": "@SoulSavior_GainForgeTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "ForgestoneIcon",
+      "id": "SoulSavior_ForgestoneIcon",
       "path": "textures/forgestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainForgeTrigger",
+      "id": "SoulSavior_GainForgeTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Gain [forge] [effect0.paramint]",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@GainForgeEffect"
+          "id": "@SoulSavior_GainForgeEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainForgeEffect",
+      "id": "SoulSavior_GainForgeEffect",
       "name": "CardEffectAdjustForgePoints",
       "param_int": 5
     }

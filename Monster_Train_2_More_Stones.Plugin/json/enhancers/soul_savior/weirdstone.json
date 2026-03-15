@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeUnstable",
+      "id": "SoulSavior_UnitUpgradeUnstable",
       "type": "enhancer",
       "names": {
         "english": "Madstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[unstable] [effect0.upgrade.status0.power]。"
       },
       "relic_effects": [
-        "@Unstable25Enhancer"
+        "@SoulSavior_Unstable25Enhancer"
       ],
-      "icon": "@WeirdstoneIcon",
+      "icon": "@SoulSavior_WeirdstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "Unstable25Enhancer",
+      "id": "SoulSavior_Unstable25Enhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddUnstable"
+      "param_upgrade": "@SoulSavior_AddUnstable"
     }
   ],
   "upgrades": [
     {
-      "id": "AddUnstable",
+      "id": "SoulSavior_AddUnstable",
       "titles": {
         "english": "Madstone",
         "chinese": "癫狂石"
@@ -48,7 +48,7 @@
         "english": "Gain [unstable] [status0.power].",
         "chinese": "获得[unstable] [status0.power]。"
       },
-      "icon": "@WeirdstoneIcon",
+      "icon": "@SoulSavior_WeirdstoneIcon",
       "status_effect_upgrades": [
         {
           "status": "unstable",
@@ -62,7 +62,7 @@
   ],
   "sprites": [
     {
-      "id": "WeirdstoneIcon",
+      "id": "SoulSavior_WeirdstoneIcon",
       "path": "textures/weirdstone.png"
     }
   ]

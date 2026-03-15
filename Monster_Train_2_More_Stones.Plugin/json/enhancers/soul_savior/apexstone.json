@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeArmored",
+      "id": "SoulSavior_UnitUpgradeArmored",
       "type": "enhancer",
       "names": {
         "english": "Apexstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得'<b>带甲</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
       },
       "relic_effects": [
-        "@ArmoredEnhancer"
+        "@SoulSavior_ArmoredEnhancer"
       ],
-      "icon": "@ApexstoneIcon",
+      "icon": "@SoulSavior_ApexstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "ArmoredEnhancer",
+      "id": "SoulSavior_ArmoredEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddArmored"
+      "param_upgrade": "@SoulSavior_AddArmored"
     }
   ],
   "upgrades": [
     {
-      "id": "AddArmored",
+      "id": "SoulSavior_AddArmored",
       "titles": {
         "english": "Apexstone",
         "chinese": "巅峰石"
@@ -48,27 +48,27 @@
         "english": "Gain '<b>Armored</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].'",
         "chinese": "获得'<b>带甲</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]。'"
       },
-      "icon": "@ApexstoneIcon",
+      "icon": "@SoulSavior_ApexstoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@ArmoredAdd4AttackTrigger"
+          "id": "@SoulSavior_ArmoredAdd4AttackTrigger"
         }
       ]
     },
     {
-      "id": "Plus4Attack",
+      "id": "SoulSavior_Plus4Attack",
       "bonus_damage": 4
     }
   ],
   "sprites": [
     {
-      "id": "ApexstoneIcon",
+      "id": "SoulSavior_ApexstoneIcon",
       "path": "textures/apexstone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "ArmoredAdd4AttackTrigger",
+      "id": "SoulSavior_ArmoredAdd4AttackTrigger",
       "trigger": "on_armor_added",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack].",
@@ -76,18 +76,18 @@
       },
       "effects": [
         {
-          "id": "@EffectAdd4Attack"
+          "id": "@SoulSavior_EffectAdd4Attack"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectAdd4Attack",
+      "id": "SoulSavior_EffectAdd4Attack",
       "name": "CardEffectAddTempCardUpgradeToUnits",
       "target_mode": "self",
       "param_int": 1,
-      "param_upgrade": "@Plus4Attack"
+      "param_upgrade": "@SoulSavior_Plus4Attack"
     }
   ]
 }

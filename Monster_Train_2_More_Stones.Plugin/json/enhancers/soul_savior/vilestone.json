@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeCorruption",
+      "id": "SoulSavior_SpellUpgradeCorruption",
       "type": "enhancer",
       "names": {
         "english": "Vilestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[corruption] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@CorruptionEnhancer"
+        "@SoulSavior_CorruptionEnhancer"
       ],
-      "icon": "@VilestoneIcon",
+      "icon": "@SoulSavior_VilestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "CorruptionEnhancer",
+      "id": "SoulSavior_CorruptionEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddCorruptionEffect"
+      "param_upgrade": "@SoulSavior_AddCorruptionEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddCorruptionEffect",
+      "id": "SoulSavior_AddCorruptionEffect",
       "titles": {
         "english": "Vilestone",
         "chinese": "腐败石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [corruption] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[corruption] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@VilestoneIcon",
+      "icon": "@SoulSavior_VilestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyCorruptionTrigger"
+          "id": "@SoulSavior_ApplyCorruptionTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "VilestoneIcon",
+      "id": "SoulSavior_VilestoneIcon",
       "path": "textures/vilestone-v2.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyCorruptionTrigger",
+      "id": "SoulSavior_ApplyCorruptionTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [corruption] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyCorruption"
+          "id": "@SoulSavior_EffectApplyCorruption"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyCorruption",
+      "id": "SoulSavior_EffectApplyCorruption",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

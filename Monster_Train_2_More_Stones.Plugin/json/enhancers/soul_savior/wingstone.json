@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeFlight",
+      "id": "SoulSavior_UnitUpgradeFlight",
       "type": "enhancer",
       "names": {
         "english": "Wingstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[ability]：<b>飞行</b>。"
       },
       "relic_effects": [
-        "@FlightEnhancer"
+        "@SoulSavior_FlightEnhancer"
       ],
-      "icon": "@WingstoneIcon",
+      "icon": "@SoulSavior_WingstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "FlightEnhancer",
+      "id": "SoulSavior_FlightEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddAbilityFlight"
+      "param_upgrade": "@SoulSavior_AddAbilityFlight"
     }
   ],
   "upgrades": [
     {
-      "id": "AddAbilityFlight",
+      "id": "SoulSavior_AddAbilityFlight",
       "titles": {
         "english": "Wingstone",
         "chinese": "添翼石"
@@ -48,7 +48,7 @@
         "english": "Gain [ability]: <b>Flight</b>.",
         "chinese": "获得[ability]：<b>飞行</b>。"
       },
-      "icon": "@WingstoneIcon",
+      "icon": "@SoulSavior_WingstoneIcon",
       "ability_upgrade": "AngelFlightAbility",
       "filters": [
         "ExcludeUnitsWithAbilities"
@@ -57,7 +57,7 @@
   ],
   "sprites": [
     {
-      "id": "WingstoneIcon",
+      "id": "SoulSavior_WingstoneIcon",
       "path": "textures/wingstone.png"
     }
   ]

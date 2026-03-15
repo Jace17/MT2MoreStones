@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeSweep",
+      "id": "SoulSavior_UnitUpgradeSweep",
       "type": "enhancer",
       "names": {
         "english": "Swipestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[sweep]，[effect0.upgrade.bonusdamage][attack]。"
       },
       "relic_effects": [
-        "@SweepEnhancer"
+        "@SoulSavior_SweepEnhancer"
       ],
-      "icon": "@SwipestoneIcon",
+      "icon": "@SoulSavior_SwipestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "SweepEnhancer",
+      "id": "SoulSavior_SweepEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddSweep"
+      "param_upgrade": "@SoulSavior_AddSweep"
     }
   ],
   "upgrades": [
     {
-      "id": "AddSweep",
+      "id": "SoulSavior_AddSweep",
       "titles": {
         "english": "Swipestone",
         "chinese": "拍击石"
@@ -48,7 +48,7 @@
         "english": "Gain [sweep] but [bonusdamage][attack].",
         "chinese": "获得[sweep]，[bonusdamage][attack]。"
       },
-      "icon": "@SwipestoneIcon",
+      "icon": "@SoulSavior_SwipestoneIcon",
       "bonus_damage": -20,
       "status_effect_upgrades": [
         {
@@ -58,19 +58,19 @@
       ],
       "filters": [
         "ExcludeEelGorgon",
-        "@ExcludeSweep"
+        "@SoulSavior_ExcludeSweep"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "SwipestoneIcon",
+      "id": "SoulSavior_SwipestoneIcon",
       "path": "textures/swipestone-v2.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeSweep",
+      "id": "SoulSavior_ExcludeSweep",
       "excluded_status": [
         {
           "status": "sweep",

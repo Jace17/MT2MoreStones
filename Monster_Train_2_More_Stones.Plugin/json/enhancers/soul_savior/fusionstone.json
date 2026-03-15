@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainInfusion",
+      "id": "SoulSavior_SpellUpgradeGainInfusion",
       "type": "enhancer",
       "names": {
         "english": "Fusionstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'获得 [effect0.upgrade.trigger0.effect0.paramint][corrupt]。'"
       },
       "relic_effects": [
-        "@GainInfusionEnhancer"
+        "@SoulSavior_GainInfusionEnhancer"
       ],
-      "icon": "@FusionstoneIcon",
+      "icon": "@SoulSavior_FusionstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "GainInfusionEnhancer",
+      "id": "SoulSavior_GainInfusionEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainInfusion"
+      "param_upgrade": "@SoulSavior_GainInfusion"
     }
   ],
   "upgrades": [
     {
-      "id": "GainInfusion",
+      "id": "SoulSavior_GainInfusion",
       "titles": {
         "english": "Fusionstone",
         "chinese": "注能石"
@@ -48,10 +48,10 @@
         "english": "Gain [trigger0.effect0.paramint][corrupt].",
         "chinese": "获得'获得 [trigger0.effect0.paramint][corrupt]。'"
       },
-      "icon": "@FusionstoneIcon",
+      "icon": "@SoulSavior_FusionstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainInfusionTrigger"
+          "id": "@SoulSavior_GainInfusionTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "FusionstoneIcon",
+      "id": "SoulSavior_FusionstoneIcon",
       "path": "textures/fusionstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainInfusionTrigger",
+      "id": "SoulSavior_GainInfusionTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Gain [effect0.paramint][corrupt].",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@GainInfusionEffect"
+          "id": "@SoulSavior_GainInfusionEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainInfusionEffect",
+      "id": "SoulSavior_GainInfusionEffect",
       "name": "CardEffectAdjustCorruption",
       "target_mode": "room",
       "param_int": 1,

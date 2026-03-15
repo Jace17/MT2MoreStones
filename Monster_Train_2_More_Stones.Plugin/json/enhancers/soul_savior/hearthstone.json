@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeRefine",
+      "id": "SoulSavior_SpellUpgradeRefine",
       "type": "enhancer",
       "names": {
         "english": "Hearthstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得[refined] [effect0.upgrade.trait0.paramint]。"
       },
       "relic_effects": [
-        "@RefineEnhancer"
+        "@SoulSavior_RefineEnhancer"
       ],
-      "icon": "@HearthstoneIcon",
+      "icon": "@SoulSavior_HearthstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "RefineEnhancer",
+      "id": "SoulSavior_RefineEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddRefineTrait"
+      "param_upgrade": "@SoulSavior_AddRefineTrait"
     }
   ],
   "upgrades": [
     {
-      "id": "AddRefineTrait",
+      "id": "SoulSavior_AddRefineTrait",
       "titles": {
         "english": "Hearthstone",
         "chinese": "炉底石"
@@ -48,26 +48,26 @@
         "english": "Gain [refined] [trait0.paramint].",
         "chinese": "获得[refined] [trait0.paramint]。"
       },
-      "icon": "@HearthstoneIcon",
+      "icon": "@SoulSavior_HearthstoneIcon",
       "trait_upgrades": [
         {
-          "id": "@RefineTrait"
+          "id": "@SoulSavior_RefineTrait"
         }
       ],
       "filters": [
-        "@ExcludeRefine"
+        "@SoulSavior_ExcludeRefine"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "HearthstoneIcon",
+      "id": "SoulSavior_HearthstoneIcon",
       "path": "textures/hearthstone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeRefine",
+      "id": "SoulSavior_ExcludeRefine",
       "excluded_traits": [
         "CardTraitRefine"
       ]
@@ -75,7 +75,7 @@
   ],
   "traits": [
     {
-      "id": "RefineTrait",
+      "id": "SoulSavior_RefineTrait",
       "name": "CardTraitRefine",
       "param_int": 3
     }

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradePropagate",
+      "id": "SoulSavior_SpellUpgradePropagate",
       "type": "enhancer",
       "names": {
         "english": "Growstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'使本层所有单位[propagate] [effect0.upgrade.trigger0.effect0.paramint]。'"
       },
       "relic_effects": [
-        "@AddPropagateEnhancer"
+        "@SoulSavior_AddPropagateEnhancer"
       ],
-      "icon": "@GrowstoneIcon",
+      "icon": "@SoulSavior_GrowstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddPropagateEnhancer",
+      "id": "SoulSavior_AddPropagateEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddPropagate"
+      "param_upgrade": "@SoulSavior_AddPropagate"
     }
   ],
   "upgrades": [
     {
-      "id": "AddPropagate",
+      "id": "SoulSavior_AddPropagate",
       "titles": {
         "english": "Growstone",
         "chinese": "生长石"
@@ -50,10 +50,10 @@
         "english": "Gain '[propagate] [trigger0.effect0.paramint] on all units.'",
         "chinese": "获得'使本层所有单位[propagate] [trigger0.effect0.paramint]。'"
       },
-      "icon": "@GrowstoneIcon",
+      "icon": "@SoulSavior_GrowstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddPropagateTrigger"
+          "id": "@SoulSavior_AddPropagateTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "GrowstoneIcon",
+      "id": "SoulSavior_GrowstoneIcon",
       "path": "textures/growstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddPropagateTrigger",
+      "id": "SoulSavior_AddPropagateTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[propagate] [effect0.paramint] on all units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@PropagateEffect"
+          "id": "@SoulSavior_PropagateEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "PropagateEffect",
+      "id": "SoulSavior_PropagateEffect",
       "name": "CardEffectAdjustAllStatusEffects",
       "target_mode": "room",
       "target_team": "both",

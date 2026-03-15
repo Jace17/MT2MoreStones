@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeMute",
+      "id": "SoulSavior_SpellUpgradeMute",
       "type": "enhancer",
       "names": {
         "english": "Mutestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[mute] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@MuteEnhancer"
+        "@SoulSavior_MuteEnhancer"
       ],
-      "icon": "@MutestoneIcon",
+      "icon": "@SoulSavior_MutestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "MuteEnhancer",
+      "id": "SoulSavior_MuteEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddMuteEffect"
+      "param_upgrade": "@SoulSavior_AddMuteEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddMuteEffect",
+      "id": "SoulSavior_AddMuteEffect",
       "titles": {
         "english": "Mutestone",
         "chinese": "静默石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [mute] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[mute] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@MutestoneIcon",
+      "icon": "@SoulSavior_MutestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyMuteTrigger"
+          "id": "@SoulSavior_ApplyMuteTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "MutestoneIcon",
+      "id": "SoulSavior_MutestoneIcon",
       "path": "textures/mutestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyMuteTrigger",
+      "id": "SoulSavior_ApplyMuteTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [mute] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyMute"
+          "id": "@SoulSavior_EffectApplyMute"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyMute",
+      "id": "SoulSavior_EffectApplyMute",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

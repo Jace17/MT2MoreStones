@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeRemoveBuff",
+      "id": "SoulSavior_SpellUpgradeRemoveBuff",
       "type": "enhancer",
       "names": {
         "english": "Scourstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'移除本层所有敌方单位身上的所有[buff]效果。'"
       },
       "relic_effects": [
-        "@RemoveBuffEnhancer"
+        "@SoulSavior_RemoveBuffEnhancer"
       ],
-      "icon": "@ScourstoneIcon",
+      "icon": "@SoulSavior_ScourstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "RemoveBuffEnhancer",
+      "id": "SoulSavior_RemoveBuffEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@RemoveBuff"
+      "param_upgrade": "@SoulSavior_RemoveBuff"
     }
   ],
   "upgrades": [
     {
-      "id": "RemoveBuff",
+      "id": "SoulSavior_RemoveBuff",
       "titles": {
         "english": "Scourstone",
         "chinese": "冲刷石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Remove all [buff] effects from enemy units.'",
         "chinese": "获得'移除本层所有敌方单位身上的所有[buff]效果。'"
       },
-      "icon": "@ScourstoneIcon",
+      "icon": "@SoulSavior_ScourstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@RemoveBuffTrigger"
+          "id": "@SoulSavior_RemoveBuffTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "ScourstoneIcon",
+      "id": "SoulSavior_ScourstoneIcon",
       "path": "textures/scourstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "RemoveBuffTrigger",
+      "id": "SoulSavior_RemoveBuffTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Remove all [buff] effects from enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@RemoveBuffEffect"
+          "id": "@SoulSavior_RemoveBuffEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "RemoveBuffEffect",
+      "id": "SoulSavior_RemoveBuffEffect",
       "name": "CardEffectRemoveAllStatusEffects",
       "target_mode": "room",
       "target_team": "heroes",

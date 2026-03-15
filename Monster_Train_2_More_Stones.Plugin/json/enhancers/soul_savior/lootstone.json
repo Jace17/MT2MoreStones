@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainCoin",
+      "id": "SoulSavior_SpellUpgradeGainCoin",
       "type": "enhancer",
       "names": {
         "english": "Lootstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'获得 [effect0.upgrade.trigger0.effect0.paramint][coin]。'"
       },
       "relic_effects": [
-        "@GainCoinEnhancer"
+        "@SoulSavior_GainCoinEnhancer"
       ],
-      "icon": "@LootstoneIcon",
+      "icon": "@SoulSavior_LootstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "GainCoinEnhancer",
+      "id": "SoulSavior_GainCoinEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainCoin"
+      "param_upgrade": "@SoulSavior_GainCoin"
     }
   ],
   "upgrades": [
     {
-      "id": "GainCoin",
+      "id": "SoulSavior_GainCoin",
       "titles": {
         "english": "Lootstone",
         "chinese": "财宝石"
@@ -50,10 +50,10 @@
         "english": "Gain [trigger0.effect0.paramint][coin].",
         "chinese": "获得'获得 [trigger0.effect0.paramint][coin]。'"
       },
-      "icon": "@LootstoneIcon",
+      "icon": "@SoulSavior_LootstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainCoinTrigger"
+          "id": "@SoulSavior_GainCoinTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "LootstoneIcon",
+      "id": "SoulSavior_LootstoneIcon",
       "path": "textures/lootstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainCoinTrigger",
+      "id": "SoulSavior_GainCoinTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Gain [effect0.paramint][coin].",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@GainCoinEffect"
+          "id": "@SoulSavior_GainCoinEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainCoinEffect",
+      "id": "SoulSavior_GainCoinEffect",
       "name": "CardEffectRewardGold",
       "param_int": 10
     }

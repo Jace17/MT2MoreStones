@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeInspire",
+      "id": "SoulSavior_UnitUpgradeInspire",
       "type": "enhancer",
       "names": {
         "english": "InspireStone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得'<b>激励</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
-        "@InspireEnhancer"
+        "@SoulSavior_InspireEnhancer"
       ],
-      "icon": "@InspirestoneIcon",
+      "icon": "@SoulSavior_InspirestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "InspireEnhancer",
+      "id": "SoulSavior_InspireEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddInspire"
+      "param_upgrade": "@SoulSavior_AddInspire"
     }
   ],
   "upgrades": [
     {
-      "id": "AddInspire",
+      "id": "SoulSavior_AddInspire",
       "titles": {
         "english": "Inspirestone",
         "chinese": "激励石"
@@ -48,23 +48,23 @@
         "english": "Gain '<b>Inspire</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
         "chinese": "获得'<b>激励</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
-      "icon": "@InspirestoneIcon",
+      "icon": "@SoulSavior_InspirestoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@InspireAdd2Attack2HealthTrigger"
+          "id": "@SoulSavior_InspireAdd2Attack2HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "InspirestoneIcon",
+      "id": "SoulSavior_InspirestoneIcon",
       "path": "textures/inspirestone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "InspireAdd2Attack2HealthTrigger",
+      "id": "SoulSavior_InspireAdd2Attack2HealthTrigger",
       "trigger": "corruption_added",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
@@ -72,7 +72,7 @@
       },
       "effects": [
         {
-          "id": "@EffectAdd2Attack2Health"
+          "id": "@SoulSavior_EffectAdd2Attack2Health"
         }
       ]
     }

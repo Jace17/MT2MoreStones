@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeExtreme",
+      "id": "SoulSavior_SpellUpgradeExtreme",
       "type": "enhancer",
       "names": {
         "english": "Extremestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得 +[effect0.upgrade.bonusdamage] [magicpower]。"
       },
       "relic_effects": [
-        "@ExtremeEnhancer"
+        "@SoulSavior_ExtremeEnhancer"
       ],
-      "icon": "@ExtremestoneIcon",
+      "icon": "@SoulSavior_ExtremestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "ExtremeEnhancer",
+      "id": "SoulSavior_ExtremeEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@ExtremeUpgrade"
+      "param_upgrade": "@SoulSavior_ExtremeUpgrade"
     }
   ],
   "upgrades": [
     {
-      "id": "ExtremeUpgrade",
+      "id": "SoulSavior_ExtremeUpgrade",
       "titles": {
         "english": "Extremestone",
         "chinese": "极限石"
@@ -50,7 +50,7 @@
         "english": "+[bonusdamage] [magicpower].",
         "chinese": "+[bonusdamage] [magicpower]。"
       },
-      "icon": "@ExtremestoneIcon",
+      "icon": "@SoulSavior_ExtremestoneIcon",
       "bonus_damage": 30,
       "bonus_heal": 30,
       "filters": [
@@ -60,7 +60,7 @@
   ],
   "sprites": [
     {
-      "id": "ExtremestoneIcon",
+      "id": "SoulSavior_ExtremestoneIcon",
       "path": "textures/extremestone-v2.png"
     }
   ]

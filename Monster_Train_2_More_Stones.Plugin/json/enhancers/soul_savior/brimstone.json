@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDamage",
+      "id": "SoulSavior_SpellUpgradeDamage",
       "type": "enhancer",
       "names": {
         "english": "Brimstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位造成 [effect0.upgrade.trigger0.effect0.power] 点伤害。'"
       },
       "relic_effects": [
-        "@DamageAllEnhancer"
+        "@SoulSavior_DamageAllEnhancer"
       ],
-      "icon": "@BrimstoneIcon",
+      "icon": "@SoulSavior_BrimstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "DamageAllEnhancer",
+      "id": "SoulSavior_DamageAllEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddDamageAll"
+      "param_upgrade": "@SoulSavior_AddDamageAll"
     }
   ],
   "upgrades": [
     {
-      "id": "AddDamageAll",
+      "id": "SoulSavior_AddDamageAll",
       "titles": {
         "english": "Brimstone",
         "chinese": "硫黄石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'",
         "chinese": "获得'对本层所有敌方单位造成 [trigger0.effect0.power] 点伤害。'"
       },
-      "icon": "@BrimstoneIcon",
+      "icon": "@SoulSavior_BrimstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@DamageAllTrigger"
+          "id": "@SoulSavior_DamageAllTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "BrimstoneIcon",
+      "id": "SoulSavior_BrimstoneIcon",
       "path": "textures/brimstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "DamageAllTrigger",
+      "id": "SoulSavior_DamageAllTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Deal [effect0.power] damage to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@DamageAllEffect"
+          "id": "@SoulSavior_DamageAllEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "DamageAllEffect",
+      "id": "SoulSavior_DamageAllEffect",
       "name": "CardEffectDamage",
       "target_mode": "room",
       "target_team": "heroes",

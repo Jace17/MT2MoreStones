@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeValue",
+      "id": "SoulSavior_SpellUpgradeValue",
       "type": "enhancer",
       "names": {
         "english": "Valuestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
-        "@ValueEffect"
+        "@SoulSavior_ValueEffect"
       ],
-      "icon": "@ValuestoneIcon",
+      "icon": "@SoulSavior_ValuestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "ValueEffect",
+      "id": "SoulSavior_ValueEffect",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@ValueUpgrade"
+      "param_upgrade": "@SoulSavior_ValueUpgrade"
     }
   ],
   "upgrades": [
     {
-      "id": "ValueUpgrade",
+      "id": "SoulSavior_ValueUpgrade",
       "titles": {
         "english": "Valuestone",
         "chinese": "价值石"
@@ -50,7 +50,7 @@
         "english": "-[costreduction][ember].",
         "chinese": "-[costreduction][ember]。"
       },
-      "icon": "@ValuestoneIcon",
+      "icon": "@SoulSavior_ValuestoneIcon",
       "cost_reduction": 3,
       "x_cost_reduction": 3,
       "filters": [
@@ -61,7 +61,7 @@
   ],
   "sprites": [
     {
-      "id": "ValuestoneIcon",
+      "id": "SoulSavior_ValuestoneIcon",
       "path": "textures/valuestone.png"
     }
   ]

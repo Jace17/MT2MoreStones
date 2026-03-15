@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeAddImp",
+      "id": "SoulSavior_SpellUpgradeAddImp",
       "type": "enhancer",
       "names": {
         "english": "Impstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'将一个普通或高级[imp]单位加入你的手牌。'"
       },
       "relic_effects": [
-        "@AddImpEnhancer"
+        "@SoulSavior_AddImpEnhancer"
       ],
-      "icon": "@ImpstoneIcon",
+      "icon": "@SoulSavior_ImpstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AddImpEnhancer",
+      "id": "SoulSavior_AddImpEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddImpToHand"
+      "param_upgrade": "@SoulSavior_AddImpToHand"
     }
   ],
   "upgrades": [
     {
-      "id": "AddImpToHand",
+      "id": "SoulSavior_AddImpToHand",
       "titles": {
         "english": "Impstone",
         "chinese": "碎尾石"
@@ -48,10 +48,10 @@
         "english": "Gain 'Add a common or uncommon [imp] unit to your hand.'",
         "chinese": "获得'将一个普通或高级[imp]单位加入你的手牌。'"
       },
-      "icon": "@ImpstoneIcon",
+      "icon": "@SoulSavior_ImpstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AddImpToHandTrigger"
+          "id": "@SoulSavior_AddImpToHandTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "ImpstoneIcon",
+      "id": "SoulSavior_ImpstoneIcon",
       "path": "textures/impstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AddImpToHandTrigger",
+      "id": "SoulSavior_AddImpToHandTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Add a common or uncommon [imp] unit to your hand.",
@@ -75,22 +75,22 @@
       },
       "effects": [
         {
-          "id": "@AddImpToHandEffect"
+          "id": "@SoulSavior_AddImpToHandEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "AddImpToHandEffect",
+      "id": "SoulSavior_AddImpToHandEffect",
       "name": "CardEffectAddBattleCard",
       "param_int": 3,
-      "param_card_pool": "@RandomImpCardPool"
+      "param_card_pool": "@SoulSavior_RandomImpCardPool"
     }
   ],
   "card_pools": [
     {
-      "id": "RandomImpCardPool",
+      "id": "SoulSavior_RandomImpCardPool",
       "cards": [
         "AggressiveImp",
         "AggressiveImp",

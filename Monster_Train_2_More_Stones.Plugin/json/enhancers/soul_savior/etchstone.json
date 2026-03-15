@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeEtch",
+      "id": "SoulSavior_UnitUpgradeEtch",
       "type": "enhancer",
       "names": {
         "english": "Etchstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得'<b>蚀刻</b>：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
-        "@EtchEnhancer"
+        "@SoulSavior_EtchEnhancer"
       ],
-      "icon": "@EtchstoneIcon",
+      "icon": "@SoulSavior_EtchstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "EtchEnhancer",
+      "id": "SoulSavior_EtchEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddEtch"
+      "param_upgrade": "@SoulSavior_AddEtch"
     }
   ],
   "upgrades": [
     {
-      "id": "AddEtch",
+      "id": "SoulSavior_AddEtch",
       "titles": {
         "english": "Etchstone",
         "chinese": "蚀刻石"
@@ -48,23 +48,23 @@
         "english": "Gain '<b>Etch</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
         "chinese": "获得'<b>蚀刻</b>：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
-      "icon": "@EtchstoneIcon",
+      "icon": "@SoulSavior_EtchstoneIcon",
       "trigger_upgrades": [
         {
-          "id": "@EtchAdd4Attack4HealthTrigger"
+          "id": "@SoulSavior_EtchAdd4Attack4HealthTrigger"
         }
       ]
     }
   ],
   "sprites": [
     {
-      "id": "EtchstoneIcon",
+      "id": "SoulSavior_EtchstoneIcon",
       "path": "textures/etchstone.png"
     }
   ],
   "character_triggers": [
     {
-      "id": "EtchAdd4Attack4HealthTrigger",
+      "id": "SoulSavior_EtchAdd4Attack4HealthTrigger",
       "trigger": "card_exhausted",
       "descriptions": {
         "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
@@ -72,7 +72,7 @@
       },
       "effects": [
         {
-          "id": "@EffectAdd4Attack4Health"
+          "id": "@SoulSavior_EffectAdd4Attack4Health"
         }
       ]
     }

@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeUnstable",
+      "id": "SoulSavior_SpellUpgradeUnstable",
       "type": "enhancer",
       "names": {
         "english": "Radstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[unstable] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@Unstable10Enhancer"
+        "@SoulSavior_Unstable10Enhancer"
       ],
-      "icon": "@RadiostoneIcon",
+      "icon": "@SoulSavior_RadiostoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "Unstable10Enhancer",
+      "id": "SoulSavior_Unstable10Enhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddUnstableEffect"
+      "param_upgrade": "@SoulSavior_AddUnstableEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddUnstableEffect",
+      "id": "SoulSavior_AddUnstableEffect",
       "titles": {
         "english": "Radstone",
         "chinese": "辐射石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [unstable] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[unstable] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@RadiostoneIcon",
+      "icon": "@SoulSavior_RadiostoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyUnstableTrigger"
+          "id": "@SoulSavior_ApplyUnstableTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "RadiostoneIcon",
+      "id": "SoulSavior_RadiostoneIcon",
       "path": "textures/radiostone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyUnstableTrigger",
+      "id": "SoulSavior_ApplyUnstableTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [unstable] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyUnstable"
+          "id": "@SoulSavior_EffectApplyUnstable"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyUnstable",
+      "id": "SoulSavior_EffectApplyUnstable",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

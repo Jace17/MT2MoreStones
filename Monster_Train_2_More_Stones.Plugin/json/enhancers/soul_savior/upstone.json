@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeAscend",
+      "id": "SoulSavior_SpellUpgradeAscend",
       "type": "enhancer",
       "names": {
         "english": "Upstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个指定目标法术，使其获得'[ascend]。'"
       },
       "relic_effects": [
-        "@AscendEnhancer"
+        "@SoulSavior_AscendEnhancer"
       ],
-      "icon": "@UpstoneIcon",
+      "icon": "@SoulSavior_UpstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "AscendEnhancer",
+      "id": "SoulSavior_AscendEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddAscend"
+      "param_upgrade": "@SoulSavior_AddAscend"
     }
   ],
   "upgrades": [
     {
-      "id": "AddAscend",
+      "id": "SoulSavior_AddAscend",
       "titles": {
         "english": "Upstone",
         "chinese": "上移石"
@@ -48,28 +48,28 @@
         "english": "Gain [ascend].",
         "chinese": "获得'[ascend]。'"
       },
-      "icon": "@UpstoneIcon",
+      "icon": "@SoulSavior_UpstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@AscendTrigger"
+          "id": "@SoulSavior_AscendTrigger"
         }
       ],
       "filters": [
         "OnlySpells",
-        "@SingleTargetOnly",
-        "@NoAscendOrDescend"
+        "@SoulSavior_SingleTargetOnly",
+        "@SoulSavior_NoAscendOrDescend"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "UpstoneIcon",
+      "id": "SoulSavior_UpstoneIcon",
       "path": "textures/upstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "AscendTrigger",
+      "id": "SoulSavior_AscendTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[ascend].",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@AscendEffect"
+          "id": "@SoulSavior_AscendEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "AscendEffect",
+      "id": "SoulSavior_AscendEffect",
       "name": "CardEffectBump",
       "target_mode": "last_targeted_characters",
       "param_int": 1

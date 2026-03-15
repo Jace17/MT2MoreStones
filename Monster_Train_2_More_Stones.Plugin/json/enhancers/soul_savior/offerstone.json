@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeOffering",
+      "id": "SoulSavior_SpellUpgradeOffering",
       "type": "enhancer",
       "names": {
         "english": "Offerstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个非指定目标法术，使其获得<b>献祭</b>，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
-        "@OfferingEnhancer"
+        "@SoulSavior_OfferingEnhancer"
       ],
-      "icon": "@OfferstoneIcon",
+      "icon": "@SoulSavior_OfferstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "OfferingEnhancer",
+      "id": "SoulSavior_OfferingEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddOfferingTrait"
+      "param_upgrade": "@SoulSavior_AddOfferingTrait"
     }
   ],
   "upgrades": [
     {
-      "id": "AddOfferingTrait",
+      "id": "SoulSavior_AddOfferingTrait",
       "titles": {
         "english": "Offerstone",
         "chinese": "献祭石"
@@ -48,42 +48,42 @@
         "english": "Gain <b>Offering</b> and -[costreduction][ember].",
         "chinese": "获得<b>献祭</b>，费用 -[effect0.upgrade.costreduction][ember]。"
       },
-      "icon": "@OfferstoneIcon",
+      "icon": "@SoulSavior_OfferstoneIcon",
       "cost_reduction": 1,
       "x_cost_reduction": 1,
       "trait_upgrades": [
         {
-          "id": "@OfferingTrait"
+          "id": "@SoulSavior_OfferingTrait"
         }
       ],
       "filters": [
         "OnlySpells",
-        "@TargetlessOnly",
-        "@ExcludeOffering"
+        "@SoulSavior_TargetlessOnly",
+        "@SoulSavior_ExcludeOffering"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "OfferstoneIcon",
+      "id": "SoulSavior_OfferstoneIcon",
       "path": "textures/offerstone.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeOffering",
+      "id": "SoulSavior_ExcludeOffering",
       "excluded_traits": [
         "CardTraitTreasure"
       ]
     },
     {
-      "id": "TargetlessOnly",
+      "id": "SoulSavior_TargetlessOnly",
       "card_target_mode": [ "targetless" ]
     }
   ],
   "traits": [
     {
-      "id": "OfferingTrait",
+      "id": "SoulSavior_OfferingTrait",
       "name": "CardTraitTreasure"
     }
   ]

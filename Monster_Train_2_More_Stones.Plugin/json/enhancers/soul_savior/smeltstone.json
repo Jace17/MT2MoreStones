@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeGainSmelt",
+      "id": "SoulSavior_SpellUpgradeGainSmelt",
       "type": "enhancer",
       "names": {
         "english": "Smeltstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'[smelt]一张手牌。'"
       },
       "relic_effects": [
-        "@GainSmeltEnhancer"
+        "@SoulSavior_GainSmeltEnhancer"
       ],
-      "icon": "@SmeltstoneIcon",
+      "icon": "@SoulSavior_SmeltstoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -31,15 +31,15 @@
   ],
   "relic_effects": [
     {
-      "id": "GainSmeltEnhancer",
+      "id": "SoulSavior_GainSmeltEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@GainSmelt"
+      "param_upgrade": "@SoulSavior_GainSmelt"
     }
   ],
   "upgrades": [
     {
-      "id": "GainSmelt",
+      "id": "SoulSavior_GainSmelt",
       "titles": {
         "english": "Smeltstone",
         "chinese": "熔炼石"
@@ -48,10 +48,10 @@
         "english": "Gain '[smelt] a card in hand.'",
         "chinese": "获得'[smelt]一张手牌。'"
       },
-      "icon": "@SmeltstoneIcon",
+      "icon": "@SoulSavior_SmeltstoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@GainSmeltTrigger"
+          "id": "@SoulSavior_GainSmeltTrigger"
         }
       ],
       "filters": [
@@ -61,13 +61,13 @@
   ],
   "sprites": [
     {
-      "id": "SmeltstoneIcon",
+      "id": "SoulSavior_SmeltstoneIcon",
       "path": "textures/smeltstone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "GainSmeltTrigger",
+      "id": "SoulSavior_GainSmeltTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "[smelt] a card in hand.",
@@ -75,14 +75,14 @@
       },
       "effects": [
         {
-          "id": "@GainSmeltEffect"
+          "id": "@SoulSavior_GainSmeltEffect"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "GainSmeltEffect",
+      "id": "SoulSavior_GainSmeltEffect",
       "name": "CardEffectChooseDiscard",
       "target_mode": "hand",
       "param_int": 3,

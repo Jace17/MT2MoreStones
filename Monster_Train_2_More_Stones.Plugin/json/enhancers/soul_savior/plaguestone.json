@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "SpellUpgradeDecay",
+      "id": "SoulSavior_SpellUpgradeDecay",
       "type": "enhancer",
       "names": {
         "english": "Plaguestone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个法术，使其获得'对本层所有敌方单位施加[decay] [effect0.upgrade.trigger0.effect0.status0.power]。'"
       },
       "relic_effects": [
-        "@DecayEnhancer"
+        "@SoulSavior_DecayEnhancer"
       ],
-      "icon": "@PlaguestoneIcon",
+      "icon": "@SoulSavior_PlaguestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "DecayEnhancer",
+      "id": "SoulSavior_DecayEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "spell",
-      "param_upgrade": "@AddDecayEffect"
+      "param_upgrade": "@SoulSavior_AddDecayEffect"
     }
   ],
   "upgrades": [
     {
-      "id": "AddDecayEffect",
+      "id": "SoulSavior_AddDecayEffect",
       "titles": {
         "english": "Plaguestone",
         "chinese": "瘟疫石"
@@ -50,10 +50,10 @@
         "english": "Gain 'Apply [decay] [trigger0.effect0.status0.power] to enemy units.'",
         "chinese": "获得'对本层所有敌方单位施加[decay] [trigger0.effect0.status0.power]。'"
       },
-      "icon": "@PlaguestoneIcon",
+      "icon": "@SoulSavior_PlaguestoneIcon",
       "card_trigger_upgrades": [
         {
-          "id": "@ApplyDecayTrigger"
+          "id": "@SoulSavior_ApplyDecayTrigger"
         }
       ],
       "filters": [
@@ -63,13 +63,13 @@
   ],
   "sprites": [
     {
-      "id": "PlaguestoneIcon",
+      "id": "SoulSavior_PlaguestoneIcon",
       "path": "textures/plaguestone.png"
     }
   ],
   "card_triggers": [
     {
-      "id": "ApplyDecayTrigger",
+      "id": "SoulSavior_ApplyDecayTrigger",
       "trigger": "on_cast",
       "descriptions": {
         "english": "Apply [decay] [effect0.status0.power] to enemy units.",
@@ -77,14 +77,14 @@
       },
       "effects": [
         {
-          "id": "@EffectApplyDecay"
+          "id": "@SoulSavior_EffectApplyDecay"
         }
       ]
     }
   ],
   "effects": [
     {
-      "id": "EffectApplyDecay",
+      "id": "SoulSavior_EffectApplyDecay",
       "name": "CardEffectAddStatusEffect",
       "target_mode": "room",
       "target_team": "heroes",

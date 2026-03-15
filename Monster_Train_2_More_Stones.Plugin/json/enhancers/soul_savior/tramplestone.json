@@ -2,7 +2,7 @@
   "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
   "relics": [
     {
-      "id": "UnitUpgradeTrample",
+      "id": "SoulSavior_UnitUpgradeTrample",
       "type": "enhancer",
       "names": {
         "english": "Stompstone",
@@ -13,9 +13,9 @@
         "chinese": "升级一个单位，使其获得[trample]。"
       },
       "relic_effects": [
-        "@TrampleEnhancer"
+        "@SoulSavior_TrampleEnhancer"
       ],
-      "icon": "@TramplestoneIcon",
+      "icon": "@SoulSavior_TramplestoneIcon",
       "extensions": [
         {
           "enhancer": {
@@ -33,15 +33,15 @@
   ],
   "relic_effects": [
     {
-      "id": "TrampleEnhancer",
+      "id": "SoulSavior_TrampleEnhancer",
       "name": "RelicEffectCardUpgrade",
       "param_card_type": "monster",
-      "param_upgrade": "@AddTrample"
+      "param_upgrade": "@SoulSavior_AddTrample"
     }
   ],
   "upgrades": [
     {
-      "id": "AddTrample",
+      "id": "SoulSavior_AddTrample",
       "titles": {
         "english": "Stompstone",
         "chinese": "蹂躏石"
@@ -50,7 +50,7 @@
         "english": "Gain [trample].",
         "chinese": "获得[trample]。"
       },
-      "icon": "@TramplestoneIcon",
+      "icon": "@SoulSavior_TramplestoneIcon",
       "status_effect_upgrades": [
         {
           "status": "trample",
@@ -59,19 +59,19 @@
       ],
       "filters": [
         "ExcludeEelGorgon",
-        "@ExcludeTrample"
+        "@SoulSavior_ExcludeTrample"
       ]
     }
   ],
   "sprites": [
     {
-      "id": "TramplestoneIcon",
+      "id": "SoulSavior_TramplestoneIcon",
       "path": "textures/tramplestone-v2.png"
     }
   ],
   "upgrade_masks": [
     {
-      "id": "ExcludeTrample",
+      "id": "SoulSavior_ExcludeTrample",
       "excluded_status": [
         {
           "status": "trample",
