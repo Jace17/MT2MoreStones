@@ -19,7 +19,7 @@
       "extensions": [
         {
           "enhancer": {
-            "class": "ClassUnderlegion",
+            "class": null,
             "pools": [
               "SpellUpgradePoolCommon"
             ],

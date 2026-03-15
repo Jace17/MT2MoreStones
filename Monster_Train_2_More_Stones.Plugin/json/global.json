@@ -4,6 +4,28 @@
       "id": "Plus8Attack8Health",
       "bonus_damage": 8,
       "bonus_hp": 8
+    },
+    {
+      "id": "Plus4Attack4Armor",
+      "bonus_damage": 4,
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 4,
+          "from_permanent_upgrade": false
+        }
+      ]
+    },
+    {
+      "id": "Plus8Attack8Armor",
+      "bonus_damage": 8,
+      "status_effect_upgrades": [
+        {
+          "status": "armor",
+          "count": 8,
+          "from_permanent_upgrade": false
+        }
+      ]
     }
   ],
   "upgrade_masks": [
@@ -55,6 +77,27 @@
       "target_mode": "self",
       "param_int": 1,
       "param_upgrade": "@Plus8Attack8Health"
+    },
+    {
+      "id": "EffectAdd2Attack2Armor",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "Plus2Attack2Armor"
+    },
+    {
+      "id": "EffectAdd4Attack4Armor",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "@Plus4Attack4Armor"
+    },
+    {
+      "id": "EffectAdd8Attack8Armor",
+      "name": "CardEffectAddTempCardUpgradeToUnits",
+      "target_mode": "self",
+      "param_int": 1,
+      "param_upgrade": "@Plus8Attack8Armor"
     }
   ]
 }

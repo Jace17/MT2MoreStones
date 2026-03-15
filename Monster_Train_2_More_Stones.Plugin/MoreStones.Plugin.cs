@@ -73,11 +73,16 @@ namespace Monster_Train_2_More_Stones.Plugin
         public static ConfigEntry<bool>? addInspirestone;
         public static ConfigEntry<bool>? addEtchstone;
         public static ConfigEntry<bool>? addSnipestone;
+        public static ConfigEntry<bool>? addStrikestone;
+        public static ConfigEntry<bool>? addHungerstone;
+        public static ConfigEntry<bool>? addRevengestone;
+        public static ConfigEntry<bool>? addRallystone;
+        public static ConfigEntry<bool>? addGravestone;
 
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
         public void Awake()
         {
-            // Plugin startup logic
+            // Plugin startup logic 
             Logger = base.Logger;
 
             addBloomstone = Config.Bind("General", "Bloomstone", true, "Enable Bloomstone. (Add Rejuvenate: +4 Attack, +4 Health)\n启用盛开石（单位获得'复原: +4 攻击力，+4 生命值。'）");
@@ -142,6 +147,11 @@ namespace Monster_Train_2_More_Stones.Plugin
             addInspirestone = Config.Bind("General", "Inspirestone", true, "Enable Inspirestone. (Add Inspire: +2 Attack, +2 Health)\n启用激励石（单位获得'激励: +2 攻击力，+2 生命值。'）");
             addEtchstone = Config.Bind("General", "Etchstone", true, "Enable Etchstone. (Add Etch: +4 Attack, +4 Health)\n启用蚀刻石（单位获得'蚀刻: +4 攻击力，+4 生命值。'）");
             addSnipestone = Config.Bind("General", "Snipestone", true, "Enable Snipestone. (Add Sniper. Attack +10.)\n启用狙击石（单位获得狙击手，+10 攻击力。）");
+            addStrikestone = Config.Bind("General", "Strikestone", true, "Enable Strikestone. (Add Strike: +2 Attack, +2 Armor)");
+            addHungerstone = Config.Bind("General", "Hungerstone", true, "Enable Hungerstone. (Add Hunger.)");
+            addRevengestone = Config.Bind("General", "Revengestone", true, "Enable Revengestone. (Add Revenge: +4 Attack, +4 Armor)");
+            addRallystone = Config.Bind("General", "Rallystone", true, "Enable Rallystone. (Add Rally: +2 Attack, +2 Health)");
+            addGravestone = Config.Bind("General", "Gravestone", true, "Enable Gravestone. (Add Harvest: +2 Attack, +2 Health)");
 
             List<String> paths = new List<string>
             {
@@ -203,7 +213,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addPlaguestone.Value) paths.Add("json/enhancers/plaguestone.json");
             if (addSpawnstone.Value) paths.Add("json/enhancers/spawnstone.json");
 
-            // DLC Stones
+            // Post-DLC 1 Stones
             if (addSteelstone.Value) paths.Add("json/enhancers/steelstone.json");
             if (addForgestone.Value) paths.Add("json/enhancers/forgestone.json");
             if (addSmeltstone.Value) paths.Add("json/enhancers/smeltstone.json");
@@ -213,6 +223,11 @@ namespace Monster_Train_2_More_Stones.Plugin
             if (addInspirestone.Value) paths.Add("json/enhancers/inspirestone.json");
             if (addEtchstone.Value) paths.Add("json/enhancers/etchstone.json");
             if (addSnipestone.Value) paths.Add("json/enhancers/snipestone.json");
+            if (addStrikestone.Value) paths.Add("json/enhancers/strikestone.json");
+            if (addHungerstone.Value) paths.Add("json/enhancers/hungerstone.json");
+            if (addRevengestone.Value) paths.Add("json/enhancers/revengestone.json");
+            if (addRallystone.Value) paths.Add("json/enhancers/rallystone.json");
+            if (addGravestone.Value) paths.Add("json/enhancers/gravestone.json");
 
             // Soul Savior Stones
             if (addBloomstone.Value) paths.Add("json/enhancers/soul_savior/bloomstone.json");
@@ -288,34 +303,34 @@ namespace Monster_Train_2_More_Stones.Plugin
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-                
+
             // Uncomment if you need harmony patches, if you are writing your own custom effects.
             var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
-            harmony.PatchAll(); 
+            harmony.PatchAll();
         }
     }
 
-    //[HarmonyPatch(typeof(SaveManager), "SetupRun")]
-    //public class LogForDebug
-    //{
-    //    public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
-    //    public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
-    //    {
-    //        // Log all enhancers
-    //        List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
-    //        enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
-    //        foreach (EnhancerData enhancerData in enhancers)
-    //        {
-    //            Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
-    //        }
+    [HarmonyPatch(typeof(SaveManager), "SetupRun")]
+    public class LogForDebug
+    {
+        public static readonly ManualLogSource Log = Logger.CreateLogSource("LogForDebug");
+        public static void Postfix(SaveManager __instance, AllGameData ___allGameData)
+        {
+            // Log all enhancers
+            List<EnhancerData> enhancers = ___allGameData.GetAllEnhancerData().ToList();
+            enhancers.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort enhancers by Name
+            foreach (EnhancerData enhancerData in enhancers)
+            {
+                Log.LogInfo($"Enhancer Name: {enhancerData.Cheat_GetNameEnglish()}, Debug Name: {enhancerData.GetDebugName()}, ID: {enhancerData.GetID()}"); // Log all enhancer IDs 
+            }
 
-    //        // Log all cards
-    //        List<CardData> cards = ___allGameData.GetAllCardData().ToList();
-    //        cards.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort cards by Name
-    //        foreach (CardData cardData in cards)
-    //        {
-    //            Log.LogInfo($"Card Name: {cardData.Cheat_GetNameEnglish()}, Debug Name: {cardData.GetDebugName()}, ID: {cardData.GetID()}"); // Log all card IDs
-    //        }
-    //    }
-    //}
+            // Log all cards
+            List<CardData> cards = ___allGameData.GetAllCardData().ToList();
+            cards.Sort((x, y) => x.Cheat_GetNameEnglish().CompareTo(y.Cheat_GetNameEnglish())); // Sort cards by Name
+            foreach (CardData cardData in cards)
+            {
+                Log.LogInfo($"Card Name: {cardData.Cheat_GetNameEnglish()}, Debug Name: {cardData.GetDebugName()}, ID: {cardData.GetID()}"); // Log all card IDs
+            }
+        }
+    }
 }

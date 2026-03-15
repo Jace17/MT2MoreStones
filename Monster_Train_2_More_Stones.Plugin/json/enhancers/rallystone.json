@@ -1,0 +1,75 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeRally",
+      "type": "enhancer",
+      "names": {
+        "english": "Rallystone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '[rally]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "relic_effects": [
+        "@RallyEnhancer"
+      ],
+      "icon": "@RallystoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUnderlegion",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "RallyEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddRally"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddRally",
+      "titles": {
+        "english": "Rallystone"
+      },
+      "descriptions": {
+        "english": "Gain '[rally]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+      },
+      "icon": "@RallystoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@RallyAdd2Attack2HealthTrigger"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "RallystoneIcon",
+      "path": "textures/rallystone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "RallyAdd2Attack2HealthTrigger",
+      "trigger": "card_monster_played",
+      "descriptions": {
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+      },
+      "effects": [
+        {
+          "id": "@EffectAdd2Attack2Health"
+        }
+      ]
+    }
+  ]
+}

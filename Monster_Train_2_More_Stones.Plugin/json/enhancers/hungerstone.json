@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "UnitUpgradeHunger",
+      "type": "enhancer",
+      "names": {
+        "english": "Hungerstone"
+      },
+      "descriptions": {
+        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].'"
+      },
+      "relic_effects": [
+        "@HungerEnhancer"
+      ],
+      "icon": "@HungerstoneIcon",
+      "extensions": [
+        {
+          "enhancer": {
+            "class": "ClassUmbra",
+            "pools": [
+              "UnitUpgradePoolRare"
+            ],
+            "rarity": "rare"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "HungerEnhancer",
+      "name": "RelicEffectCardUpgrade",
+      "param_card_type": "monster",
+      "param_upgrade": "@AddHunger"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "AddHunger",
+      "titles": {
+        "english": "Hungerstone"
+      },
+      "descriptions": {
+        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].'"
+      },
+      "icon": "@HungerstoneIcon",
+      "trigger_upgrades": [
+        {
+          "id": "@HungerEatFood"
+        }
+      ]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "HungerstoneIcon",
+      "path": "textures/hungerstone.png"
+    }
+  ],
+  "character_triggers": [
+    {
+      "id": "HungerEatFood",
+      "trigger": "on_food_spawn",
+      "descriptions": {
+        "english": "Feed on units with [eaten]."
+      },
+      "effects": [
+        {
+          "id": "@EffectEatFood"
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "EffectEatFood",
+      "name": "CardEffectFeederRules",
+      "target_mode": "room",
+      "target_team": "monsters",
+      "param_bool": true
+    }
+  ]
+}
