@@ -5,10 +5,12 @@
       "id": "UnitUpgradeStrike",
       "type": "enhancer",
       "names": {
-        "english": "Strikestone"
+        "english": "Strikestone",
+        "chinese": "攻击石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[strike]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'"
+        "english": "Upgrade a unit with '[strike]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'",
+        "chinese": "升级一个单位，使其获得'[strike]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，[armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power]。'"
       },
       "relic_effects": [
         "@StrikeEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddStrike",
       "titles": {
-        "english": "Strikestone"
+        "english": "Strikestone",
+        "chinese": "攻击石"
       },
       "descriptions": {
-        "english": "Gain '[strike]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'"
+        "english": "Gain '[strike]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'",
+        "chinese": "获得'[strike]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，[armor] [charactertrigger0.effect0.upgrade.status0.power]。'"
       },
       "icon": "@StrikestoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "StrikeAdd4Attack4ArmorTrigger",
       "trigger": "on_attacking",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，[armor] [effect0.upgrade.status0.power]。"
       },
       "effects": [
         {

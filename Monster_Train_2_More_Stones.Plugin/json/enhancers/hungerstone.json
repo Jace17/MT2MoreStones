@@ -5,10 +5,12 @@
       "id": "UnitUpgradeHunger",
       "type": "enhancer",
       "names": {
-        "english": "Hungerstone"
+        "english": "Hungerstone",
+        "chinese": "饥饿石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].'"
+        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].'",
+        "chinese": "升级一个单位，使其获得'<b>饥饿</b>：吞食带有[eaten]的单位。'"
       },
       "relic_effects": [
         "@HungerEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddHunger",
       "titles": {
-        "english": "Hungerstone"
+        "english": "Hungerstone",
+        "chinese": "饥饿石"
       },
       "descriptions": {
-        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].'"
+        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].'",
+        "chinese": "获得'<b>饥饿</b>：吞食带有[eaten]的单位。'"
       },
       "icon": "@HungerstoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "HungerEatFood",
       "trigger": "on_food_spawn",
       "descriptions": {
-        "english": "Feed on units with [eaten]."
+        "english": "Feed on units with [eaten].",
+        "chinese": "吞食带有[eaten]的单位。"
       },
       "effects": [
         {

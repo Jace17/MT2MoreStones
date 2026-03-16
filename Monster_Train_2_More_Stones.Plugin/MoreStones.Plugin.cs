@@ -90,7 +90,7 @@ namespace Monster_Train_2_More_Stones.Plugin
             addSunstone = Config.Bind("General", "Sunstone", true, "Enable Sunstone. (Draw +1 next turn.)\n启用太阳石（法术获得'下个回合抽 +1 张牌。'）");
             addVinestone = Config.Bind("General", "Vinestone", true, "Enable Vinestone. (Apply Rooted 1 to all enemies.)\n启用藤蔓石（法术获得'对本层所有敌方单位施加缠绕 1。'）");
             addBackstone = Config.Bind("General", "Backstone", true, "Enable Backstone. (Add Retreat. (Targeted spells only.))\n启用后移石（指定目标法术获得'后退。'）");
-            addCloudstone = Config.Bind("General", "Cloudstone", true, "Enable Cloudstone. (Add Shift: +2 Attack, +2 Health)\n启用腾云石（单位获得'转移: +2 攻击力，+2 生命值。'）");
+            addCloudstone = Config.Bind("General", "Cloudstone", true, "Enable Cloudstone. (Add Shift: +2 Attack, +2 Armor)\n启用腾云石（单位获得'转移: +2 攻击力，护甲 2。'）");
             addWeakstone = Config.Bind("General", "Weakstone", true, "Enable Weakstone. (Apply Melee Weakness 1 to all enemies.)\n启用破防石（法术获得'对本层所有敌方单位施加近战易伤 1。'）");
             addWingstone = Config.Bind("General", "Wingstone", true, "Enable Wingstone. (Add Ability: Flight)\n启用添翼石（单位获得能力: 飞行。）");
             addBannerstone = Config.Bind("General", "Bannerstone", true, "Enable Bannerstone. (Add Deployable. Attack +10.)\n启用战旗石（单位获得可部署，+10 攻击力。）");
@@ -110,8 +110,8 @@ namespace Monster_Train_2_More_Stones.Plugin
             addImpstone = Config.Bind("General", "Impstone", true, "Enable Impstone. (Add a common or uncommon Imp unit to your hand.)\n启用碎尾石（法术获得'将一个普通或高级小鬼单位加入你的手牌。'）");
             addUpstone = Config.Bind("General", "Upstone", true, "Enable Upstone. (Add Ascend. (Targeted spells only.))\n启用上移石（指定目标法术获得'上升。'）");
             addFlaskstone = Config.Bind("General", "Flaskstone", true, "Enable Flaskstone. (Add Mix.)\n启用试剂石（法术获得'调配。'）");
-            addArtistone = Config.Bind("General", "Artistone", true, "Enable Artistone. (Add Artificer: +8 Attack, +8 Health)\n启用巧艺石（单位获得'巧匠: +8 攻击力，+8 生命值。'");
-            addWeirdstone = Config.Bind("General", "Weirdstone", true, "Enable Madstone. (Add Unstable 30.)\n启用癫狂石（单位获得不稳定 30。）");
+            addArtistone = Config.Bind("General", "Artistone", true, "Enable Artistone. (Add Artificer: +8 Attack, +8 Armor)\n启用巧艺石（单位获得'巧匠: +8 攻击力，护甲 8。'");
+            addWeirdstone = Config.Bind("General", "Weirdstone", true, "Enable Madstone. (Add Unstable 20.)\n启用癫狂石（单位获得不稳定 20。）");
             addRadiostone = Config.Bind("General", "Radiostone", true, "Enable Radstone. (Apply Unstable 10 to all enemies.)\n启用辐射石（法术获得'对本层所有敌方单位施加不稳定 10。'）");
             addBladestone = Config.Bind("General", "Bladestone", true, "Enable Bladestone. (Add Mageblade 2.)\n启用刀刃石（单位获得魔刃 2。）");
             addCyclestone = Config.Bind("General", "Cyclestone", true, "Enable Cyclestone. (Add Mooncycle: +2 Attack, +2 Health)\n启用朔望石（单位获得'月相循环: +2 攻击力，+2 生命值。'）");
@@ -147,11 +147,11 @@ namespace Monster_Train_2_More_Stones.Plugin
             addInspirestone = Config.Bind("General", "Inspirestone", true, "Enable Inspirestone. (Add Inspire: +2 Attack, +2 Health)\n启用激励石（单位获得'激励: +2 攻击力，+2 生命值。'）");
             addEtchstone = Config.Bind("General", "Etchstone", true, "Enable Etchstone. (Add Etch: +4 Attack, +4 Health)\n启用蚀刻石（单位获得'蚀刻: +4 攻击力，+4 生命值。'）");
             addSnipestone = Config.Bind("General", "Snipestone", true, "Enable Snipestone. (Add Sniper. Attack +10.)\n启用狙击石（单位获得狙击手，+10 攻击力。）");
-            addStrikestone = Config.Bind("General", "Strikestone", true, "Enable Strikestone. (Add Strike: +2 Attack, +2 Armor)");
-            addHungerstone = Config.Bind("General", "Hungerstone", true, "Enable Hungerstone. (Add Hunger.)");
-            addRevengestone = Config.Bind("General", "Revengestone", true, "Enable Revengestone. (Add Revenge: +4 Attack, +4 Armor)");
-            addRallystone = Config.Bind("General", "Rallystone", true, "Enable Rallystone. (Add Rally: +2 Attack, +2 Health)");
-            addGravestone = Config.Bind("General", "Gravestone", true, "Enable Gravestone. (Add Harvest: +2 Attack, +2 Health)");
+            addStrikestone = Config.Bind("General", "Strikestone", true, "Enable Strikestone. (Add Strike: +4 Attack, +4 Armor)\n启用攻击石（单位获得'攻击: +4 攻击力，护甲 4。'）");
+            addHungerstone = Config.Bind("General", "Hungerstone", true, "Enable Hungerstone. (Add Hunger.)\n启用饥饿石（单位获得'饥饿：吞食带有被吞食的单位。'）");
+            addRevengestone = Config.Bind("General", "Revengestone", true, "Enable Revengestone. (Add Revenge: +4 Attack, +4 Armor)\n启用复仇石（单位获得'复仇: +4 攻击力，护甲 4。'）");
+            addRallystone = Config.Bind("General", "Rallystone", true, "Enable Rallystone. (Add Rally: +2 Attack, +2 Health)\n启用集结石（单位获得'集结: +2 攻击力，+2 生命值。'）");
+            addGravestone = Config.Bind("General", "Gravestone", true, "Enable Gravestone. (Add Harvest: +2 Attack, +2 Health)\n启用墓碑石（单位获得'收割: +2 攻击力，+2 生命值。'）");
 
             List<String> paths = new List<string>
             {
