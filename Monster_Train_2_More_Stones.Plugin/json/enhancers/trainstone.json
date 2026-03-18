@@ -48,7 +48,7 @@
       },
       "descriptions": {
         "english": "<b>0</b>[ember].",
-        "chinese": "<b>0</b>[ember]。"
+        "chinese": "费用变成 <b>0</b>[ember]。"
       },
       "icon": "@TrainstoneIcon",
       "cost_reduction": 99,

@@ -5,10 +5,12 @@
       "id": "SoulSavior_UnitUpgradeRevenge",
       "type": "enhancer",
       "names": {
-        "english": "Revengeslab"
+        "english": "Revengeslab",
+        "chinese": "复仇石板"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'"
+        "english": "Upgrade a unit with '[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'",
+        "chinese": "升级一个单位，使其获得'[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，[armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power]。'"
       },
       "relic_effects": [
         "@SoulSavior_RevengeEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "SoulSavior_AddRevenge",
       "titles": {
-        "english": "Revengeslab"
+        "english": "Revengeslab",
+        "chinese": "复仇石板"
       },
       "descriptions": {
-        "english": "Gain '[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'"
+        "english": "Gain '[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'",
+        "chinese": "获得'[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，[armor] [charactertrigger0.effect0.upgrade.status0.power]。'"
       },
       "icon": "@SoulSavior_RevengestoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "SoulSavior_RevengeAdd4Attack4ArmorTrigger",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，[armor] [effect0.upgrade.status0.power]。"
       },
       "effects": [
         {

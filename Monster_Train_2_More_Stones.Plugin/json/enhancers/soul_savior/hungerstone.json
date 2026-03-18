@@ -5,10 +5,12 @@
       "id": "SoulSavior_UnitUpgradeHunger",
       "type": "enhancer",
       "names": {
-        "english": "Hungerslab"
+        "english": "Hungerslab",
+        "chinese": "饥饿石板"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].' and +[effect0.upgrade.bonushp][health]."
+        "english": "Upgrade a unit with '<b>Hunger</b>: Feed on units with [eaten].' and +[effect0.upgrade.bonushp][health].",
+        "chinese": "升级一个单位，使其获得'<b>饥饿</b>：吞食带有[eaten]的单位'，+[effect0.upgrade.bonushp][health]。"
       },
       "relic_effects": [
         "@SoulSavior_HungerEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "SoulSavior_AddHunger",
       "titles": {
-        "english": "Hungerslab"
+        "english": "Hungerslab",
+        "chinese": "饥饿石板"
       },
       "descriptions": {
-        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].' and +[bonushp][health]."
+        "english": "Gain '<b>Hunger</b>: Feed on units with [eaten].' and +[bonushp][health].",
+        "chinese": "获得'<b>饥饿</b>：吞食带有[eaten]的单位'，+[bonushp][health]。"
       },
       "icon": "@SoulSavior_HungerstoneIcon",
       "bonus_hp": 30,
@@ -64,7 +68,8 @@
       "id": "SoulSavior_HungerEatFood",
       "trigger": "on_food_spawn",
       "descriptions": {
-        "english": "Feed on units with [eaten]."
+        "english": "Feed on units with [eaten].",
+        "chinese": "吞食带有[eaten]的单位。"
       },
       "effects": [
         {

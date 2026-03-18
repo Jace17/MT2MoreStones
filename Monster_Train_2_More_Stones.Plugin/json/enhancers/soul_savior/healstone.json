@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Healstone+",
-        "chinese": "回血石"
+        "chinese": "回血石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to restore [effect0.upgrade.trigger0.effect0.power] health to friendly units.",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddHeal",
       "titles": {
         "english": "Healstone+",
-        "chinese": "回血石"
+        "chinese": "回血石+"
       },
       "descriptions": {
         "english": "Gain 'Restore [trigger0.effect0.power] health to friendly units.'",

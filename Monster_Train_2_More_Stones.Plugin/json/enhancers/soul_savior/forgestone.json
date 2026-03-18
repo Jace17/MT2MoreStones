@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Forgestone+",
-        "chinese": "锻造石"
+        "chinese": "锻造石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add [forge] [effect0.upgrade.trigger0.effect0.paramint].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_GainForge",
       "titles": {
         "english": "Forgestone+",
-        "chinese": "锻造石"
+        "chinese": "锻造石+"
       },
       "descriptions": {
         "english": "Gain [forge] [trigger0.effect0.paramint].",

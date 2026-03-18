@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Lootstone+",
-        "chinese": "财宝石"
+        "chinese": "财宝石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][coin].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_GainCoin",
       "titles": {
         "english": "Lootstone+",
-        "chinese": "财宝石"
+        "chinese": "财宝石+"
       },
       "descriptions": {
         "english": "Gain [trigger0.effect0.paramint][coin].",

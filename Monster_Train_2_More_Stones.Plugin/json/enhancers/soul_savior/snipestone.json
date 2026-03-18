@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Snipeslab",
-        "chinese": "狙击石"
+        "chinese": "狙击石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with <b>Sniper</b> and +[effect0.upgrade.bonusdamage][attack].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddSniper",
       "titles": {
         "english": "Snipeslab",
-        "chinese": "狙击石"
+        "chinese": "狙击石板"
       },
       "descriptions": {
         "english": "Gain <b>Sniper</b> and +[bonusdamage][attack].",

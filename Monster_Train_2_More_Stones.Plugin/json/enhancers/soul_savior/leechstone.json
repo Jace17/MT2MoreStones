@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Leechslab",
-        "chinese": "水蛭石"
+        "chinese": "水蛭石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [lifesteal] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddLifesteal",
       "titles": {
         "english": "Leechslab",
-        "chinese": "水蛭石"
+        "chinese": "水蛭石板"
       },
       "descriptions": {
         "english": "Gain [lifesteal] [status0.power] and +[bonusdamage][attack].",

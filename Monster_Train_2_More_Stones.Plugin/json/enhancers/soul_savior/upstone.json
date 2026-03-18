@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Upstone+",
-        "chinese": "上移石"
+        "chinese": "上移石+"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [ascend] and -[effect0.upgrade.costreduction][ember].",
-        "chinese": "升级一个指定目标法术，使其获得'[ascend]。'"
+        "chinese": "升级一个指定目标法术，使其获得'[ascend]'，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@SoulSavior_AscendEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddAscend",
       "titles": {
         "english": "Upstone+",
-        "chinese": "上移石"
+        "chinese": "上移石+"
       },
       "descriptions": {
         "english": "Gain [ascend] and -[costreduction][ember].",
-        "chinese": "获得'[ascend]。'"
+        "chinese": "获得'[ascend]'，费用 -[costreduction][ember]。"
       },
       "icon": "@SoulSavior_UpstoneIcon",
       "cost_reduction": 1,

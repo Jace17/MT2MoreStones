@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Etchslab",
-        "chinese": "蚀刻石"
+        "chinese": "蚀刻石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with '<b>Etch</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddEtch",
       "titles": {
         "english": "Etchslab",
-        "chinese": "蚀刻石"
+        "chinese": "蚀刻石板"
       },
       "descriptions": {
         "english": "Gain '<b>Etch</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
