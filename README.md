@@ -121,7 +121,7 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Stompslab         | Unit  | Clanless        | Rare     | Add Trample. Attack +20.                               |
 | Swipeslab         | Unit  | Clanless        | Rare     | Add Sweep.                                             |
 | Trainslab         | Unit  | Clanless        | Common   | Ember cost is 0. Attack +20.                           |
-| Truestone+        | Spell | Clanless        | Uncommon | Add Piercing. Spell Power +10.                         |
+| Truestone+        | Spell | Clanless        | Uncommon | Add Piercing. Spell Power +30.                         |
 | Tunestone+        | Spell | Clanless        | Rare     | Add Attuned. Spell Power +5.                           |
 | Upstone+          | Spell | Clanless        | Uncommon | Add Ascend. Ember cost -1. (Targeted spells only.)     |
 | Valuestone+       | Spell | Clanless        | Rare     | Ember cost -6.                                         |
@@ -139,7 +139,7 @@ If you loved this or any of my other mods, feel free to [tip me a coffee.](https
 | Feeblestone+      | Spell | Luna Coven      | Rare     | Apply Spell Weakness 2 to all enemies.                 |
 | Lunestone+        | Spell | Luna Coven      | Common   | Add Phase. Ember cost -2.                              |
 | Dazestone+        | Spell | Melting Remnant | Rare     | Apply Dazed 2 to all enemies.                          |
-| Formstone+        | Spell | Melting Remnant | Uncommon | Reform a random unit.                                  |
+| Formstone+        | Spell | Melting Remnant | Uncommon | Reform 2 random units.                                 |
 | Graveslab         | Unit  | Melting Remnant | Rare     | Add Harvest: +4 Attack, +4 Health                      |
 | Smokeslab         | Unit  | Melting Remnant | Common   | Add Stealth 4. +30 attack.                             |
 | Brimstone+        | Spell | Pyreborne       | Common   | Deal 6 Damage to all enemies.                          |

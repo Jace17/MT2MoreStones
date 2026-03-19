@@ -5,8 +5,8 @@
       "id": "SoulSavior_SpellUpgradeRooted",
       "type": "enhancer",
       "names": {
-        "english": "Vinestone",
-        "chinese": "藤蔓石"
+        "english": "Vinestone+",
+        "chinese": "藤蔓石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [rooted] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -41,8 +41,8 @@
     {
       "id": "SoulSavior_AddRootedEffect",
       "titles": {
-        "english": "Vinestone",
-        "chinese": "藤蔓石"
+        "english": "Vinestone+",
+        "chinese": "藤蔓石+"
       },
       "descriptions": {
         "english": "Gain 'Apply [rooted] [trigger0.effect0.status0.power] to enemy units.'",
@@ -89,7 +89,7 @@
       "param_status_effects": [
         {
           "status": "rooted",
-          "count": 1
+          "count": 2
         }
       ]
     }

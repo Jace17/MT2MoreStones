@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Dazestone+",
-        "chinese": "眩晕石"
+        "chinese": "眩晕石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [dazed] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AdDazedEffect",
       "titles": {
         "english": "Dazestone+",
-        "chinese": "眩晕石"
+        "chinese": "眩晕石+"
       },
       "descriptions": {
         "english": "Gain 'Apply [dazed] [trigger0.effect0.status0.power] to enemy units.'",

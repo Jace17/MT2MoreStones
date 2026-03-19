@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Extremestone+",
-        "chinese": "极限石"
+        "chinese": "极限石+"
       },
       "descriptions": {
         "english": "Upgrade a spell with +[effect0.upgrade.bonusdamage] [magicpower].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_ExtremeUpgrade",
       "titles": {
         "english": "Extremestone+",
-        "chinese": "极限石"
+        "chinese": "极限石+"
       },
       "descriptions": {
         "english": "+[bonusdamage] [magicpower].",

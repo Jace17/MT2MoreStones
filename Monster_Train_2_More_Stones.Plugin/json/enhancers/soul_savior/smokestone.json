@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Smokeslab",
-        "chinese": "烟雾石"
+        "chinese": "烟雾石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [stealth] [effect0.upgrade.status0.power] and +[effect0.upgrade.bonusdamage][attack].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddStealth",
       "titles": {
         "english": "Smokeslab",
-        "chinese": "烟雾石"
+        "chinese": "烟雾石板"
       },
       "descriptions": {
         "english": "Gain [stealth] [status0.power] and +[bonusdamage][attack].",

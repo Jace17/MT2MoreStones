@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Lunestone+",
-        "chinese": "月相石"
+        "chinese": "月相石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to gain [phase] and -[effect0.upgrade.costreduction][ember].",
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddPhase",
       "titles": {
         "english": "Lunestone+",
-        "chinese": "月相石"
+        "chinese": "月相石+"
       },
       "descriptions": {
         "english": "Gain [phase] and -[costreduction][ember].",
-        "chinese": "获得'[phase]'，费用 -[effect0.upgrade.costreduction][ember]。"
+        "chinese": "获得'[phase]'，费用 -[costreduction][ember]。"
       },
       "icon": "@SoulSavior_LunestoneIcon",
       "cost_reduction": 2,

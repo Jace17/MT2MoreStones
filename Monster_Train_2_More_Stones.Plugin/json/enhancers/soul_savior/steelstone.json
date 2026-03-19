@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Steelslab",
-        "chinese": "钢铁石"
+        "chinese": "钢铁石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [steelguard] and [armor] [effect0.upgrade.status0.power].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddSteelguard",
       "titles": {
         "english": "Steelslab",
-        "chinese": "钢铁石"
+        "chinese": "钢铁石板"
       },
       "descriptions": {
         "english": "Gain [steelguard] and [armor] [status0.power].",

@@ -5,10 +5,12 @@
       "id": "UnitUpgradeRevenge",
       "type": "enhancer",
       "names": {
-        "english": "Revengestone"
+        "english": "Revengestone",
+        "chinese": "复仇石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'"
+        "english": "Upgrade a unit with '[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power].'",
+        "chinese": "升级一个单位，使其获得'[revenge]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，[armor] [effect0.upgrade.charactertrigger0.effect0.upgrade.status0.power]。'"
       },
       "relic_effects": [
         "@RevengeEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "AddRevenge",
       "titles": {
-        "english": "Revengestone"
+        "english": "Revengestone",
+        "chinese": "复仇石"
       },
       "descriptions": {
-        "english": "Gain '[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'"
+        "english": "Gain '[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and [armor] [charactertrigger0.effect0.upgrade.status0.power].'",
+        "chinese": "获得'[revenge]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack]，[armor] [charactertrigger0.effect0.upgrade.status0.power]。'"
       },
       "icon": "@RevengestoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "RevengeAdd4Attack4ArmorTrigger",
       "trigger": "on_hit",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and [armor] [effect0.upgrade.status0.power].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，[armor] [effect0.upgrade.status0.power]。"
       },
       "effects": [
         {

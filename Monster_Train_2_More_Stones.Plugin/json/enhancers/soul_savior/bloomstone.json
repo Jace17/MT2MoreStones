@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Bloomslab",
-        "chinese": "盛开石"
+        "chinese": "盛开石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[rejuvenate]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddRejuvenate",
       "titles": {
         "english": "Bloomslab",
-        "chinese": "盛开石"
+        "chinese": "盛开石板"
       },
       "descriptions": {
         "english": "Gain '[rejuvenate]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",

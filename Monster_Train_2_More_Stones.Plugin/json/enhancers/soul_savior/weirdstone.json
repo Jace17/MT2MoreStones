@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Madslab",
-        "chinese": "癫狂石"
+        "chinese": "癫狂石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [unstable] [effect0.upgrade.status0.power].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddUnstable",
       "titles": {
         "english": "Madslab",
-        "chinese": "癫狂石"
+        "chinese": "癫狂石板"
       },
       "descriptions": {
         "english": "Gain [unstable] [status0.power].",

@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Smeltstone+",
-        "chinese": "熔炼石"
+        "chinese": "熔炼石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add 'Draw [effect0.upgrade.trigger0.effect0.paramint]. [smelt] a card in hand.'",
-        "chinese": "升级一个法术，使其获得'[smelt]一张手牌。'"
+        "chinese": "升级一个法术，使其获得'抽 [effect0.upgrade.trigger0.effect0.paramint] 张牌。[smelt]一张手牌。'"
       },
       "relic_effects": [
         "@SoulSavior_GainSmeltEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_GainSmelt",
       "titles": {
         "english": "Smeltstone+",
-        "chinese": "熔炼石"
+        "chinese": "熔炼石+"
       },
       "descriptions": {
         "english": "Gain 'Draw [trigger0.effect0.paramint]. [smelt] a card in hand.'",
-        "chinese": "获得'[smelt]一张手牌。'"
+        "chinese": "获得'抽 [trigger0.effect0.paramint] 张牌。[smelt]一张手牌。'"
       },
       "icon": "@SoulSavior_SmeltstoneIcon",
       "card_trigger_upgrades": [
@@ -71,7 +71,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "Draw [effect0.paramint]. [smelt] a card in hand.",
-        "chinese": "[smelt]一张手牌。"
+        "chinese": "抽 [effect0.paramint] 张牌。[smelt]一张手牌。"
       },
       "effects": [
         {

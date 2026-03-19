@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Offerstone+",
-        "chinese": "献祭石"
+        "chinese": "献祭石+"
       },
       "descriptions": {
         "english": "Upgrade a targetless spell to gain <b>Offering</b> and -[effect0.upgrade.costreduction][ember].",
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddOfferingTrait",
       "titles": {
         "english": "Offerstone+",
-        "chinese": "献祭石"
+        "chinese": "献祭石+"
       },
       "descriptions": {
         "english": "Gain <b>Offering</b> and -[costreduction][ember].",
-        "chinese": "获得<b>献祭</b>，费用 -[effect0.upgrade.costreduction][ember]。"
+        "chinese": "获得<b>献祭</b>，费用 -[costreduction][ember]。"
       },
       "icon": "@SoulSavior_OfferstoneIcon",
       "cost_reduction": 2,

@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Frontstone+",
-        "chinese": "前移石"
+        "chinese": "前移石+"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [advance] and -[effect0.upgrade.costreduction][ember].",
-        "chinese": "升级一个指定目标法术，使其获得'[advance]。'"
+        "chinese": "升级一个指定目标法术，使其获得'[advance]'，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@SoulSavior_AdvanceEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddAdvance",
       "titles": {
         "english": "Frontstone+",
-        "chinese": "前移石"
+        "chinese": "前移石+"
       },
       "descriptions": {
         "english": "Gain [advance] and -[effect0.upgrade.costreduction][ember].",
-        "chinese": "获得'[advance]。'"
+        "chinese": "获得'[advance]'，费用 -[costreduction][ember]。"
       },
       "icon": "@SoulSavior_FrontstoneIcon",
       "cost_reduction": 1,
