@@ -81,12 +81,5 @@
         }
       ]
     }
-  ],
-  "traits": [
-    {
-      "id": "SoulSavior_SteelguardTrait",
-      "name": "CardTraitModifyArmorOnHit",
-      "param_int": 15
-    }
   ]
 }
