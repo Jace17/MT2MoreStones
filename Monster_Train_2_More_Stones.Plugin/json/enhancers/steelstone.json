@@ -55,11 +55,10 @@
         {
           "status": "armor",
           "count": 50
-        }
-      ],
-      "trait_upgrades": [
+        },
         {
-          "id": "@SteelguardTrait"
+          "status": "steelguard",
+          "count": 1
         }
       ],
       "filters": [
@@ -77,8 +76,11 @@
   "upgrade_masks": [
     {
       "id": "ExcludeSteelguard",
-      "excluded_traits": [
-        "CardTraitModifyArmorOnHit"
+      "excluded_status": [
+        {
+          "status": "steelguard",
+          "count": 1
+        }
       ]
     }
   ],

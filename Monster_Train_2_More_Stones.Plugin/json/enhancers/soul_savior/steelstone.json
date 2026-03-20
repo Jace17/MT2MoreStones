@@ -53,11 +53,10 @@
         {
           "status": "armor",
           "count": 75
-        }
-      ],
-      "trait_upgrades": [
+        },
         {
-          "id": "@SoulSavior_SteelguardTrait"
+          "status": "steelguard",
+          "count": 1
         }
       ],
       "filters": [
@@ -75,8 +74,11 @@
   "upgrade_masks": [
     {
       "id": "SoulSavior_ExcludeSteelguard",
-      "excluded_traits": [
-        "CardTraitModifyArmorOnHit"
+      "excluded_status": [
+        {
+          "status": "steelguard",
+          "count": 1
+        }
       ]
     }
   ],
