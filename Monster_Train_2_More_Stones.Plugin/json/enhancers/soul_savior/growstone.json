@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Growstone+",
-        "chinese": "生长石"
+        "chinese": "生长石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add '[propagate] [effect0.upgrade.trigger0.effect0.paramint] on all units.'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddPropagate",
       "titles": {
         "english": "Growstone+",
-        "chinese": "生长石"
+        "chinese": "生长石+"
       },
       "descriptions": {
         "english": "Gain '[propagate] [trigger0.effect0.paramint] on all units.'",

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Inspireslab",
-        "chinese": "激励石"
+        "chinese": "激励石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with '<b>Inspire</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddInspire",
       "titles": {
         "english": "Inspireslab",
-        "chinese": "激励石"
+        "chinese": "激励石板"
       },
       "descriptions": {
         "english": "Gain '<b>Inspire</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",

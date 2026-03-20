@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Wingslab",
-        "chinese": "添翼石"
+        "chinese": "添翼石板"
       },
       "descriptions": {
         "english": "Add [ability]: <b>Flight</b> and +[effect0.upgrade.bonushp][health].",
-        "chinese": "升级一个单位，使其获得[ability]：<b>飞行</b>。"
+        "chinese": "升级一个单位，使其获得[ability]：<b>飞行</b>，+[effect0.upgrade.bonushp][health]。"
       },
       "relic_effects": [
         "@SoulSavior_FlightEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddAbilityFlight",
       "titles": {
         "english": "Wingslab",
-        "chinese": "添翼石"
+        "chinese": "添翼石板"
       },
       "descriptions": {
         "english": "Gain [ability]: <b>Flight</b> and +[bonushp][health].",
-        "chinese": "获得[ability]：<b>飞行</b>。"
+        "chinese": "获得[ability]：<b>飞行</b>，+[bonushp][health]。"
       },
       "icon": "@SoulSavior_WingstoneIcon",
       "bonus_hp": 30,

@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Bannerslab",
-        "chinese": "战旗石"
+        "chinese": "战旗石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [deployable] and +[effect0.upgrade.bonusdamage][attack].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddDeployableTrait",
       "titles": {
         "english": "Bannerslab",
-        "chinese": "战旗石"
+        "chinese": "战旗石板"
       },
       "descriptions": {
         "english": "Gain [deployable] and +[bonusdamage][attack].",

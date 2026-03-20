@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Armorslab",
-        "chinese": "护甲石"
+        "chinese": "护甲石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [armor] [effect0.upgrade.status0.power].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddArmor",
       "titles": {
         "english": "Armorslab",
-        "chinese": "护甲石"
+        "chinese": "护甲石板"
       },
       "descriptions": {
         "english": "Gain [armor] [status0.power].",

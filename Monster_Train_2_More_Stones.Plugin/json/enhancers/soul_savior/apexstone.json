@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Apexslab",
-        "chinese": "巅峰石"
+        "chinese": "巅峰石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with '<b>Armored</b>: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack].'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddArmored",
       "titles": {
         "english": "Apexslab",
-        "chinese": "巅峰石"
+        "chinese": "巅峰石板"
       },
       "descriptions": {
         "english": "Gain '<b>Armored</b>: +[charactertrigger0.effect0.upgrade.bonusdamage][attack].'",

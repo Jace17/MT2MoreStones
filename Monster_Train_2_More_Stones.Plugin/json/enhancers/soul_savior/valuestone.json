@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Valuestone+",
-        "chinese": "价值石"
+        "chinese": "价值石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to cost -[effect0.upgrade.costreduction][ember].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_ValueUpgrade",
       "titles": {
         "english": "Valuestone+",
-        "chinese": "价值石"
+        "chinese": "价值石+"
       },
       "descriptions": {
         "english": "-[costreduction][ember].",

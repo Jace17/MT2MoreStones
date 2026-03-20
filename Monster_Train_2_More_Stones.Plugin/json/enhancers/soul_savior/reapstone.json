@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Reapstone+",
-        "chinese": "晶爆石"
+        "chinese": "晶爆石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [corruptpoison] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddReapEffect",
       "titles": {
         "english": "Reapstone+",
-        "chinese": "晶爆石"
+        "chinese": "晶爆石+"
       },
       "descriptions": {
         "english": "Gain 'Apply [corruptpoison] [trigger0.effect0.status0.power] to enemy units.'",

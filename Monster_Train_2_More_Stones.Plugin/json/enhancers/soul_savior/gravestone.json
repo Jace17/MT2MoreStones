@@ -5,10 +5,12 @@
       "id": "SoulSavior_UnitUpgradeHarvest",
       "type": "enhancer",
       "names": {
-        "english": "Graveslab"
+        "english": "Graveslab",
+        "chinese": "墓碑石板"
       },
       "descriptions": {
-        "english": "Upgrade a unit with '[harvest]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Upgrade a unit with '[harvest]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "升级一个单位，使其获得'[harvest]：+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "relic_effects": [
         "@SoulSavior_HarvestEnhancer"
@@ -39,10 +41,12 @@
     {
       "id": "SoulSavior_AddHarvest",
       "titles": {
-        "english": "Graveslab"
+        "english": "Graveslab",
+        "chinese": "墓碑石板"
       },
       "descriptions": {
-        "english": "Gain '[harvest]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'"
+        "english": "Gain '[harvest]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
+        "chinese": "获得'[harvest]：+[charactertrigger0.effect0.upgrade.bonusdamage][attack]，+[charactertrigger0.effect0.upgrade.bonushp][health]。'"
       },
       "icon": "@SoulSavior_GravestoneIcon",
       "trigger_upgrades": [
@@ -63,7 +67,8 @@
       "id": "SoulSavior_HarvestAdd2Attack2HealthTrigger",
       "trigger": "on_any_unit_death_on_floor",
       "descriptions": {
-        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health]."
+        "english": "+[effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.bonushp][health].",
+        "chinese": "+[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]。"
       },
       "effects": [
         {

@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Flaskstone+",
-        "chinese": "试剂石"
+        "chinese": "试剂石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add '[mix] twice.'",
-        "chinese": "升级一个法术，使其获得'[mix]。'"
+        "chinese": "升级一个法术，使其获得'[mix]两次。'"
       },
       "relic_effects": [
         "@SoulSavior_AddMixEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddMix",
       "titles": {
         "english": "Flaskstone+",
-        "chinese": "试剂石"
+        "chinese": "试剂石+"
       },
       "descriptions": {
         "english": "Gain '[mix] twice.'",
-        "chinese": "获得'[mix]。'"
+        "chinese": "获得'[mix]两次。'"
       },
       "icon": "@SoulSavior_FlaskstoneIcon",
       "card_trigger_upgrades": [
@@ -71,7 +71,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "[mix] twice.",
-        "chinese": "[mix]。"
+        "chinese": "[mix]两次。"
       },
       "effects": [
         {

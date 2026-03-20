@@ -5,7 +5,7 @@
       "id": "SpellUpgradeRooted",
       "type": "enhancer",
       "names": {
-        "english": "Vinestone+",
+        "english": "Vinestone",
         "chinese": "藤蔓石"
       },
       "descriptions": {
@@ -41,7 +41,7 @@
     {
       "id": "AddRootedEffect",
       "titles": {
-        "english": "Vinestone+",
+        "english": "Vinestone",
         "chinese": "藤蔓石"
       },
       "descriptions": {
@@ -89,7 +89,7 @@
       "param_status_effects": [
         {
           "status": "rooted",
-          "count": 2
+          "count": 1
         }
       ]
     }

@@ -46,7 +46,7 @@
       },
       "descriptions": {
         "english": "Gain [phase] and -[costreduction][ember].",
-        "chinese": "获得'[phase]'，费用 -[effect0.upgrade.costreduction][ember]。"
+        "chinese": "获得'[phase]'，费用 -[costreduction][ember]。"
       },
       "icon": "@LunestoneIcon",
       "cost_reduction": 1,

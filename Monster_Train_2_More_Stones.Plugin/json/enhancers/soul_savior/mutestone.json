@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Mutestone+",
-        "chinese": "静默石"
+        "chinese": "静默石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [mute] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddMuteEffect",
       "titles": {
         "english": "Mutestone+",
-        "chinese": "静默石"
+        "chinese": "静默石+"
       },
       "descriptions": {
         "english": "Gain 'Apply [mute] [trigger0.effect0.status0.power] to enemy units.'",

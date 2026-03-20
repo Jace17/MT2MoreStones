@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Gorgeslab",
-        "chinese": "暴食石"
+        "chinese": "暴食石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[feed]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddGorge",
       "titles": {
         "english": "Gorgeslab",
-        "chinese": "暴食石"
+        "chinese": "暴食石板"
       },
       "descriptions": {
         "english": "Gain '[feed]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",

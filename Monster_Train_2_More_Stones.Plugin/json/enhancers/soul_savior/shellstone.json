@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Shellslab",
-        "chinese": "甲壳石"
+        "chinese": "甲壳石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with [titanskin] [effect0.upgrade.status0.power].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddTitanskin2",
       "titles": {
         "english": "Shellslab",
-        "chinese": "甲壳石"
+        "chinese": "甲壳石板"
       },
       "descriptions": {
         "english": "Gain [titanskin] [status0.power].",

@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Backstone+",
-        "chinese": "后移石"
+        "chinese": "后移石+"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [retreat] and -[effect0.upgrade.costreduction][ember].",
-        "chinese": "升级一个指定目标法术，使其获得'[retreat]。'"
+        "chinese": "升级一个指定目标法术，使其获得'[retreat]'，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@SoulSavior_RetreatEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddRetreat",
       "titles": {
         "english": "Backstone+",
-        "chinese": "后移石"
+        "chinese": "后移石+"
       },
       "descriptions": {
         "english": "Gain [retreat] and -[costreduction][ember].",
-        "chinese": "获得'[retreat]。'"
+        "chinese": "获得'[retreat]'，费用 -[costreduction][ember]。"
       },
       "icon": "@SoulSavior_BackstoneIcon",
       "cost_reduction": 1,

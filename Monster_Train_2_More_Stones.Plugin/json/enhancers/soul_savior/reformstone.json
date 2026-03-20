@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Formstone+",
-        "chinese": "塑造石"
+        "chinese": "塑造石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add '[raise] [effect0.upgrade.trigger0.effect0.paramint] random units.'",
-        "chinese": "升级一个法术，使其获得'随机[raise]一个单位。'"
+        "chinese": "升级一个法术，使其获得'随机[raise] [effect0.upgrade.trigger0.effect0.paramint] 个单位。'"
       },
       "relic_effects": [
         "@SoulSavior_AddReformEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddReform",
       "titles": {
         "english": "Formstone+",
-        "chinese": "塑造石"
+        "chinese": "塑造石+"
       },
       "descriptions": {
         "english": "Gain '[raise] [trigger0.effect0.paramint] random units.'",
-        "chinese": "获得'随机[raise]一个单位。'"
+        "chinese": "获得'随机[raise] [trigger0.effect0.paramint] 个单位。'"
       },
       "icon": "@SoulSavior_ReformstoneIcon",
       "card_trigger_upgrades": [
@@ -71,7 +71,7 @@
       "trigger": "on_cast",
       "descriptions": {
         "english": "[raise] [effect0.paramint] random units.",
-        "chinese": "随机[raise]一个单位。"
+        "chinese": "随机[raise] [effect0.paramint] 个单位。"
       },
       "effects": [
         {

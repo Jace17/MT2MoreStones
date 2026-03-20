@@ -6,11 +6,11 @@
       "type": "enhancer",
       "names": {
         "english": "Downstone+",
-        "chinese": "下移石"
+        "chinese": "下移石+"
       },
       "descriptions": {
         "english": "Upgrade a targeted spell to add [descend] and -[effect0.upgrade.costreduction][ember].",
-        "chinese": "升级一个指定目标法术，使其获得'[descend]。'"
+        "chinese": "升级一个指定目标法术，使其获得'[descend]'，费用 -[effect0.upgrade.costreduction][ember]。"
       },
       "relic_effects": [
         "@SoulSavior_DescendEnhancer"
@@ -42,11 +42,11 @@
       "id": "SoulSavior_AddDescend",
       "titles": {
         "english": "Downstone+",
-        "chinese": "下移石"
+        "chinese": "下移石+"
       },
       "descriptions": {
         "english": "Gain [descend] and -[costreduction][ember].",
-        "chinese": "获得'[descend]。'"
+        "chinese": "获得'[descend]'，费用 -[costreduction][ember]。"
       },
       "icon": "@SoulSavior_DownstoneIcon",
       "cost_reduction": 1,

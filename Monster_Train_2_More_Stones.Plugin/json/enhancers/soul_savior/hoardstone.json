@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Hoardstone+",
-        "chinese": "龙藏石"
+        "chinese": "龙藏石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to add [effect0.upgrade.trigger0.effect0.paramint][dragonshoardicon].",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_GainDragonsHoard",
       "titles": {
         "english": "Hoardstone+",
-        "chinese": "龙藏石"
+        "chinese": "龙藏石+"
       },
       "descriptions": {
         "english": "Gain [trigger0.effect0.paramint][dragonshoardicon].",

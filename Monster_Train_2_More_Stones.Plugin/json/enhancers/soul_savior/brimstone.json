@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Brimstone+",
-        "chinese": "硫黄石"
+        "chinese": "硫黄石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to deal [effect0.upgrade.trigger0.effect0.power] damage to enemy units.",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddDamageAll",
       "titles": {
         "english": "Brimstone+",
-        "chinese": "硫黄石"
+        "chinese": "硫黄石+"
       },
       "descriptions": {
         "english": "Gain 'Deal [trigger0.effect0.power] damage to enemy units.'",

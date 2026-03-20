@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Froststone+",
-        "chinese": "霜冻石"
+        "chinese": "霜冻石+"
       },
       "descriptions": {
         "english": "Upgrade a spell to apply [frostbite] [effect0.upgrade.trigger0.effect0.status0.power] to enemy units.",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddFrostbiteEffect",
       "titles": {
         "english": "Froststone+",
-        "chinese": "霜冻石"
+        "chinese": "霜冻石+"
       },
       "descriptions": {
         "english": "Gain 'Apply [frostbite] [trigger0.effect0.status0.power] to enemy units.'",

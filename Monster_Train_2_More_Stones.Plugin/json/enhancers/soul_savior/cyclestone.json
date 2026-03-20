@@ -6,7 +6,7 @@
       "type": "enhancer",
       "names": {
         "english": "Cycleslab",
-        "chinese": "朔望石"
+        "chinese": "朔望石板"
       },
       "descriptions": {
         "english": "Upgrade a unit with '[mooncycle]: +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[effect0.upgrade.charactertrigger0.effect0.upgrade.bonushp][health].'",
@@ -42,7 +42,7 @@
       "id": "SoulSavior_AddMooncycle",
       "titles": {
         "english": "Cycleslab",
-        "chinese": "朔望石"
+        "chinese": "朔望石板"
       },
       "descriptions": {
         "english": "Gain '[mooncycle]: +[charactertrigger0.effect0.upgrade.bonusdamage][attack] and +[charactertrigger0.effect0.upgrade.bonushp][health].'",
