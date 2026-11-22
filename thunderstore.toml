@@ -26,4 +26,5 @@ target = ""
 repository = "https://thunderstore.io"
 communities = [ "monster-train-2" ]
 
-
+[publish.categories]
+monster-train-2 = ["merchants", "mods"]
